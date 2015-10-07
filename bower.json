@@ -18,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "cui-icons": "*",
-    "cui-i18n": "*"
+    "cui-icons": "git@github.com:thirdwavellc/cui-icons.git",
+    "cui-i18n": "git@github.com:thirdwavellc/cui-i18n.git"
   }
 }
