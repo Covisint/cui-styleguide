@@ -1,0 +1,22 @@
+{
+  "name": "cui-styleguide",
+  "version": "0.0.0",
+  "description": "Digital Style Guide for Core CUI Elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thirdwavellc/cui-styleguide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thirdwavellc/cui-styleguide/issues"
+  },
+  "homepage": "https://github.com/thirdwavellc/cui-styleguide#readme",
+  "dependencies": {
+    "bower": "^1.5.3"
+  }
+}
