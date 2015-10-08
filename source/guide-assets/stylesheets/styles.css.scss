@@ -58,21 +58,21 @@ body {
 
 /* Typography */
 
-h1 {
-    font-size: 2.25em;
-    margin-bottom: em(24, 2.25*16);
-}
+// h1 {
+//     font-size: 2.25em;
+//     margin-bottom: em(24, 2.25*16);
+// }
 
-h2 {
+.cui-styleguide__section-title {
     border-bottom: 1px solid $color-accent;
     font-size: 1.5em;
     margin-bottom: em(24, 1.5*16);
 }
 
-h3 {
-    font-size: 1.25em;
-    margin-bottom: em(24, 1.25*16);
-}
+// h3 {
+//     font-size: 1.25em;
+//     margin-bottom: em(24, 1.25*16);
+// }
 
 
 /* Header */
@@ -276,3 +276,10 @@ h3 {
       font-size: 12px;
       font-weight: normal;
       color: #222; }
+
+.cui-styleguide__background-container {
+    border: 1px solid #000;
+    height: 193px;
+    padding: 5%;
+    width: 193px;
+}

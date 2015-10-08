@@ -1,0 +1,32 @@
+$primary-font-color: #929292;
+
+// Texts
+//
+// Styleguide 1.2
+
+body {
+  color: $primary-font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+.cui__italic,
+.cui__bold,
+ {
+  color: $primary-font-color;
+  font-style: italic;
+}
+
+p {
+  color: $primary-font-color;
+}
+
+.cui__link {
+  color: #429DD1;
+}
+
+.cui__ul, .cui__ol {
+  padding-left: 40px;
+}
