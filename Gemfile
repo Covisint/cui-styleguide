@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.3.1'
-gem 'kss', :path => '../'
+gem 'middleman', '3.2.0'
+gem 'middleman-kss', '0.3.1'
