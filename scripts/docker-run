@@ -1,13 +1,11 @@
 #!/bin/bash
 
 IMAGE_NAME=cui-styleguide
-CONTAINER_NAME=cui-styleguide-$(date +%s)
-SRC_VOLUME=$(pwd)
-DEST_VOLUME=/app
-CMD=bundle exec middleman build --verbose
+SRC_SSH_VOLUME=$HOME/.ssh/id_rsa
+DEST_SSH_VOLUME=/root/.ssh/id_rsa
+CMD="scripts/build"
 
-docker run --name=${CONTAINER_NAME} \
-           --volume=${SRC_VOLUME}:${DEST_VOLUME} \
-           --detach \
+docker run --volume=${SRC_SSH_VOLUME}:${DEST_SSH_VOLUME} \
+           --rm \
            ${IMAGE_NAME} \
            ${CMD}

@@ -19,6 +19,7 @@ ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 4.1.2
 
 ADD . /app
+ADD ssh_config /root/.ssh/config
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
   && gpg --verify SHASUMS256.txt.asc \
