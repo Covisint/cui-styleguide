@@ -1,16 +1,13 @@
-$primary-background: #fff;
-$secondary-background: #DEE9EE;
-
 // Backgrounds
 //
 // Styleguide 1.1
 
-.cui__background {
+.cui-background {
     background-color: $primary-background;
     padding: 20px;
 }
 
-.cui__background--secondary {
+.cui-background--secondary {
     background-color: $secondary-background;
     padding: 20px;
 }

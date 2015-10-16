@@ -1,0 +1,43 @@
+/*
+Inputs
+
+.cui-form__input--focus    - Some text,
+.cui-form__input--invalid  - Some other text
+
+Styleguide 1.3.1
+*/
+
+.cui-form__input {
+  border: $input-border;
+  height: 50px;
+  width: 400px;
+  &:focus {
+    border: $input-border--focus;
+    outline: 0;
+  }
+}
+
+.cui-form__input--focus{
+  border: $input-border--focus;
+}
+
+.cui-form__input--invalid {
+  border: $input-border--invalid;
+}
+
+
+// Dropdown
+//
+// Styleguide 1.3.2
+
+select.cui-form__select {
+  background: url('../images/dropdown-arrow.svg') right no-repeat;
+  border: $input-border--focus;
+  height: 50px;
+  width: 400px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  &:focus {
+    outline: 0;
+  }
+}

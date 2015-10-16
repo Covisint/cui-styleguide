@@ -1,2 +1,6 @@
-//= require_tree "./external"
 //= require "styles"
+
+@import 'external/scss/vars';
+@import 'external/scss/background';
+@import 'external/scss/text';
+@import 'external/scss/form';
