@@ -6,7 +6,6 @@ set :images_dir, 'guide-assets/images'
 activate :directory_indexes
 
 # KSS helpers
-set :markdown_engine, :redcarpet
 activate :kss, :kss_dir => 'guide-assets/stylesheets/external'
 
 # Build-specific configuration
