@@ -1,2 +1,4 @@
 #!/bin/bash
 bower install
+bundle install
+middleman build
