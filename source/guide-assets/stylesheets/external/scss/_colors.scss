@@ -1,0 +1,82 @@
+.cui-primary-colors,
+.cui-secondary-colors {
+  height: 6rem;
+  width: 6rem;
+}
+
+/*
+Primary Colors
+
+.cui-primary-colors--light          - Some text,
+.cui-primary-colors--medium-light   - Some text,
+.cui-primary-colors--medium         - Some text,
+.cui-primary-colors--medium-dark    - Some text,
+.cui-primary-colors--dark           - Some text,
+
+Styleguide 1.4.1
+*/
+
+.cui-primary-colors--light  {
+  background-color: $cui-primary-colors--light;
+}   
+
+.cui-primary-colors--medium-light  {
+  background-color: $cui-primary-colors--medium-light;
+}
+
+.cui-primary-colors--medium  {
+  background-color: $cui-primary-colors--medium;
+}   
+
+.cui-primary-colors--medium-dark  {
+  background-color: $cui-primary-colors--medium-dark;
+} 
+
+.cui-primary-colors--dark  {
+  background-color: $cui-primary-colors--dark;
+}
+
+
+
+
+
+/*
+Secondary Colors
+
+.cui-secondary-colors--light          - Some text,
+.cui-secondary-colors--medium-light   - Some text,
+.cui-secondary-colors--medium         - Some text,
+.cui-secondary-colors--dark           - Some text,
+
+Styleguide 1.4.2
+*/
+
+.cui-secondary-colors--light  {
+  background-color: $cui-secondary-colors--light;
+}   
+
+.cui-secondary-colors--medium-light  {
+  background-color: $cui-secondary-colors--medium-light;
+}
+
+.cui-secondary-colors--medium  {
+  background-color: $cui-secondary-colors--medium;
+}
+
+.cui-secondary-colors--dark  {
+  background-color: $cui-secondary-colors--dark;
+}
+
+
+
+
+
+
+/*
+Primary Colors
+
+.cui-form__input--focus    - Some text,
+.cui-form__input--invalid  - Some other text
+
+Styleguide 1.4.3
+*/
