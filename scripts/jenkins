@@ -2,3 +2,4 @@
 bower install
 bundle install
 middleman build
+mvn clean deploy
