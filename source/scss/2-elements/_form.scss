@@ -1,0 +1,62 @@
+// Forms
+//
+// Styles for form elements
+// 
+// Styleguide 1.3
+
+/*
+Inputs
+
+.cui-form__input--focus         - Styling when user clicks in a field to enter input
+.cui-form__input.ng-invalid     - Styling after user has entered input that is invalid
+.cui-form__input.ng-valid       - Styling after user has entered input that is valid
+
+Markup: <input type="text" class="{{modifier_class}}"/>
+
+Styleguide 1.3.1
+*/
+
+.cui-form__input {
+  border: 1px solid $cui-input-border;
+  height: 50px;
+  width: 400px;
+}
+
+.cui-form__input:focus,
+.cui-form__input--focus {
+  border: 1px solid $cui-input-border--focus;
+  outline: 0;
+}
+
+.cui-form__input.ng-invalid {
+  border: 1px solid $cui-input-border--invalid;
+}
+
+.cui-form__input.ng-valid {
+  border: 1px solid $cui-input-border--valid;
+}
+
+
+/*
+Dropdown
+
+Markup: <select class="cui-form__select">
+            <option value="helloo"></option>
+            <option value="hellloooo"></option>
+            <option value="hellllooooooo"></option>
+            <option value="HELLO"></option>
+          </select>
+
+Styleguide 1.3.2
+*/
+select.cui-form__select {
+  background: url('../images/dropdown-arrow.svg') right no-repeat;
+  border: 1px solid $cui-input-border--focus;
+  height: 50px;
+  width: 400px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  &:focus {
+    outline: 0;
+  }
+}

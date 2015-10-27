@@ -1,0 +1,133 @@
+.cui-background {
+  background-color: #fff;
+  padding: 20px; }
+
+.cui-background--secondary {
+  background-color: #DEE9EE;
+  padding: 20px; }
+
+body {
+  color: #929292; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000; }
+
+.cui__italic,
+.cui__bold {
+  color: #929292;
+  font-style: italic; }
+
+p {
+  color: #929292; }
+
+.cui__link {
+  color: #429DD1; }
+
+.cui__ul, .cui__ol {
+  padding-left: 40px; }
+
+/*
+Inputs
+
+.cui-form__input--focus         - Styling when user clicks in a field to enter input
+.cui-form__input.ng-invalid     - Styling after user has entered input that is invalid
+.cui-form__input.ng-valid       - Styling after user has entered input that is valid
+
+Markup: <input type="text" class="{{modifier_class}}"/>
+
+Styleguide 1.3.1
+*/
+.cui-form__input {
+  border: 1px solid #DEE9EE;
+  height: 50px;
+  width: 400px; }
+
+.cui-form__input:focus,
+.cui-form__input--focus {
+  border: 1px solid #828483;
+  outline: 0; }
+
+.cui-form__input.ng-invalid {
+  border: 1px solid #FF4400; }
+
+.cui-form__input.ng-valid {
+  border: 1px solid #47CBB4; }
+
+/*
+Dropdown
+
+Markup: <select class="cui-form__select">
+            <option value="helloo"></option>
+            <option value="hellloooo"></option>
+            <option value="hellllooooooo"></option>
+            <option value="HELLO"></option>
+          </select>
+
+Styleguide 1.3.2
+*/
+select.cui-form__select {
+  background: url("../images/dropdown-arrow.svg") right no-repeat;
+  border: 1px solid #828483;
+  height: 50px;
+  width: 400px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+  select.cui-form__select:focus {
+    outline: 0; }
+
+.cui-primary-colors,
+.cui-secondary-colors {
+  height: 6rem;
+  width: 6rem; }
+
+/*
+Primary Colors
+
+.cui-primary-colors--light          - Some text,
+.cui-primary-colors--medium-light   - Some text,
+.cui-primary-colors--medium         - Some text,
+.cui-primary-colors--medium-dark    - Some text,
+.cui-primary-colors--dark           - Some text,
+
+Markup: <div class="cui-primary-colors {{modifier_class}}"></div>
+
+Styleguide 1.4.1
+*/
+.cui-primary-colors--light {
+  background-color: #87CEEC; }
+
+.cui-primary-colors--medium-light {
+  background-color: #429DD1; }
+
+.cui-primary-colors--medium {
+  background-color: #4582B4; }
+
+.cui-primary-colors--medium-dark {
+  background-color: #165E9B; }
+
+.cui-primary-colors--dark {
+  background-color: #0A2741; }
+
+/*
+Secondary Colors
+
+.cui-secondary-colors--light          - Some text,
+.cui-secondary-colors--medium-light   - Some text,
+.cui-secondary-colors--medium         - Some text,
+.cui-secondary-colors--dark           - Some text,
+
+Markup: <div class="cui-secondary-colors {{modifier_class}}"></div>
+
+Styleguide 1.4.2
+*/
+.cui-secondary-colors--light {
+  background-color: #3CB371; }
+
+.cui-secondary-colors--medium-light {
+  background-color: #FFD700; }
+
+.cui-secondary-colors--medium {
+  background-color: #FF8C00; }
+
+.cui-secondary-colors--dark {
+  background-color: #FF4400; }
