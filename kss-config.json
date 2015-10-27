@@ -1,7 +1,7 @@
 {
   "//": "The source and destination paths are relative to this file.",
   "source": [
-    "source/styles/styles.scss"
+    "source/"
   ],
   "destination":  "styleguide/",
 

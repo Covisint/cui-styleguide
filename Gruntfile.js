@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: 'source/styles/**/*',
-        tasks: ['sass']
+        files: ['source/scss/**/*.scss','styleguide/**/*'],
+        tasks: ['sass','copy:build']
       },
       build:{
         files: 'styleguide/**/*',
@@ -14,15 +14,26 @@ module.exports = function(grunt) {
     sass:{
       dist:{
         files:{
-          'styleguide/public/styles.css': 'source/styles/styles.scss'
+          'source/styles.css': 'source/styles.scss'
         }
+      }
+    },
+    copy:{
+      build:{
+        files: [{
+          cwd: 'source/',
+          src: 'styles.css',
+          dest: 'styleguide/public/',
+          expand: true
+        }]
       }
     },
     browserSync: {
       dev: {
         bsFiles: {
             src : [
-                'styleguide/**/*.html',
+                'styleguide/*.html',
+                'styleguide/**/*',
                 'source/**/*.js',
                 'source/**/*.scss'
             ]
@@ -43,7 +54,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['browserSync','watch:css']);
-  grunt.registerTask('build', ['browserSync','watch:build']);
 }
