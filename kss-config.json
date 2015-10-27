@@ -1,0 +1,15 @@
+{
+  "//": "The source and destination paths are relative to this file.",
+  "source": [
+    "source/styles/styles.scss"
+  ],
+  "destination":  "styleguide/",
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+    "public/kss.css",
+    "public/styles.css"
+  ],
+  "title": "Covisint Next Gen UI Framework",
+  "homepage": "homepage.md"
+}
