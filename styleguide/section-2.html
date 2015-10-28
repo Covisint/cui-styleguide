@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="public/kss.css">
   <link rel="stylesheet" href="public/kss.css">
-<link rel="stylesheet" href="public/styles.css">
+<link rel="stylesheet" href="public/styles.min.css">
 
 </head>
 <body id="kss-node">
@@ -52,7 +52,7 @@
             <li class="kss-nav__menu-item">
               <a href="section-2.html#kssref-2-2">
                 <span class="kss-nav__ref">2.2</span
-                ><span class="kss-nav__name">CUI Wizard</span>
+                ><span class="kss-nav__name">Header</span>
               </a>
             </li>
         </ul>
@@ -127,8 +127,8 @@
           <div class="cui-wizard">
           <div class="cui-wizard__title ng-binding">Create your security administrator account</div>
           <div class="cui-wizard__body">
-            <cui-wizard step="1" clickable-indicators="" minimum-padding="30">
-              <indicator-container><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
+            <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
+              <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
               <step title="Organization info" class="active">
                 <form name="organization" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength">
                   <!-- organization name -->
@@ -312,8 +312,8 @@
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wizard&quot;&gt;
           &lt;div class=&quot;cui-wizard__title ng-binding&quot;&gt;Create your security administrator account&lt;/div&gt;
           &lt;div class=&quot;cui-wizard__body&quot;&gt;
-            &lt;cui-wizard step=&quot;1&quot; clickable-indicators=&quot;&quot; minimum-padding=&quot;30&quot;&gt;
-              &lt;indicator-container&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope active&quot; ng-click=&quot;goToStep(1)&quot; style=&quot;cursor: pointer;&quot;&gt;Organization info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(2)&quot; style=&quot;cursor: pointer;&quot;&gt;Sign on info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(3)&quot; style=&quot;cursor: pointer;&quot;&gt;User info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(4)&quot; style=&quot;cursor: pointer;&quot;&gt;Preferences&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(5)&quot; style=&quot;cursor: pointer;&quot;&gt;Review&lt;/span&gt;&lt;/indicator-container&gt;
+            &lt;cui-wizard class=&quot;cui-wizard__contents&quot; step=&quot;1&quot; clickable-indicators=&quot;&quot; minimum-padding=&quot;30&quot;&gt;
+              &lt;indicator-container class=&quot;cui-wizard__indicator-container&quot;&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope active&quot; ng-click=&quot;goToStep(1)&quot; style=&quot;cursor: pointer;&quot;&gt;Organization info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(2)&quot; style=&quot;cursor: pointer;&quot;&gt;Sign on info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(3)&quot; style=&quot;cursor: pointer;&quot;&gt;User info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(4)&quot; style=&quot;cursor: pointer;&quot;&gt;Preferences&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(5)&quot; style=&quot;cursor: pointer;&quot;&gt;Review&lt;/span&gt;&lt;/indicator-container&gt;
               &lt;step title=&quot;Organization info&quot; class=&quot;active&quot;&gt;
                 &lt;form name=&quot;organization&quot; novalidate=&quot;&quot; class=&quot;ng-pristine ng-invalid ng-invalid-required ng-valid-minlength&quot;&gt;
                   &lt;!-- organization name --&gt;
@@ -504,7 +504,7 @@
                 #permalink
             </span>
           </span>
-          CUI Wizard
+          Header
         </a>
       </h2>
 

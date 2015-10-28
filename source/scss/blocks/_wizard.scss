@@ -6,8 +6,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu vehicula quam. In
 Markup: <div class="cui-wizard">
           <div class="cui-wizard__title ng-binding">Create your security administrator account</div>
           <div class="cui-wizard__body">
-            <cui-wizard step="1" clickable-indicators="" minimum-padding="30">
-              <indicator-container><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
+            <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
+              <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
               <step title="Organization info" class="active">
                 <form name="organization" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength">
                   <!-- organization name -->
@@ -404,7 +404,7 @@ cui-expandable {
 
 }
 
-cui-wizard {
+.cui-wizard__contents {
   display: block;
   margin: 0 auto;
   max-width: 800px;
@@ -457,7 +457,7 @@ cui-wizard {
   }
 }
 
-indicator-container {
+.cui-wizard__indicator-container {
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
