@@ -83,5 +83,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('default', ['browserSync','watch:css']);
-  grunt.registerTask('build', ['sass','cssmin','copy:min']);
+  grunt.registerTask('build', ['sass','cssmin','copy:min', 'copy:build']);
 }
