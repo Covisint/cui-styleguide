@@ -1,3 +1,9 @@
+// Colors
+//
+// A color palette for the Covisint Next Gen UI Framework
+//
+// Styleguide 1.4
+
 .cui-primary-colors,
 .cui-secondary-colors {
   height: 6rem;
@@ -12,6 +18,8 @@ Primary Colors
 .cui-primary-colors--medium         - Some text,
 .cui-primary-colors--medium-dark    - Some text,
 .cui-primary-colors--dark           - Some text,
+
+Markup: <div class="cui-primary-colors {{modifier_class}}"></div>
 
 Styleguide 1.4.1
 */
@@ -47,6 +55,8 @@ Secondary Colors
 .cui-secondary-colors--medium-light   - Some text,
 .cui-secondary-colors--medium         - Some text,
 .cui-secondary-colors--dark           - Some text,
+
+Markup: <div class="cui-secondary-colors {{modifier_class}}"></div>
 
 Styleguide 1.4.2
 */

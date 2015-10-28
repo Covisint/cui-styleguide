@@ -3,26 +3,58 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: 'source/styles/**/*',
-        tasks: ['sass']
+        files: ['source/scss/**/*.scss','styleguide/**/*'],
+        tasks: ['sass','cssmin','copy:min','copy:build']
       },
       build:{
         files: 'styleguide/**/*',
-        tasks: ['sass']
+        tasks: ['sass','cssmin','copy:min']
       }
     },
     sass:{
       dist:{
         files:{
-          'styleguide/public/styles.css': 'source/styles/styles.scss'
+          '.tmp/styles.css': 'source/styles.scss'
         }
+      }
+    },
+    cssmin: {
+      options: {
+        keepSpecialComments: 0,
+        shorthandCompacting: false,
+        roundingPrecision: -1
+      },
+      target: {
+        files: [{
+          src: ['.tmp/styles.css'],
+          dest: '.tmp/styles.min.css'
+        }]
+      }
+    },
+    copy:{
+      build:{
+        files: [{
+          cwd: 'source/',
+          src: ['styles.min.css','img/svg-out.svg'],
+          dest: 'styleguide/public/',
+          expand: true
+        }]
+      },
+      min:{
+        files: [{
+          cwd: '.tmp/',
+          src: 'styles.min.css',
+          dest: 'source/',
+          expand: true
+        }]
       }
     },
     browserSync: {
       dev: {
         bsFiles: {
             src : [
-                'styleguide/**/*.html',
+                'styleguide/*.html',
+                'styleguide/**/*',
                 'source/**/*.js',
                 'source/**/*.scss'
             ]
@@ -31,8 +63,12 @@ module.exports = function(grunt) {
           ghostMode: false,
           watchTask: true,
           online: true,
+          port: 4000,
           server:{
             baseDir: 'styleguide'
+          },
+          ui: {
+            port: 4001
           }
         }
       }
@@ -43,7 +79,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('default', ['browserSync','watch:css']);
-  grunt.registerTask('build', ['browserSync','watch:build']);
 }

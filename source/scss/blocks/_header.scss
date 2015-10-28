@@ -1,0 +1,48 @@
+/*
+Header
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu vehicula quam. In porta lorem turpis, eu lacinia sapien auctor ac. Donec vitae nibh egestas, cursus lacus vel, viverra mauris. Pellentesque maximus suscipit molestie. Vestibulum luctus augue nec efficitur pulvinar. Nunc purus dui, molestie eu tellus ac
+
+Markup: <header class="cui-header">
+          <div class="cui-header__top">
+            <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="assets/img/svg-out.svg#covisint-logo"></use></svg>
+            <cui-avatar class="cui-header__avatar" user="{{cuiUser}}"></cui-avatar>
+          </div>
+          <cui-top-menu ng-if="cuiTopMenu"></cui-top-menu>
+          <!-- TODO : Search bar? -->
+        </header>
+
+Styleguide 2.2
+*/
+
+.cui-header {
+  padding: $header-padding;
+
+  &__avatar {
+    background: pink;
+    height: 45px;
+    margin-left: auto;
+  }
+
+  &__logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 45px;
+    width: 200px;
+  }
+
+  &__top {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    padding: $header-top-padding;
+  }
+
+  &__svg-logo {
+    height: 45px;
+    width: 200px;
+  }
+}
+
+
