@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       build:{
         files: [{
           cwd: 'source/',
-          src: 'styles.min.css',
+          src: ['styles.min.css','img/svg-out.svg'],
           dest: 'styleguide/public/',
           expand: true
         }]
