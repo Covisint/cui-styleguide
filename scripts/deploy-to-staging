@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bundle install
+cap staging deploy
