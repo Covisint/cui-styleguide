@@ -49,6 +49,12 @@
                 ><span class="kss-nav__name">CUI Wizard</span>
               </a>
             </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-2">
+                <span class="kss-nav__ref">2.2</span
+                ><span class="kss-nav__name">CUI Wizard</span>
+              </a>
+            </li>
         </ul>
       </li>
     </ul>
@@ -118,9 +124,9 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="cui-container">
-          <div class="cui-container__title ng-binding">Create your security administrator account</div>
-          <div class="cui-container__body">
+          <div class="cui-wizard">
+          <div class="cui-wizard__title ng-binding">Create your security administrator account</div>
+          <div class="cui-wizard__body">
             <cui-wizard step="1" clickable-indicators="" minimum-padding="30">
               <indicator-container><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
               <step title="Organization info" class="active">
@@ -303,9 +309,9 @@
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-container&quot;&gt;
-          &lt;div class=&quot;cui-container__title ng-binding&quot;&gt;Create your security administrator account&lt;/div&gt;
-          &lt;div class=&quot;cui-container__body&quot;&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wizard&quot;&gt;
+          &lt;div class=&quot;cui-wizard__title ng-binding&quot;&gt;Create your security administrator account&lt;/div&gt;
+          &lt;div class=&quot;cui-wizard__body&quot;&gt;
             &lt;cui-wizard step=&quot;1&quot; clickable-indicators=&quot;&quot; minimum-padding=&quot;30&quot;&gt;
               &lt;indicator-container&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope active&quot; ng-click=&quot;goToStep(1)&quot; style=&quot;cursor: pointer;&quot;&gt;Organization info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(2)&quot; style=&quot;cursor: pointer;&quot;&gt;Sign on info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(3)&quot; style=&quot;cursor: pointer;&quot;&gt;User info&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(4)&quot; style=&quot;cursor: pointer;&quot;&gt;Preferences&lt;/span&gt;&lt;span class=&quot;step-indicator ng-binding ng-scope&quot; ng-click=&quot;goToStep(5)&quot; style=&quot;cursor: pointer;&quot;&gt;Review&lt;/span&gt;&lt;/indicator-container&gt;
               &lt;step title=&quot;Organization info&quot; class=&quot;active&quot;&gt;
@@ -484,6 +490,56 @@
                     &lt;span class=&quot;chevron&quot;&gt;&amp;gt;&lt;/span&gt;
                   &lt;/cui-expandable-title&gt;
                   &lt;cui-expandable-body&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-2" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-2">
+          <span class="kss-title__ref">
+              2.2
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          CUI Wizard
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu vehicula quam. In porta lorem turpis, eu lacinia sapien auctor ac. Donec vitae nibh egestas, cursus lacus vel, viverra mauris. Pellentesque maximus suscipit molestie. Vestibulum luctus augue nec efficitur pulvinar. Nunc purus dui, molestie eu tellus ac</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <header class="cui-header">
+          <div class="cui-header__top">
+            <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="assets/img/svg-out.svg#covisint-logo"></use></svg>
+            <cui-avatar class="cui-header__avatar" user=""></cui-avatar>
+          </div>
+          <cui-top-menu ng-if="cuiTopMenu"></cui-top-menu>
+          <!-- TODO : Search bar? -->
+        </header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;cui-header&quot;&gt;
+          &lt;div class=&quot;cui-header__top&quot;&gt;
+            &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;assets/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;cui-avatar class=&quot;cui-header__avatar&quot; user=&quot;&quot;&gt;&lt;/cui-avatar&gt;
+          &lt;/div&gt;
+          &lt;cui-top-menu ng-if=&quot;cuiTopMenu&quot;&gt;&lt;/cui-top-menu&gt;
+          &lt;!-- TODO : Search bar? --&gt;
+        &lt;/header&gt;</code></pre>
       </div>
 
       </section>

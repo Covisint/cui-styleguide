@@ -1,4 +1,4 @@
-
+@import 'scss/base/normalize';
 @import 'scss/base/vars';
 
 /*
@@ -8,6 +8,7 @@ A constituent part of a block that can't be used outside of it.
 
 Styleguide 1.
 */
+
 @import 'scss/elements/background';
 @import 'scss/elements/text';
 @import 'scss/elements/form';
@@ -22,4 +23,5 @@ Styleguide 2.
 */
 
 @import 'scss/blocks/wizard';
+@import 'scss/blocks/header';
 
