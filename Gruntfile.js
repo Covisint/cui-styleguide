@@ -42,8 +42,12 @@ module.exports = function(grunt) {
           ghostMode: false,
           watchTask: true,
           online: true,
+          port: 4000,
           server:{
             baseDir: 'styleguide'
+          },
+          ui: {
+            port: 4001
           }
         }
       }
