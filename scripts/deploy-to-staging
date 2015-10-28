@@ -1,4 +1,4 @@
 #!/bin/bash
 
 bundle install
-cap staging deploy
+bundle exec cap staging deploy
