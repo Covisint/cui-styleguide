@@ -8,10 +8,10 @@
   
   <fileSets>
     <fileSet>
-      <directory>${project.basedir}/build</directory>
+      <directory>${project.basedir}</directory>
       <outputDirectory>/</outputDirectory>
       <includes>
-        <include>*</include>
+        <include>styleguide/**/*</include>
       </includes>
     </fileSet>
   </fileSets>
