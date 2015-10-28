@@ -4,4 +4,4 @@ bower install
 npm install
 $PATH kss-node --config kss-config.json
 grunt build
-mvn clean deploy
+mvn clean deploy -U
