@@ -1,0 +1,26 @@
+/* 
+Buttons
+
+Styles for button elements
+
+.cui-button--error    - Styling when a user clicks a button before required information is populated
+
+Markup: <button class="cui-button {{modifier_class}}">Button</button>
+
+Styleguide 1.6
+*/
+
+.cui-button {
+  background-color: #386895;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  height: 37px;
+  width: 160px;
+
+  &--error {
+    background-color: lightgray;
+    cursor: default;
+  }
+}
