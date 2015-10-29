@@ -8,8 +8,8 @@
 Inputs
 
 :focus          - Styling when user clicks in a field to enter input
-.ng-invalid     - Styling after user has entered input that is invalid
-.ng-valid       - Styling after user has entered input that is valid
+.cui-input--error     - Styling after user has entered input that is invalid
+.cui-input--valid       - Styling after user has entered input that is valid
 
 Markup: <input type="text" class="cui-input {{modifier_class}} cui-input--full"/>
 
@@ -66,7 +66,8 @@ Styleguide 1.3.1
       }
     }
   }
-  &.ng-touched.ng-valid {
+  &.ng-touched.ng-valid,
+  &--valid {
     border: 1px solid $cui-input-border--valid;
   }
 
@@ -94,7 +95,8 @@ Markup: <select class="cui-form__select">
 
 Styleguide 1.3.2
 */
-.cui-select {
+select.cui-select {
+  background-color: #fff;
   border: 1px solid $cui-input-border;
   -webkit-appearance: none;
   -webkit-border-radius: 0;

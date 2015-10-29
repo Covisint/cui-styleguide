@@ -67,6 +67,12 @@
                 ><span class="kss-nav__name">Logos</span>
               </a>
             </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-1.html#kssref-1-6">
+                <span class="kss-nav__ref">1.6</span
+                ><span class="kss-nav__name">Buttons</span>
+              </a>
+            </li>
         </ul>
       </li>
       <li class="kss-nav__menu-item">
@@ -218,22 +224,22 @@
           <input type="text" class="cui-input pseudo-class-focus cui-input--full"/>
         </div>
         <div class="kss-modifier__name kss-style">
-          .ng-invalid
+          .cui-input--error
         </div>
         <div class="kss-modifier__description kss-style">
           Styling after user has entered input that is invalid
         </div>
         <div class="kss-modifier__example">
-          <input type="text" class="cui-input ng-invalid cui-input--full"/>
+          <input type="text" class="cui-input cui-input--error cui-input--full"/>
         </div>
         <div class="kss-modifier__name kss-style">
-          .ng-valid
+          .cui-input--valid
         </div>
         <div class="kss-modifier__description kss-style">
           Styling after user has entered input that is valid
         </div>
         <div class="kss-modifier__example">
-          <input type="text" class="cui-input ng-valid cui-input--full"/>
+          <input type="text" class="cui-input cui-input--valid cui-input--full"/>
         </div>
       </div>
 
@@ -488,6 +494,54 @@
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-1-6" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-1-6">
+          <span class="kss-title__ref">
+              1.6
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Buttons
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Styles for button elements</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <button class="cui-button [modifier class]">Button</button>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .cui-button--error
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Styling when a user clicks a button before required information is populated
+        </div>
+        <div class="kss-modifier__example">
+          <button class="cui-button cui-button--error">Button</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;cui-button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
       </div>
 
       </section>
