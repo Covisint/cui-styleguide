@@ -98,7 +98,7 @@ Styleguide 2.1
     @extend .cui-button;
 
     &--error {
-      @extend .cui-button--error;
+      @extend .cui-button--error
     }
   }
 
@@ -264,24 +264,6 @@ Styleguide 2.1
   margin-right: 20px;
   transition: all 200ms ease-in-out;
 }
-
-// override browser defaults
-
-.cui-container {
-
-  select {
-    background-color: #fff;
-  }
-  
-  select, input {
-
-    &:focus {
-      outline: 0;
-    }
-  }
-
-}
-
 
 
 
