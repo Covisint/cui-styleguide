@@ -4,198 +4,52 @@ CUI Wizard
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu vehicula quam. In porta lorem turpis, eu lacinia sapien auctor ac. Donec vitae nibh egestas, cursus lacus vel, viverra mauris. Pellentesque maximus suscipit molestie. Vestibulum luctus augue nec efficitur pulvinar. Nunc purus dui, molestie eu tellus ac
 
 Markup: <div class="cui-wizard">
-          <div class="cui-wizard__title ng-binding">Create your security administrator account</div>
-          <div class="cui-wizard__body">
-            <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
-              <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Organization info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Sign on info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(3)" style="cursor: pointer;">User info</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(4)" style="cursor: pointer;">Preferences</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(5)" style="cursor: pointer;">Review</span></indicator-container>
-              <step title="Organization info" class="active">
-                <form name="organization" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength">
-                  <!-- organization name -->
-                  <input type="text" ng-model="app.organization.name" name="name" class="cui-input cui-input--full ng-pristine ng-untouched ng-valid" disabled="">
-                  <!-- company/division -->
-                  <!-- ngIf: organization.division.$touched -->
-                  <select ng-model="app.organization.division" name="division" class="cui-input cui-select cui-input--full ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-required="true" ng-class="{'cui-input--error': organization.division.$touched &amp;&amp; organization.division.$invalid}" required="required">
-                    <option value="" disabled="" selected="" class="ng-binding">Company / Division</option>
-                    <!-- ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Web design" class="ng-binding ng-scope">Web design</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="UI development" class="ng-binding ng-scope">UI development</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Wordpress development" class="ng-binding ng-scope">Wordpress development</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Ruby development" class="ng-binding ng-scope">Ruby development</option><!-- end ngRepeat: division in app.organization.divisions -->
-                  </select>
-                  <!-- address -->
-                  <!-- ngIf: organization.address1.$touched -->
-                  <input type="text" ng-model="app.organization.address1" name="address1" class="cui-input cui-input--half ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength" ng-required="true" ng-minlength="10" ng-class="{'cui-input--error': organization.address1.$touched &amp;&amp; organization.address1.$invalid}" placeholder="Address 1" required="required">
-                  <!-- address2 -->
-                  <input type="text" ng-model="app.organization.address2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Address 2">
-                  <!-- country -->
-                  <select ng-model="app.organization.country" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">Country</option>
-                    <!-- ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="U.S.A" class="ng-binding ng-scope">U.S.A</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Portugal" class="ng-binding ng-scope">Portugal</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Spain" class="ng-binding ng-scope">Spain</option><!-- end ngRepeat: country in app.organization.countries -->
-                  </select>
-                  <!-- state/province -->
-                  <select ng-model="app.organization.state" class="cui-input cui-select cui-input--half--right ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">State / Province</option>
-                    <!-- ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="IL" class="ng-binding ng-scope">IL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="FL" class="ng-binding ng-scope">FL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="NY" class="ng-binding ng-scope">NY</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="CA" class="ng-binding ng-scope">CA</option><!-- end ngRepeat: state in app.organization.states -->
-                  </select>
-                  <!-- city/region -->
-                  <select ng-model="app.organization.city" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">City</option>
-                    <!-- ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Chicago" class="ng-binding ng-scope">Chicago</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Aurora" class="ng-binding ng-scope">Aurora</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Rockford" class="ng-binding ng-scope">Rockford</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Joliet" class="ng-binding ng-scope">Joliet</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Naperville" class="ng-binding ng-scope">Naperville</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Springfiled" class="ng-binding ng-scope">Springfiled</option><!-- end ngRepeat: city in app.organization.cities -->
-                  </select>
-                  <!-- postal code -->
-                  <input type="text" ng-model="app.organization.postal" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Postal code">
-                  <div class="cui-wizard__controls">
-                    <button class="cui-wizard__next ng-binding" ng-class="{'cui-wizard__next--error' : invalidForm[1] &amp;&amp; organization.$invalid}" ng-click="nextWithErrorChecking(organization)">NEXT STEP</button>
-                    <button class="cui-wizard__skip ng-binding" ng-class="{'cui-wizard__skip--show' : invalidForm[1] &amp;&amp; organization.$invalid}" ng-click="next()">cui-skip-for-now &gt;&gt;</button>
-                  </div>
-                </form>
-              </step>
-              <step title="Sign on info">
-                <form name="signOn" novalidate="" class="ng-pristine ng-invalid ng-invalid-length ng-invalid-lowercase ng-invalid-uppercase ng-invalid-number ng-invalid-complex ng-invalid-required">
-                  <!-- user ID -->
-                  <input type="text" name="userID" ng-model="app.signOn.userID" class="cui-input cui-input--full ng-pristine ng-untouched ng-valid" placeholder="User ID">
-                  <!-- password -->
-                  <div style="position:relative; width:48%; display:inline-block">
-                    <input type="password" name="password1" ng-model="app.signOn.password1" class="cui-input cui-input--half ng-pristine ng-untouched ng-invalid ng-invalid-length ng-invalid-lowercase ng-invalid-uppercase ng-invalid-number ng-invalid-complex ng-invalid-required" placeholder="Password" ng-required="true" ng-class="{'cui-input--error': signOn.password1.$touched &amp;&amp; signOn.password1.$invalid}" password-validation="" style="width:100%" required="required">
-                    <!-- ngIf: signOn.password1.$dirty && signOn.password1.$invalid -->
-                  </div>
-                  <!-- password -->
-                  <input type="password" ng-model="app.signOn.password2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Re-enter password">
-                  <!-- question 1 -->
-                  <select ng-model="app.signOn.question1" class="cui-input cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">Challenge question 1</option>
-                    <!-- ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="0" class="ng-binding ng-scope">What's your favorite pet's name?</option><!-- end ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="1" class="ng-binding ng-scope">What's your mother's maiden name?</option><!-- end ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="2" class="ng-binding ng-scope">Who's your best friend?</option><!-- end ngRepeat: question in app.signOn.questions -->
-                  </select>
-                  <!-- answer 1 -->
-                  <input type="text" ng-model="app.signOn.answer1" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Challenge answer 1">
-                  <!-- question 2 -->
-                  <select ng-model="app.signOn.question2" class="cui-input cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">Challenge question 2</option>
-                    <!-- ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="0" class="ng-binding ng-scope">What's your favorite pet's name?</option><!-- end ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="1" class="ng-binding ng-scope">What's your mother's maiden name?</option><!-- end ngRepeat: question in app.signOn.questions --><option ng-repeat="question in app.signOn.questions" value="2" class="ng-binding ng-scope">Who's your best friend?</option><!-- end ngRepeat: question in app.signOn.questions -->
-                  </select>
-                  <!-- answer 2 -->
-                  <input type="text" ng-model="app.signOn.answer2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Challenge answer 2">
-                   <div class="cui-wizard__controls">
-                    <button class="cui-wizard__previous ng-binding" ng-click="previous()">&lt;&lt; PREVIOUS</button>
-                    <button class="cui-wizard__next ng-binding" ng-class="{'cui-wizard__next--error' : invalidForm[2] &amp;&amp; signOn.$invalid}" ng-click="nextWithErrorChecking(signOn)">NEXT STEP</button>
-                    <button class="cui-wizard__skip ng-binding" ng-class="{'cui-wizard__skip--show' : invalidForm[2] &amp;&amp; signOn.$invalid}" ng-click="next()">cui-skip-for-now &gt;&gt;</button>
-                  </div>
-                </form>
-              </step>
-              <step title="User info">
-                <form name="user" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
-                  <!-- first name -->
-                  <input type="text" ng-model="app.user.fName" class="cui-input cui-input--half ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="First name" required="">
-                  <!-- Last name -->
-                  <input type="text" ng-model="app.user.lName" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Last name">
-                  <!-- Email -->
-                  <input type="email" ng-model="app.user.email" class="cui-input cui-input--half ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" placeholder="Email" required="">
-                  <!-- Email 2 -->
-                  <input type="email" ng-model="app.user.email2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid ng-valid-email" placeholder="Re-enter email">
-                  <!-- Address 1 -->
-                  <input type="text" ng-model="app.user.address1" class="cui-input cui-input--half ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="Address 1" required="">
-                  <!-- Address 2 -->
-                  <input type="text" ng-model="app.user.address2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Address 2">
-                  <!-- country -->
-                  <select ng-model="app.user.country" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">Country</option>
-                    <!-- ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="U.S.A" class="ng-binding ng-scope">U.S.A</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Portugal" class="ng-binding ng-scope">Portugal</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Spain" class="ng-binding ng-scope">Spain</option><!-- end ngRepeat: country in app.organization.countries -->
-                  </select>
-                  <!-- state/province -->
-                  <select ng-model="app.user.state" class="cui-input cui-select cui-input--half--right ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">State / Province</option>
-                    <!-- ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="IL" class="ng-binding ng-scope">IL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="FL" class="ng-binding ng-scope">FL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="NY" class="ng-binding ng-scope">NY</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="CA" class="ng-binding ng-scope">CA</option><!-- end ngRepeat: state in app.organization.states -->
-                  </select>
-                  <!-- city/region -->
-                  <select ng-model="app.user.city" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">City</option>
-                    <!-- ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Chicago" class="ng-binding ng-scope">Chicago</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Aurora" class="ng-binding ng-scope">Aurora</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Rockford" class="ng-binding ng-scope">Rockford</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Joliet" class="ng-binding ng-scope">Joliet</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Naperville" class="ng-binding ng-scope">Naperville</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Springfiled" class="ng-binding ng-scope">Springfiled</option><!-- end ngRepeat: city in app.organization.cities -->
-                  </select>
-                  <!-- postal code -->
-                  <input type="text" ng-model="app.user.postal" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Postal code">
-                  <!-- phone -->
-                  <input type="number" ng-model="app.user.phone" class="cui-input cui-input--half ng-pristine ng-untouched ng-valid" placeholder="Telephone number">
-                  <!-- timezone -->
-                  <select ng-model="app.user.timezone" class="cui-input cui-select cui-input--half--right ng-pristine ng-untouched ng-valid">
-                    <option value="" disabled="" selected="" class="ng-binding">Timezone</option>
-                    <!-- ngRepeat: timezone in app.user.timezones --><option ng-repeat="timezone in app.user.timezones" value="-08:00" class="ng-binding ng-scope">-08:00</option><!-- end ngRepeat: timezone in app.user.timezones --><option ng-repeat="timezone in app.user.timezones" value="-07:00" class="ng-binding ng-scope">-07:00</option><!-- end ngRepeat: timezone in app.user.timezones --><option ng-repeat="timezone in app.user.timezones" value="-06:00" class="ng-binding ng-scope">-06:00</option><!-- end ngRepeat: timezone in app.user.timezones --><option ng-repeat="timezone in app.user.timezones" value="-05:00" class="ng-binding ng-scope">-05:00</option><!-- end ngRepeat: timezone in app.user.timezones --><option ng-repeat="timezone in app.user.timezones" value="-04:00" class="ng-binding ng-scope">-04:00</option><!-- end ngRepeat: timezone in app.user.timezones -->
-                  </select>
-                   <div class="cui-wizard__controls">
-                    <button class="cui-wizard__previous ng-binding" ng-click="previous()">&lt;&lt; PREVIOUS</button>
-                    <button class="cui-wizard__next ng-binding" ng-click="next()">NEXT STEP</button>
-                  </div>
-                </form>
-              </step>
-              <step title="Preferences">
-                <div class="cui-wizard__controls">
-                  <button class="cui-wizard__previous ng-binding" ng-click="previous()">&lt;&lt; PREVIOUS</button>
-                  <button class="cui-wizard__next ng-binding" ng-click="next()">NEXT STEP</button>
-                </div>
-              </step>
-              <step title="Review">
-                <cui-expandable expanded="true" class="ng-scope">
-                  <cui-expandable-title ng-click="toggleExpand()" class="ng-binding">
-                    Organization info
-                    <span class="chevron">&gt;</span>
-                  </cui-expandable-title>
-                  <cui-expandable-body>
-                    <p class="ng-binding">Organization: Thirdwave LLC</p>
-                    <p class="ng-binding">Company / Division: </p>
-                    <p class="ng-binding">Address 1: </p>
-                    <!-- ngIf: app.organization.address2 -->
-                    <p class="ng-binding">Country: </p>
-                    <p class="ng-binding">State / Province: </p>
-                    <p class="ng-binding">City: </p>
-                    <p class="ng-binding">Postal code: </p>
-                  </cui-expandable-body>
-                </cui-expandable>
-                <cui-expandable class="ng-scope">
-                  <cui-expandable-title ng-click="toggleExpand()" class="ng-binding">
-                    Sign on info
-                    <span class="chevron">&gt;</span>
-                  </cui-expandable-title>
-                  <cui-expandable-body>
-                    <p class="ng-binding">User ID: </p>
-                    <p class="ng-binding">Password: <input type="password" class="cui-input--display ng-pristine ng-untouched ng-valid" disabled="" ng-model="app.signOn.password1"></p>
-                    <p class="ng-binding">Challenge question 1: </p>
-                    <p class="ng-binding">Challenge answer 1: </p>
-                    <p class="ng-binding">Challenge question 2: </p>
-                    <p class="ng-binding">Challenge answer 2: </p>
-                  </cui-expandable-body>
-                </cui-expandable>
-                <cui-expandable class="ng-scope">
-                  <cui-expandable-title ng-click="toggleExpand()" class="ng-binding">
-                    User info
-                    <span class="chevron">&gt;</span>
-                  </cui-expandable-title>
-                  <cui-expandable-body>
-                    <p class="ng-binding">First name: </p>
-                    <p class="ng-binding">Last name: </p>
-                    <p class="ng-binding">Email: </p>
-                    <p class="ng-binding">Address 1: </p>
-                    <p class="ng-binding">Address 2: </p>
-                    <p class="ng-binding">Country: </p>
-                    <p class="ng-binding">State / Province: </p>
-                    <p class="ng-binding">City: </p>
-                    <p class="ng-binding">Postal code: </p>
-                    <p class="ng-binding">Telephone number: </p>
-                    <p class="ng-binding">Timezone: </p>
-                  </cui-expandable-body>
-                </cui-expandable>
-                <cui-expandable class="ng-scope">
-                  <cui-expandable-title ng-click="toggleExpand()" class="ng-binding">
-                    Preferences
-                    <span class="chevron">&gt;</span>
-                  </cui-expandable-title>
-                  <cui-expandable-body>
-
-                  </cui-expandable-body>
-                </cui-expandable>
-                <div class="cui-wizard__controls">
-                  <button class="cui-wizard__previous ng-binding" ng-click="previous()">&lt;&lt; PREVIOUS</button>
-                  <button class="cui-wizard__next ng-binding" ng-click="">SUBMIT</button>
-                </div>
-              </step>
-            </cui-wizard>
+  <div class="cui-wizard__title ng-binding">Create your security administrator account</div>
+  <div class="cui-wizard__body">
+    <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
+      <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator ng-binding ng-scope active" ng-click="goToStep(1)" style="cursor: pointer;">Step One</span><span class="step-indicator ng-binding ng-scope" ng-click="goToStep(2)" style="cursor: pointer;">Step 2</span></indicator-container>
+      <step title="Organization info" class="active">
+        <form name="organization" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength">
+          <!-- organization name -->
+          <input type="text" ng-model="app.organization.name" name="name" class="cui-input cui-input--full ng-pristine ng-untouched ng-valid" disabled="">
+          <!-- company/division -->
+          <!-- ngIf: organization.division.$touched -->
+          <select ng-model="app.organization.division" name="division" class="cui-input cui-select cui-input--full ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-required="true" ng-class="{'cui-input--error': organization.division.$touched &amp;&amp; organization.division.$invalid}" required="required">
+            <option value="" disabled="" selected="" class="ng-binding">Company / Division</option>
+            <!-- ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Web design" class="ng-binding ng-scope">Web design</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="UI development" class="ng-binding ng-scope">UI development</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Wordpress development" class="ng-binding ng-scope">Wordpress development</option><!-- end ngRepeat: division in app.organization.divisions --><option ng-repeat="division in app.organization.divisions" value="Ruby development" class="ng-binding ng-scope">Ruby development</option><!-- end ngRepeat: division in app.organization.divisions -->
+          </select>
+          <!-- address -->
+          <!-- ngIf: organization.address1.$touched -->
+          <input type="text" ng-model="app.organization.address1" name="address1" class="cui-input cui-input--half ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-minlength" ng-required="true" ng-minlength="10" ng-class="{'cui-input--error': organization.address1.$touched &amp;&amp; organization.address1.$invalid}" placeholder="Address 1" required="required">
+          <!-- address2 -->
+          <input type="text" ng-model="app.organization.address2" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Address 2">
+          <!-- country -->
+          <select ng-model="app.organization.country" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
+            <option value="" disabled="" selected="" class="ng-binding">Country</option>
+            <!-- ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="U.S.A" class="ng-binding ng-scope">U.S.A</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Portugal" class="ng-binding ng-scope">Portugal</option><!-- end ngRepeat: country in app.organization.countries --><option ng-repeat="country in app.organization.countries" value="Spain" class="ng-binding ng-scope">Spain</option><!-- end ngRepeat: country in app.organization.countries -->
+          </select>
+          <!-- state/province -->
+          <select ng-model="app.organization.state" class="cui-input cui-select cui-input--half--right ng-pristine ng-untouched ng-valid">
+            <option value="" disabled="" selected="" class="ng-binding">State / Province</option>
+            <!-- ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="IL" class="ng-binding ng-scope">IL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="FL" class="ng-binding ng-scope">FL</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="NY" class="ng-binding ng-scope">NY</option><!-- end ngRepeat: state in app.organization.states --><option ng-repeat="state in app.organization.states" value="CA" class="ng-binding ng-scope">CA</option><!-- end ngRepeat: state in app.organization.states -->
+          </select>
+          <!-- city/region -->
+          <select ng-model="app.organization.city" class="cui-input cui-select cui-input--half ng-pristine ng-untouched ng-valid">
+            <option value="" disabled="" selected="" class="ng-binding">City</option>
+            <!-- ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Chicago" class="ng-binding ng-scope">Chicago</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Aurora" class="ng-binding ng-scope">Aurora</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Rockford" class="ng-binding ng-scope">Rockford</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Joliet" class="ng-binding ng-scope">Joliet</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Naperville" class="ng-binding ng-scope">Naperville</option><!-- end ngRepeat: city in app.organization.cities --><option ng-repeat="city in app.organization.cities" value="Springfiled" class="ng-binding ng-scope">Springfiled</option><!-- end ngRepeat: city in app.organization.cities -->
+          </select>
+          <!-- postal code -->
+          <input type="text" ng-model="app.organization.postal" class="cui-input cui-input--half--right ng-pristine ng-untouched ng-valid" placeholder="Postal code">
+          <div class="cui-wizard__controls">
+            <button class="cui-wizard__next ng-binding" ng-class="{'cui-wizard__next--error' : invalidForm[1] &amp;&amp; organization.$invalid}" ng-click="nextWithErrorChecking(organization)">NEXT STEP</button>
+            <button class="cui-wizard__skip ng-binding" ng-class="{'cui-wizard__skip--show' : invalidForm[1] &amp;&amp; organization.$invalid}" ng-click="next()">cui-skip-for-now &gt;&gt;</button>
           </div>
-        <!-- ngIf: visible --><div class="language-select ng-scope" ng-if="visible" ng-translate-language-select=""><select ng-model="currentLocaleDisplayName" ng-options="localesDisplayName for localesDisplayName in localesDisplayNames" ng-change="changeLanguage(currentLocaleDisplayName)" class="ng-pristine ng-untouched ng-valid"><option label="Português (Portugal)" value="string:Português (Portugal)">Português (Portugal)</option><option label="English (United States)" value="string:English (United States)" selected="selected">English (United States)</option></select></div><!-- end ngIf: visible -->
-      </div>
+        </form>
+      </step>
+    </cui-wizard>
+  </div>
+  <div class="language-select ng-scope" ng-if="visible" ng-translate-language-select=""><select ng-model="currentLocaleDisplayName" ng-options="localesDisplayName for localesDisplayName in localesDisplayNames" ng-change="changeLanguage(currentLocaleDisplayName)" class="ng-pristine ng-untouched ng-valid"><option label="Português (Portugal)" value="string:Português (Portugal)">Português (Portugal)</option><option label="English (United States)" value="string:English (United States)" selected="selected">English (United States)</option></select></div>
+</div>
 
 Styleguide 2.1
 */
