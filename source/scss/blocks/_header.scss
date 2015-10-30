@@ -6,7 +6,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu vehicula quam. In
 Markup: <header class="cui-header">
           <div class="cui-header__top">
             <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
-            <cui-avatar class="cui-header__avatar" user="{{cuiUser}}"></cui-avatar>
+            <div class="cui-header__user">
+            <span class="cui-header__user--name">Bill Murray</span>
+            <div class="cui-chevron--left"></div>
+            <cui-avatar class="cui-header__user--avatar cui-avatar">
+              <div class="cui-avatar--popup" ng-class="app.userPopup? 'active' : ''">
+                <span class="cui-avatar--popup__greet">
+                  Hello, Bill!<br/>
+                  <span class="small">Logged in as Bill Murray</span>
+                </span>
+                <span class="cui-avatar--popup__greet">You should login.<br/>
+                </span>
+                <hr/>
+              </div>
+            </cui-avatar>
+          </div>
           </div>
           <cui-top-menu ng-if="cuiTopMenu"></cui-top-menu>
           <!-- TODO : Search bar? -->

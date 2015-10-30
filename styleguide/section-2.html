@@ -221,7 +221,21 @@
           <header class="cui-header">
           <div class="cui-header__top">
             <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
-            <cui-avatar class="cui-header__avatar" user=""></cui-avatar>
+            <div class="cui-header__user">
+            <span class="cui-header__user--name">Bill Murray</span>
+            <div class="cui-chevron--left"></div>
+            <cui-avatar class="cui-header__user--avatar cui-avatar">
+              <div class="cui-avatar--popup" ng-class="app.userPopup? 'active' : ''">
+                <span class="cui-avatar--popup__greet">
+                  Hello, Bill!<br/>
+                  <span class="small">Logged in as Bill Murray</span>
+                </span>
+                <span class="cui-avatar--popup__greet">You should login.<br/>
+                </span>
+                <hr/>
+              </div>
+            </cui-avatar>
+          </div>
           </div>
           <cui-top-menu ng-if="cuiTopMenu"></cui-top-menu>
           <!-- TODO : Search bar? -->
@@ -233,7 +247,21 @@
         <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;cui-header&quot;&gt;
           &lt;div class=&quot;cui-header__top&quot;&gt;
             &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-            &lt;cui-avatar class=&quot;cui-header__avatar&quot; user=&quot;&quot;&gt;&lt;/cui-avatar&gt;
+            &lt;div class=&quot;cui-header__user&quot;&gt;
+            &lt;span class=&quot;cui-header__user--name&quot;&gt;Bill Murray&lt;/span&gt;
+            &lt;div class=&quot;cui-chevron--left&quot;&gt;&lt;/div&gt;
+            &lt;cui-avatar class=&quot;cui-header__user--avatar cui-avatar&quot;&gt;
+              &lt;div class=&quot;cui-avatar--popup&quot; ng-class=&quot;app.userPopup? &#x27;active&#x27; : &#x27;&#x27;&quot;&gt;
+                &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;
+                  Hello, Bill!&lt;br/&gt;
+                  &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;You should login.&lt;br/&gt;
+                &lt;/span&gt;
+                &lt;hr/&gt;
+              &lt;/div&gt;
+            &lt;/cui-avatar&gt;
+          &lt;/div&gt;
           &lt;/div&gt;
           &lt;cui-top-menu ng-if=&quot;cuiTopMenu&quot;&gt;&lt;/cui-top-menu&gt;
           &lt;!-- TODO : Search bar? --&gt;
