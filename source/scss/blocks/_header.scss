@@ -16,20 +16,42 @@ Styleguide 2.2
 */
 
 .cui-header {
+  background: white;
   padding: $header-padding;
+  &__user {
+    flex-grow: 1;
+    height: 50px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 
-  &__avatar {
-    background: pink;
-    height: 45px;
-    margin-left: auto;
+    &--avatar {
+      background-size: contain;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 50px;
+      width: 50px;
+    }
+
+    &--name {
+      color: #AAA;
+      margin-right: 15px;
+      @media all and (max-width:600px){
+        display: none;
+      }
+    }
+
+    @media all and (max-width:600px){
+      > .cui-chevron--left {
+        display: none;
+      }
+    }
   }
 
-  &__logo {
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
+  &__svg-logo {
     height: 45px;
     width: 200px;
+    margin-left:20px;
   }
 
   &__top {
@@ -37,12 +59,16 @@ Styleguide 2.2
     display: flex;
     height: 80px;
     padding: $header-top-padding;
+    border-bottom:1px solid #EEE;
   }
 
-  &__svg-logo {
-    height: 45px;
-    width: 200px;
+  &__bottom {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    padding: $header-bottom-padding;
   }
 }
+
 
 

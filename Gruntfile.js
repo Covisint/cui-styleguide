@@ -14,7 +14,8 @@ module.exports = function(grunt) {
     sass:{
       dist:{
         files:{
-          '.tmp/styles.css': 'source/styles.scss'
+          '.tmp/styles.css': 'source/styles.scss',
+          'source/cui-styleguide-styles.css': 'source/cui-styleguide-styles.scss'
         }
       }
     },
@@ -35,7 +36,7 @@ module.exports = function(grunt) {
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg'],
+          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
           dest: 'styleguide/public/',
           expand: true
         }]

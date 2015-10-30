@@ -1,0 +1,9 @@
+.cui-styleguide__colors {
+  color: #fff;
+  display: inline-flex;
+  height: 6rem;
+  padding: 20px;
+  width: 6rem; }
+
+.cui-header__user--avatar {
+  background-image: url(http://www.fillmurray.com/200/200); }
