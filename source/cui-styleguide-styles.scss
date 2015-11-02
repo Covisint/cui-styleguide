@@ -47,6 +47,7 @@ html {
 .cui-styleguide__main {
   background-color: #dfe9ee;
   flex: 1;
+  min-height: 1000px;
 }
 
 .cui-styleguide__section.cui-container {
@@ -56,4 +57,20 @@ html {
 .cui-styleguide__title a {
   color: #fff;
   text-decoration: none;
+}
+
+.cui-styleguide__markup-container {
+  border: 1px solid #eee;
+}
+
+.cui-styleguide__markup {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.cui-styleguide__description,
+.cui-styleguide__modifier-title,
+.cui-styleguide__markup-title {
+  font-weight: 900;
+  padding: 10px 0;
 }

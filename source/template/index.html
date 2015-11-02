@@ -107,8 +107,8 @@
 
       <div class="cui-container__body">
       {{#if description}}
-        <div class="cui-styleguide__description">
-          {{{description}}}
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span>{{{description}}}
         </div>
       {{/if}}
       
@@ -116,7 +116,7 @@
       {{#if markup}}
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example{{#if modifiers}}s{{/if}}
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>{{#if modifiers}}{{/if}}
           </div>
         {{#if modifiers}}
           <div class="cui-styleguide__modifier__default-name cui-styleguide__style">
@@ -138,9 +138,9 @@
           </div>
         {{/eachModifier}}
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
         </div>
       {{/if}}
         </div>

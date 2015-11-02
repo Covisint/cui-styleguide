@@ -107,8 +107,8 @@
       </div>
 
       <div class="cui-container__body">
-        <div class="cui-styleguide__description">
-          <p>A constituent part of a block that can&#39;t be used outside of it.</p>
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span><p>A constituent part of a block that can&#39;t be used outside of it.</p>
 
         </div>
       
@@ -135,15 +135,15 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <div class="cui-background">Primary</div><div class="cui-background--secondary">Secondary</div>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-background&quot;&gt;Primary&lt;/div&gt;&lt;div class=&quot;cui-background--secondary&quot;&gt;Secondary&lt;/div&gt;</code></pre>
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-background&quot;&gt;Primary&lt;/div&gt;&lt;div class=&quot;cui-background--secondary&quot;&gt;Secondary&lt;/div&gt;</code></pre>
         </div>
         </div>
         </section>
@@ -163,15 +163,15 @@
       </div>
 
       <div class="cui-container__body">
-        <div class="cui-styleguide__description">
-          <p>Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.</p>
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.</p>
 
         </div>
       
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <h1>H1 Heading</h1>
@@ -199,9 +199,9 @@
         </ol>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;H1 Heading&lt;/h1&gt;
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;H1 Heading&lt;/h1&gt;
         &lt;h2&gt;H2 Heading&lt;/h2&gt;
         &lt;h3&gt;H3 Heading&lt;/h3&gt;
         &lt;h4&gt;H4 Heading&lt;/h4&gt;
@@ -243,8 +243,8 @@
       </div>
 
       <div class="cui-container__body">
-        <div class="cui-styleguide__description">
-          <p>Styles for form elements</p>
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for form elements</p>
 
         </div>
       
@@ -271,7 +271,7 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Examples
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__default-name cui-styleguide__style">
             Default styling
@@ -307,9 +307,9 @@
             <input type="text" class="cui-input cui-input--valid cui-input--full"/>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;cui-input [modifier class] cui-input--full&quot;/&gt;</code></pre>
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;cui-input [modifier class] cui-input--full&quot;/&gt;</code></pre>
         </div>
         </div>
         </section>
@@ -333,7 +333,7 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <select class="cui-input cui-input--full cui-select">
@@ -344,9 +344,9 @@
           </select>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;select class=&quot;cui-input cui-input--full cui-select&quot;&gt;
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;select class=&quot;cui-input cui-input--full cui-select&quot;&gt;
             &lt;option value=&quot;helloo&quot;&gt;&lt;/option&gt;
             &lt;option value=&quot;hellloooo&quot;&gt;&lt;/option&gt;
             &lt;option value=&quot;hellllooooooo&quot;&gt;&lt;/option&gt;
@@ -371,8 +371,8 @@
       </div>
 
       <div class="cui-container__body">
-        <div class="cui-styleguide__description">
-          <p>A color palette for the Covisint Next Gen UI Framework</p>
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span><p>A color palette for the Covisint Next Gen UI Framework</p>
 
         </div>
       
@@ -399,7 +399,7 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--light">.cui-primary-colors--light</div>
@@ -409,9 +409,9 @@
         <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--dark">.cui-primary-colors--dark</div>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-light&quot;&gt;.cui-primary-colors--medium-light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium&quot;&gt;.cui-primary-colors--medium&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-dark&quot;&gt;.cui-primary-colors--medium-dark&lt;/div&gt;
@@ -439,7 +439,7 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light">.cui-primary-colors--light</div>
@@ -448,9 +448,9 @@
         <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark">.cui-primary-colors--dark</div>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium-light&quot;&gt;.cui-primary-colors--medium-light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium&quot;&gt;.cui-primary-colors--medium&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark&quot;&gt;.cui-primary-colors--dark&lt;/div&gt;</code></pre>
@@ -477,15 +477,15 @@
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Example
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__example">
             <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
         </div>
         </div>
         </section>
@@ -505,15 +505,15 @@
       </div>
 
       <div class="cui-container__body">
-        <div class="cui-styleguide__description">
-          <p>Styles for button elements</p>
+        <div class="cui-styleguide__description-container">
+          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for button elements</p>
 
         </div>
       
 
         <div class="cui-styleguide__modifier__wrapper">
           <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            Examples
+            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>
           </div>
           <div class="cui-styleguide__modifier__default-name cui-styleguide__style">
             Default styling
@@ -531,9 +531,9 @@
             <button class="cui-button cui-button--error">Button</button>
           </div>
         </div>
-
-        <div class="cui-styleguide__markup cui-styleguide__style">
-          <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;cui-button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+        <div class="cui-styleguide__markup-title">CODE:</div>
+        <div class="cui-styleguide__markup-container cui-styleguide__style">
+          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;cui-button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
         </div>
         </div>
         </section>
