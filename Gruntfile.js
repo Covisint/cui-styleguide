@@ -4,11 +4,11 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss','styleguide/**/*'],
-        tasks: ['sass','cssmin','copy:min','copy:build']
+        tasks: ['sass','postcss','copy:min','copy:build']
       },
       build:{
         files: 'styleguide/**/*',
-        tasks: ['sass','cssmin','copy:min']
+        tasks: ['sass','postcss','copy:min']
       }
     },
     sass:{
@@ -19,17 +19,17 @@ module.exports = function(grunt) {
         }
       }
     },
-    cssmin: {
+    postcss: {
       options: {
-        keepSpecialComments: 0,
-        shorthandCompacting: false,
-        roundingPrecision: -1
+        map: false,
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('cssnano')()
+        ]
       },
-      target: {
-        files: [{
-          src: ['.tmp/styles.css'],
-          dest: '.tmp/styles.min.css'
-        }]
+      dist: {
+        src: ['.tmp/styles.css'],
+        dest: '.tmp/styles.min.css'
       }
     },
     copy:{
@@ -81,8 +81,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['browserSync','watch:css']);
-  grunt.registerTask('build', ['sass','cssmin','copy:min', 'copy:build']);
+  grunt.registerTask('build', ['sass','postcss','copy:min', 'copy:build']);
 }
