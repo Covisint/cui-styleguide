@@ -114,26 +114,26 @@
       
 
       {{#if markup}}
-        <div class="cui-styleguide__modifier__wrapper">
-          <div class="cui-styleguide__modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide__modifier-title">EXAMPLE: </div>{{#if modifiers}}{{/if}}
+        <div class="cui-styleguide-modifier__wrapper">
+          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>{{#if modifiers}}{{/if}}
           </div>
         {{#if modifiers}}
-          <div class="cui-styleguide__modifier__default-name cui-styleguide__style">
+          <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
             Default styling
           </div>
         {{/if}}
-          <div class="cui-styleguide__modifier__example">
+          <div class="cui-styleguide-modifier__example">
             {{{markup}}}
           </div>
         {{#eachModifier}}
-          <div class="cui-styleguide__modifier__name cui-styleguide__style">
+          <div class="cui-styleguide-modifier__name cui-styleguide__style">
             {{name}}
           </div>
-          <div class="cui-styleguide__modifier__description cui-styleguide__style">
+          <div class="cui-styleguide-modifier__description cui-styleguide__style">
             {{{description}}}
           </div>
-          <div class="cui-styleguide__modifier__example">
+          <div class="cui-styleguide-modifier__example">
             {{{markup}}}
           </div>
         {{/eachModifier}}

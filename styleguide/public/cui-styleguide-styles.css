@@ -54,7 +54,12 @@ html {
   margin-bottom: 0; }
 
 .cui-styleguide__description,
-.cui-styleguide__modifier-title,
+.cui-styleguide-modifier__title,
 .cui-styleguide__markup-title {
   font-weight: 900;
   padding: 10px 0; }
+
+.cui-styleguide-modifier__default-name,
+.cui-styleguide-modifier__name,
+.cui-styleguide-modifier__description {
+  margin: 10px 0; }
