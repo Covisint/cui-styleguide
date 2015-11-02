@@ -45,7 +45,12 @@ html {
 }
 
 .cui-styleguide__main {
+  background-color: #dfe9ee;
   flex: 1;
+}
+
+.cui-styleguide__section.cui-container {
+  margin: 50px auto;
 }
 
 .cui-styleguide__title a {
