@@ -4,38 +4,39 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss','styleguide/**/*'],
-        tasks: ['sass','cssmin','copy:min','copy:build']
+        tasks: ['sass','postcss','copy:min','copy:build']
       },
       build:{
         files: 'styleguide/**/*',
-        tasks: ['sass','cssmin','copy:min']
+        tasks: ['sass','postcss','copy:min']
       }
     },
     sass:{
       dist:{
         files:{
-          '.tmp/styles.css': 'source/styles.scss'
+          '.tmp/styles.css': 'source/styles.scss',
+          'source/cui-styleguide-styles.css': 'source/cui-styleguide-styles.scss'
         }
       }
     },
-    cssmin: {
+    postcss: {
       options: {
-        keepSpecialComments: 0,
-        shorthandCompacting: false,
-        roundingPrecision: -1
+        map: false,
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('cssnano')()
+        ]
       },
-      target: {
-        files: [{
-          src: ['.tmp/styles.css'],
-          dest: '.tmp/styles.min.css'
-        }]
+      dist: {
+        src: ['.tmp/styles.css'],
+        dest: '.tmp/styles.min.css'
       }
     },
     copy:{
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','img/svg-out.svg'],
+          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
           dest: 'styleguide/public/',
           expand: true
         }]
@@ -80,8 +81,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['browserSync','watch:css']);
-  grunt.registerTask('build', ['sass','cssmin','copy:min', 'copy:build']);
+  grunt.registerTask('build', ['sass','postcss','copy:min', 'copy:build']);
 }
