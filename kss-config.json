@@ -11,6 +11,6 @@
     "public/cui-styleguide-styles.css",
     "public/styles.min.css"
   ],
-  "title": "Covisint Next Gen UI Framework",
+  "template": "source/template",
   "homepage": "homepage.md"
 }
