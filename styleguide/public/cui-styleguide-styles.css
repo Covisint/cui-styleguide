@@ -36,3 +36,7 @@ html {
 
 .cui-styleguide__main {
   flex: 1; }
+
+.cui-styleguide__title a {
+  color: #fff;
+  text-decoration: none; }
