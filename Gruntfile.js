@@ -3,8 +3,12 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: ['source/scss/**/*.scss','styleguide/**/*'],
+        files: ['source/scss/**/*.scss'],
         tasks: ['sass','postcss','copy:min','copy:build']
+      },
+      js: {
+        files: ['source/scripts/*.js'],
+        tasks: ['copy:build']
       },
       build:{
         files: 'styleguide/**/*',
@@ -36,7 +40,7 @@ module.exports = function(grunt) {
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
+          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css','scripts/*.js'],
           dest: 'styleguide/public/',
           expand: true
         }]
@@ -83,6 +87,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-postcss');
 
-  grunt.registerTask('default', ['browserSync','watch:css']);
+  grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
   grunt.registerTask('build', ['sass','postcss','copy:min', 'copy:build']);
 }

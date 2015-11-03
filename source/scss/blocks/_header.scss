@@ -47,6 +47,7 @@ Styleguide 2.2
 
     &--name {
       color: #AAA;
+      cursor: pointer;
       margin-right: 15px;
       @media all and (max-width:600px){
         display: none;
