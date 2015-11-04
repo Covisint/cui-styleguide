@@ -11,6 +11,9 @@
     "public/cui-styleguide-styles.css",
     "public/styles.min.css"
   ],
+  "js": [
+    "public/scripts/cui-scripts.js"
+  ],
   "template": "source/template",
   "homepage": "homepage.md"
 }

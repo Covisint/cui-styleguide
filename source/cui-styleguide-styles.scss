@@ -21,21 +21,21 @@ html {
 }
 
 .cui-styleguide__main-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     flex-direction: row;
     flex: 1;
   }
 }
 
 .cui-styleguide__main-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     flex: 1 0 auto;
   }
 }
 
 .cui-styleguide__nav {
   justify-content: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     flex: 0 0 15em;
   }
 }

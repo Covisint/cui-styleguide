@@ -16,18 +16,18 @@ html {
   display: flex;
   flex-direction: column; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .cui-styleguide__main-container {
     flex-direction: row;
     flex: 1; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .cui-styleguide__main-container {
     flex: 1 0 auto; } }
 
 .cui-styleguide__nav {
   justify-content: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     .cui-styleguide__nav {
       flex: 0 0 15em; } }
 
