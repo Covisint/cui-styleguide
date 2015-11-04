@@ -17,7 +17,7 @@ $cui-input-border--valid: #47CBB4;
 $cui-primary-colors--light: #87CEEC;    
 $cui-primary-colors--medium-light: #429DD1;
 $cui-primary-colors--medium: #4582B4;
-$cui-primary-colors--medium-dark: #000;
+$cui-primary-colors--medium-dark: #165E9B;
 $cui-primary-colors--dark: #0A2741;
 
 $cui-secondary-colors--light: #3CB371;    
@@ -52,7 +52,7 @@ $container-body-max-width: 100%;
 // inputs
 
 $input-padding:8px 12px;
-$input-error-padding:5px 12px 3px;
+$input-error-padding: 5px 0 5px;
 
 // fonts
 $primary-font-color: #929292;
