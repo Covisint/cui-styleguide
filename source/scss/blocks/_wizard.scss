@@ -1,29 +1,56 @@
 /*
 CUI Wizard
 
-Markup: <div class="cui-wizard">
+Markup: 
+<div class="cui-wizard">
   <div class="cui-wizard__title ">A description of this form</div>
   <div class="cui-wizard__body">
     <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
       <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator active" style="cursor: pointer;">Step One</span><span class="step-indicator style="cursor: pointer;">Step 2</span></indicator-container>
       <step title="Organization info" class="active">
         <form name="organization" novalidate="" class="">
-          <input type="text" name="field-1" class="cui-input cui-input--full" disabled="" placeholder="field 1">
+          <label for="field-1">Input Field Disabled</label>
+          <input type="text" name="field-1" class="cui-input cui-input--full" disabled="">
+          <label for="field-2">Select Field</label>
           <select name="field-2" class="cui-input cui-select cui-input--full" required="required">
-            <option value="" disabled="" selected="" class="">field 2</option>
+            <option value="" disabled="" selected="" class=""></option>
           </select>
-          <input type="text" name="field-3" class="cui-input cui-input--half" placeholder="field 3" required="required">
-          <input type="text" class="cui-input cui-input--half--right" placeholder="field 4">
-          <select  class="cui-input cui-select cui-input--half">
-            <option value="" disabled="" selected="" class="">field 5</option>
-          </select>
-          <select class="cui-input cui-select cui-input--half--right">
-            <option value="" disabled="" selected="" class="">field 6</option>
-          </select>
-          <select class="cui-input cui-select cui-input--half">
-            <option value="" disabled="" selected="" class="">field 7</option>
-          </select>
-          <input type="text" class="cui-input cui-input--half--right" placeholder="field 8">
+          <div>
+            <div class="cui-wizard__field-container cui-input--half">
+              <label for="field-3">Input Field</label>
+              <input type="text" name="field-3" class="cui-input cui-input--full" required="required">
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-4">Input Field</label>
+              <input type="text" name="field-4" class="cui-input cui-input--full">
+            </div>
+          </div>
+          <div>
+            <div class="cui-wizard__field-container cui-input--half">
+              <label for="field-5">Select Field</label>
+              <select name="field-5" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-6">Select Field</label>
+              <select name="field-6" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half">
+              <label for="field-7">Select Field</label>
+              <select name="field-7" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-8">Input Field</label>
+              <input type="text" name="field-8" class="cui-input cui-input--full">
+            </div>
+          </div>
           <div class="cui-wizard__controls">
             <button class="cui-wizard__next">Button</button>
             <button class="cui-wizard__skip">cui-skip-for-now &gt;&gt;</button>
@@ -152,6 +179,10 @@ Styleguide 2.1
     &.active {
       display: block;
     }
+  }
+
+  &__field-container {
+    display: inline-block;
   }
 
 }

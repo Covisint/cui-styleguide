@@ -112,22 +112,48 @@
       <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator active" style="cursor: pointer;">Step One</span><span class="step-indicator style="cursor: pointer;">Step 2</span></indicator-container>
       <step title="Organization info" class="active">
         <form name="organization" novalidate="" class="">
-          <input type="text" name="field-1" class="cui-input cui-input--full" disabled="" placeholder="field 1">
+          <label for="field-1">Input Field Disabled</label>
+          <input type="text" name="field-1" class="cui-input cui-input--full" disabled="">
+          <label for="field-2">Select Field</label>
           <select name="field-2" class="cui-input cui-select cui-input--full" required="required">
-            <option value="" disabled="" selected="" class="">field 2</option>
+            <option value="" disabled="" selected="" class=""></option>
           </select>
-          <input type="text" name="field-3" class="cui-input cui-input--half" placeholder="field 3" required="required">
-          <input type="text" class="cui-input cui-input--half--right" placeholder="field 4">
-          <select  class="cui-input cui-select cui-input--half">
-            <option value="" disabled="" selected="" class="">field 5</option>
-          </select>
-          <select class="cui-input cui-select cui-input--half--right">
-            <option value="" disabled="" selected="" class="">field 6</option>
-          </select>
-          <select class="cui-input cui-select cui-input--half">
-            <option value="" disabled="" selected="" class="">field 7</option>
-          </select>
-          <input type="text" class="cui-input cui-input--half--right" placeholder="field 8">
+          <div>
+            <div class="cui-wizard__field-container cui-input--half">
+              <label for="field-3">Input Field</label>
+              <input type="text" name="field-3" class="cui-input cui-input--full" required="required">
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-4">Input Field</label>
+              <input type="text" name="field-4" class="cui-input cui-input--full">
+            </div>
+          </div>
+          <div>
+            <div class="cui-wizard__field-container cui-input--half">
+              <label for="field-5">Select Field</label>
+              <select name="field-5" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-6">Select Field</label>
+              <select name="field-6" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half">
+              <label for="field-7">Select Field</label>
+              <select name="field-7" class="cui-input cui-select cui-input--full">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+              <label for="field-8">Input Field</label>
+              <input type="text" name="field-8" class="cui-input cui-input--full">
+            </div>
+          </div>
           <div class="cui-wizard__controls">
             <button class="cui-wizard__next">Button</button>
             <button class="cui-wizard__skip">cui-skip-for-now &gt;&gt;</button>
@@ -148,22 +174,48 @@
       &lt;indicator-container class=&quot;cui-wizard__indicator-container&quot;&gt;&lt;span class=&quot;step-indicator active&quot; style=&quot;cursor: pointer;&quot;&gt;Step One&lt;/span&gt;&lt;span class=&quot;step-indicator style=&quot;cursor: pointer;&quot;&gt;Step 2&lt;/span&gt;&lt;/indicator-container&gt;
       &lt;step title=&quot;Organization info&quot; class=&quot;active&quot;&gt;
         &lt;form name=&quot;organization&quot; novalidate=&quot;&quot; class=&quot;&quot;&gt;
-          &lt;input type=&quot;text&quot; name=&quot;field-1&quot; class=&quot;cui-input cui-input--full&quot; disabled=&quot;&quot; placeholder=&quot;field 1&quot;&gt;
+          &lt;label for=&quot;field-1&quot;&gt;Input Field Disabled&lt;/label&gt;
+          &lt;input type=&quot;text&quot; name=&quot;field-1&quot; class=&quot;cui-input cui-input--full&quot; disabled=&quot;&quot;&gt;
+          &lt;label for=&quot;field-2&quot;&gt;Select Field&lt;/label&gt;
           &lt;select name=&quot;field-2&quot; class=&quot;cui-input cui-select cui-input--full&quot; required=&quot;required&quot;&gt;
-            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;field 2&lt;/option&gt;
+            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
           &lt;/select&gt;
-          &lt;input type=&quot;text&quot; name=&quot;field-3&quot; class=&quot;cui-input cui-input--half&quot; placeholder=&quot;field 3&quot; required=&quot;required&quot;&gt;
-          &lt;input type=&quot;text&quot; class=&quot;cui-input cui-input--half--right&quot; placeholder=&quot;field 4&quot;&gt;
-          &lt;select  class=&quot;cui-input cui-select cui-input--half&quot;&gt;
-            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;field 5&lt;/option&gt;
-          &lt;/select&gt;
-          &lt;select class=&quot;cui-input cui-select cui-input--half--right&quot;&gt;
-            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;field 6&lt;/option&gt;
-          &lt;/select&gt;
-          &lt;select class=&quot;cui-input cui-select cui-input--half&quot;&gt;
-            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;field 7&lt;/option&gt;
-          &lt;/select&gt;
-          &lt;input type=&quot;text&quot; class=&quot;cui-input cui-input--half--right&quot; placeholder=&quot;field 8&quot;&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half&quot;&gt;
+              &lt;label for=&quot;field-3&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-3&quot; class=&quot;cui-input cui-input--full&quot; required=&quot;required&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half cui-input--half--right&quot;&gt;
+              &lt;label for=&quot;field-4&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-4&quot; class=&quot;cui-input cui-input--full&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half&quot;&gt;
+              &lt;label for=&quot;field-5&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-5&quot; class=&quot;cui-input cui-select cui-input--full&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half cui-input--half--right&quot;&gt;
+              &lt;label for=&quot;field-6&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-6&quot; class=&quot;cui-input cui-select cui-input--full&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half cui-input--half&quot;&gt;
+              &lt;label for=&quot;field-7&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-7&quot; class=&quot;cui-input cui-select cui-input--full&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-input--half cui-input--half--right&quot;&gt;
+              &lt;label for=&quot;field-8&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-8&quot; class=&quot;cui-input cui-input--full&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
           &lt;div class=&quot;cui-wizard__controls&quot;&gt;
             &lt;button class=&quot;cui-wizard__next&quot;&gt;Button&lt;/button&gt;
             &lt;button class=&quot;cui-wizard__skip&quot;&gt;cui-skip-for-now &amp;gt;&amp;gt;&lt;/button&gt;
