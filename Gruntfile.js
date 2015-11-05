@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss'],
-        tasks: ['sass','postcss','copy:min','copy:build']
+        tasks: ['concat','sass','postcss','copy:min','copy:build']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -12,16 +12,22 @@ module.exports = function(grunt) {
       },
       build:{
         files: 'styleguide/**/*',
-        tasks: ['sass','postcss','copy:min']
+        tasks: ['concat','sass','postcss','copy:min']
+      }
+    },
+    concat: {
+      dist: {
+        src: ['source/base.scss','source/components.scss'],
+        dest: 'source/styles.scss'
       }
     },
     sass:{
       dist:{
         files:{
-          '.tmp/styles.css': 'source/styles.scss',
+          '.tmp/styles.css': ['source/styles.scss'],
           'source/cui-styleguide-styles.css': 'source/cui-styleguide-styles.scss'
         }
-      }
+      },
     },
     postcss: {
       options: {
@@ -86,6 +92,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
   grunt.registerTask('build', ['sass','postcss','copy:min', 'copy:build']);
