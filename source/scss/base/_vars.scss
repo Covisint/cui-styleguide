@@ -59,6 +59,7 @@ $primary-font-color: #929292;
 
 
 //helper classes
+
 .clearfix {
   overflow: auto;
 }
@@ -72,6 +73,13 @@ $primary-font-color: #929292;
 .language-select {
   float: right;
   margin-top: 20px;
+}
+
+.wrapper {
+  background: $secondary-background;
+  min-height: 100vh;
+  position:relative;
+  overflow-x: hidden;
 }
 
 
