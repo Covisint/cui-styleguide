@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "cui-icons": "git@github.com:thirdwavellc/cui-icons.git",
-    "cui-i18n": "git@github.com:thirdwavellc/cui-i18n.git"
+    "cui-i18n": "git@github.com:thirdwavellc/cui-i18n.git",
+    "bourbon": "~4.2.6"
   }
 }
