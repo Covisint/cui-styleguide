@@ -39,7 +39,7 @@ html {
   flex: 1;
   min-height: 1000px; }
 
-.cui-styleguide__section.cui-container {
+.cui-styleguide__section.cui-tile {
   margin: 50px auto; }
 
 .cui-styleguide__title a {

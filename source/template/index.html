@@ -60,7 +60,7 @@
 
   <article role="main" class="cui-styleguide__main">
   {{#if homepage}}
-    <div id="kssref-0" class="cui-container cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
+    <div id="kssref-0" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
       {{{homepage}}}
     </div>
   {{else}}
@@ -73,14 +73,14 @@
     }}
     {{#eachSection rootName}}
       {{#ifDepth 1}}
-        <div     id="kssref-{{referenceURI}}" class="cui-container cui-styleguide__section cui-styleguide__section--depth-{{depth}}">
+        <div     id="kssref-{{referenceURI}}" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-{{depth}}">
       {{else}}
-        <section id="kssref-{{referenceURI}}" class="cui-container cui-styleguide__section cui-styleguide__section--depth-{{depth}}">
+        <section id="kssref-{{referenceURI}}" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-{{depth}}">
       
 
       <div class="cui-styleguide__style">
-        <div clas="cui-container__title"></div>
-        <h{{depth}} class="cui-container__title cui-styleguide__title cui-styleguide__title--level-{{depth}}">
+        <div clas="cui-tile__title"></div>
+        <h{{depth}} class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-{{depth}}">
           <a class="cui-styleguide__title__permalink" href="#kssref-{{referenceURI}}">
             <span class="cui-styleguide__title__ref">
               {{#ifNumeric reference}}
@@ -105,7 +105,7 @@
 
       </div>
 
-      <div class="cui-container__body">
+      <div class="cui-tile__body">
       {{#if description}}
         <div class="cui-styleguide__description-container">
           <span class="cui-styleguide__description">DESCRIPTION: </span>{{{description}}}
