@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss'],
-        tasks: ['concat','sass','postcss','copy:min','copy:build']
+        tasks: ['concat:dist','sass','postcss','copy:min','copy:build']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -19,6 +19,10 @@ module.exports = function(grunt) {
       dist: {
         src: ['source/base.scss','source/components.scss'],
         dest: 'source/styles.scss'
+      },
+      specificity: {
+        src: ['source/cui-wrapper.intro','.tmp/styles.css','source/cui-wrapper.outro'],
+        dest: '.tmp/styles.specific.css'
       }
     },
     sass:{
@@ -40,13 +44,17 @@ module.exports = function(grunt) {
       dist: {
         src: ['.tmp/styles.css'],
         dest: '.tmp/styles.min.css'
+      },
+      specificity: {
+        src: ['.tmp/styles.specific.css'],
+        dest: '.tmp/styles.specific.min.css'
       }
     },
     copy:{
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css','scripts/*.js'],
+          src: ['styles.min.css','styles.specific.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css','scripts/*.js'],
           dest: 'styleguide/public/',
           expand: true
         }]
@@ -54,7 +62,7 @@ module.exports = function(grunt) {
       min:{
         files: [{
           cwd: '.tmp/',
-          src: 'styles.min.css',
+          src: ['styles.min.css','styles.specific.min.css'],
           dest: 'source/',
           expand: true
         }]
@@ -95,5 +103,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
-  grunt.registerTask('build', ['sass','postcss','copy:min', 'copy:build']);
+  grunt.registerTask('build', ['sass','concat:specificity','postcss:dist','postcss:specificity','copy:min', 'copy:build']);
 }
