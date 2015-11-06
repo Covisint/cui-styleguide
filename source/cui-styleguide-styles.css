@@ -39,7 +39,7 @@ html {
   flex: 1;
   min-height: 1000px; }
 
-.cui-styleguide__section.cui-container {
+.cui-styleguide__section.cui-tile {
   margin: 50px auto; }
 
 .cui-styleguide__title a {
@@ -63,3 +63,7 @@ html {
 .cui-styleguide-modifier__name,
 .cui-styleguide-modifier__description {
   margin: 10px 0; }
+
+.cui-background,
+.cui-background--secondary {
+  padding: 20px; }

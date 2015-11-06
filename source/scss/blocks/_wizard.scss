@@ -20,7 +20,7 @@ Markup:
               <label for="field-3">Input Field</label>
               <input type="text" name="field-3" class="cui-input cui-input--full" required="required">
             </div>
-            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+            <div class="cui-wizard__field-container cui-input--half cui-input--half-right">
               <label for="field-4">Input Field</label>
               <input type="text" name="field-4" class="cui-input cui-input--full">
             </div>
@@ -32,7 +32,7 @@ Markup:
                 <option value="" disabled="" selected="" class=""></option>
               </select>
             </div>
-            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+            <div class="cui-wizard__field-container cui-input--half cui-input--half-right">
               <label for="field-6">Select Field</label>
               <select name="field-6" class="cui-input cui-select cui-input--full">
                 <option value="" disabled="" selected="" class=""></option>
@@ -46,7 +46,7 @@ Markup:
                 <option value="" disabled="" selected="" class=""></option>
               </select>
             </div>
-            <div class="cui-wizard__field-container cui-input--half cui-input--half--right">
+            <div class="cui-wizard__field-container cui-input--half cui-input--half-right">
               <label for="field-8">Input Field</label>
               <input type="text" name="field-8" class="cui-input cui-input--full">
             </div>
@@ -139,47 +139,6 @@ Styleguide 2.1
     }
   }
 
-  &__indicator-container {
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-
-    &.small {
-      &>.step-indicator {
-        display: none;
-        pointer-events: none;
-
-        &.active {
-          border: 0;
-          display:inline-block;
-          margin:0 auto;
-          text-align: center;
-          color: #bbb;
-        }
-      }
-    }
-  }
-
-  & .step-indicator {
-    color: #bbb;
-    margin-bottom: -2px;
-    padding: 10px 0;
-    white-space: nowrap;
-    display: inline-block;
-    &.active {
-      border-bottom: 6px solid $cui-primary-colors--medium-light;;
-      color: #333;
-    }
-  }
-
-  &__step-contents {
-    display: none;
-
-    &.active {
-      display: block;
-    }
-  }
 
   &__field-container {
     display: inline-block;
@@ -248,7 +207,7 @@ Styleguide 2.1
     padding: 10px 0 0;
   }
 
-  &__paragraph {
+  &__review-item {
     color: #666;
     font-size: 14px;
     line-height: .75;
@@ -275,6 +234,49 @@ Styleguide 2.1
     }
   }
 }
+
+.indicator-container {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &.small {
+    &>.step-indicator {
+      display: none;
+      pointer-events: none;
+
+      &.active {
+        border: 0;
+        display:inline-block;
+        margin:0 auto;
+        text-align: center;
+        color: #bbb;
+      }
+    }
+  }
+}
+
+& .step-indicator {
+  color: #bbb;
+  margin-bottom: -2px;
+  padding: 10px 0;
+  white-space: nowrap;
+  display: inline-block;
+  &.active {
+    border-bottom: 6px solid $cui-primary-colors--medium-light;;
+    color: #333;
+  }
+}
+
+step {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 
 .chevron {
   color: $container-title-background;
