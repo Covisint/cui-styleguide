@@ -257,7 +257,8 @@ Styleguide 2.1
   }
 }
 
-& .step-indicator {
+//Shane this was & .step-indicator , was there a reason for that, or just a mistake?
+.step-indicator {
   color: #bbb;
   margin-bottom: -2px;
   padding: 10px 0;
