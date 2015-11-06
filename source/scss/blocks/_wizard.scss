@@ -6,7 +6,7 @@ Markup:
   <div class="cui-wizard__title ">A description of this form</div>
   <div class="cui-wizard__body">
     <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
-      <indicator-container class="cui-wizard__indicator-container"><span class="step-indicator active" style="cursor: pointer;">Step One</span><span class="step-indicator style="cursor: pointer;">Step 2</span></indicator-container>
+      <indicator-container class="indicator-container"><span class="step-indicator active" style="cursor: pointer;">Step One</span><span class="step-indicator style="cursor: pointer;">Step 2</span></indicator-container>
       <step title="Organization info" class="active">
         <form name="organization" novalidate="" class="">
           <label for="field-1">Input Field Disabled</label>
