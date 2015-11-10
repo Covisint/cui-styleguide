@@ -127,3 +127,56 @@ select.cui-select {
   }
 
 }
+
+/*
+Radio
+
+Markup:
+<fieldset class="cui-radio__fieldset">
+  <legend class="cui-radio__legend">Accessible description for radio button choice</legend>
+  <div class="cui-radio__container">
+    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+    <label class="cui-radio__label" for="radio-choice-1">Choice 1</label>
+  </div>
+  <div class="cui-radio__container">
+    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+    <label class="cui-radio__label" for="radio-choice-2">Choice 2</label>
+  </div>
+</fieldset>
+
+Styleguide 1.3.3
+*/
+
+.cui-radio {
+  position: absolute;
+  left: -999em;
+
+  &__legend {
+    left: -999em;
+    position: absolute;
+  }
+
+  &__fieldset {
+    border: 0;
+    display: flex;
+  }
+
+  &__container {
+    height: em(30);
+  }
+
+  &__label:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $cui-greyscale--light, 0 0 0 3px $cui-greyscale--medium-light;
+    content: "\00a0";
+    display: inline-block;
+    height: rem(18px);
+    margin: em(-2px) em(8px) 0 0;
+    vertical-align: top;
+    width: rem(18px);
+  }
+
+  &:checked + .cui-radio__label::before {
+    @extend .cui-primary-colors--medium-light;
+  }
+}
