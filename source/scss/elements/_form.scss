@@ -102,6 +102,199 @@ Styleguide 1.3.1
 }
 
 /*
+Email tags field
+
+Markup:
+<div name="emails" class="cui-tags-input">
+  <div class="host" tabindex="-1">
+    <div class="tags">
+      <ul class="tag-list">
+        <li class="tag-item"><span>example@gmail.com</span> 
+          <a class="remove-button">×</a>
+        </li>
+      </ul>
+      <input class="input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="input" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
+    </div> 
+  </div>
+</div>
+
+Styleguide 1.3.2
+*/
+
+.cui-tags-input {
+  display: block;
+  font-size: em(14);
+
+  &.ng-touched {
+    &.ng-invalid {
+      & .tags {
+        border:1px solid $cui-input-border--invalid;
+      }
+    }
+    &.ng-valid {
+      & .tags {
+        border:1px solid $cui-input-border--valid;
+      }
+    }
+  }
+}
+
+.cui-tags-input *, .cui-tags-input *:before, .cui-tags-input *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.cui-tags-input .host {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.cui-tags-input .host:active {
+  outline: 0;
+}
+
+.cui-tags-input .tags {
+  padding: $input-padding;
+  min-height: 56px;
+  overflow: hidden;
+  word-wrap: break-word;
+  cursor: text;
+  background-color: $cui-greyscale--light;
+  border: 1px solid $cui-input-border;
+}
+
+.cui-tags-input .tags.focused {
+  border: 1px solid $cui-input-border--focus;
+  outline: 0;
+}
+
+.cui-tags-input .tags .tag-list {
+  padding: 4px 20px 0 0;
+  margin: 0 10px 0 0;
+  list-style-type: none;
+}
+
+.cui-tags-input .tags .tag-item {
+  background: $cui-primary-colors--medium-light;
+  border-radius: 3px;
+  color: $cui-greyscale--light;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  margin: 0 10px 5px 0;
+}
+
+.cui-tags-input .tags .tag-item.selected {
+  background: $cui-secondary-colors--dark;
+}
+
+.cui-tags-input .tags .tag-item .remove-button {
+  margin: 0 0 0 5px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  vertical-align: middle;
+  font: bold 16px Arial, sans-serif;
+  color: $cui-greyscale--light;
+}
+
+.cui-tags-input .tags .tag-item .remove-button:active {
+  color: $cui-secondary-colors--medium-light;
+}
+
+.cui-tags-input .tags .input {
+  border: 0;
+  outline: 0;
+  padding: 5px 0 0 0;
+  width:3px;
+  float: left;
+}
+
+.cui-tags-input .tags .input.invalid-tag {
+  color: $cui-secondary-colors--dark;
+}
+
+.cui-tags-input .tags .input::-ms-clear {
+  display: none;
+}
+
+.cui-tags-input[disabled] .host:focus {
+  outline: 0;
+}
+
+.cui-tags-input[disabled] .tags {
+  background-color: #eee;
+  cursor: default;
+}
+
+.cui-tags-input[disabled] .tags .tag-item {
+  opacity: 0.65;
+  background: linear-gradient(to bottom, #f0f9ff 0%, rgba(203, 235, 255, 0.75) 47%, rgba(161, 219, 255, 0.62) 100%);
+}
+
+.cui-tags-input[disabled] .tags .tag-item .remove-button {
+  cursor: default;
+}
+
+.cui-tags-input[disabled] .tags .tag-item .remove-button:active {
+  color: #585858;
+}
+
+.cui-tags-input[disabled] .tags .input {
+  background-color: #eee;
+  cursor: default;
+}
+
+.cui-tags-input .autocomplete {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  position: absolute;
+  padding: 5px 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.cui-tags-input .autocomplete .suggestion-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 280px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cui-tags-input .autocomplete .suggestion-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+  background-color: #fff;
+}
+
+.cui-tags-input .autocomplete .suggestion-item.selected {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.cui-tags-input .autocomplete .suggestion-item.selected em {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.cui-tags-input .autocomplete .suggestion-item em {
+  color: #000;
+  background-color: #fff;
+}
+
+/*
 Dropdown
 
 Markup: <select class="cui-input cui-input--full cui-select">
@@ -111,7 +304,7 @@ Markup: <select class="cui-input cui-input--full cui-select">
             <option value="HELLO"></option>
           </select>
 
-Styleguide 1.3.2
+Styleguide 1.3.3
 */
 
 select.cui-select {
@@ -126,4 +319,57 @@ select.cui-select {
     outline: 0;
   }
 
+}
+
+/*
+Radio
+
+Markup:
+<fieldset class="cui-radio__fieldset">
+  <legend class="cui-radio__legend">Accessible description for radio button choice</legend>
+  <div class="cui-radio__container">
+    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+    <label class="cui-radio__label" for="radio-choice-1">Choice 1</label>
+  </div>
+  <div class="cui-radio__container">
+    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+    <label class="cui-radio__label" for="radio-choice-2">Choice 2</label>
+  </div>
+</fieldset>
+
+Styleguide 1.3.4
+*/
+
+.cui-radio {
+  position: absolute;
+  left: -999em;
+
+  &__legend {
+    left: -999em;
+    position: absolute;
+  }
+
+  &__fieldset {
+    border: 0;
+    display: flex;
+  }
+
+  &__container {
+    height: em(30);
+  }
+
+  &__label:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $cui-greyscale--light, 0 0 0 3px $cui-greyscale--medium-light;
+    content: "\00a0";
+    display: inline-block;
+    height: rem(18px);
+    margin: em(-2px) em(8px) 0 0;
+    vertical-align: top;
+    width: rem(18px);
+  }
+
+  &:checked + .cui-radio__label::before {
+    @extend .cui-primary-colors--medium-light;
+  }
 }
