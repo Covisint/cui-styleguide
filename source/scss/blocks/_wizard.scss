@@ -239,7 +239,7 @@ Styleguide 2.1
     transition: all 200ms ease-in-out;
   }
 
-  &[expanded="true"] {
+  &.expanded {
     >.cui-expandable__body {
       max-height: 500px;
     }
