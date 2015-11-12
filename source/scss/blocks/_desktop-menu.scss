@@ -65,7 +65,7 @@
 	transition:all 200ms ease-in-out;
 	
 	&:before {
-		@extend .cui-primary-colors--light;
+		@extend .cui-primary-colors--medium-light;
 		content:'';
 		position:absolute;
 		width:40px;
@@ -74,7 +74,7 @@
 	}
 
 	&:after {
-		@extend .cui-primary-colors--light;
+		@extend .cui-primary-colors--medium-light;
 		content:'';
 		position:absolute;
 		width:40px;
