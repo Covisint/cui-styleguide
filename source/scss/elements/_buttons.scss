@@ -34,11 +34,11 @@ Styleguide 1.6
   }
 
   &--error {
-    background-color: $cui-greyscale--medium-light;
+    background-color: #dbdbdb;
     cursor: default;
     &:active,
     &.pseudo-class-active {
-      background-color: #dbdbdb;
+      background-color: $cui-greyscale--medium-light;
     }
   }
 }
