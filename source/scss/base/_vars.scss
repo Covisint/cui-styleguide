@@ -58,29 +58,4 @@ $input-error-padding: 5px 0 5px;
 $primary-font-color: #929292;
 
 
-//helper classes
-
-.clearfix {
-  overflow: auto;
-}
-
-.container {
-  background: #dfe9ee;
-  padding-bottom: 200px;
-  padding-top: 100px;
-}
-
-.language-select {
-  float: right;
-  margin-top: 20px;
-}
-
-.cui-wrapper {
-  background: $secondary-background;
-  min-height: 100vh;
-  position:relative;
-  overflow-x: hidden;
-}
-
-
 
