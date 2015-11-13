@@ -58,4 +58,19 @@ $input-error-padding: 5px 0 5px;
 $primary-font-color: #929292;
 
 
+// normalize overrides
+fieldset {
+  border: 0;
+  margin: 0;
+}
+
+// helpers
+
+%cui-sr-only {
+  left: -999em;
+  position: absolute;
+}
+
+
+
 
