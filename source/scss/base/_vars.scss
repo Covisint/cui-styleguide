@@ -1,7 +1,3 @@
-//general
-$snap-menu-breaking-point: 1000px;
-$snap-menu-breaking-point-1: 999px;
-$desktop-menu-width: 300px;
 
 // Backgrounds
 $primary-background: #fff;
@@ -56,6 +52,33 @@ $input-error-padding: 5px 0 5px;
 
 // fonts
 $primary-font-color: #929292;
+
+// navigation
+$snap-menu-breaking-point: 1000px;
+$snap-menu-breaking-point-1: 999px;
+$desktop-menu-width: 300px;
+$snap-menu:true;
+
+@if $snap-menu==false{
+    $snap-menu-breaking-point: 0px;
+    $snap-menu-breaking-point-1: 0px;
+}
+
+
+
+// normalize overrides
+fieldset {
+  border: 0;
+  margin: 0;
+}
+
+// helpers
+
+%cui-sr-only {
+  left: -999em;
+  position: absolute;
+}
+
 
 
 

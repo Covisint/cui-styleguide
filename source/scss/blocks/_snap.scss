@@ -1,15 +1,44 @@
+.cui-wrapper {
+  min-height:100vh;
+  background: $secondary-background;
+  position:relative;
+}
+
+.cui-nav__content-wrapper {
+  padding:40px;
+  margin-left:$desktop-menu-width;
+  transition: all 150ms ease-in-out;
+  &.desktop-menu--collapse {
+    margin-left:0;
+  }
+  @if $snap-menu == true{
+    @media screen and (max-width:$snap-menu-breaking-point-1){
+        margin-left:0;
+    }
+  }
+}
+
+
+//SNAP CSS
+
 snap-content {
-  @extend .cui-background--secondary;
+  background: $secondary-background;
   padding: 0;
 }
 
-snap-drawer{
-  @extend .cui-primary-colors--medium;
+snap-drawer {
+  background: $cui-primary-colors--medium;
   min-height:100vh;
 }
 
+.snap-drawer {
+  @media screen and (min-width:$snap-menu-breaking-point-1) {
+    display: none;
+  }
+}
+
 .snap-menu--option {
-  @extend .cui-primary-colors--medium-dark;
+  background: $cui-primary-colors--medium-dark;
   color:white;
   display:block;
   padding: 10px 20px;
@@ -44,6 +73,7 @@ snap-drawers,
 .snap-drawers,
 .snap-content {
   position: static;
+  background: $secondary-background;
   @media screen and (max-width:$snap-menu-breaking-point-1){
     position:absolute;
     height: auto;
@@ -62,10 +92,9 @@ snap-drawer,
 .snap-drawer,
 .x-snap-drawer,
 .snap-drawer {
-  position: relative;
-  display: none;
+  // position: relative;
+  // display: none;
   height: auto;
-  top: 0;
   bottom: 0;
   overflow: auto;
   -webkit-transition: top 0.2s linear;
@@ -81,10 +110,10 @@ snap-drawer,
   -o-overflow-scrolling: touch;
   overflow-scrolling: touch;
   width: 265px;
-  @media screen and (max-width:$snap-menu-breaking-point-1){
+  // @media screen and (max-width:$snap-menu-breaking-point-1){
     position:absolute;
-    display:inline;
-  }
+    // display:inline-block;
+  // }
 }
 .snap-content {
   z-index: 2;
