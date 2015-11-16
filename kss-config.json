@@ -7,7 +7,6 @@
 
   "//": "The css and js paths are URLs relative to the generated style guide.",
   "css": [
-    "public/kss.css",
     "public/cui-styleguide-styles.css",
     "public/styles.min.css"
   ],
