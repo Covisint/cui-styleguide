@@ -11,63 +11,60 @@
   <meta name="description" content="">
   <meta name="generator" content="cui-styleguide__node">
   <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/kss.css">
-<link rel="stylesheet" href="public/cui-styleguide-styles.css">
+  <link rel="stylesheet" href="public/cui-styleguide-styles.css">
 <link rel="stylesheet" href="public/styles.min.css">
 
 </head>
 <body id="cui-styleguide__page-container">
 
-<header class="cui-header">
-  <div class="cui-header__top">
-    <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
-</header>
+<div class="cui-wrapper">
+  <header class="cui-header">
+    <div class="cui-header__top">
+      <div class="menu-toggle active" snap-toggle="left" onclick="toggle_desktop_nav()">
+        <div class="menu-toggle--button"></div>
+      </div>
+      <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
+  </header>
+  <div class="cui-nav__content-wrapper">
+    <div class="cui-styleguide__main-container">
+      <!--   <header class="cui-styleguide__header">
+          <h1 class="cui-styleguide__doc-title"></h1>
+        </header> -->
+    <nav id="desktop-menu" class="cui-styleguide__nav off-canvas desktop-menu">
+      <ul class="cui-styleguide__nav__menu off-canvas__list">
+        <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
+          <a href="./">
+            <span class="cui-styleguide__nav__name">Overview</span>
+          </a>
+        </li>
+        <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
+          <a href="section-1.html">
+            <span class="cui-styleguide__nav__ref"></span
+            ><span class="cui-styleguide__nav__name">Elements</span>
+          </a>
+        </li>
+        <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
+          <a href="section-2.html">
+            <span class="cui-styleguide__nav__ref"></span
+            ><span class="cui-styleguide__nav__name">Blocks</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<div class="cui-styleguide__main-container">
-  <!--   <header class="cui-styleguide__header">
-      <h1 class="cui-styleguide__doc-title"></h1>
-    </header> -->
-<nav class="cui-styleguide__nav off-canvas">
-  <ul class="cui-styleguide__nav__menu off-canvas__list">
-    <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
-      <a href="./">
-        <span class="cui-styleguide__nav__name">Overview</span>
-      </a>
-    </li>
-    <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-      <a href="section-1.html">
-        <span class="cui-styleguide__nav__ref"></span
-        ><span class="cui-styleguide__nav__name">Elements</span>
-      </a>
-    </li>
-    <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-      <a href="section-2.html">
-        <span class="cui-styleguide__nav__ref"></span
-        ><span class="cui-styleguide__nav__name">Blocks</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-  <article role="main" class="cui-styleguide__main">
-    <div id="kssref-0" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
-       <h1 id="covisint-next-gen-ui-framework">Covisint Next Gen UI Framework</h1>
+      <article role="main" class="cui-styleguide__main">
+        <div id="kssref-0" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
+           <h1 id="covisint-next-gen-ui-framework">Covisint Next Gen UI Framework</h1>
 <p>This file, homepage.md, is where a overall description of what this framework is, who it&#39;s for, and a general overview of the documentation</p>
 <p>This uses the Node.js implementation of <a href="https://github.com/kneath/kss">Knyle Style Sheets</a> (KSS), &quot;a documentation syntax for CSS&quot; that&#39;s intended to have syntax readable by humans <em>and</em> machines. Hence, the kss-node software can be used to create a &quot;living style guide&quot;.</p>
 
+        </div>
+      </article>
     </div>
-  </article>
+  </div>
 </div>
 
-
 <!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
 <script src="public/scripts/cui-scripts.js"></script>
 
 

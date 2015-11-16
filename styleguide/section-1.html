@@ -11,150 +11,151 @@
   <meta name="description" content="">
   <meta name="generator" content="cui-styleguide__node">
   <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/kss.css">
-<link rel="stylesheet" href="public/cui-styleguide-styles.css">
+  <link rel="stylesheet" href="public/cui-styleguide-styles.css">
 <link rel="stylesheet" href="public/styles.min.css">
 
 </head>
 <body id="cui-styleguide__page-container">
 
-<header class="cui-header">
-  <div class="cui-header__top">
-    <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
-</header>
-
-<div class="cui-styleguide__main-container">
-  <!--   <header class="cui-styleguide__header">
-      <h1 class="cui-styleguide__doc-title"></h1>
-    </header> -->
-<nav class="cui-styleguide__nav off-canvas">
-  <ul class="cui-styleguide__nav__menu off-canvas__list">
-    <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
-      <a href="./">
-        <span class="cui-styleguide__nav__name">Overview</span>
-      </a>
-    </li>
-    <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-      <a href="section-1.html">
-        <span class="cui-styleguide__nav__ref"></span
-        ><span class="cui-styleguide__nav__name">Elements</span>
-      </a>
-      <ul class="cui-styleguide__nav-menu--child">
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-1">
-              <span class="cui-styleguide__nav__ref"> 1.1 </span
-              ><span class="cui-styleguide__nav__name">Backgrounds</span>
-            </a>
-          </li>
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-2">
-              <span class="cui-styleguide__nav__ref"> 1.2 </span
-              ><span class="cui-styleguide__nav__name">Texts</span>
-            </a>
-          </li>
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-3">
-              <span class="cui-styleguide__nav__ref"> 1.3 </span
-              ><span class="cui-styleguide__nav__name">Forms</span>
-            </a>
-          </li>
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-4">
-              <span class="cui-styleguide__nav__ref"> 1.4 </span
-              ><span class="cui-styleguide__nav__name">Colors</span>
-            </a>
-          </li>
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-5">
-              <span class="cui-styleguide__nav__ref"> 1.5 </span
-              ><span class="cui-styleguide__nav__name">Logos</span>
-            </a>
-          </li>
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
-            <a href="section-1.html#kssref-1-6">
-              <span class="cui-styleguide__nav__ref"> 1.6 </span
-              ><span class="cui-styleguide__nav__name">Buttons</span>
-            </a>
-          </li>
+<div class="cui-wrapper">
+  <header class="cui-header">
+    <div class="cui-header__top">
+      <div class="menu-toggle active" snap-toggle="left" onclick="toggle_desktop_nav()">
+        <div class="menu-toggle--button"></div>
+      </div>
+      <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
+  </header>
+  <div class="cui-nav__content-wrapper">
+    <div class="cui-styleguide__main-container">
+      <!--   <header class="cui-styleguide__header">
+          <h1 class="cui-styleguide__doc-title"></h1>
+        </header> -->
+    <nav id="desktop-menu" class="cui-styleguide__nav off-canvas desktop-menu">
+      <ul class="cui-styleguide__nav__menu off-canvas__list">
+        <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
+          <a href="./">
+            <span class="cui-styleguide__nav__name">Overview</span>
+          </a>
+        </li>
+        <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
+          <a href="section-1.html">
+            <span class="cui-styleguide__nav__ref"></span
+            ><span class="cui-styleguide__nav__name">Elements</span>
+          </a>
+          <ul class="cui-styleguide__nav-menu--child">
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-1">
+                  <span class="cui-styleguide__nav__ref"> 1.1 </span
+                  ><span class="cui-styleguide__nav__name">Backgrounds</span>
+                </a>
+              </li>
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-2">
+                  <span class="cui-styleguide__nav__ref"> 1.2 </span
+                  ><span class="cui-styleguide__nav__name">Texts</span>
+                </a>
+              </li>
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-3">
+                  <span class="cui-styleguide__nav__ref"> 1.3 </span
+                  ><span class="cui-styleguide__nav__name">Forms</span>
+                </a>
+              </li>
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-4">
+                  <span class="cui-styleguide__nav__ref"> 1.4 </span
+                  ><span class="cui-styleguide__nav__name">Colors</span>
+                </a>
+              </li>
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-5">
+                  <span class="cui-styleguide__nav__ref"> 1.5 </span
+                  ><span class="cui-styleguide__nav__name">Logos</span>
+                </a>
+              </li>
+              <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <a href="section-1.html#kssref-1-6">
+                  <span class="cui-styleguide__nav__ref"> 1.6 </span
+                  ><span class="cui-styleguide__nav__name">Buttons</span>
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
+          <a href="section-2.html">
+            <span class="cui-styleguide__nav__ref"></span
+            ><span class="cui-styleguide__nav__name">Blocks</span>
+          </a>
+        </li>
       </ul>
-    </li>
-    <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-      <a href="section-2.html">
-        <span class="cui-styleguide__nav__ref"></span
-        ><span class="cui-styleguide__nav__name">Blocks</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+    </nav>
 
-  <article role="main" class="cui-styleguide__main">
+      <article role="main" class="cui-styleguide__main">
 
-        <div     id="kssref-1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-1">
-        </div>
-        <section id="kssref-1-1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
+            <div     id="kssref-1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-1">
+            </div>
+            <section id="kssref-1-1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-1">
-            <span class="cui-styleguide__title__ref">
-                1.1
-            </span>
-            Backgrounds
-          </a>
-        </h2>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-1">
+                <span class="cui-styleguide__title__ref">
+                    1.1
+                </span>
+                Backgrounds
+              </a>
+            </h2>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <div class="cui-background">Primary</div><div class="cui-background--secondary">Secondary</div>
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <div class="cui-background">Primary</div><div class="cui-background--secondary">Secondary</div>
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-background&quot;&gt;Primary&lt;/div&gt;&lt;div class=&quot;cui-background--secondary&quot;&gt;Secondary&lt;/div&gt;</code></pre>
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
+
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-2">
+                <span class="cui-styleguide__title__ref">
+                    1.2
+                </span>
+                Texts
+              </a>
+            </h2>
+
           </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-background&quot;&gt;Primary&lt;/div&gt;&lt;div class=&quot;cui-background--secondary&quot;&gt;Secondary&lt;/div&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-2">
-            <span class="cui-styleguide__title__ref">
-                1.2
-            </span>
-            Texts
-          </a>
-        </h2>
+          <div class="cui-tile__body">
+            <div class="cui-styleguide__description-container">
+              <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.</p>
 
-      </div>
+            </div>
+          
 
-      <div class="cui-tile__body">
-        <div class="cui-styleguide__description-container">
-          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.</p>
-
-        </div>
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <h1>H1 Heading</h1>
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <h1>H1 Heading</h1>
         <h2>H2 Heading</h2>
         <h3>H3 Heading</h3>
         <h4>H4 Heading</h4>
@@ -177,11 +178,11 @@
         <ol class="cui-ol">
           <li>Ordered List</li>
         </ol>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;H1 Heading&lt;/h1&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;H1 Heading&lt;/h1&gt;
         &lt;h2&gt;H2 Heading&lt;/h2&gt;
         &lt;h3&gt;H3 Heading&lt;/h3&gt;
         &lt;h4&gt;H4 Heading&lt;/h4&gt;
@@ -204,131 +205,131 @@
         &lt;ol class=&quot;cui-ol&quot;&gt;
           &lt;li&gt;Ordered List&lt;/li&gt;
         &lt;/ol&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-3" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-3" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3">
-            <span class="cui-styleguide__title__ref">
-                1.3
-            </span>
-            Forms
-          </a>
-        </h2>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3">
+                <span class="cui-styleguide__title__ref">
+                    1.3
+                </span>
+                Forms
+              </a>
+            </h2>
 
-      </div>
+          </div>
 
-      <div class="cui-tile__body">
-        <div class="cui-styleguide__description-container">
-          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for form elements</p>
+          <div class="cui-tile__body">
+            <div class="cui-styleguide__description-container">
+              <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for form elements</p>
 
-        </div>
-      
+            </div>
+          
 
-        </div>
-        </section>
-        <section id="kssref-1-3.1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            </div>
+            </section>
+            <section id="kssref-1-3.1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3.1">
-            <span class="cui-styleguide__title__ref">
-                1.3.1
-            </span>
-            Inputs
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3.1">
+                <span class="cui-styleguide__title__ref">
+                    1.3.1
+                </span>
+                Inputs
+              </a>
+            </h3>
 
-      </div>
+          </div>
 
-      <div class="cui-tile__body">
-      
+          <div class="cui-tile__body">
+          
 
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
-          </div>
-          <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
-            Default styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <input type="text" class="cui-input [modifier class] cui-input--full"/>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            :disabled
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Styling for a disabled input field
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <input type="text" class="cui-input pseudo-class-disabled cui-input--full"/>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            :focus
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Styling when user clicks in a field to enter input
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <input type="text" class="cui-input pseudo-class-focus cui-input--full"/>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            .cui-input--error
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Styling after user has entered input that is invalid
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <input type="text" class="cui-input cui-input--error cui-input--full"/>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            .cui-input--valid
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Styling after user has entered input that is valid
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <input type="text" class="cui-input cui-input--valid cui-input--full"/>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;cui-input [modifier class] cui-input--full&quot;/&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-3.2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
+                Default styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <input type="text" class="cui-input [modifier class] cui-input--full"/>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                :disabled
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Styling for a disabled input field
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <input type="text" class="cui-input pseudo-class-disabled cui-input--full"/>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                :focus
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Styling when user clicks in a field to enter input
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <input type="text" class="cui-input pseudo-class-focus cui-input--full"/>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                .cui-input--error
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Styling after user has entered input that is invalid
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <input type="text" class="cui-input cui-input--error cui-input--full"/>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                .cui-input--valid
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Styling after user has entered input that is valid
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <input type="text" class="cui-input cui-input--valid cui-input--full"/>
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;input type=&quot;text&quot; class=&quot;cui-input [modifier class] cui-input--full&quot;/&gt;</code></pre>
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-3.2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3.2">
-            <span class="cui-styleguide__title__ref">
-                1.3.2
-            </span>
-            Email tags field
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3.2">
+                <span class="cui-styleguide__title__ref">
+                    1.3.2
+                </span>
+                Email tags field
+              </a>
+            </h3>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <div name="emails" class="cui-tags-input">
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <div name="emails" class="cui-tags-input">
   <div class="host" tabindex="-1">
     <div class="tags">
       <ul class="tag-list">
@@ -340,11 +341,11 @@
     </div>
   </div>
 </div>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div name=&quot;emails&quot; class=&quot;cui-tags-input&quot;&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div name=&quot;emails&quot; class=&quot;cui-tags-input&quot;&gt;
   &lt;div class=&quot;host&quot; tabindex=&quot;-1&quot;&gt;
     &lt;div class=&quot;tags&quot;&gt;
       &lt;ul class=&quot;tag-list&quot;&gt;
@@ -356,77 +357,77 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-3.3" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-3.3" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3.3">
-            <span class="cui-styleguide__title__ref">
-                1.3.3
-            </span>
-            Dropdown
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3.3">
+                <span class="cui-styleguide__title__ref">
+                    1.3.3
+                </span>
+                Dropdown
+              </a>
+            </h3>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <select class="cui-input cui-input--full cui-select">
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <select class="cui-input cui-input--full cui-select">
             <option value="helloo"></option>
             <option value="hellloooo"></option>
             <option value="hellllooooooo"></option>
             <option value="HELLO"></option>
           </select>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;select class=&quot;cui-input cui-input--full cui-select&quot;&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;select class=&quot;cui-input cui-input--full cui-select&quot;&gt;
             &lt;option value=&quot;helloo&quot;&gt;&lt;/option&gt;
             &lt;option value=&quot;hellloooo&quot;&gt;&lt;/option&gt;
             &lt;option value=&quot;hellllooooooo&quot;&gt;&lt;/option&gt;
             &lt;option value=&quot;HELLO&quot;&gt;&lt;/option&gt;
           &lt;/select&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-3.4" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-3.4" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3.4">
-            <span class="cui-styleguide__title__ref">
-                1.3.4
-            </span>
-            Radio
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3.4">
+                <span class="cui-styleguide__title__ref">
+                    1.3.4
+                </span>
+                Radio
+              </a>
+            </h3>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <fieldset class="cui-radio__fieldset">
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <fieldset class="cui-radio__fieldset">
   <legend class="cui-radio__legend">Accessible description for radio button collection</legend>
   <div class="cui-radio__container">
     <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
@@ -437,11 +438,11 @@
     <label class="cui-radio__label" for="radio-choice-2">Choice 2</label>
   </div>
 </fieldset>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;fieldset class=&quot;cui-radio__fieldset&quot;&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;fieldset class=&quot;cui-radio__fieldset&quot;&gt;
   &lt;legend class=&quot;cui-radio__legend&quot;&gt;Accessible description for radio button collection&lt;/legend&gt;
   &lt;div class=&quot;cui-radio__container&quot;&gt;
     &lt;input class=&quot;cui-radio&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-choice-1&quot; value=&quot;choice-1&quot; /&gt;
@@ -452,34 +453,34 @@
     &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-choice-2&quot;&gt;Choice 2&lt;/label&gt;
   &lt;/div&gt;
 &lt;/fieldset&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-3.5" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-3.5" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-3.5">
-            <span class="cui-styleguide__title__ref">
-                1.3.5
-            </span>
-            Checkbox
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-3.5">
+                <span class="cui-styleguide__title__ref">
+                    1.3.5
+                </span>
+                Checkbox
+              </a>
+            </h3>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <fieldset>
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <fieldset>
   <legend class="cui-checkbox__legend">Accessible description for checkbox collection</legend>
   <ul class="cui-checkbox__group">
     <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-1"/><label class="cui-checkbox__label" for="option-1">Option 1</label></li>
@@ -488,11 +489,11 @@
     <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-4"/><label class="cui-checkbox__label" for="option-4">Option 4</label></li>
   </ul>
 </fieldset>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;fieldset&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;fieldset&gt;
   &lt;legend class=&quot;cui-checkbox__legend&quot;&gt;Accessible description for checkbox collection&lt;/legend&gt;
   &lt;ul class=&quot;cui-checkbox__group&quot;&gt;
     &lt;li class=&quot;cui-checkbox__container&quot;&gt;&lt;input class=&quot;cui-checkbox&quot; type=&quot;checkbox&quot; id=&quot;option-1&quot;/&gt;&lt;label class=&quot;cui-checkbox__label&quot; for=&quot;option-1&quot;&gt;Option 1&lt;/label&gt;&lt;/li&gt;
@@ -501,233 +502,229 @@
     &lt;li class=&quot;cui-checkbox__container&quot;&gt;&lt;input class=&quot;cui-checkbox&quot; type=&quot;checkbox&quot; id=&quot;option-4&quot;/&gt;&lt;label class=&quot;cui-checkbox__label&quot; for=&quot;option-4&quot;&gt;Option 4&lt;/label&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/fieldset&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-4" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-4" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-4">
-            <span class="cui-styleguide__title__ref">
-                1.4
-            </span>
-            Colors
-          </a>
-        </h2>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-4">
+                <span class="cui-styleguide__title__ref">
+                    1.4
+                </span>
+                Colors
+              </a>
+            </h2>
 
-      </div>
-
-      <div class="cui-tile__body">
-        <div class="cui-styleguide__description-container">
-          <span class="cui-styleguide__description">DESCRIPTION: </span><p>A color palette for the Covisint Next Gen UI Framework</p>
-
-        </div>
-      
-
-        </div>
-        </section>
-        <section id="kssref-1-4.1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
-
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-4.1">
-            <span class="cui-styleguide__title__ref">
-                1.4.1
-            </span>
-            Primary Colors
-          </a>
-        </h3>
-
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--light">.cui-primary-colors--light</div>
+
+          <div class="cui-tile__body">
+            <div class="cui-styleguide__description-container">
+              <span class="cui-styleguide__description">DESCRIPTION: </span><p>A color palette for the Covisint Next Gen UI Framework</p>
+
+            </div>
+          
+
+            </div>
+            </section>
+            <section id="kssref-1-4.1" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
+
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-4.1">
+                <span class="cui-styleguide__title__ref">
+                    1.4.1
+                </span>
+                Primary Colors
+              </a>
+            </h3>
+
+          </div>
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--light">.cui-primary-colors--light</div>
         <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-light">.cui-primary-colors--medium-light</div>
         <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium">.cui-primary-colors--medium</div>
         <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-dark">.cui-primary-colors--medium-dark</div>
         <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--dark">.cui-primary-colors--dark</div>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--light&quot;&gt;.cui-primary-colors--light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-light&quot;&gt;.cui-primary-colors--medium-light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium&quot;&gt;.cui-primary-colors--medium&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-dark&quot;&gt;.cui-primary-colors--medium-dark&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-primary-colors cui-primary-colors--dark&quot;&gt;.cui-primary-colors--dark&lt;/div&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-4.2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-4.2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-3">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-4.2">
-            <span class="cui-styleguide__title__ref">
-                1.4.2
-            </span>
-            Secondary Colors
-          </a>
-        </h3>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h3 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-3">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-4.2">
+                <span class="cui-styleguide__title__ref">
+                    1.4.2
+                </span>
+                Secondary Colors
+              </a>
+            </h3>
 
-      </div>
-
-      <div class="cui-tile__body">
-      
-
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
           </div>
-          <div class="cui-styleguide-modifier__example">
-            <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light">.cui-secondary-colors--light</div>
+
+          <div class="cui-tile__body">
+          
+
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light">.cui-secondary-colors--light</div>
         <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium-light">.cui-secondary-colors--medium-light</div>
         <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium">.cui-secondary-colors--medium</div>
         <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark">.cui-secondary-colors--dark</div>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light&quot;&gt;.cui-secondary-colors--light&lt;/div&gt;
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light&quot;&gt;.cui-secondary-colors--light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium-light&quot;&gt;.cui-secondary-colors--medium-light&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium&quot;&gt;.cui-secondary-colors--medium&lt;/div&gt;
         &lt;div class=&quot;cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark&quot;&gt;.cui-secondary-colors--dark&lt;/div&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-5" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-5" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-5">
-            <span class="cui-styleguide__title__ref">
-                1.5
-            </span>
-            Logos
-          </a>
-        </h2>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-5">
+                <span class="cui-styleguide__title__ref">
+                    1.5
+                </span>
+                Logos
+              </a>
+            </h2>
 
-      </div>
+          </div>
 
-      <div class="cui-tile__body">
-      
+          <div class="cui-tile__body">
+          
 
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-        <section id="kssref-1-6" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
-      
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </div>
+            </div>
+            </section>
+            <section id="kssref-1-6" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+          
 
-      <div class="cui-styleguide__style">
-        <div clas="cui-tile__title"></div>
-        <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
-          <a class="cui-styleguide__title__permalink" href="#kssref-1-6">
-            <span class="cui-styleguide__title__ref">
-                1.6
-            </span>
-            Buttons
-          </a>
-        </h2>
+          <div class="cui-styleguide__style">
+            <div clas="cui-tile__title"></div>
+            <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+              <a class="cui-styleguide__title__permalink" href="#kssref-1-6">
+                <span class="cui-styleguide__title__ref">
+                    1.6
+                </span>
+                Buttons
+              </a>
+            </h2>
 
-      </div>
+          </div>
 
-      <div class="cui-tile__body">
-        <div class="cui-styleguide__description-container">
-          <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for button elements</p>
+          <div class="cui-tile__body">
+            <div class="cui-styleguide__description-container">
+              <span class="cui-styleguide__description">DESCRIPTION: </span><p>Styles for button elements</p>
 
-        </div>
-      
+            </div>
+          
 
-        <div class="cui-styleguide-modifier__wrapper">
-          <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-            <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
-          </div>
-          <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
-            Default styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <button class="cui-button [modifier class]">Button</button>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            :focus
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Focus styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <button class="cui-button pseudo-class-focus">Button</button>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            :active
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Selected styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <button class="cui-button pseudo-class-active">Button</button>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            .cui-button--error
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Error styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <button class="cui-button cui-button--error">Button</button>
-          </div>
-          <div class="cui-styleguide-modifier__name cui-styleguide__style">
-            .cui-button--error:active
-          </div>
-          <div class="cui-styleguide-modifier__description cui-styleguide__style">
-            Error selected styling
-          </div>
-          <div class="cui-styleguide-modifier__example">
-            <button class="cui-button cui-button--error pseudo-class-active">Button</button>
-          </div>
-        </div>
-        <div class="cui-styleguide__markup-title">CODE:</div>
-        <div class="cui-styleguide__markup-container cui-styleguide__style">
-          <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;cui-button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
-        </div>
-        </div>
-        </section>
-  </article>
+            <div class="cui-styleguide-modifier__wrapper">
+              <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+              </div>
+              <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
+                Default styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <button class="cui-button [modifier class]">Button</button>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                :focus
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Focus styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <button class="cui-button pseudo-class-focus">Button</button>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                :active
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Selected styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <button class="cui-button pseudo-class-active">Button</button>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                .cui-button--error
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Error styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <button class="cui-button cui-button--error">Button</button>
+              </div>
+              <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                .cui-button--error:active
+              </div>
+              <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                Error selected styling
+              </div>
+              <div class="cui-styleguide-modifier__example">
+                <button class="cui-button cui-button--error pseudo-class-active">Button</button>
+              </div>
+            </div>
+            <div class="cui-styleguide__markup-title">CODE:</div>
+            <div class="cui-styleguide__markup-container cui-styleguide__style">
+              <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;button class=&quot;cui-button [modifier class]&quot;&gt;Button&lt;/button&gt;</code></pre>
+            </div>
+            </div>
+            </section>
+      </article>
+    </div>
+  </div>
 </div>
 
-
 <!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
-<script>
-  prettyPrint();
-</script>
 <script src="public/scripts/cui-scripts.js"></script>
 
 
