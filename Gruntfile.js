@@ -3,12 +3,12 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: ['source/scss/**/*.scss'],
-        tasks: ['concat:dist','sass','postcss','copy:min','copy:build']
+        files: ['source/scss/**/*.scss','source/scripts/*.js'],
+        tasks: ['concat:dist','sass','postcss','copy:min','copy:build','concat:js','copy:js']
       },
       js: {
         files: ['source/scripts/*.js'],
-        tasks: ['copy:build']
+        tasks: ['concat:js','copy:js']
       },
       build:{
         files: 'styleguide/**/*',
@@ -23,6 +23,10 @@ module.exports = function(grunt) {
       specificity: {
         src: ['source/cui-wrapper.intro','.tmp/styles.css','source/cui-wrapper.outro'],
         dest: '.tmp/styles.specific.css'
+      },
+      js: {
+        src: ['bower_components/snapjs/snap.min.js','source/scripts/*.js'],
+        dest: '.tmp/scripts/cui-scripts.js'
       }
     },
     sass:{
@@ -54,7 +58,7 @@ module.exports = function(grunt) {
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','styles.specific.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css','scripts/*.js'],
+          src: ['styles.min.css','styles.specific.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
           dest: 'styleguide/public/',
           expand: true
         }]
@@ -64,6 +68,14 @@ module.exports = function(grunt) {
           cwd: '.tmp/',
           src: ['styles.min.css','styles.specific.min.css'],
           dest: 'source/',
+          expand: true
+        }]
+      },
+      js: {
+        files: [{
+          cwd: '.tmp',
+          src: ['scripts/*.js'],
+          dest: 'styleguide/public',
           expand: true
         }]
       }
@@ -103,5 +115,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
-  grunt.registerTask('build', ['sass','concat:specificity','postcss:dist','postcss:specificity','copy:min', 'copy:build']);
+  grunt.registerTask('build', ['sass','concat:specificity','postcss:dist','postcss:specificity','copy:min', 'copy:build', 'copy:js']);
 }
