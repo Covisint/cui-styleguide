@@ -20,11 +20,13 @@
 
 //SNAP CSS
 
+.snap-content,
 snap-content {
   background: $secondary-background;
   padding: 0;
 }
 
+.snap-drawer,
 snap-drawer {
   background: $cui-primary-colors--medium;
   min-height:100vh;
