@@ -28,7 +28,7 @@
         {{#eachRoot}}
           <li class="cui-off-canvas__list-item">
             <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
-              <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
+              <span class="cui-styleguide__list-item-name">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
               ><span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
@@ -68,7 +68,7 @@
         <ul class="cui-off-canvas__list">
           <li class="cui-off-canvas__list-item">
             <a class="cui-off-canvas__list-item-link" href="./">
-              <span class="cui-styleguide__nav__name">Overview</span>
+              <span class="cui-styleguide__list-item-name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
