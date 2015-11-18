@@ -1,0 +1,79 @@
+/*
+Tables
+
+Markup:
+<table class="cui-table cui-table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Document Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="">
+        <td scope="row">Declaration of Independence</td>
+        <td>Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
+        <td>1776</td>
+      </tr>
+      <tr>
+        <td scope="row">Bill of Rights</td>
+        <td>The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
+        <td>1791</td>
+      </tr>
+      <tr>
+        <td scope="row">Declaration of Sentiments</td>
+        <td>MadeA document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
+        <td>1848</td>
+      </tr>
+      <tr>
+        <td scope="row">Emancipation Proclamation</td>
+        <td>An executive order granting freedom to slaves in designated southern states.</td>
+        <td>1863</td>
+      </tr>      
+    </tbody>
+  </table>
+
+Styleguide 1.7
+
+*/
+
+.cui-table {
+  border-spacing: 0;
+  margin: 2em 0;
+  min-width: 100%;
+
+  thead {
+    tr {
+      background-color: $cui-greyscale--medium-light;
+    }
+
+    th {
+      text-align: left;
+    }
+  }
+
+  th, td {
+    border: 1px solid $cui-greyscale--medium-light;
+    padding: 1.5rem;
+  }
+}
+
+.cui-table--borderless {
+  thead {
+    tr {
+      background-color: transparent;
+
+      th {
+        border-top: 0;
+      }
+    }
+  }
+
+  th, td {
+    border: {
+      left: 0;
+      right: 0;
+    }
+  }
+}
