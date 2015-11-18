@@ -1,16 +1,15 @@
-.off-canvas {
+.cui-off-canvas {
   @extend .cui-primary-colors--medium;
 }
 
-.off-canvas__list {
+.cui-off-canvas__list {
   list-style-type: none;
   padding: 0;
 }
 
-.off-canvas__list-item {
+.cui-off-canvas__list-item {
   @extend .cui-primary-colors--medium-dark;
   display: block;
-  padding: 10px 20px;
   margin: 10px 0;
   cursor: pointer;
   a {
@@ -19,7 +18,7 @@
   }
 }
 
-.off-canvas__option {
+.cui-off-canvas__option {
   @extend .cui-primary-colors--medium-dark;
   color:white;
   cursor: pointer;
@@ -34,4 +33,23 @@
   &:first-of-type {
     margin-top: 30px;
   }
+}
+
+.cui-off-canvas__list-item-link {
+  display: block;
+  min-height: em(30);
+  padding-left: em(30);
+  padding-top: em(10);
+}
+
+.cui-off-canvas__list--child {
+  @extend .cui-primary-colors--medium;
+  @extend .cui-ul;
+  padding-left: em(40);
+  padding-top: em(10);
+}
+
+.cui-off-canvas__list-item--child {
+  font-weight: 500;
+  padding: em(5px) 0;
 }

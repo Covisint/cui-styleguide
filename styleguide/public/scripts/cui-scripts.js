@@ -43,7 +43,7 @@ var snapMenu = new Snap({
     disable: 'right'
 });
 
-var menuToggle = document.querySelector('.menu-toggle')
+var menuToggle = document.querySelector('.cui-menu__toggle-button-container')
 
 menuToggle.addEventListener('click', function() {
 
