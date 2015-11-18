@@ -18,24 +18,24 @@
 <div class="cui-wrapper">
   <div class="snap-drawers">
     <div class="snap-drawer">
-      <nav id="desktop-menu" class="cui-styleguide__nav off-canvas">
-        <ul class="cui-styleguide__nav__menu off-canvas__list">
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
-            <a href="./">
+      <nav id="desktop-menu" class="cui-off-canvas">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="./">
               <span class="cui-styleguide__nav__name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-            <a href="section-{{referenceURI}}.html">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
               <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
               ><span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-styleguide__nav-menu--child">
+            <ul class="cui-off-canvas__list--child">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <li class="cui-off-canvas__list-item--child">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
                     <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span
                     ><span class="cui-styleguide__nav__name">{{header}}</span>
@@ -54,8 +54,8 @@
   <snap-content class="snap-content">
     <header class="cui-header">
       <div class="cui-header__top">
-        <div class="menu-toggle active" snap-toggle="left" onclick="Nav.navToggle()">
-          <div class="menu-toggle--button"></div>
+        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+          <button class="cui-menu__toggle-button"></button>
         </div>
         <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
     </header>
@@ -64,24 +64,24 @@
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title">{{options.title}}</h1>
           </header> -->
-      <nav id="desktop-menu" class="cui-styleguide__nav off-canvas desktop-menu">
-        <ul class="cui-styleguide__nav__menu off-canvas__list">
-          <li class="cui-styleguide__nav__menu-item off-canvas__list-item">
-            <a href="./">
+      <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="./">
               <span class="cui-styleguide__nav__name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-styleguide__nav-menu-item off-canvas__list-item">
-            <a href="section-{{referenceURI}}.html">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
               <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
               ><span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-styleguide__nav-menu--child">
+            <ul class="cui-off-canvas__list--child">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-styleguide__nav__menu-item off-canvas__list-item--child">
+                <li class="cui-off-canvas__list-item--child">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
                     <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span
                     ><span class="cui-styleguide__nav__name">{{header}}</span>
