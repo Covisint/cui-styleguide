@@ -42,11 +42,20 @@
   padding-top: em(10);
 }
 
+.cui-off-canvas__list-item a:hover,
+.cui-off-canvas__list-item.active a {
+  color: $cui-secondary-colors--medium;
+}
+
 .cui-off-canvas__list--child {
   @extend .cui-primary-colors--medium;
   @extend .cui-ul;
   padding-left: em(40);
   padding-top: em(10);
+  & a:hover,
+  &.active a {
+    color: $cui-primary-colors--light;
+  }
 }
 
 .cui-off-canvas__list-item--child {
