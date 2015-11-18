@@ -22,11 +22,12 @@ var Nav = (function () {
   var cache = new Array();
   cache.push(document.querySelector('.desktop-menu'));
   cache.push(document.querySelector('.cui-nav__content-wrapper'));
-  cache.push(document.querySelector('.menu-toggle'));
+  cache.push(document.querySelector('.cui-menu__toggle-button-container'));
 
   function toggleDesktopNav() {
     cache[0].classList.toggle('desktop-menu--collapse');
     cache[1].classList.toggle('desktop-menu--collapse');
+    cache[2].classList.toggle('active');
   };
 
   return {

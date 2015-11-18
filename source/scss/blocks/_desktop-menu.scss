@@ -41,50 +41,68 @@
 
 // MENU TOGGLE
 
-.menu-toggle--button {
-    background: $cui-primary-colors--light;
+.menu-toggle--button,
+.cui-menu__toggle-button {
+    background: $cui-primary-colors--medium-light;
+    border: none;
     width: 40px;
     height: 7px;
-    position:relative;
-    transition:all 200ms ease-in-out;
+    position: relative;
+    transition: background 200ms ease-in-out;
     
     &:before {
-        background: $cui-primary-colors--light;
-        content:'';
-        position:absolute;
-        width:40px;
-        height:7px;
-        top:-12px;
+        background: $cui-primary-colors--medium-light;
+        content: '';
+        height: 7px;
+        left: 0;
+        position: absolute;
+        width: 40px;
+        top: -12px;
+        transition: background 200ms ease-in-out;
     }
 
     &:after {
-        background: $cui-primary-colors--light;
+        background: $cui-primary-colors--medium-light;
         content:'';
-        position:absolute;
-        width:40px;
-        height:7px;
-        bottom:-12px;
+        bottom: -12px;
+        height: 7px;
+        left: 0;
+        position: absolute;
+        width: 40px;
+        transition: background 200ms ease-in-out;
     }
 }
 
+.cui-menu__toggle-button:focus {
+  box-shadow: 0 3px 3px rgba(100, 100, 100, 0.6);
+  outline: 0;
 
-.menu-toggle {
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    display:flex;
-    align-items:center;
-    &.active {
-        .menu-toggle--button{
-            background: $cui-primary-colors--medium;
+  &:before,
+  &:after {
+    box-shadow: 0 3px 3px rgba(100, 100, 100, 0.6);
+    outline: 0;
+  }
+}
 
-            &:before{
-                background: $cui-primary-colors--medium;
-            }
+.menu-toggle,
+.cui-menu__toggle-button-container {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  &.active {
+    .menu-toggle--button,
+    .cui-menu__toggle-button {
+      background: $cui-primary-colors--medium;
 
-            &:after{
-                background: $cui-primary-colors--medium;
-            }
-        }
+      &:before{
+        background: $cui-primary-colors--medium;
+      }
+
+      &:after{
+        background: $cui-primary-colors--medium;
+      }
     }
+  }
 }
