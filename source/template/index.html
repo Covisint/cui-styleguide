@@ -144,6 +144,9 @@
             </div>
 
             <div class="cui-tile__body">
+            {{#ifReference "2.6"}}
+              <iframe src="public/off-canvas-iframe.html" style="width:100%;height:500px;border:1px solid #eee"></iframe>
+            {{else}}
             {{#if description}}
               <div class="cui-styleguide__description-container">
                 <span class="cui-styleguide__description">DESCRIPTION: </span>{{{description}}}
@@ -182,6 +185,7 @@
               </div>
             {{/if}}
               </div>
+            {{/ifReference}}
             {{/ifDepth}}
             {{#ifDepth 1}}
               </div>
