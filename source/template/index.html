@@ -18,7 +18,7 @@
 <div class="cui-wrapper">
   <div class="snap-drawers">
     <div class="snap-drawer">
-      <nav id="desktop-menu" class="cui-off-canvas">
+      <nav class="cui-off-canvas">
         <ul class="cui-off-canvas__list">
           <li class="cui-off-canvas__list-item">
             <a class="cui-off-canvas__list-item-link" href="./">
@@ -59,12 +59,12 @@
         </div>
         <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
     </header>
-    <div class="cui-nav__content-wrapper">
+    <div class="cui-menu__content-wrapper">
       <div class="cui-styleguide__main-container">
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title">{{options.title}}</h1>
           </header> -->
-      <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
+      <nav class="cui-off-canvas desktop-menu">
         <ul class="cui-off-canvas__list">
           <li class="cui-off-canvas__list-item">
             <a class="cui-off-canvas__list-item-link" href="./">
@@ -144,6 +144,81 @@
             </div>
 
             <div class="cui-tile__body">
+            {{#ifReference "2.6"}}
+                <div class="cui-styleguide__markup-title">EXAMPLE: </div>
+                <iframe src="public/off-canvas-iframe.html" style="width:100%;height:500px;border:1px solid #eee"></iframe>
+
+                <div class="cui-styleguide__description">DESCRIPTION: </div>
+                <p>The off canvas menu component requires two menus to be implemented in markup:</p>
+                <ol>
+                  <li>The mobile menu wrapped in Snap.js specific classes </li>
+                  <li>The desktop menu wrapped in with the .cui-off-canvas class</li>
+                </ol>
+                <p>The markup example below contains a few very important elements with classes that are necessary in order to enable the off canvas' functionality</p>
+                <ul>
+                  <li><strong>.snap-drawers</strong> - This is where you put your markup for your mobile off-canvas menu</li>
+                  <li><strong>.snap-drawer</strong> - in our case, we use a single drawer</li>
+                  <li><strong>.cui-off-canvas</strong> - this block-level class, its elements and modifiers are used to apply style to the navigation menu</li>
+                  <li><strong>the snap-content element with .snap-content</strong> - this is where the content of your page should go that should be "pushed" when the mobile menu is expanded, including your header </li>
+                  <li><strong>.cui-menu__toggle-button-container</strong> - applied to the button used to open and close the menu</li>
+                  <li><strong>.cui-menu__content-wrapper</strong> - this div wraps your main content that should be shifted on the desktop. Should not contain items you don't want shifted, like your header element contents</li>
+                  <li><strong>.desktop-menu</strong> - applied to the nav element for your desktop menu</li>
+                </ul>
+
+                <p>In addition to these items, the small but necessary Javascript snippet located below also must be included at the bottom of your page</p>
+
+                <div class="cui-styleguide__markup-container cui-styleguide__style">
+                </div>
+
+                <div class="cui-styleguide__markup-title">HTML: </div>
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+
+                <div class="cui-styleguide__markup-title">JAVASCRIPT: </div>
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html">
+                  <code data-language="html">
+var Nav = (function () {
+
+var cache = new Array();
+cache.push(document.querySelector('.desktop-menu'));
+cache.push(document.querySelector('.cui-menu__content-wrapper'));
+cache.push(document.querySelector('.cui-menu__toggle-button-container'));
+
+function toggleDesktopNav() {
+  cache[0].classList.toggle('desktop-menu--collapse');
+  cache[1].classList.toggle('desktop-menu--collapse');
+  cache[2].classList.toggle('active');
+};
+
+return {
+  navToggle: toggleDesktopNav
+};
+
+}) ();
+
+// Snap.js Mobile Navigation
+
+var snapMenu = new Snap({
+    element: document.querySelector('.snap-content'),
+    disable: 'right'
+});
+
+var menuToggle = document.querySelector('.cui-menu__toggle-button-container')
+
+menuToggle.addEventListener('click', function() {
+
+    if (snapMenu.state().state == "left") {
+        snapMenu.close();
+    } else {
+        snapMenu.open('left');
+    }
+
+});
+
+                  </code>
+                </pre>
+              </div>
+
+            {{else}}
             {{#if description}}
               <div class="cui-styleguide__description-container">
                 <span class="cui-styleguide__description">DESCRIPTION: </span>{{{description}}}
@@ -182,6 +257,7 @@
               </div>
             {{/if}}
               </div>
+            {{/ifReference}}
             {{/ifDepth}}
             {{#ifDepth 1}}
               </div>

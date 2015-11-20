@@ -9,7 +9,7 @@ var Nav = (function () {
 
   var cache = new Array();
   cache.push(document.querySelector('.desktop-menu'));
-  cache.push(document.querySelector('.cui-nav__content-wrapper'));
+  cache.push(document.querySelector('.cui-menu__content-wrapper'));
   cache.push(document.querySelector('.cui-menu__toggle-button-container'));
 
   function toggleDesktopNav() {

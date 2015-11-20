@@ -58,7 +58,13 @@ module.exports = function(grunt) {
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','styles.specific.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
+          src: ['styles.min.css',
+          'styles.specific.min.css',
+          'img/svg-out.svg',
+          'img/select-arrows.svg',
+          'cui-styleguide-styles.css',
+          'off-canvas-iframe.html'
+          ],
           dest: 'styleguide/public/',
           expand: true
         }]
