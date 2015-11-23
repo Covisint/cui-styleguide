@@ -1,3 +1,6 @@
+@import 'scss/vendor/bourbon/bourbon';
+@import 'scss/vendor/neat/neat';
+
 html {
   font-size: 16px;
 }
@@ -45,11 +48,12 @@ html {
 }
 
 .cui-styleguide__main {
+  @include outer-container(95%);
   background-color: #dfe9ee;
   flex: 1;
   min-height: 1000px;
   @media screen and (min-width: 999px) {
-    padding: 0 10%;
+    @include outer-container(80%);
   }
 }
 
