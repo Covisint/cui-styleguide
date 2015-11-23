@@ -38,6 +38,9 @@ html {
   background-color: #dfe9ee;
   flex: 1;
   min-height: 1000px; }
+  @media screen and (min-width: 999px) {
+    .cui-styleguide__main {
+      padding: 0 10%; } }
 
 .cui-styleguide__section.cui-tile {
   margin: 50px auto; }
