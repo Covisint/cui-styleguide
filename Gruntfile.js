@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         dest: 'source/styles.scss'
       },
       specificity: {
-        src: ['source/cui-wrapper.intro','.tmp/styles.css','source/cui-wrapper.outro'],
-        dest: '.tmp/styles.specific.css'
+        src: ['source/cui-wrapper.intro','source/styles.scss','source/cui-wrapper.outro'],
+        dest: 'source/styles.specific.scss'
       },
       js: {
         src: ['bower_components/snapjs/snap.min.js','source/scripts/*.js'],
@@ -36,13 +36,18 @@ module.exports = function(grunt) {
           'source/cui-styleguide-styles.css': 'source/cui-styleguide-styles.scss'
         }
       },
+      specificity: {
+        files: {
+          '.tmp/styles.specific.css':'source/styles.specific.scss'
+        }
+      }
     },
     postcss: {
       options: {
         map: false,
         processors: [
           require('autoprefixer')({browsers: 'last 2 versions'}),
-          require('cssnano')()
+          require('cssnano')({discardComments: 'true'})
         ]
       },
       dist: {
@@ -130,8 +135,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['browserSync','watch:css','watch:js','watch:md']);
   grunt.registerTask('build', [
-    'sass',
     'concat:specificity',
+    'sass',
     'postcss:dist',
     'postcss:specificity',
     'copy:min', 
