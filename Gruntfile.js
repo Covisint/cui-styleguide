@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: ['source/scss/**/*.scss','source/scripts/*.js'],
-        tasks: ['concat:dist','sass','postcss','copy:min','copy:build','concat:js','copy:js']
+        files: ['source/scss/**/*.scss','source/scripts/*.js','README.md'],
+        tasks: ['concat:dist','sass','postcss','copy:min','copy:build','concat:js','copy:js','copy:md']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -84,6 +84,14 @@ module.exports = function(grunt) {
           dest: 'styleguide/public',
           expand: true
         }]
+      },
+      md: {
+        files: [{
+          cwd: '.',
+          src: 'README.md',
+          dest: 'source/',
+          expand: true
+        }]
       }
     },
     browserSync: {
@@ -120,6 +128,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
-  grunt.registerTask('build', ['sass','concat:specificity','postcss:dist','postcss:specificity','copy:min', 'copy:build', 'copy:js']);
+  grunt.registerTask('default', ['browserSync','watch:css','watch:js','watch:md']);
+  grunt.registerTask('build', [
+    'sass',
+    'concat:specificity',
+    'postcss:dist',
+    'postcss:specificity',
+    'copy:min', 
+    'copy:build', 
+    'copy:js'
+    ]);
 }
