@@ -80,9 +80,17 @@
 
         <article role="main" class="cui-styleguide__main">
           <div id="kssref-0" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
-             <h1 id="covisint-next-gen-ui-framework">Covisint Next Gen UI Framework</h1>
-<p>This file, homepage.md, is where a overall description of what this framework is, who it&#39;s for, and a general overview of the documentation</p>
-<p>This uses the Node.js implementation of <a href="https://github.com/kneath/kss">Knyle Style Sheets</a> (KSS), &quot;a documentation syntax for CSS&quot; that&#39;s intended to have syntax readable by humans <em>and</em> machines. Hence, the kss-node software can be used to create a &quot;living style guide&quot;.</p>
+             <h1 id="cui-styleguide">cui-styleguide</h1>
+<p>Digital Style Guide for Core CUI Elements</p>
+<h2 id="assets">assets</h2>
+<p>There are two css files one can choose to include in their projects in order to access cui-styleguide styles:</p>
+<ul>
+<li><p><strong>styles.min.css</strong>: This file is ideal for use in projects that contain no other style frameworks (ie. Bootstrap, AUI, etc.). The class names are namespaced and written with a low specificity</p>
+</li>
+<li><p><strong>styles.specific.min.css</strong>: This file is ideal for use in projects that contain another css framework. The styles are wrapped in an ID (#cui-wrapper, which should be added to the body element in your markup), which gives the CUI styles an extra level of specificity. This ensures CUI styles do not lose a specificity battle with other CSS frameworks used in a project.</p>
+</li>
+</ul>
+<p>In addition to these two CSS assets, one can access scss files. This is ideal if a user wants to @import the base files (which include vars), @import their own variable overrides and then @import the styleguide elements and blocks.</p>
 
           </div>
         </article>
