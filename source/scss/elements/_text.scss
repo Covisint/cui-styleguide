@@ -56,7 +56,10 @@ p {
   color: #429DD1;
 }
 
-.cui-ul, .cui-ol {
+ul,
+ol,
+.cui-ul, 
+.cui-ol {
   list-style-type: none;
   padding-left: 0;
   margin: 0;

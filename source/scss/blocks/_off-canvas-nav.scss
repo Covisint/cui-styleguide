@@ -160,11 +160,6 @@ Styleguide 2.6
   @extend .cui-primary-colors--medium;
 }
 
-.cui-off-canvas__list {
-  list-style-type: none;
-  padding: 0;
-}
-
 .cui-off-canvas__list-item {
   @extend .cui-primary-colors--medium-dark;
   display: block;
