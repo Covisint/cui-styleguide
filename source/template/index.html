@@ -236,9 +236,15 @@ menuToggle.addEventListener('click', function() {
                   Default styling
                 </div>
               {{/if}}
+              {{#ifReference  "2.8"}}
+                <div class="cui-styleguide-modifier__example--with-bg">
+                  {{{markup}}}
+                </div>
+              {{else}}
                 <div class="cui-styleguide-modifier__example">
                   {{{markup}}}
                 </div>
+              {{/ifReference}}
               {{#eachModifier}}
                 <div class="cui-styleguide-modifier__name cui-styleguide__style">
                   {{name}}
