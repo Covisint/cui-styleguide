@@ -89,3 +89,7 @@ html {
 .cui-background,
 .cui-background--secondary {
   padding: 20px; }
+
+.cui-styleguide-modifier__example--with-bg {
+  background-color: #DEE9EE;
+  padding: 10px; }

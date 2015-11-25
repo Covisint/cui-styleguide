@@ -60,15 +60,27 @@ module.exports = function(grunt) {
       }
     },
     copy:{
+      bowerImg: {
+        files: [{
+          cwd: 'bower_components/cui-icons/dist',
+          src: [
+            'logos/logos-out.svg',
+            'icons/icons-out.svg'
+          ],
+          dest: 'source/img',
+          expand: true
+        }]
+      },
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css',
+          src: [
+          'styles.min.css',
           'styles.specific.min.css',
-          'img/svg-out.svg',
-          'img/select-arrows.svg',
+          'img/**/*.svg',
+          'img/**/*.png',
           'cui-styleguide-styles.css',
-          'off-canvas-iframe.html'
+          'off-canvas-iframe.html',
           ],
           dest: 'styleguide/public/',
           expand: true
@@ -139,7 +151,8 @@ module.exports = function(grunt) {
     'sass',
     'postcss:dist',
     'postcss:specificity',
-    'copy:min', 
+    'copy:min',
+    'copy:bowerImg', 
     'copy:build', 
     'copy:js'
     ]);
