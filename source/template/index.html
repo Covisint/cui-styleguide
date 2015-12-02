@@ -20,22 +20,22 @@
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="./">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="./">
               <span class="cui-styleguide__nav__name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="section-{{referenceURI}}.html">
               <!-- <span class="cui-styleguide__list-item-name">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
               <span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-off-canvas__list--child">
+            <ul class="cui-off-canvas__sub-section-list">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
                     <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
                     <span class="cui-styleguide__nav__name">{{header}}</span>
@@ -66,22 +66,22 @@
           </header> -->
       <nav class="cui-off-canvas desktop-menu">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="./">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="./">
               <span class="cui-styleguide__list-item-name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="section-{{referenceURI}}.html">
               <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
               <span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-off-canvas__list--child">
+            <ul class="cui-off-canvas__sub-section-list">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
                     <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
                     <span class="cui-styleguide__nav__name">{{header}}</span>
