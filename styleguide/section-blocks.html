@@ -562,7 +562,7 @@
                   <li><strong>.desktop-menu</strong> - applied to the nav element for your desktop menu</li>
                 </ul>
 
-                <p>In addition to these items, the small but necessary Javascript snippet located below also must be included at the bottom of your page</p>
+                <p>In addition to these items, please be sure to load the cui javascript dependency file, cui-scripts.js</p>
 
                 <div class="cui-styleguide__markup-container cui-styleguide__style">
                 </div>
@@ -689,49 +689,6 @@
         &lt;/ul&gt;
       &lt;/nav&gt;</code></pre>
 
-                <div class="cui-styleguide__markup-title">JAVASCRIPT: </div>
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html">
-                  <code data-language="html">
-var Nav = (function () {
-
-var cache = new Array();
-cache.push(document.querySelector('.desktop-menu'));
-cache.push(document.querySelector('.cui-menu__content-wrapper'));
-cache.push(document.querySelector('.cui-menu__toggle-button-container'));
-
-function toggleDesktopNav() {
-  cache[0].classList.toggle('desktop-menu--collapse');
-  cache[1].classList.toggle('desktop-menu--collapse');
-  cache[2].classList.toggle('active');
-};
-
-return {
-  navToggle: toggleDesktopNav
-};
-
-}) ();
-
-// Snap.js Mobile Navigation
-
-var snapMenu = new Snap({
-    element: document.querySelector('.snap-content'),
-    disable: 'right'
-});
-
-var menuToggle = document.querySelector('.cui-menu__toggle-button-container')
-
-menuToggle.addEventListener('click', function() {
-
-    if (snapMenu.state().state == "left") {
-        snapMenu.close();
-    } else {
-        snapMenu.open('left');
-    }
-
-});
-
-                  </code>
-                </pre>
               </div>
 
               </section>
