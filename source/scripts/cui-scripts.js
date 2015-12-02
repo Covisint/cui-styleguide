@@ -3,6 +3,20 @@ function toggle_visibility(Id) {
    e.style.opacity = ((e.style.opacity!='0') ? '0' : '1');
 }
 
+var Expandable = (function () {
+
+    function expandableToggle(elem) {
+      var parent = elem.parentNode;
+      parent.classList.toggle('expanded');
+    };
+
+
+  return {
+    toggleExpandable: expandableToggle
+  }
+
+}) ();
+
 // Desktop Navigation Functions
 
 var Nav = (function () {
