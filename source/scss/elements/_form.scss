@@ -2,7 +2,7 @@
 //
 // Styles for form elements
 // 
-// Styleguide 1.3
+// Styleguide Elements.Forms
 
 /*
 Inputs
@@ -14,7 +14,7 @@ Inputs
 
 Markup: <input type="text" class="cui-input {{modifier_class}} cui-input--full"/>
 
-Styleguide 1.3.1
+Styleguide Elements.Forms.Input
 */
 
 .cui-input {
@@ -118,7 +118,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 1.3.2
+Styleguide Elements.Forms.Tags
 */
 
 .cui-tags-input {
@@ -304,7 +304,7 @@ Markup: <select class="cui-input cui-input--full cui-select">
             <option value="HELLO"></option>
           </select>
 
-Styleguide 1.3.3
+Styleguide Elements.Forms.Dropdown
 */
 
 select.cui-select {
@@ -337,7 +337,7 @@ Markup:
   </div>
 </fieldset>
 
-Styleguide 1.3.4
+Styleguide Elements.Forms.Radio
 */
 
 .cui-radio {
@@ -393,7 +393,7 @@ Markup:
   </ul>
 </fieldset>
 
-Styleguide 1.3.5
+Styleguide Elements.Forms.Checkbox
 */
 
 .cui-checkbox {

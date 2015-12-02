@@ -20,25 +20,25 @@
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="./">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="./">
               <span class="cui-styleguide__nav__name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
-              <span class="cui-styleguide__list-item-name">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
-              ><span class="cui-styleguide__nav__name">{{header}}</span>
+          <li class="cui-off-canvas__section cui-off-canvas__section--active">
+            <a class="cui-off-canvas__section-link" href="section-{{referenceURI}}.html">
+              <!-- <span class="cui-styleguide__list-item-name">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
+              <span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-off-canvas__list--child">
+            <ul class="cui-off-canvas__sub-section-list">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
-                    <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span
-                    ><span class="cui-styleguide__nav__name">{{header}}</span>
+                    <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
+                    <span class="cui-styleguide__nav__name">{{header}}</span>
                   </a>
                 </li>
               {{/ifDepth}}
@@ -66,25 +66,25 @@
           </header> -->
       <nav class="cui-off-canvas desktop-menu">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="./">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="./">
               <span class="cui-styleguide__list-item-name">Overview</span>
             </a>
           </li>
         {{#eachRoot}}
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="section-{{referenceURI}}.html">
-              <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span
-              ><span class="cui-styleguide__nav__name">{{header}}</span>
+          <li class="cui-off-canvas__section cui-off-canvas__section--active">
+            <a class="cui-off-canvas__section-link" href="section-{{referenceURI}}.html">
+              <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
+              <span class="cui-styleguide__nav__name">{{header}}</span>
             </a>
           {{#ifReference ../rootName}}
-            <ul class="cui-off-canvas__list--child">
+            <ul class="cui-off-canvas__sub-section-list">
             {{#eachSection reference}}
               {{#ifDepth 2}}
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
-                    <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span
-                    ><span class="cui-styleguide__nav__name">{{header}}</span>
+                    <!-- <span class="cui-styleguide__nav__ref">{{#ifNumeric reference}} {{reference}} {{else}}{{autoincrement}}{{/ifNumeric}}</span> -->
+                    <span class="cui-styleguide__nav__name">{{header}}</span>
                   </a>
                 </li>
               {{/ifDepth}}
@@ -144,7 +144,7 @@
             </div>
 
             <div class="cui-tile__body">
-            {{#ifReference "2.6"}}
+            {{#ifReference "Blocks.Off-Canvas"}}
                 <div class="cui-styleguide__markup-title">EXAMPLE: </div>
                 <iframe src="public/off-canvas-iframe.html" style="width:100%;height:500px;border:1px solid #eee"></iframe>
 
@@ -165,7 +165,7 @@
                   <li><strong>.desktop-menu</strong> - applied to the nav element for your desktop menu</li>
                 </ul>
 
-                <p>In addition to these items, the small but necessary Javascript snippet located below also must be included at the bottom of your page</p>
+                <p>In addition to these items, please be sure to load the cui javascript dependency file, cui-scripts.js</p>
 
                 <div class="cui-styleguide__markup-container cui-styleguide__style">
                 </div>
@@ -173,49 +173,6 @@
                 <div class="cui-styleguide__markup-title">HTML: </div>
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
 
-                <div class="cui-styleguide__markup-title">JAVASCRIPT: </div>
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html">
-                  <code data-language="html">
-var Nav = (function () {
-
-var cache = new Array();
-cache.push(document.querySelector('.desktop-menu'));
-cache.push(document.querySelector('.cui-menu__content-wrapper'));
-cache.push(document.querySelector('.cui-menu__toggle-button-container'));
-
-function toggleDesktopNav() {
-  cache[0].classList.toggle('desktop-menu--collapse');
-  cache[1].classList.toggle('desktop-menu--collapse');
-  cache[2].classList.toggle('active');
-};
-
-return {
-  navToggle: toggleDesktopNav
-};
-
-}) ();
-
-// Snap.js Mobile Navigation
-
-var snapMenu = new Snap({
-    element: document.querySelector('.snap-content'),
-    disable: 'right'
-});
-
-var menuToggle = document.querySelector('.cui-menu__toggle-button-container')
-
-menuToggle.addEventListener('click', function() {
-
-    if (snapMenu.state().state == "left") {
-        snapMenu.close();
-    } else {
-        snapMenu.open('left');
-    }
-
-});
-
-                  </code>
-                </pre>
               </div>
 
             {{else}}
@@ -236,7 +193,7 @@ menuToggle.addEventListener('click', function() {
                   Default styling
                 </div>
               {{/if}}
-              {{#ifReference  "2.8"}}
+              {{#ifReference  "Blocks.Cards"}}
                 <div class="cui-styleguide-modifier__example--with-bg">
                   {{{markup}}}
                 </div>

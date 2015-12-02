@@ -7,47 +7,47 @@ Markup:
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__nav__name">Overview</span>
             </a>
           </li>
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
             </a>
           </li>
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
             </a>
-            <ul class="cui-off-canvas__list--child">
-                <li class="cui-off-canvas__list-item--child">
+            <ul class="cui-off-canvas__sub-section">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
@@ -73,47 +73,47 @@ Markup:
           </header> -->
       <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
         <ul class="cui-off-canvas__list">
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__list-item-name">Overview</span>
             </a>
           </li>
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
             </a>
           </li>
-          <li class="cui-off-canvas__list-item">
-            <a class="cui-off-canvas__list-item-link" href="#">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
               <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
             </a>
-            <ul class="cui-off-canvas__list--child">
-                <li class="cui-off-canvas__list-item--child">
+            <ul class="cui-off-canvas__sub-section">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
                 </li>
-                <li class="cui-off-canvas__list-item--child">
+                <li class="cui-off-canvas__sub-section">
                   <a href="#">
                     <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
                   </a>
@@ -153,14 +153,15 @@ Markup:
 </div>
 
 
-Styleguide 2.6
+Styleguide Blocks.Off-Canvas
 */
 
 .cui-off-canvas {
   @extend .cui-primary-colors--medium;
 }
 
-.cui-off-canvas__list-item {
+.cui-off-canvas__list-item,
+.cui-off-canvas__section {
   @extend .cui-primary-colors--medium-dark;
   display: block;
   margin: 10px 0;
@@ -188,7 +189,8 @@ Styleguide 2.6
   }
 }
 
-.cui-off-canvas__list-item-link {
+.cui-off-canvas__list-item-link,
+.cui-off-canvas__section-link {
   display: block;
   min-height: em(40);
   padding-left: em(40);
@@ -196,22 +198,34 @@ Styleguide 2.6
 }
 
 .cui-off-canvas__list-item a:hover,
-.cui-off-canvas__list-item.active a {
+.cui-off-canvas__list-item.active a,
+.cui-off-canvas__section a:hover,
+.cui-off-canvas__section.active a {
   color: $cui-secondary-colors--medium;
 }
 
-.cui-off-canvas__list--child {
+.cui-off-canvas__list--child,
+.cui-off-canvas__sub-section-list {
+  @extend %cui-sr-only;
   @extend .cui-primary-colors--medium;
   @extend .cui-ul;
   padding-left: em(40);
   padding-top: em(10);
+
   & a:hover,
   &.active a {
     color: $cui-primary-colors--light;
   }
+
+  .cui-off-canvas__list-item--active,
+  .cui-off-canvas__section--active & {
+    position: inherit;
+  }
+
 }
 
-.cui-off-canvas__list-item--child {
+.cui-off-canvas__list-item--child,
+.cui-off-canvas__sub-section {
   font-weight: 500;
   padding: em(5px) 0;
 }
