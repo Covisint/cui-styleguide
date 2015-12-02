@@ -34,7 +34,7 @@ snap-drawer {
 }
 
 .snap-drawer {
-  @media screen and (min-width:$snap-menu-breaking-point-1) {
+  @media screen and (min-width:$snap-menu-breaking-point) {
     display: none;
   }
 }
