@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="cui-styleguide__node">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="public/cui-styleguide-styles.css">
+<link rel="stylesheet" href="public/styles.min.css">
+
+</head>
+<body id="cui-styleguide__page-container">
+
+<div class="cui-wrapper">
+  <div class="snap-drawers">
+    <div class="snap-drawer">
+      <nav class="cui-off-canvas">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="./">
+              <span class="cui-styleguide__nav__name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-blocks.html">
+              <!-- <span class="cui-styleguide__list-item-name">1</span> -->
+              <span class="cui-styleguide__nav__name">Blocks</span>
+            </a>
+            <ul class="cui-off-canvas__list--child">
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-avatar">
+                    <!-- <span class="cui-styleguide__nav__ref">1.1</span> -->
+                    <span class="cui-styleguide__nav__name">Avatar</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-cards">
+                    <!-- <span class="cui-styleguide__nav__ref">1.2</span> -->
+                    <span class="cui-styleguide__nav__name">Card</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-container">
+                    <!-- <span class="cui-styleguide__nav__ref">1.3</span> -->
+                    <span class="cui-styleguide__nav__name">Container</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-expandable">
+                    <!-- <span class="cui-styleguide__nav__ref">1.4</span> -->
+                    <span class="cui-styleguide__nav__name">Expandable</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-header">
+                    <!-- <span class="cui-styleguide__nav__ref">1.5</span> -->
+                    <span class="cui-styleguide__nav__name">Header</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-off-canvas">
+                    <!-- <span class="cui-styleguide__nav__ref">1.6</span> -->
+                    <span class="cui-styleguide__nav__name">Off Canvas Nav</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-popover">
+                    <!-- <span class="cui-styleguide__nav__ref">1.7</span> -->
+                    <span class="cui-styleguide__nav__name">Popover</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-wizard">
+                    <!-- <span class="cui-styleguide__nav__ref">1.8</span> -->
+                    <span class="cui-styleguide__nav__name">CUI Wizard</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-elements.html">
+              <!-- <span class="cui-styleguide__list-item-name">2</span> -->
+              <span class="cui-styleguide__nav__name">Elements</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <snap-content class="snap-content">
+    <header class="cui-header">
+      <div class="cui-header__top">
+        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+          <button class="cui-menu__toggle-button"></button>
+        </div>
+        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
+    </header>
+    <div class="cui-menu__content-wrapper">
+      <div class="cui-styleguide__main-container">
+        <!--   <header class="cui-styleguide__header">
+            <h1 class="cui-styleguide__doc-title"></h1>
+          </header> -->
+      <nav class="cui-off-canvas desktop-menu">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="./">
+              <span class="cui-styleguide__list-item-name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-blocks.html">
+              <!-- <span class="cui-styleguide__nav__ref">1</span> -->
+              <span class="cui-styleguide__nav__name">Blocks</span>
+            </a>
+            <ul class="cui-off-canvas__list--child">
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-avatar">
+                    <!-- <span class="cui-styleguide__nav__ref">1.1</span> -->
+                    <span class="cui-styleguide__nav__name">Avatar</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-cards">
+                    <!-- <span class="cui-styleguide__nav__ref">1.2</span> -->
+                    <span class="cui-styleguide__nav__name">Card</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-container">
+                    <!-- <span class="cui-styleguide__nav__ref">1.3</span> -->
+                    <span class="cui-styleguide__nav__name">Container</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-expandable">
+                    <!-- <span class="cui-styleguide__nav__ref">1.4</span> -->
+                    <span class="cui-styleguide__nav__name">Expandable</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-header">
+                    <!-- <span class="cui-styleguide__nav__ref">1.5</span> -->
+                    <span class="cui-styleguide__nav__name">Header</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-off-canvas">
+                    <!-- <span class="cui-styleguide__nav__ref">1.6</span> -->
+                    <span class="cui-styleguide__nav__name">Off Canvas Nav</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-popover">
+                    <!-- <span class="cui-styleguide__nav__ref">1.7</span> -->
+                    <span class="cui-styleguide__nav__name">Popover</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="section-blocks.html#kssref-blocks-wizard">
+                    <!-- <span class="cui-styleguide__nav__ref">1.8</span> -->
+                    <span class="cui-styleguide__nav__name">CUI Wizard</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="section-elements.html">
+              <!-- <span class="cui-styleguide__nav__ref">2</span> -->
+              <span class="cui-styleguide__nav__name">Elements</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+        <article role="main" class="cui-styleguide__main">
+
+              <div     id="kssref-blocks" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-1">
+              </div>
+              <section id="kssref-blocks-avatar" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-avatar">
+                  <span class="cui-styleguide__title__ref">
+                      1.1
+                  </span>
+                  Avatar
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-header__user" onclick="toggle_visibility('cui-avatar__popup');">
+  <span class="cui-header__user--name">Bill Murray</span>
+  <div class="cui-chevron--left"></div>
+  <cui-avatar class="cui-header__user--avatar cui-avatar" >
+    <div id="cui-avatar__popup" class="cui-avatar--popup" style="opacity:0">
+      <span class="cui-avatar--popup__greet">
+        Hello, Bill!<br/>
+        <span class="small">Logged in as Bill Murray</span>
+      </span>
+      <span class="cui-avatar--popup__greet">You should login.<br/>
+      </span>
+      <hr/>
+    </div>
+  </cui-avatar>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-header__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-avatar__popup&#x27;);&quot;&gt;
+  &lt;span class=&quot;cui-header__user--name&quot;&gt;Bill Murray&lt;/span&gt;
+  &lt;div class=&quot;cui-chevron--left&quot;&gt;&lt;/div&gt;
+  &lt;cui-avatar class=&quot;cui-header__user--avatar cui-avatar&quot; &gt;
+    &lt;div id=&quot;cui-avatar__popup&quot; class=&quot;cui-avatar--popup&quot; style=&quot;opacity:0&quot;&gt;
+      &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;
+        Hello, Bill!&lt;br/&gt;
+        &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;You should login.&lt;br/&gt;
+      &lt;/span&gt;
+      &lt;hr/&gt;
+    &lt;/div&gt;
+  &lt;/cui-avatar&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-cards" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-cards">
+                  <span class="cui-styleguide__title__ref">
+                      1.2
+                  </span>
+                  Card
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-card__container">
+  <div class="cui-card">
+    <div class="cui-card__image-container">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="88px"
+         height="88px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+        <use class="cui-card__icon" xlink:href="public/img/icons/icons-out.svg#user"></use>
+      </svg>
+    </div>
+    <div class="cui-card__content">
+      <h3 class="cui-card__content-header">Header</h3>
+      <p>Some text that appropriately describes the context of this card. Some text that appropriately describes the context of this card.</p>
+    </div>
+    <button class="cui-card__button">Button</button>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-card__container&quot;&gt;
+  &lt;div class=&quot;cui-card&quot;&gt;
+    &lt;div class=&quot;cui-card__image-container&quot;&gt;
+      &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;88px&quot;
+         height=&quot;88px&quot; viewBox=&quot;0 0 48 48&quot; enable-background=&quot;new 0 0 48 48&quot; xml:space=&quot;preserve&quot;&gt;
+        &lt;use class=&quot;cui-card__icon&quot; xlink:href=&quot;public/img/icons/icons-out.svg#user&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui-card__content&quot;&gt;
+      &lt;h3 class=&quot;cui-card__content-header&quot;&gt;Header&lt;/h3&gt;
+      &lt;p&gt;Some text that appropriately describes the context of this card. Some text that appropriately describes the context of this card.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;cui-card__button&quot;&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-container" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-container">
+                  <span class="cui-styleguide__title__ref">
+                      1.3
+                  </span>
+                  Container
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-tile">
+    <div class="cui-tile__title">Container Title</div>
+    <div class="cui-tile__body">
+        <p>Container Body</p>
+    </div>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-tile&quot;&gt;
+    &lt;div class=&quot;cui-tile__title&quot;&gt;Container Title&lt;/div&gt;
+    &lt;div class=&quot;cui-tile__body&quot;&gt;
+        &lt;p&gt;Container Body&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-expandable" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-expandable">
+                  <span class="cui-styleguide__title__ref">
+                      1.4
+                  </span>
+                  Expandable
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-expandable expanded">
+  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+    Expandable Group #1
+    <span class="chevron">></span>
+  </div>
+  <ul class="cui-expandable__body">
+    <li class="cui-expandable__review-item">Revealed item</li>
+    <li class="cui-expandable__review-item">Revealed item</li>
+    <li class="cui-expandable__review-item">Revealed item</li>
+    <li class="cui-expandable__review-item">Revealed item</li>
+  </ul>
+</div>
+<div class="cui-expandable">
+  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+    Expandable Group #2
+    <span class="chevron">></span>
+  </div>
+  <ul class="cui-expandable__body">
+    <li class="cui-expandable__review-item">Hidden item</li>
+    <li class="cui-expandable__review-item">Hidden item</li>
+    <li class="cui-expandable__review-item">Hidden item</li>
+    <li class="cui-expandable__review-item">Hidden item</li>
+  </ul>
+</div>
+<div class="cui-expandable">
+  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+    Expandable Group #3
+    <span class="chevron">></span>
+  </div>
+  <ul class="cui-expandable__body">
+    <li class="cui-expandable__review-item">Another hidden item</li>
+    <li class="cui-expandable__review-item">Another hidden item</li>
+    <li class="cui-expandable__review-item">Another hidden item</li>
+    <li class="cui-expandable__review-item">Another hidden item</li>
+  </ul>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-expandable expanded&quot;&gt;
+  &lt;div class=&quot;cui-expandable__title&quot; onclick=&quot;Expandable.toggleExpandable(this)&quot;&gt;
+    Expandable Group #1
+    &lt;span class=&quot;chevron&quot;&gt;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;cui-expandable__body&quot;&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Revealed item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Revealed item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Revealed item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Revealed item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cui-expandable&quot;&gt;
+  &lt;div class=&quot;cui-expandable__title&quot; onclick=&quot;Expandable.toggleExpandable(this)&quot;&gt;
+    Expandable Group #2
+    &lt;span class=&quot;chevron&quot;&gt;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;cui-expandable__body&quot;&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Hidden item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cui-expandable&quot;&gt;
+  &lt;div class=&quot;cui-expandable__title&quot; onclick=&quot;Expandable.toggleExpandable(this)&quot;&gt;
+    Expandable Group #3
+    &lt;span class=&quot;chevron&quot;&gt;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;cui-expandable__body&quot;&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Another hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Another hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Another hidden item&lt;/li&gt;
+    &lt;li class=&quot;cui-expandable__review-item&quot;&gt;Another hidden item&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-header" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-header">
+                  <span class="cui-styleguide__title__ref">
+                      1.5
+                  </span>
+                  Header
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <header class="cui-header">
+          <div class="cui-header__top">
+            <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="public/img/svg-out.svg#covisint-logo"></use></svg>
+            <div class="cui-header__user" onclick="toggle_visibility('cui-avatar__popup--header');">
+            <span class="cui-header__user--name">Bill Murray</span>
+            <div class="cui-chevron--left"></div>
+            <cui-avatar class="cui-header__user--avatar cui-avatar">
+              <div id="cui-avatar__popup--header" class="cui-avatar--popup" style="opacity:0">
+                <span class="cui-avatar--popup__greet">
+                  Hello, Bill!<br/>
+                  <span class="small">Logged in as Bill Murray</span>
+                </span>
+                <span class="cui-avatar--popup__greet">You should login.<br/>
+                </span>
+                <hr/>
+              </div>
+            </cui-avatar>
+          </div>
+          </div>
+          <cui-top-menu ng-if="cuiTopMenu"></cui-top-menu>
+          <!-- TODO : Search bar? -->
+        </header>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;cui-header&quot;&gt;
+          &lt;div class=&quot;cui-header__top&quot;&gt;
+            &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;public/img/svg-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;div class=&quot;cui-header__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-avatar__popup--header&#x27;);&quot;&gt;
+            &lt;span class=&quot;cui-header__user--name&quot;&gt;Bill Murray&lt;/span&gt;
+            &lt;div class=&quot;cui-chevron--left&quot;&gt;&lt;/div&gt;
+            &lt;cui-avatar class=&quot;cui-header__user--avatar cui-avatar&quot;&gt;
+              &lt;div id=&quot;cui-avatar__popup--header&quot; class=&quot;cui-avatar--popup&quot; style=&quot;opacity:0&quot;&gt;
+                &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;
+                  Hello, Bill!&lt;br/&gt;
+                  &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;You should login.&lt;br/&gt;
+                &lt;/span&gt;
+                &lt;hr/&gt;
+              &lt;/div&gt;
+            &lt;/cui-avatar&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;cui-top-menu ng-if=&quot;cuiTopMenu&quot;&gt;&lt;/cui-top-menu&gt;
+          &lt;!-- TODO : Search bar? --&gt;
+        &lt;/header&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-off-canvas" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-off-canvas">
+                  <span class="cui-styleguide__title__ref">
+                      1.6
+                  </span>
+                  Off Canvas Nav
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+              <div class="cui-styleguide__description-container">
+                <span class="cui-styleguide__description">DESCRIPTION: </span><pre><code>    &lt;article role=&quot;main&quot; class=&quot;cui-styleguide__main&quot; style=&quot;min-height:0&quot;&gt;
+
+          &lt;div id=&quot;kssref-2&quot; class=&quot;cui-tile cui-styleguide__section cui-styleguide__section--depth-1&quot;&gt;
+          &lt;/div&gt;
+          &lt;section id=&quot;kssref-2-6&quot; class=&quot;cui-tile cui-styleguide__section cui-styleguide__section--depth-2&quot;&gt;
+
+        &lt;div class=&quot;cui-styleguide__style&quot;&gt;
+          &lt;div clas=&quot;cui-tile__title&quot;&gt;&lt;/div&gt;
+          &lt;h2 class=&quot;cui-tile__title cui-styleguide__title cui-styleguide__title--level-2&quot;&gt;
+            &lt;a class=&quot;cui-styleguide__title__permalink&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__title__ref&quot;&gt;
+
+              &lt;/span&gt;
+              Example
+            &lt;/a&gt;
+          &lt;/h2&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;cui-tile__body&quot;&gt;
+          &lt;div&gt;PAGE CONTENT&lt;/div&gt;
+          &lt;/div&gt;&lt;/section&gt;
+    &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>  </snap-content>
+</div></p>
+
+              </div>
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-wrapper">
+  <div class="snap-drawers">
+    <div class="snap-drawer">
+      <nav class="cui-off-canvas">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__nav__name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+            <ul class="cui-off-canvas__list--child">
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <snap-content class="snap-content">
+    <header class="cui-header">
+      <div class="cui-header__top">
+        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+          <button class="cui-menu__toggle-button"></button>
+        </div>
+        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#">
+    </div></header>
+    <div class="cui-menu__content-wrapper" style="min-height:0;height:400px">
+      <div class="cui-styleguide__main-container" style="min-height:0;height:400px">
+        <!--   <header class="cui-styleguide__header">
+            <h1 class="cui-styleguide__doc-title"></h1>
+          </header> -->
+      <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__list-item-name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__list-item">
+            <a class="cui-off-canvas__list-item-link" href="#">
+              <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+            <ul class="cui-off-canvas__list--child">
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__list-item--child">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wrapper&quot;&gt;
+  &lt;div class=&quot;snap-drawers&quot;&gt;
+    &lt;div class=&quot;snap-drawer&quot;&gt;
+      &lt;nav class=&quot;cui-off-canvas&quot;&gt;
+        &lt;ul class=&quot;cui-off-canvas__list&quot;&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Overview&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__list-item-name&quot;&gt;&lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Parent Link&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__list-item-name&quot;&gt;&lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Parent Link&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;cui-off-canvas__list--child&quot;&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;snap-content class=&quot;snap-content&quot;&gt;
+    &lt;header class=&quot;cui-header&quot;&gt;
+      &lt;div class=&quot;cui-header__top&quot;&gt;
+        &lt;div class=&quot;cui-menu__toggle-button-container active&quot; snap-toggle=&quot;left&quot; onclick=&quot;Nav.navToggle()&quot;&gt;
+          &lt;button class=&quot;cui-menu__toggle-button&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;#&quot;&gt;
+    &lt;/div&gt;&lt;/header&gt;
+    &lt;div class=&quot;cui-menu__content-wrapper&quot; style=&quot;min-height:0;height:400px&quot;&gt;
+      &lt;div class=&quot;cui-styleguide__main-container&quot; style=&quot;min-height:0;height:400px&quot;&gt;
+        &lt;!--   &lt;header class=&quot;cui-styleguide__header&quot;&gt;
+            &lt;h1 class=&quot;cui-styleguide__doc-title&quot;&gt;&lt;/h1&gt;
+          &lt;/header&gt; --&gt;
+      &lt;nav id=&quot;desktop-menu&quot; class=&quot;cui-off-canvas desktop-menu&quot;&gt;
+        &lt;ul class=&quot;cui-off-canvas__list&quot;&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__list-item-name&quot;&gt;Overview&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;&lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Parent Link&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;cui-off-canvas__list-item&quot;&gt;
+            &lt;a class=&quot;cui-off-canvas__list-item-link&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;&lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Parent Link&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;cui-off-canvas__list--child&quot;&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;cui-off-canvas__list-item--child&quot;&gt;
+                  &lt;a href=&quot;#&quot;&gt;
+                    &lt;span class=&quot;cui-styleguide__nav__ref&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;cui-styleguide__nav__name&quot;&gt;Child Link&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-popover" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-popover">
+                  <span class="cui-styleguide__title__ref">
+                      1.7
+                  </span>
+                  Popover
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-wizard__field-container cui-wizard__field-container--half ">
+                  <div class="cui-input__password-holder">
+                    <label for="password1">Password</label>
+                    <input type="password" name="password1" class="cui-input cui-input__password cui-input--error" placeholder="" required="required">
+<div class="cui-error__password">
+  <p class="">Passwords must:</p>
+  <div class="cui-error__message">have at least 1 lower case letter</div>
+  <div class="cui-error__message">have at least 1 upper case letter</div>
+</div>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half &quot;&gt;
+                  &lt;div class=&quot;cui-input__password-holder&quot;&gt;
+                    &lt;label for=&quot;password1&quot;&gt;Password&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; name=&quot;password1&quot; class=&quot;cui-input cui-input__password cui-input--error&quot; placeholder=&quot;&quot; required=&quot;required&quot;&gt;
+&lt;div class=&quot;cui-error__password&quot;&gt;
+  &lt;p class=&quot;&quot;&gt;Passwords must:&lt;/p&gt;
+  &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 lower case letter&lt;/div&gt;
+  &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 upper case letter&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+              <section id="kssref-blocks-wizard" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-wizard">
+                  <span class="cui-styleguide__title__ref">
+                      1.8
+                  </span>
+                  CUI Wizard
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-wizard">
+  <div class="cui-wizard__title ">A description of this form</div>
+  <div class="cui-wizard__body">
+    <cui-wizard class="cui-wizard__contents" step="1" clickable-indicators="" minimum-padding="30">
+      <indicator-container class="indicator-container"><span class="step-indicator active" style="cursor: pointer;">Step One</span><span class="step-indicator style="cursor: pointer;">Step 2</span></indicator-container>
+      <step title="Organization info" class="active">
+        <form name="organization" novalidate="" class="">
+          <label for="field-1">Input Field Disabled</label>
+          <input type="text" name="field-1" class="cui-input" disabled="">
+          <label for="field-2">Select Field</label>
+          <select name="field-2" class="cui-input cui-select" required="required">
+            <option value="" disabled="" selected="" class=""></option>
+          </select>
+          <div class="cui-wizard__field-row">
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-3">Input Field</label>
+              <input type="text" name="field-3" class="cui-input" required="required">
+            </div>
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-4">Input Field</label>
+              <input type="text" name="field-4" class="cui-input">
+            </div>
+          </div>
+          <div class="cui-wizard__field-row">
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-5">Select Field</label>
+              <select name="field-5" class="cui-input cui-select">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-6">Select Field</label>
+              <select name="field-6" class="cui-input cui-select">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+          </div>
+          <div class="cui-wizard__field-row">
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-7">Select Field</label>
+              <select name="field-7" class="cui-input cui-select">
+                <option value="" disabled="" selected="" class=""></option>
+              </select>
+            </div>
+            <div class="cui-wizard__field-container cui-wizard__field-container--half">
+              <label for="field-8">Input Field</label>
+              <input type="text" name="field-8" class="cui-input">
+            </div>
+          </div>
+          <div class="cui-wizard__controls">
+            <button class="cui-wizard__next">Button</button>
+            <button class="cui-wizard__skip">cui-skip-for-now &gt;&gt;</button>
+          </div>
+        </form>
+      </step>
+    </cui-wizard>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wizard&quot;&gt;
+  &lt;div class=&quot;cui-wizard__title &quot;&gt;A description of this form&lt;/div&gt;
+  &lt;div class=&quot;cui-wizard__body&quot;&gt;
+    &lt;cui-wizard class=&quot;cui-wizard__contents&quot; step=&quot;1&quot; clickable-indicators=&quot;&quot; minimum-padding=&quot;30&quot;&gt;
+      &lt;indicator-container class=&quot;indicator-container&quot;&gt;&lt;span class=&quot;step-indicator active&quot; style=&quot;cursor: pointer;&quot;&gt;Step One&lt;/span&gt;&lt;span class=&quot;step-indicator style=&quot;cursor: pointer;&quot;&gt;Step 2&lt;/span&gt;&lt;/indicator-container&gt;
+      &lt;step title=&quot;Organization info&quot; class=&quot;active&quot;&gt;
+        &lt;form name=&quot;organization&quot; novalidate=&quot;&quot; class=&quot;&quot;&gt;
+          &lt;label for=&quot;field-1&quot;&gt;Input Field Disabled&lt;/label&gt;
+          &lt;input type=&quot;text&quot; name=&quot;field-1&quot; class=&quot;cui-input&quot; disabled=&quot;&quot;&gt;
+          &lt;label for=&quot;field-2&quot;&gt;Select Field&lt;/label&gt;
+          &lt;select name=&quot;field-2&quot; class=&quot;cui-input cui-select&quot; required=&quot;required&quot;&gt;
+            &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;div class=&quot;cui-wizard__field-row&quot;&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-3&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-3&quot; class=&quot;cui-input&quot; required=&quot;required&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-4&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-4&quot; class=&quot;cui-input&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cui-wizard__field-row&quot;&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-5&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-5&quot; class=&quot;cui-input cui-select&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-6&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-6&quot; class=&quot;cui-input cui-select&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cui-wizard__field-row&quot;&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-7&quot;&gt;Select Field&lt;/label&gt;
+              &lt;select name=&quot;field-7&quot; class=&quot;cui-input cui-select&quot;&gt;
+                &lt;option value=&quot;&quot; disabled=&quot;&quot; selected=&quot;&quot; class=&quot;&quot;&gt;&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half&quot;&gt;
+              &lt;label for=&quot;field-8&quot;&gt;Input Field&lt;/label&gt;
+              &lt;input type=&quot;text&quot; name=&quot;field-8&quot; class=&quot;cui-input&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cui-wizard__controls&quot;&gt;
+            &lt;button class=&quot;cui-wizard__next&quot;&gt;Button&lt;/button&gt;
+            &lt;button class=&quot;cui-wizard__skip&quot;&gt;cui-skip-for-now &amp;gt;&amp;gt;&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/step&gt;
+    &lt;/cui-wizard&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              </div>
+              </section>
+        </article>
+      </div>
+    </div>
+  </snap-content>
+</div>
+
+<!-- SCRIPTS -->
+<script src="public/scripts/cui-scripts.js"></script>
+
+
+
+</body>
+</html>
