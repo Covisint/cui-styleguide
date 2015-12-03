@@ -217,11 +217,16 @@ Styleguide Blocks.Off-Canvas
     color: $cui-primary-colors--light;
   }
 
-  .cui-off-canvas__list-item--active,
-  .cui-off-canvas__section--active & {
+}
+
+.cui-off-canvas__list-item--active,
+.cui-off-canvas__section--active {
+  
+  .cui-off-canvas__list--child,
+  .cui-off-canvas__sub-section-list {
     position: inherit;
   }
-
+  
 }
 
 .cui-off-canvas__list-item--child,
