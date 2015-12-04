@@ -156,6 +156,12 @@ Markup:
 Styleguide Blocks.Off-Canvas
 */
 
+%cui-list__section {
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
 .cui-off-canvas {
   @extend .cui-primary-colors--medium;
 }
@@ -232,5 +238,5 @@ Styleguide Blocks.Off-Canvas
 .cui-off-canvas__list-item--child,
 .cui-off-canvas__sub-section {
   font-weight: 500;
-  padding: em(5px) 0;
+  padding: em(5) 0;
 }
