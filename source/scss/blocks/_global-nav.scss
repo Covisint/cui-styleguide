@@ -1,0 +1,170 @@
+/*
+Global Navigation
+
+Markup:
+<div class="cui-top-nav__container">
+  <nav class="cui-top-nav" role='navigation'>
+    <ul class="cui-top-nav__nav-list">
+      <li class="cui-top-nav__section cui-top-nav__section--active">
+        <a href="#">Home</a>
+        <div class="cui-top-nav__sub-nav-dropdown">
+          <ul class="cui-top-nav__sub-nav-list">
+            <li>Sub section</li>
+            <li>Sub section</li>
+            <li>Sub section</li>
+          </ul>
+        </div>
+      </li>
+      <li class="cui-top-nav__section">
+        <a href="#">My Profile</a>
+      </li>
+      <li class="cui-top-nav__section">
+        <a href="#">My Organization</a>
+      </li>
+      <li class="cui-top-nav__section">
+        <a href="#">Administration</a>
+      </li>
+      <li class="cui-top-nav__section">
+        <a href="#">Reports</a>
+      </li>
+    </ul>
+    <div class="cui-search-container">
+      <input class="cui-search" type="text" placeholder="search" />
+      <div class="cui-search__dropdown">
+        <ul>
+          <li>Top Results</li>
+          <li>Users in my organization</li>
+          <li>Users across exchange</li>
+          <li>Divisions in hierarchy</li>
+          <li>Organizations across</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+Styleguide Blocks.Global Navigation
+*/
+
+.cui-top-nav__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+}
+
+.cui-top-nav {
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  flex-grow: 2;
+  justify-content: center;
+  @media screen and (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.cui-top-nav__nav-list {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cui-top-nav__section  {
+
+  a {
+    color: $cui-greyscale--medium;
+    position: relative;
+    text-decoration: none;
+  }
+
+  ul {
+    @extend .cui-ul;
+  }
+
+}
+
+.cui-top-nav__section.cui-top-nav__section--active {
+  
+  a {
+    color: $cui-primary-colors--medium;
+    border: 2px solid $cui-primary-colors--medium;
+    border-radius: 30px;
+    padding: .3em .7em;
+    transition: background-color .3s;
+    z-index: 1;
+
+    &:hover {
+      color: white;
+      background-color: $cui-primary-colors--medium;
+    }
+
+  }
+
+}
+
+.cui-search {
+  border: 2px solid #eee;
+  border-radius: 4px;
+  height: 2em;
+  padding-left: 5px;
+  margin-right: 1em;
+}
+
+.cui-search__dropdown {
+  position: absolute;
+  
+  ul {
+    background-color: #f9f9f9;
+    max-height: 0;
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  li {
+    @extend %cui-list__section;
+    background-color: #eee;
+    color: $cui-greyscale--medium;
+    font-weight: 600;
+    padding: em(10) em(5);
+  }
+  
+}
+
+.cui-top-nav__sub-nav-dropdown {
+  position: absolute;
+  
+  ul {
+    background-color: #f9f9f9;
+    max-height: 0;
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  li {
+    @extend %cui-list__section;
+    background-color: #eee;
+    color: $cui-greyscale--medium;
+    font-weight: 600;
+    padding: em(10) em(5);
+  }
+
+}
+
+.cui-search:focus + .cui-search__dropdown,
+.cui-top-nav__section:hover .cui-top-nav__sub-nav-dropdown {
+
+  ul {
+    max-height: em(200);
+    transition: max-height .2s ease-in;
+  }
+}
