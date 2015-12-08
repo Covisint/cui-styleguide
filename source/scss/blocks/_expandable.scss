@@ -3,7 +3,7 @@ Expandable
 
 Markup:
 <div class="cui-expandable expanded">
-  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+  <div class="cui-expandable__title">
     Expandable Group #1
     <span class="chevron">></span>
   </div>
@@ -15,7 +15,7 @@ Markup:
   </ul>
 </div>
 <div class="cui-expandable">
-  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+  <div class="cui-expandable__title">
     Expandable Group #2
     <span class="chevron">></span>
   </div>
@@ -27,7 +27,7 @@ Markup:
   </ul>
 </div>
 <div class="cui-expandable">
-  <div class="cui-expandable__title" onclick="Expandable.toggleExpandable(this)">
+  <div class="cui-expandable__title">
     Expandable Group #3
     <span class="chevron">></span>
   </div>

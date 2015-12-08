@@ -24,15 +24,16 @@ var TopNav = (function () {
 
 var Expandable = (function () {
 
-    function expandableToggle(elem) {
-      var parent = elem.parentNode;
-      parent.classList.toggle('expanded');
-    };
+  var e = document.querySelectorAll('.cui-expandable__title');
 
-
-  return {
-    toggleExpandable: expandableToggle
+  for (var i = 0; i < e.length; i++) {
+    e[i].addEventListener('click', function() {expandableToggle(this);} );
   }
+
+  function expandableToggle(elem) {
+    var parent = elem.parentNode;
+    parent.classList.toggle('expanded');
+  };
 
 }) ();
 
