@@ -6,37 +6,49 @@ Markup:
   <nav class="cui-top-nav" role='navigation'>
     <ul class="cui-top-nav__nav-list">
       <li class="cui-top-nav__section cui-top-nav__section--active">
-        <a href="#">Home</a>
+        <a href="#">Nav section</a>
         <div class="cui-top-nav__sub-nav-dropdown">
           <ul class="cui-top-nav__sub-nav-list">
-            <li>Sub section</li>
-            <li>Sub section</li>
-            <li>Sub section</li>
+            <li>
+              <span class="cui-top-nav__sub-title" >Sub section</span>
+              <ul class="cui-top-nav__sub-nav-items">
+                <li class="cui-top-nav__sub-nav-item" ><a href="#">Sub link</a></li>
+                <li class="cui-top-nav__sub-nav-item" ><a href="#">Sub link</a></li>
+                <li class="cui-top-nav__sub-nav-item" ><a href="#">Sub link</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="cui-top-nav__sub-title" >Sub section</span>
+            </li>
+            <li>
+              <span class="cui-top-nav__sub-title" >Sub section</span>
+            </li>
           </ul>
         </div>
       </li>
       <li class="cui-top-nav__section">
-        <a href="#">My Profile</a>
+        <a href="#">Nav section</a>
       </li>
       <li class="cui-top-nav__section">
-        <a href="#">My Organization</a>
-      </li>
-      <li class="cui-top-nav__section">
-        <a href="#">Administration</a>
-      </li>
-      <li class="cui-top-nav__section">
-        <a href="#">Reports</a>
+        <a href="#">Nav section</a>
       </li>
     </ul>
     <div class="cui-search-container">
       <input class="cui-search" type="text" placeholder="search" />
       <div class="cui-search__dropdown">
         <ul>
-          <li>Top Results</li>
-          <li>Users in my organization</li>
-          <li>Users across exchange</li>
-          <li>Divisions in hierarchy</li>
-          <li>Organizations across</li>
+          <li class="cui-search__filter">
+            <span class="cui-search__filter-title" >Search filter</span>
+            <ul class="cui-search__search-filter-items">
+              <li class="cui-search__search-filter-item" ><a href="#">Filter link</a></li>
+              <li class="cui-search__search-filter-item" ><a href="#">Filter link</a></li>
+              <li class="cui-search__search-filter-item" ><a href="#">Filter link</a></li>
+            </ul>
+          </li>
+          <li class="cui-search__filter" ><span class="cui-search__filter-title" >Search filter<span></li>
+          <li class="cui-search__filter" ><span class="cui-search__filter-title" >Search filter<span></li>
+          <li class="cui-search__filter" ><span class="cui-search__filter-title" >Search filter<span></li>
+          <li class="cui-search__filter" ><span class="cui-search__filter-title" >Search filter<span></li>
         </ul>
       </div>
     </div>
@@ -64,7 +76,7 @@ Styleguide Blocks.Global Navigation
 }
 
 .cui-top-nav__nav-list {
-  justify-content: space-around;
+  justify-content: flex-start;
   display: flex;
   flex-direction: row;
   flex-grow: 2;
@@ -74,6 +86,7 @@ Styleguide Blocks.Global Navigation
 }
 
 .cui-top-nav__section  {
+  padding: 0 em(10);
 
   a {
     color: $cui-greyscale--medium;
@@ -89,7 +102,7 @@ Styleguide Blocks.Global Navigation
 
 .cui-top-nav__section.cui-top-nav__section--active {
   
-  a {
+  > a {
     color: $cui-primary-colors--medium;
     border: 2px solid $cui-primary-colors--medium;
     border-radius: 30px;
@@ -115,7 +128,18 @@ Styleguide Blocks.Global Navigation
 }
 
 .cui-search__dropdown {
+  min-width: em(200);
   position: absolute;
+
+  a {
+    @extend .cui-link;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .cui-search__search-filter-items {
+    max-height: 0;
+  }
   
   ul {
     background-color: #f9f9f9;
@@ -127,18 +151,34 @@ Styleguide Blocks.Global Navigation
     transition: max-height .2s ease-out;
   }
 
-  li {
+  .cui-search__filter-title {
     @extend %cui-list__section;
     background-color: #eee;
     color: $cui-greyscale--medium;
     font-weight: 600;
+    margin: em(10) 0 0;
     padding: em(10) em(5);
+  }
+
+  .cui-search__filter.expanded .cui-search__search-filter-items {
+      max-height: em(1000);
+      transition: max-height .2s ease-in;
+    }
+
+
+  .cui-search__search-filter-item {
+    margin: em(10) 0 0 em(10);
   }
   
 }
 
 .cui-top-nav__sub-nav-dropdown {
+  min-width: em(200);
   position: absolute;
+
+  .cui-top-nav__sub-nav-items {
+    max-height: 0;
+  }
   
   ul {
     background-color: #f9f9f9;
@@ -150,21 +190,32 @@ Styleguide Blocks.Global Navigation
     transition: max-height .2s ease-out;
   }
 
-  li {
+  .cui-top-nav__sub-title {
     @extend %cui-list__section;
     background-color: #eee;
     color: $cui-greyscale--medium;
     font-weight: 600;
+    margin: em(10) 0 0;
     padding: em(10) em(5);
+
+    &.expanded + .cui-top-nav__sub-nav-items {
+      max-height: em(1000);
+      transition: max-height .2s ease-in;
+    }
+  }
+
+  .cui-top-nav__sub-nav-item {
+    margin: em(10) 0 0 em(10);
   }
 
 }
 
 .cui-search:focus + .cui-search__dropdown,
+.cui-search-container:hover .cui-search__dropdown,
 .cui-top-nav__section:hover .cui-top-nav__sub-nav-dropdown {
 
-  ul {
-    max-height: em(200);
+  > ul {
+    max-height: em(1000);
     transition: max-height .2s ease-in;
   }
 }
