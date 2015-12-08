@@ -3,6 +3,25 @@ function toggle_visibility(Id) {
    e.style.opacity = ((e.style.opacity!='0') ? '0' : '1');
 }
 
+var TopNav = (function () {
+
+  var e = document.querySelectorAll('.cui-top-nav__sub-title');
+  var f = document.querySelectorAll('.cui-search__filter');
+
+  for (var i = 0; i < e.length; i++) {
+    e[i].addEventListener('click', function() {expandNav(this);} );
+  }
+
+  for (var i = 0; i < f.length; i++) {
+    f[i].addEventListener('click', function() {expandNav(this);} );
+  }
+
+  function expandNav(elem) {
+    elem.classList.toggle('expanded');
+  };
+
+}) ();
+
 var Expandable = (function () {
 
     function expandableToggle(elem) {
