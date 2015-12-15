@@ -65,7 +65,8 @@ module.exports = function(grunt) {
           cwd: 'bower_components/cui-icons/dist',
           src: [
             'logos/logos-out.svg',
-            'icons/icons-out.svg'
+            'icons/icons-out.svg',
+            'favicon.ico'
           ],
           dest: 'source/img',
           expand: true
@@ -79,6 +80,7 @@ module.exports = function(grunt) {
           'styles.specific.min.css',
           'img/**/*.svg',
           'img/**/*.png',
+          'img/*.ico',
           'cui-styleguide-styles.css',
           'off-canvas-iframe.html',
           ],
