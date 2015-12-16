@@ -169,8 +169,18 @@ Styleguide Blocks.Wizard
   padding: $input-error-padding;
   position: relative;
 
+  &.ng-active {
+    animation: error-opacity .3s;
+    min-height: 26px;
+    opacity: 1;
+    transition: min-height .15s ease-in, opacity .3s ease-in;
+  }
+
   &.ng-inactive {
-    display: none;
+    min-height: 0px;
+    opacity: 0;
+    padding: 0;
+    transition: min-height .15s ease-out, opacity .3s ease-out;
   }
 
   &--half {
