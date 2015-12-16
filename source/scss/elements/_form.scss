@@ -55,13 +55,11 @@ Styleguide Elements.Forms.Input
   }
 
   &__password-holder {
-    width: 100%;
-    float: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
     position: relative;
-    &--half {
-      position: relative;
-      float:left;
-    }
   }
 
   &[type="password"] {
@@ -80,23 +78,6 @@ Styleguide Elements.Forms.Input
   @media all and (max-width:700px){
    &--half {
       width: 100%;
-    }
-
-    &__password--holder {
-      &--half{
-        width: 100%;
-        float: none;
-        > .cui-error__password {
-          top:100%;
-          right:0;
-          transform: translate(-100%,0);
-          &:before{
-            top:0;
-            left:50%;
-            transform: translate(-50%,-90%) rotate(180deg);
-          }
-        }
-      }
     }
   }
 }
