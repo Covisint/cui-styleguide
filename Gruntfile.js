@@ -86,6 +86,16 @@ module.exports = function(grunt) {
           ],
           dest: 'styleguide/public/',
           expand: true
+        },
+        {
+          cwd: 'bower_components/lato/font/lato-regular/',
+          src: [
+          '*.woff',
+          '*.woff2',
+          '*.ttf'
+          ],
+          dest: 'styleguide/public/fonts',
+          expand: true
         }]
       },
       min:{

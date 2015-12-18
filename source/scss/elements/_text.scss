@@ -30,8 +30,13 @@ Markup: <h1>H1 Heading</h1>
 Styleguide Elements.Text
 */ 
 
+@include font-face('lato-regular','fonts/lato-regular', $file-formats: woff2 woff);
+
 body {
   color: $primary-font-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
 }
 
 h1, h2, h3, h4, h5, h6 {
