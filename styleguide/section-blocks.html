@@ -89,14 +89,20 @@
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
-                  <a href="section-blocks.html#kssref-blocks-popover">
+                  <a href="section-blocks.html#kssref-blocks-pagination">
                     <!-- <span class="cui-styleguide__nav__ref">2.9</span> -->
+                    <span class="cui-styleguide__nav__name">Pagination</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="section-blocks.html#kssref-blocks-popover">
+                    <!-- <span class="cui-styleguide__nav__ref">2.10</span> -->
                     <span class="cui-styleguide__nav__name">Popover</span>
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
                   <a href="section-blocks.html#kssref-blocks-wizard">
-                    <!-- <span class="cui-styleguide__nav__ref">2.10</span> -->
+                    <!-- <span class="cui-styleguide__nav__ref">2.11</span> -->
                     <span class="cui-styleguide__nav__name">Wizard</span>
                   </a>
                 </li>
@@ -187,14 +193,20 @@
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
-                  <a href="section-blocks.html#kssref-blocks-popover">
+                  <a href="section-blocks.html#kssref-blocks-pagination">
                     <!-- <span class="cui-styleguide__nav__ref">2.9</span> -->
+                    <span class="cui-styleguide__nav__name">Pagination</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="section-blocks.html#kssref-blocks-popover">
+                    <!-- <span class="cui-styleguide__nav__ref">2.10</span> -->
                     <span class="cui-styleguide__nav__name">Popover</span>
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
                   <a href="section-blocks.html#kssref-blocks-wizard">
-                    <!-- <span class="cui-styleguide__nav__ref">2.10</span> -->
+                    <!-- <span class="cui-styleguide__nav__ref">2.11</span> -->
                     <span class="cui-styleguide__nav__name">Wizard</span>
                   </a>
                 </li>
@@ -983,6 +995,87 @@
               </div>
 
               </section>
+              <section id="kssref-blocks-pagination" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-pagination">
+                  <span class="cui-styleguide__title__ref">
+                      2.9
+                  </span>
+                  Pagination
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <nav class="cui-pagination">
+  <span class="cui-pagination__total">Showing 1-300 of 1500 items</span>
+  <a class="cui-pagination__display-amount" href="#">Show 50</a>
+  <ul class="cui-pagination__links">
+    <li class="cui-pagination__link">
+      <a href="#" aria-label="Previous">
+        <span class="cui-pagination__previous cui-pagination__previous--disabled" aria-hidden="true">&lsaquo;Prev</span>
+      </a>
+    </li>
+    <li class="cui-pagination__link cui-pagination__link--current">
+      <a href="">1</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="">2</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="">3</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="#" aria-label="Next">
+        <span class="cui-pagination__next" aria-hidden="true">Next&rsaquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;cui-pagination&quot;&gt;
+  &lt;span class=&quot;cui-pagination__total&quot;&gt;Showing 1-300 of 1500 items&lt;/span&gt;
+  &lt;a class=&quot;cui-pagination__display-amount&quot; href=&quot;#&quot;&gt;Show 50&lt;/a&gt;
+  &lt;ul class=&quot;cui-pagination__links&quot;&gt;
+    &lt;li class=&quot;cui-pagination__link&quot;&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+        &lt;span class=&quot;cui-pagination__previous cui-pagination__previous--disabled&quot; aria-hidden=&quot;true&quot;&gt;&amp;lsaquo;Prev&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;cui-pagination__link cui-pagination__link--current&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;cui-pagination__link&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;cui-pagination__link&quot;&gt;
+      &lt;a href=&quot;&quot;&gt;3&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;cui-pagination__link&quot;&gt;
+      &lt;a href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+        &lt;span class=&quot;cui-pagination__next&quot; aria-hidden=&quot;true&quot;&gt;Next&amp;rsaquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+              </div>
+              </section>
               <section id="kssref-blocks-popover" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
             
 
@@ -991,7 +1084,7 @@
               <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
                 <a class="cui-styleguide__title__permalink" href="#kssref-blocks-popover">
                   <span class="cui-styleguide__title__ref">
-                      2.9
+                      2.10
                   </span>
                   Popover
                 </a>
@@ -1044,7 +1137,7 @@
               <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
                 <a class="cui-styleguide__title__permalink" href="#kssref-blocks-wizard">
                   <span class="cui-styleguide__title__ref">
-                      2.10
+                      2.11
                   </span>
                   Wizard
                 </a>
