@@ -3,56 +3,56 @@ Expandable with Table Layout
 
 Markup:
 <div class="cui-expandable__container">
-<div class="cui-expandable__tr">
-  <span class="cui-expandable__td">Invitation ID</span>
-  <span class="cui-expandable__td">Email</span>
-  <span class="cui-expandable__td"></span>
-</div>
-<div class="cui-expandable expanded">
-  <div class="cui-expandable__title">
-    <div class="cui-expandable__tr">
-      <span class="cui-expandable__td">11545385</span>
-      <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
-      <span class="cui-expandable__td"><span class="cui-expandable__link">view</span></span>
-    </div>
+  <div class="cui-expandable__tr">
+    <span class="cui-expandable__td">Invitation ID</span>
+    <span class="cui-expandable__td">Email</span>
+    <span class="cui-expandable__td"></span>
   </div>
-  <ul class="cui-expandable__body">
-    <li class="cui-expandable__review-item">Revealed item</li>
-    <li class="cui-expandable__review-item">Revealed item</li>
-    <li class="cui-expandable__review-item">Revealed item</li>
-    <li class="cui-expandable__review-item">Revealed item</li>
-  </ul>
-</div>
-<div class="cui-expandable">
-  <div class="cui-expandable__title">
-    <div class="cui-expandable__tr">
-      <span class="cui-expandable__td">11545385</span>
-      <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
-      <span class="cui-expandable__td"><span class="cui-link">view</span></span>
+  <div class="cui-expandable expanded">
+    <div class="cui-expandable__title">
+      <div class="cui-expandable__tr">
+        <span class="cui-expandable__td">11545385</span>
+        <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
+        <span class="cui-expandable__td"><span class="cui-expandable__link">view</span></span>
+      </div>
     </div>
+    <ul class="cui-expandable__body">
+      <li class="cui-expandable__review-item">Revealed item</li>
+      <li class="cui-expandable__review-item">Revealed item</li>
+      <li class="cui-expandable__review-item">Revealed item</li>
+      <li class="cui-expandable__review-item">Revealed item</li>
+    </ul>
   </div>
-  <ul class="cui-expandable__body">
-    <li class="cui-expandable__review-item">Hidden item</li>
-    <li class="cui-expandable__review-item">Hidden item</li>
-    <li class="cui-expandable__review-item">Hidden item</li>
-    <li class="cui-expandable__review-item">Hidden item</li>
-  </ul>
-</div>
-<div class="cui-expandable">
-  <div class="cui-expandable__title">
-    <div class="cui-expandable__tr">
-      <span class="cui-expandable__td">11545385</span>
-      <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
-      <span class="cui-expandable__td"><span class="cui-link">view</span></span>
+  <div class="cui-expandable">
+    <div class="cui-expandable__title">
+      <div class="cui-expandable__tr">
+        <span class="cui-expandable__td">11545385</span>
+        <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
+        <span class="cui-expandable__td"><span class="cui-link">view</span></span>
+      </div>
     </div>
+    <ul class="cui-expandable__body">
+      <li class="cui-expandable__review-item">Hidden item</li>
+      <li class="cui-expandable__review-item">Hidden item</li>
+      <li class="cui-expandable__review-item">Hidden item</li>
+      <li class="cui-expandable__review-item">Hidden item</li>
+    </ul>
   </div>
-  <ul class="cui-expandable__body">
-    <li class="cui-expandable__review-item">Another hidden item</li>
-    <li class="cui-expandable__review-item">Another hidden item</li>
-    <li class="cui-expandable__review-item">Another hidden item</li>
-    <li class="cui-expandable__review-item">Another hidden item</li>
-  </ul>
-</div>
+  <div class="cui-expandable">
+    <div class="cui-expandable__title">
+      <div class="cui-expandable__tr">
+        <span class="cui-expandable__td">11545385</span>
+        <span class="cui-expandable__td">william.murray@thirdwavellc.com</span>
+        <span class="cui-expandable__td"><span class="cui-link">view</span></span>
+      </div>
+    </div>
+    <ul class="cui-expandable__body">
+      <li class="cui-expandable__review-item">Another hidden item</li>
+      <li class="cui-expandable__review-item">Another hidden item</li>
+      <li class="cui-expandable__review-item">Another hidden item</li>
+      <li class="cui-expandable__review-item">Another hidden item</li>
+    </ul>
+  </div>
 </div>
 
 
