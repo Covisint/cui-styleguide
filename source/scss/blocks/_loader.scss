@@ -1,0 +1,26 @@
+/*
+Loading
+
+Markup:
+<div>
+  <div class="cui-loading"></div>
+</div>
+
+Styleguide Blocks.Loading
+*/
+
+.cui-loading {
+  animation: spin 1s infinite linear;
+  background-color: #fff;
+  border: em(10) solid $cui-primary-colors--medium-light;
+  border-radius: em(40);
+  border-top-color: $cui-primary-colors--light;
+  height: em(80);
+  width: em(80);
+}
+
+@keyframes spin { 
+  100% { 
+    transform: rotate(360deg); 
+  } 
+}
