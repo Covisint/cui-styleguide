@@ -1138,37 +1138,111 @@
             </div>
 
             <div class="cui-tile__body">
+              <div class="cui-styleguide__description-container">
+                <span class="cui-styleguide__description">DESCRIPTION: </span><p>Modifiers for Popover Element</p>
+
+              </div>
             
 
               <div class="cui-styleguide-modifier__wrapper">
                 <div class="cui-styleguide-modifier__heading cui-styleguide__style">
                   <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
                 </div>
+                <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
+                  Default styling
+                </div>
                 <div class="cui-styleguide-modifier__example">
-                  <div class="cui-wizard__field-container cui-wizard__field-container--half ">
-  <div class="cui-input__password-holder">
-    <label for="password1">Password</label>
-    <input type="password" name="password1" class="cui-input cui-input__password cui-input--error" placeholder="" required="required">
-    <div class="cui-error__password">
-      <p class="">Passwords must:</p>
-      <div class="cui-error__message">have at least 1 lower case letter</div>
-      <div class="cui-error__message">have at least 1 upper case letter</div>
-    </div>
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover [modifier class]">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                  .cui-popover--dark
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  a dark version of the popover
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover--dark">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                  .cui-popover--left
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  left arrow
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover--left">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                  .cui-popover--right
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  right arrow
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover--right">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                  .cui-popover--top
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  top arrow
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover--top">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                  .cui-popover--bottom
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  bottom arrow
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover--bottom">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
   </div>
 </div>
                 </div>
               </div>
               <div class="cui-styleguide__markup-title">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-wizard__field-container cui-wizard__field-container--half &quot;&gt;
-  &lt;div class=&quot;cui-input__password-holder&quot;&gt;
-    &lt;label for=&quot;password1&quot;&gt;Password&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;password1&quot; class=&quot;cui-input cui-input__password cui-input--error&quot; placeholder=&quot;&quot; required=&quot;required&quot;&gt;
-    &lt;div class=&quot;cui-error__password&quot;&gt;
-      &lt;p class=&quot;&quot;&gt;Passwords must:&lt;/p&gt;
-      &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 lower case letter&lt;/div&gt;
-      &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 upper case letter&lt;/div&gt;
-    &lt;/div&gt;
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styeguide__popover-container&quot;&gt;
+  &lt;div class=&quot;cui-popover [modifier class]&quot;&gt;
+    &lt;p class=&quot;&quot;&gt;Passwords must:&lt;/p&gt;
+    &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 lower case letter&lt;/div&gt;
+    &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 upper case letter&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
               </div>
