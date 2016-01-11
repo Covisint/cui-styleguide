@@ -268,11 +268,18 @@ Styleguide Blocks.Wizard
   }
 
   &.visited {
+    color: #666;
 
     .icon{
       border: em(2) solid #666;
     }
   }
+}
+
+.cui-icon-rotate{
+  height:24px;
+  width:24px;
+  margin:0 auto;
 }
 
 step {
@@ -296,74 +303,68 @@ step {
 }
 
 .angucomplete-dropdown {
-    border-color: #ececec;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 2px;
-    width: 100%;
-    padding: 6px;
-    max-height:200px;
-    overflow-y:auto;
-    cursor: pointer;
-    z-index: 9999;
-    position: absolute;
-    /*top: 32px;
-    left: 0px;
-    */
-    margin-top: -6px;
-    background-color: #ffffff;
+  background-color: #ffffff;
+  border-radius: em(2);
+  border: em(1) solid #ececec;
+  cursor: pointer;
+  margin-top: -6px;
+  max-height: em(200);
+  overflow-y: auto;
+  padding: em(6);
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 }
 
 .angucomplete-searching {
-    color: #acacac;
-    font-size: 14px;
+  color: #acacac;
+  font-size: em(14);
 }
 
 .angucomplete-description {
-    font-size: 14px;
+  font-size: em(14);
 }
 
 .angucomplete-row {
-    padding: 5px;
-    color: #000000;
-    margin-bottom: 4px;
-    clear: both;
+  clear: both;
+  color: #000;
+  margin-bottom: em(4);
+  padding: em(5);
 }
 
 .angucomplete-selected-row {
-    background-color: orange;
-    color: #ffffff;
-    .highlight{
-        color:white;
-    }
+  background-color: $cui-secondary-colors--medium;
+  color: #fff;
+
+  .highlight{
+      color: #fff;
+  }
 }
 
 .angucomplete-image-holder {
-    padding-top: 2px;
-    float: left;
-    margin-right: 10px;
-    margin-left: 5px;
+  float: left;
+  margin-left: 5px;
+  margin-right: em(10);
+  padding-top: em(2);
 }
 
 .angucomplete-image {
-    height: 34px;
-    width: 34px;
-    border-radius: 50%;
-    border-color: #ececec;
-    border-style: solid;
-    border-width: 1px;
+  border-radius: 50%;
+  border: em(1) solid #ececec;
+  height: em(34);
+  width: em(34);
 }
 
 .angucomplete-image-default {
     /* Add your own default image here
      background-image: url('/assets/default.png');
     */
-    background-position: center;
-    background-size: contain;
-    height: 34px;
-    width: 34px;
+  background-position: center;
+  background-size: contain;
+  height: em(34);
+  width: em(34);
 }
 
 .highlight {
-    color: orange;
+  color: $cui-secondary-colors--medium;
 }
