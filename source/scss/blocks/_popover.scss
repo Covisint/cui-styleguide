@@ -34,7 +34,7 @@ Styleguide Blocks.Popover
   flex-wrap: wrap;
   height: em(300);
   position: relative;
-  width: em(310);
+  max-width: em(310);
 }
 
 .cui-popover {
@@ -94,15 +94,15 @@ Styleguide Blocks.Popover
     transform: rotate(-90deg);
   }
 
-  @media all and (max-width:em(700)){
-    left:50%;
-    top:100%;
+  @media all and (max-width: 700px) {
     transform:translate(-50%,-em(10));
     width:90%;
-    &:before{
-      left:20%;
-      top:em(3);
-      transform:rotate(180deg) translate(0,100%);
+
+    &::before{
+      left: 50%;
+      top: 0;
+      transform: rotate(180deg) translate(em(7),em(15));
     }
+
   }
 }
