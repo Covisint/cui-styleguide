@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss','source/scripts/*.js','README.md'],
-        tasks: ['concat:dist','sass','postcss','copy:min','copy:build','concat:js','copy:js','copy:md']
+        tasks: ['concat:dist','sass','postcss','copy:min','exec','copy:build','concat:js','copy:js','copy:md']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -146,6 +146,9 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    exec: {
+      kss: 'node_modules/kss/bin/kss-node --config kss-config.json'
     }
   });
 
@@ -164,6 +167,7 @@ module.exports = function(grunt) {
     'postcss:dist',
     'postcss:specificity',
     'copy:min',
+    'exec',
     'copy:bowerImg', 
     'copy:build', 
     'copy:js'
