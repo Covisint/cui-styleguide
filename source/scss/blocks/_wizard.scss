@@ -254,6 +254,7 @@ Styleguide Blocks.Wizard
     border: em(2) solid #ccc;
     height: em(50);
     position: relative;
+    margin: auto 0;
     width: em(50);
     z-index: 1;
   }
@@ -277,9 +278,9 @@ Styleguide Blocks.Wizard
 }
 
 .cui-icon-rotate{
-  height:24px;
-  width:24px;
-  margin:0 auto;
+  height: em(24);
+  width: em(24);
+  margin: em(10) auto 0;
 }
 
 step {
