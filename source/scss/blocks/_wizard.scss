@@ -280,7 +280,10 @@ Styleguide Blocks.Wizard
 .cui-icon-rotate{
   height: em(24);
   width: em(24);
-  margin: em(10) auto 0;
+
+  @media screen and (min-width: 700px) {
+    margin: em(10) auto 0;
+  }
 }
 
 step {
