@@ -291,6 +291,21 @@ step {
   }
 }
 
+.cui-wizard[mobile-stack] {
+  .desktop-element,
+  .indicator-container {
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .mobile-element {
+    @media screen and (min-width: 701px) {
+      display: none;
+    }
+  }
+}
+
 
 .chevron {
   color: $container-title-background;
