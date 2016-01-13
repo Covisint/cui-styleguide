@@ -83,7 +83,21 @@
           <div id="kssref-0" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-0 cui-styleguide__overview cui-styleguide__style">
              <h1 id="cui-styleguide">cui-styleguide</h1>
 <p>Digital Style Guide for Core CUI Elements</p>
-<h2 id="assets">assets</h2>
+<h2 id="quick-start">Quick Start</h2>
+<ul>
+<li><p>Clone the repo into your project&#39;s root: </p>
+<pre><code>  git clone https://github.com/thirdwavellc/cui-styleguide.git
+</code></pre></li>
+<li><p>If you do not plan on altering the base styles, serve the file <code>styles.min.css</code> from the source folder in your project</p>
+</li>
+<li><p>If you do plan to alter variables and include your own components , you can @import using the following code block for direction:</p>
+<pre><code>  @import &#39;path/to/cui-styleguide/source/base&#39;;
+  @import &#39;your-variable-overrides&#39;;
+  @import &#39;path/to/cui-styleguide/source/components&#39;;
+  @import &#39;your/own/components&#39;;
+</code></pre></li>
+</ul>
+<h2 id="assets">Assets</h2>
 <p>There are two css files one can choose to include in their projects in order to access cui-styleguide styles:</p>
 <ul>
 <li><p><strong>styles.min.css</strong>: This file is ideal for use in projects that contain no other style frameworks (ie. Bootstrap, AUI, etc.). The class names are namespaced and written with a low specificity</p>
@@ -92,6 +106,7 @@
 </li>
 </ul>
 <p>In addition to these two CSS assets, one can access scss files. This is ideal if a user wants to @import the base files (which include vars), @import their own variable overrides and then @import the styleguide elements and blocks.</p>
+<h2 id="browser-support">Browser Support</h2>
 
           </div>
         </article>
