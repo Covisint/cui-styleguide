@@ -1,13 +1,173 @@
+/*
+Off Canvas Nav
+
+Markup:
+<div class="cui-wrapper">
+  <div class="snap-drawers">
+    <div class="snap-drawer">
+      <nav class="cui-off-canvas">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__nav__name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__list-item-name"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+            <ul class="cui-off-canvas__sub-section">
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <snap-content class="snap-content">
+    <header class="cui-header">
+      <div class="cui-header__top">
+        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+          <button class="cui-menu__toggle-button"></button>
+        </div>
+        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#">
+    </div></header>
+    <div class="cui-menu__content-wrapper" style="min-height:0;height:400px">
+      <div class="cui-styleguide__main-container" style="min-height:0;height:400px">
+        <!--   <header class="cui-styleguide__header">
+            <h1 class="cui-styleguide__doc-title"></h1>
+          </header> -->
+      <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
+        <ul class="cui-off-canvas__list">
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__list-item-name">Overview</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+          </li>
+          <li class="cui-off-canvas__section">
+            <a class="cui-off-canvas__section-link" href="#">
+              <span class="cui-styleguide__nav__ref"></span><span class="cui-styleguide__nav__name">Parent Link</span>
+            </a>
+            <ul class="cui-off-canvas__sub-section">
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="#">
+                    <span class="cui-styleguide__nav__ref">  </span><span class="cui-styleguide__nav__name">Child Link</span>
+                  </a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+        <article role="main" class="cui-styleguide__main" style="min-height:0">
+
+              <div id="kssref-2" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-1">
+              </div>
+              <section id="kssref-2-6" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2">
+                <a class="cui-styleguide__title__permalink" href="#">
+                  <span class="cui-styleguide__title__ref">
+                      
+                  </span>
+                  Example
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+              <div>PAGE CONTENT</div>
+              </div></section>
+        </article>
+      </div>
+    </div>
+  </snap-content>
+</div>
+
+
+Styleguide Blocks.Off-Canvas
+*/
+
+%cui-list__section {
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
 .cui-off-canvas {
   @extend .cui-primary-colors--medium;
 }
 
-.cui-off-canvas__list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cui-off-canvas__list-item {
+.cui-off-canvas__list-item,
+.cui-off-canvas__section {
   @extend .cui-primary-colors--medium-dark;
   display: block;
   margin: 10px 0;
@@ -35,30 +195,48 @@
   }
 }
 
-.cui-off-canvas__list-item-link {
+.cui-off-canvas__list-item-link,
+.cui-off-canvas__section-link {
   display: block;
-  min-height: em(30);
-  padding-left: em(30);
+  min-height: em(40);
+  padding-left: em(40);
   padding-top: em(10);
 }
 
 .cui-off-canvas__list-item a:hover,
-.cui-off-canvas__list-item.active a {
+.cui-off-canvas__list-item.active a,
+.cui-off-canvas__section a:hover,
+.cui-off-canvas__section.active a {
   color: $cui-secondary-colors--medium;
 }
 
-.cui-off-canvas__list--child {
+.cui-off-canvas__list--child,
+.cui-off-canvas__sub-section-list {
+  @extend %cui-sr-only;
   @extend .cui-primary-colors--medium;
   @extend .cui-ul;
   padding-left: em(40);
   padding-top: em(10);
+
   & a:hover,
   &.active a {
     color: $cui-primary-colors--light;
   }
+
 }
 
-.cui-off-canvas__list-item--child {
+.cui-off-canvas__list-item--active,
+.cui-off-canvas__section--active {
+  
+  .cui-off-canvas__list--child,
+  .cui-off-canvas__sub-section-list {
+    position: inherit;
+  }
+  
+}
+
+.cui-off-canvas__list-item--child,
+.cui-off-canvas__sub-section {
   font-weight: 500;
-  padding: em(5px) 0;
+  padding: em(5) 0;
 }

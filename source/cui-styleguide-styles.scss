@@ -1,3 +1,6 @@
+@import 'scss/vendor/bourbon/bourbon';
+@import 'scss/vendor/neat/neat';
+
 html {
   font-size: 16px;
 }
@@ -5,9 +8,9 @@ html {
 .cui-styleguide__colors {
   color: #fff;
   display: inline-flex;
-  height: 6rem;
+  height: 8rem;
   padding: 20px;
-  width: 6rem;
+  width: 8rem;
 }
 
 .cui-header__user--avatar {
@@ -45,9 +48,13 @@ html {
 }
 
 .cui-styleguide__main {
+  @include outer-container(95%);
   background-color: #dfe9ee;
   flex: 1;
   min-height: 1000px;
+  @media screen and (min-width: 999px) {
+    @include outer-container(80%);
+  }
 }
 
 .cui-styleguide__section.cui-tile {
@@ -84,4 +91,9 @@ html {
 .cui-background,
 .cui-background--secondary {
   padding: 20px;
+}
+
+.cui-styleguide-modifier__example--with-bg {
+  background-color: #DEE9EE;
+  padding: 10px;
 }

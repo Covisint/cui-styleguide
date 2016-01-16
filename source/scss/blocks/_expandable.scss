@@ -39,7 +39,7 @@ Markup:
   </ul>
 </div>
 
-Styleguide 2.5
+Styleguide Blocks.Expandable
 */
 
 .cui-expandable {
@@ -76,7 +76,7 @@ Styleguide 2.5
 
   &.expanded {
     >.cui-expandable__body {
-      max-height: 500px;
+      max-height: 2000px;
     }
 
     >.cui-expandable__title>.chevron {
@@ -85,11 +85,31 @@ Styleguide 2.5
   }
 }
 
+.cui-expandable__body {
+  padding-left: 10px;
+}
+
 .indicator-container {
-  border-bottom: 1px solid #ddd;
+  border: 0;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  position: relative;
+
+  .steps-bar {
+    background: #ccc;
+    height: em(2);
+    position: absolute;
+    top: 62%;
+    z-index: 0;
+
+    .steps-bar-fill {
+      background: #666;
+      display: inline-block;
+      height: em(2);
+      position: absolute;
+    }
+  }
 
   &.small {
     &>.step-indicator {
@@ -101,7 +121,11 @@ Styleguide 2.5
         display:inline-block;
         margin:0 auto;
         text-align: center;
-        color: #bbb;
+        color: #429DD1;
+      }
+
+      &.visited {
+        color: #666;
       }
     }
   }

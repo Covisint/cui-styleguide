@@ -3,38 +3,38 @@ Tables
 
 Markup:
 <table class="cui-table cui-table--borderless">
-    <thead>
-      <tr>
-        <th scope="col">Column Title</th>
-        <th scope="col">Column Title</th>
-        <th scope="col">Column Title</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="">
-        <td scope="row">Row Information</td>
-        <td>Row Information</td>
-        <td>Row Information</td>
-      </tr>
-      <tr>
-        <td scope="row">Row Information</td>
-        <td>Row Information</td>
-        <td>Row Information</td>
-      </tr>
-      <tr>
-        <td scope="row">Row Information</td>
-        <td>Row Information</td>
-        <td>Row Information</td>
-      </tr>
-      <tr>
-        <td scope="row">Row Information</td>
-        <td>Row Information</td>
-        <td>Row Information</td>
-      </tr>      
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th scope="col">Column Title 1</th>
+      <th scope="col">Column Title 2</th>
+      <th scope="col">Column Title 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="">
+      <td data-label="Column Title 1 "scope="row">Row Information</td>
+      <td data-label="Column Title 2">Row Information</td>
+      <td data-label="Column Title 3">Row Information</td>
+    </tr>
+    <tr>
+      <td data-label="Column Title 1 "scope="row">Row Information</td>
+      <td data-label="Column Title 2">Row Information</td>
+      <td data-label="Column Title 3">Row Information</td>
+    </tr>
+    <tr>
+      <td data-label="Column Title 1 "scope="row">Row Information</td>
+      <td data-label="Column Title 2">Row Information</td>
+      <td data-label="Column Title 3">Row Information</td>
+    </tr>
+    <tr>
+      <td data-label="Column Title 1 "scope="row">Row Information</td>
+      <td data-label="Column Title 2">Row Information</td>
+      <td data-label="Column Title 3">Row Information</td>
+    </tr>      
+  </tbody>
+</table>
 
-Styleguide 1.7
+Styleguide Elements.Tables
 
 */
 
@@ -75,5 +75,48 @@ Styleguide 1.7
       left: 0;
       right: 0;
     }
+  }
+  @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: flex; 
+  }
+  
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tbody { flex-direction: column; }
+
+  tr { 
+    border: 1px solid #ccc;
+    flex-direction: column;
+  }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+  }
+  
+  td:before { 
+    display: flex;
+    font-weight: 900;
+    padding-right: 20px;
+    max-width: 40%;
+  }
+  
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before { content: attr(data-label); }
+  td:nth-of-type(2):before { content: attr(data-label); }
+  td:nth-of-type(3):before { content: attr(data-label); }
+  
   }
 }

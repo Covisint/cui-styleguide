@@ -2,7 +2,7 @@
 //
 // Styles for form elements
 // 
-// Styleguide 1.3
+// Styleguide Elements.Forms
 
 /*
 Inputs
@@ -14,7 +14,7 @@ Inputs
 
 Markup: <input type="text" class="cui-input {{modifier_class}} cui-input--full"/>
 
-Styleguide 1.3.1
+Styleguide Elements.Forms.Input
 */
 
 .cui-input {
@@ -55,13 +55,11 @@ Styleguide 1.3.1
   }
 
   &__password-holder {
-    width: 100%;
-    float: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
     position: relative;
-    &--half {
-      position: relative;
-      float:left;
-    }
   }
 
   &[type="password"] {
@@ -80,23 +78,6 @@ Styleguide 1.3.1
   @media all and (max-width:700px){
    &--half {
       width: 100%;
-    }
-
-    &__password--holder {
-      &--half{
-        width: 100%;
-        float: none;
-        > .cui-error__password {
-          top:100%;
-          right:0;
-          transform: translate(-100%,0);
-          &:before{
-            top:0;
-            left:50%;
-            transform: translate(-50%,-90%) rotate(180deg);
-          }
-        }
-      }
     }
   }
 }
@@ -118,7 +99,7 @@ Markup:
   </div>
 </div>
 
-Styleguide 1.3.2
+Styleguide Elements.Forms.Tags
 */
 
 .cui-tags-input {
@@ -297,14 +278,15 @@ Styleguide 1.3.2
 /*
 Dropdown
 
-Markup: <select class="cui-input cui-input--full cui-select">
-            <option value="helloo"></option>
-            <option value="hellloooo"></option>
-            <option value="hellllooooooo"></option>
-            <option value="HELLO"></option>
-          </select>
+Markup: 
+<select class="cui-input cui-input--full cui-select">
+  <option value="helloo"></option>
+  <option value="hellloooo"></option>
+  <option value="hellllooooooo"></option>
+  <option value="HELLO"></option>
+</select>
 
-Styleguide 1.3.3
+Styleguide Elements.Forms.Dropdown
 */
 
 select.cui-select {
@@ -337,7 +319,7 @@ Markup:
   </div>
 </fieldset>
 
-Styleguide 1.3.4
+Styleguide Elements.Forms.Radio
 */
 
 .cui-radio {
@@ -393,7 +375,7 @@ Markup:
   </ul>
 </fieldset>
 
-Styleguide 1.3.5
+Styleguide Elements.Forms.Checkbox
 */
 
 .cui-checkbox {
@@ -440,5 +422,94 @@ Styleguide 1.3.5
   &:checked + .cui-checkbox__label:before {
     @extend .cui-primary-colors--medium-light;
     box-shadow: inset 0 0 0 2px #fff;
+  }
+}
+
+/*
+Switch
+
+Markup:
+<div class="cui-switch">
+  <input class="cui-switch__input" name="switch" id="cui-switch-1" type="checkbox" /> 
+  <label class="cui-switch__label" for="cui-switch-1">
+    <div class="cui-switch__container">
+      <span class="cui-switch__checked-message">Accept</span>
+      <span class="cui-switch__unchecked-message">Don't Accept</span>
+    </div>
+  </label> 
+</div>
+
+Styleguide Elements.Forms.Switch
+*/
+
+.cui-switch {
+  display: flex;
+}
+
+.cui-switch__input {
+  @extend %cui-sr-only;
+}
+
+.cui-switch__container {
+  align-items: center;
+  border: 1px solid #6D6D6D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  height: 50px;
+  justify-content: space-around;
+  width: 209px;
+  
+  span {
+    margin-left: 15px;
+  }
+}
+
+.cui-switch__checked-message {
+  color: black;
+  transition: color .5s ease-in-out;
+  z-index: 10;
+}
+
+.cui-switch__unchecked-message {
+  color: white;
+  transition: color .5s ease-in-out;
+  z-index: 10;
+}
+
+.cui-switch__label {
+  content: '';
+  position: relative;
+}
+
+.cui-switch__label:before {
+  background-color: #00BD9C;
+  border-radius: 0 6px 6px 0;
+  content: '';
+  cursor: pointer;
+  height: calc(100% - 2px);
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  transition: all .15s ease-in;
+  width: 104px;
+}
+
+.cui-switch__input:checked {
+
+  & + .cui-switch__label:before {
+    border-radius: 6px 0 0 6px;
+    transform: translateX(-103px);
+  }
+  
+  & + .cui-switch__label .cui-switch__unchecked-message {
+    color: black;
+    transition: color .5s;
+  }
+  
+  & + .cui-switch__label .cui-switch__checked-message {
+    color: white;
+    transition: color .5s;
   }
 }

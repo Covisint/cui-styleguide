@@ -1,0 +1,89 @@
+/*
+Card
+
+Markup:
+<div class="cui-card__container">
+  <div class="cui-card">
+    <div class="cui-card__image-container">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="88px"
+         height="88px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+        <use class="cui-card__icon" xlink:href="public/img/icons/icons-out.svg#user"></use>
+      </svg>
+    </div>
+    <div class="cui-card__content">
+      <h3 class="cui-card__content-header">Header</h3>
+      <p>Some text that appropriately describes the context of this card. Some text that appropriately describes the context of this card.</p>
+    </div>
+    <button class="cui-card__button">Button</button>
+  </div>
+</div>
+
+Styleguide Blocks.Cards
+*/
+
+
+.cui-card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cui-card {
+  background: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 40px 40px;
+  transition: box-shadow .2s ease, transform .2s ease;
+  width: 20em;
+  
+  &:hover {
+    box-shadow: 0 1px 3px $cui-greyscale--medium-light;
+    transform: translateY(-3px);
+  }
+}
+
+.cui-card__image-container {
+  justify-content: center;
+  display: flex;
+}
+
+.cui-card__image {
+  width: 100%;
+}
+
+p {
+  max-width: 100%;
+}
+
+.cui-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  line-height: 1.4;
+}
+
+.cui-card__content-header {
+  align-self: center;
+  color: $cui-greyscale--medium;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin: em(5) 0;
+}
+
+.cui-card__icon {
+  fill: $cui-primary-colors--medium-light;
+}
+
+.cui-card__button {
+  @extend .cui-button;
+  align-self: center;
+  border-radius: em(12);
+}

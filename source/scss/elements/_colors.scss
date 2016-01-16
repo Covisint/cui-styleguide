@@ -2,7 +2,7 @@
 //
 // A color palette for the Covisint Next Gen UI Framework
 //
-// Styleguide 1.4
+// Styleguide Elements.Colors
 
 .cui-primary-colors,
 .cui-secondary-colors {
@@ -11,13 +11,14 @@
 /*
 Primary Colors
 
-Markup: <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--light">.cui-primary-colors--light</div>
-        <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-light">.cui-primary-colors--medium-light</div>
-        <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium">.cui-primary-colors--medium</div>
-        <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-dark">.cui-primary-colors--medium-dark</div>
-        <div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--dark">.cui-primary-colors--dark</div>
+Markup: 
+<div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--light">.cui-primary-colors--light</div>
+<div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-light">.cui-primary-colors--medium-light</div>
+<div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium">.cui-primary-colors--medium</div>
+<div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--medium-dark">.cui-primary-colors--medium-dark</div>
+<div class="cui-styleguide__colors cui-primary-colors cui-primary-colors--dark">.cui-primary-colors--dark</div>
 
-Styleguide 1.4.1
+Styleguide Elements.Colors.Primary-Colors
 */
 
 .cui-primary-colors--light  {
@@ -47,12 +48,13 @@ Styleguide 1.4.1
 /*
 Secondary Colors
 
-Markup: <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light">.cui-secondary-colors--light</div>
-        <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium-light">.cui-secondary-colors--medium-light</div>
-        <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium">.cui-secondary-colors--medium</div>
-        <div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark">.cui-secondary-colors--dark</div>
+Markup: 
+<div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--light">.cui-secondary-colors--light</div>
+<div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium-light">.cui-secondary-colors--medium-light</div>
+<div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--medium">.cui-secondary-colors--medium</div>
+<div class="cui-styleguide__colors cui-secondary-colors cui-secondary-colors--dark">.cui-secondary-colors--dark</div>
 
-Styleguide 1.4.2
+Styleguide Elements.Colors.Secondary-Colors
 */
 
 .cui-secondary-colors--light  {

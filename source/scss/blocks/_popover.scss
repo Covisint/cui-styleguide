@@ -1,0 +1,108 @@
+/*
+Popover
+
+Modifiers for Popover Element
+
+.cui-popover--dark          - a dark version of the popover
+.cui-popover--left          - left arrow
+.cui-popover--right         - right arrow
+.cui-popover--top           - top arrow
+.cui-popover--bottom        - bottom arrow
+
+Markup:
+<div class="cui-styeguide__popover-container">
+  <div class="cui-popover {{modifier_class}}">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message">have at least 1 lower case letter</div>
+    <div class="cui-error__message">have at least 1 upper case letter</div>
+  </div>
+</div>
+
+Styleguide Blocks.Popover
+*/
+
+%popover-arrow {
+  color: #fff;
+  content: '▼';
+  font-size: 1em;
+  position: absolute;
+}
+
+.cui-styeguide__popover-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: em(300);
+  position: relative;
+  max-width: em(310);
+}
+
+.cui-popover {
+  @extend .cui-background;
+  border-radius: em(7);
+  border: em(1) solid #DDD;
+  box-shadow: 0 0 em(3) em(3) rgba(0, 0, 0, 0.09);
+  color: #888;
+  display: block;
+  padding: em(10) em(20) em(20);
+  position: absolute;
+  top: 30%;
+  transform: translate(em(10), -30%);
+  width: em(310);
+  z-index: 2;
+
+  &--dark {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: none;
+    color: #fff;
+    p {
+      color: #fff;
+    }
+    &::before {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  &--top::before {
+    @extend %popover-arrow;
+    left: 50%;
+    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    top: 0;
+    transform: rotate(180deg) translate(em(7),em(15));
+  }
+
+  &--bottom::before {
+    @extend %popover-arrow;
+    left: 50%;
+    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    top: calc(100% - 5px);
+  }
+
+  &--left::before {
+    @extend %popover-arrow;
+    left: 0;
+    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    top: 30%;
+    transform: rotate(90deg) translate(em(7),em(15));
+  }
+
+  &--right::before {
+    @extend %popover-arrow;
+    left: calc(100% - 2px);
+    text-shadow: -2px em(2) rgba(0,0,0,0.09);
+    top: 30%;
+    transform: rotate(-90deg);
+  }
+
+  @media all and (max-width: 700px) {
+    transform:translate(-50%,-em(10));
+    width:90%;
+
+    &::before{
+      left: 50%;
+      top: 0;
+      transform: rotate(180deg) translate(em(7),em(15));
+    }
+
+  }
+}

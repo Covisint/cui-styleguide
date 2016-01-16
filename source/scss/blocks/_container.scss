@@ -1,22 +1,19 @@
 /*
-Container
+Tile
 
 Markup: 
 <div class="cui-tile">
-    <div class="cui-tile__title">Container Title</div>
-    <div class="cui-tile__body">
-        <p>Container Body</p>
-    </div>
+  <div class="cui-tile__title">Container Title</div>
+  <div class="cui-tile__body">
+    <p>Container Body</p>
+  </div>
 </div>
 
-Styleguide 2.4
+Styleguide Blocks.Container
 */
 
 .cui-tile {
   border-radius: $container-radius;
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 80%;
 
   &__body {
     background: white;
@@ -35,7 +32,6 @@ Styleguide 2.4
   }
 
   @media all and (max-width:600px){
-    width:90%;
 
     &__body {
       padding:$container-padding-small;

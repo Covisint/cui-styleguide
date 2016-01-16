@@ -3,8 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig ({
     watch:{
       css:{
-        files: ['source/scss/**/*.scss','source/scripts/*.js'],
-        tasks: ['concat:dist','sass','postcss','copy:min','copy:build','concat:js','copy:js']
+        files: ['source/scss/**/*.scss','source/scripts/*.js','README.md'],
+        tasks: ['concat:dist','sass','postcss','copy:min','exec','copy:build','concat:js','copy:js','copy:md']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         dest: 'source/styles.scss'
       },
       specificity: {
-        src: ['source/cui-wrapper.intro','.tmp/styles.css','source/cui-wrapper.outro'],
-        dest: '.tmp/styles.specific.css'
+        src: ['source/cui-wrapper.intro','source/styles.scss','source/cui-wrapper.outro'],
+        dest: 'source/styles.specific.scss'
       },
       js: {
         src: ['bower_components/snapjs/snap.min.js','source/scripts/*.js'],
@@ -36,13 +36,18 @@ module.exports = function(grunt) {
           'source/cui-styleguide-styles.css': 'source/cui-styleguide-styles.scss'
         }
       },
+      specificity: {
+        files: {
+          '.tmp/styles.specific.css':'source/styles.specific.scss'
+        }
+      }
     },
     postcss: {
       options: {
         map: false,
         processors: [
           require('autoprefixer')({browsers: 'last 2 versions'}),
-          require('cssnano')()
+          require('cssnano')({discardComments: 'true'})
         ]
       },
       dist: {
@@ -55,11 +60,41 @@ module.exports = function(grunt) {
       }
     },
     copy:{
+      bowerImg: {
+        files: [{
+          cwd: 'bower_components/cui-icons/dist',
+          src: [
+            'logos/logos-out.svg',
+            'icons/icons-out.svg',
+            'favicon.ico'
+          ],
+          dest: 'source/img',
+          expand: true
+        }]
+      },
       build:{
         files: [{
           cwd: 'source/',
-          src: ['styles.min.css','styles.specific.min.css','img/svg-out.svg','img/select-arrows.svg','cui-styleguide-styles.css'],
+          src: [
+          'styles.min.css',
+          'styles.specific.min.css',
+          'img/**/*.svg',
+          'img/**/*.png',
+          'img/*.ico',
+          'cui-styleguide-styles.css',
+          'off-canvas-iframe.html',
+          ],
           dest: 'styleguide/public/',
+          expand: true
+        },
+        {
+          cwd: 'bower_components/lato/font/lato-regular/',
+          src: [
+          '*.woff',
+          '*.woff2',
+          '*.ttf'
+          ],
+          dest: 'styleguide/public/fonts',
           expand: true
         }]
       },
@@ -76,6 +111,14 @@ module.exports = function(grunt) {
           cwd: '.tmp',
           src: ['scripts/*.js'],
           dest: 'styleguide/public',
+          expand: true
+        }]
+      },
+      md: {
+        files: [{
+          cwd: '.',
+          src: 'README.md',
+          dest: 'source/',
           expand: true
         }]
       }
@@ -103,6 +146,9 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    exec: {
+      kss: 'node_modules/kss/bin/kss-node --config kss-config.json'
     }
   });
 
@@ -114,6 +160,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
-  grunt.registerTask('build', ['sass','concat:specificity','postcss:dist','postcss:specificity','copy:min', 'copy:build', 'copy:js']);
+  grunt.registerTask('default', ['browserSync','watch:css','watch:js','watch:md']);
+  grunt.registerTask('build', [
+    'concat:specificity',
+    'sass',
+    'postcss:dist',
+    'postcss:specificity',
+    'copy:min',
+    'exec',
+    'copy:bowerImg', 
+    'copy:build', 
+    'copy:js'
+    ]);
 }

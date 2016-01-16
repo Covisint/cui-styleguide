@@ -1,12 +1,18 @@
 html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
   font-size: 16px; }
 
 .cui-styleguide__colors {
   color: #fff;
   display: inline-flex;
-  height: 6rem;
+  height: 8rem;
   padding: 20px;
-  width: 6rem; }
+  width: 8rem; }
 
 .cui-header__user--avatar {
   background-image: url(http://www.fillmurray.com/200/200); }
@@ -35,9 +41,25 @@ html {
   list-style-type: none; }
 
 .cui-styleguide__main {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #dfe9ee;
   flex: 1;
   min-height: 1000px; }
+  .cui-styleguide__main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 999px) {
+    .cui-styleguide__main {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+      .cui-styleguide__main::after {
+        clear: both;
+        content: "";
+        display: table; } }
 
 .cui-styleguide__section.cui-tile {
   margin: 50px auto; }
@@ -67,3 +89,7 @@ html {
 .cui-background,
 .cui-background--secondary {
   padding: 20px; }
+
+.cui-styleguide-modifier__example--with-bg {
+  background-color: #DEE9EE;
+  padding: 10px; }

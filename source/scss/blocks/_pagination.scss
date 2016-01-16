@@ -1,0 +1,97 @@
+/*
+Pagination
+
+Markup:
+<nav class="cui-pagination">
+  <span class="cui-pagination__total">Showing 1-300 of 1500 items</span>
+  <a class="cui-pagination__display-amount" href="#">Show 50</a> 
+  <ul class="cui-pagination__links">
+    <li class="cui-pagination__link">
+      <a href="#" aria-label="Previous">
+        <span class="cui-pagination__previous cui-pagination__previous--disabled" aria-hidden="true">&lsaquo;Prev</span>
+      </a>
+    </li>
+    <li class="cui-pagination__link cui-pagination__link--current">
+      <a href="">1</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="">2</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="">3</a>
+    </li>
+    <li class="cui-pagination__link">
+      <a href="#" aria-label="Next">
+        <span class="cui-pagination__next" aria-hidden="true">Next&rsaquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+Styleguide Blocks.Pagination
+*/
+
+.cui-pagination {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 550px;
+  text-align: center;
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+.cui-pagination__total {
+  flex-grow: 1;
+}
+
+.cui-pagination__links {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  text-align: center;
+  @media screen and (min-width: 500px) {
+    border-left: 1px solid black;
+    margin-left: -1px;
+  }
+}
+
+.cui-pagination__link {
+  flex-grow: 1;
+  list-style-type: none;
+  padding: 0 10px;
+  @media screen and (min-width: 500px) {
+    padding: 0;
+  }
+
+  a {
+    @extend .cui-link;
+    text-decoration: none;
+  }
+
+  .cui-pagination__link--current {
+    color: $primary-font-color;
+    cursor: text;
+  }
+}
+
+.cui-pagination__previous--disabled {
+  color: $primary-font-color;
+  cursor: default;
+}
+
+.cui-pagination__display-amount {
+  @extend .cui-link;
+  flex-grow: 1;
+  text-decoration: none;
+  @media screen and (min-width: 500px) {
+    border-left: 1px solid black;
+    margin-left: -1px;
+  }
+}
