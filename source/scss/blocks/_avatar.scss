@@ -2,10 +2,10 @@
 Avatar
 
 Markup: 
-<div class="cui-profile__user" onclick="toggle_visibility('cui-profile__popup');">
+<div class="cui-profile" onclick="toggle_visibility('cui-profile__popup');">
   <span class="cui-profile__user-name">Bill Murray</span>
   <div class="cui-profile__chevron cui-profile__chevron--left"></div>
-  <cui-avatar class="cui-profile__user-avatar">
+  <div class="cui-profile__user-avatar">
     <div id="cui-profile__popup" class="cui-profile__user-menu" style="opacity:0">
       <span class="cui-profile__menu-greet">
         Hello, Bill!<br/>
@@ -15,7 +15,7 @@ Markup:
       </span>
       <hr/>
     </div>
-  </cui-avatar>
+  </div>
 </div>
 
 Styleguide Blocks.Avatar
@@ -255,6 +255,14 @@ Styleguide Blocks.Avatar
       @extend .cui-chevron--bottom;
     }
   }
+}
+
+.cui-profile {
+  align-items:center;
+  display:flex;
+  flex-grow: 1;
+  height: 50px;
+  justify-content:flex-end;
 }
 
 
