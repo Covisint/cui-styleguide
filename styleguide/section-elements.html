@@ -700,15 +700,15 @@
                   <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
                 </div>
                 <div class="cui-styleguide-modifier__example">
-                  <div name="emails" class="cui-tags-input">
-  <div class="host" tabindex="-1">
-    <div class="tags">
-      <ul class="tag-list">
-        <li class="tag-item"><span>example@gmail.com</span>
-          <a class="remove-button">×</a>
+                  <div name="emails" class="cui-tags">
+  <div class="cui-tags__host" tabindex="-1">
+    <div class="cui-tags__container">
+      <ul class="cui-tags__tag-list">
+        <li class="cui-tags__tag"><span>example@gmail.com</span>
+          <a class="cui-tags__remove">×</a>
         </li>
       </ul>
-      <input class="input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="input" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
+      <input class="cui-tags__input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="cui-tags__registered-tag" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
     </div>
   </div>
 </div>
@@ -716,15 +716,15 @@
               </div>
               <div class="cui-styleguide__markup-title">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div name=&quot;emails&quot; class=&quot;cui-tags-input&quot;&gt;
-  &lt;div class=&quot;host&quot; tabindex=&quot;-1&quot;&gt;
-    &lt;div class=&quot;tags&quot;&gt;
-      &lt;ul class=&quot;tag-list&quot;&gt;
-        &lt;li class=&quot;tag-item&quot;&gt;&lt;span&gt;example@gmail.com&lt;/span&gt;
-          &lt;a class=&quot;remove-button&quot;&gt;×&lt;/a&gt;
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div name=&quot;emails&quot; class=&quot;cui-tags&quot;&gt;
+  &lt;div class=&quot;cui-tags__host&quot; tabindex=&quot;-1&quot;&gt;
+    &lt;div class=&quot;cui-tags__container&quot;&gt;
+      &lt;ul class=&quot;cui-tags__tag-list&quot;&gt;
+        &lt;li class=&quot;cui-tags__tag&quot;&gt;&lt;span&gt;example@gmail.com&lt;/span&gt;
+          &lt;a class=&quot;cui-tags__remove&quot;&gt;×&lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
-      &lt;input class=&quot;input&quot; autocomplete=&quot;off&quot; type=&quot;text&quot; placeholder=&quot;&quot; spellcheck=&quot;true&quot;&gt;&lt;span class=&quot;input&quot; style=&quot;visibility: hidden; width: auto; white-space: pre; display: none;&quot;&gt;example@gmail.com&lt;/span&gt;
+      &lt;input class=&quot;cui-tags__input&quot; autocomplete=&quot;off&quot; type=&quot;text&quot; placeholder=&quot;&quot; spellcheck=&quot;true&quot;&gt;&lt;span class=&quot;cui-tags__registered-tag&quot; style=&quot;visibility: hidden; width: auto; white-space: pre; display: none;&quot;&gt;example@gmail.com&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
