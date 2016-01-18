@@ -4,12 +4,12 @@ Texts
 Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.
 
 Markup: 
-<h1>H1 Heading</h1>
-<h2>H2 Heading</h2>
-<h3>H3 Heading</h3>
-<h4>H4 Heading</h4>
-<h5>H5 Heading</h5>
-<h6>H6 Heading</h6>
+<h1 class="h1">H1 Heading</h1>
+<h2 class="h2">H2 Heading</h2>
+<h3 class="h3">H3 Heading</h3>
+<h4 class="h4">H4 Heading</h4>
+<h5 class="h5">H5 Heading</h5>
+<h6 class="h6">H6 Heading</h6>
 <div class="cui-styleguide__text-section">
   <span class="cui-italic">Italics should be used sparingly.</span><br>
   <span class="cui-bold">Bolds should never be used.</span><br>
@@ -78,4 +78,14 @@ ol,
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+}
+
+.cui-ul--default {
+  list-style-type: disc; 
+  list-style-position: inside;
+}
+
+.cui-ol--default {
+  list-style-type: decimal; 
+  list-style-position: inside;
 }
