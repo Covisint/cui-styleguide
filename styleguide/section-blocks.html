@@ -255,16 +255,16 @@
                   <div class="cui-styleguide-modifier__title">EXAMPLE: </div>
                 </div>
                 <div class="cui-styleguide-modifier__example">
-                  <div class="cui-header__user" onclick="toggle_visibility('cui-avatar__popup');">
-  <span class="cui-header__user--name">Bill Murray</span>
-  <div class="cui-chevron--left"></div>
-  <cui-avatar class="cui-header__user--avatar cui-avatar" >
-    <div id="cui-avatar__popup" class="cui-avatar--popup" style="opacity:0">
-      <span class="cui-avatar--popup__greet">
+                  <div class="cui-profile__user" onclick="toggle_visibility('cui-profile__popup');">
+  <span class="cui-profile__user-name">Bill Murray</span>
+  <div class="cui-profile__chevron cui-profile__chevron--left"></div>
+  <cui-avatar class="cui-profile__user-avatar">
+    <div id="cui-profile__popup" class="cui-profile__user-menu" style="opacity:0">
+      <span class="cui-profile__menu-greet">
         Hello, Bill!<br/>
         <span class="small">Logged in as Bill Murray</span>
       </span>
-      <span class="cui-avatar--popup__greet">You should login.<br/>
+      <span class="cui-profile__menu-greet">You should login.<br/>
       </span>
       <hr/>
     </div>
@@ -274,16 +274,16 @@
               </div>
               <div class="cui-styleguide__markup-title">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-header__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-avatar__popup&#x27;);&quot;&gt;
-  &lt;span class=&quot;cui-header__user--name&quot;&gt;Bill Murray&lt;/span&gt;
-  &lt;div class=&quot;cui-chevron--left&quot;&gt;&lt;/div&gt;
-  &lt;cui-avatar class=&quot;cui-header__user--avatar cui-avatar&quot; &gt;
-    &lt;div id=&quot;cui-avatar__popup&quot; class=&quot;cui-avatar--popup&quot; style=&quot;opacity:0&quot;&gt;
-      &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-profile__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-profile__popup&#x27;);&quot;&gt;
+  &lt;span class=&quot;cui-profile__user-name&quot;&gt;Bill Murray&lt;/span&gt;
+  &lt;div class=&quot;cui-profile__chevron cui-profile__chevron--left&quot;&gt;&lt;/div&gt;
+  &lt;cui-avatar class=&quot;cui-profile__user-avatar&quot;&gt;
+    &lt;div id=&quot;cui-profile__popup&quot; class=&quot;cui-profile__user-menu&quot; style=&quot;opacity:0&quot;&gt;
+      &lt;span class=&quot;cui-profile__menu-greet&quot;&gt;
         Hello, Bill!&lt;br/&gt;
         &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
       &lt;/span&gt;
-      &lt;span class=&quot;cui-avatar--popup__greet&quot;&gt;You should login.&lt;br/&gt;
+      &lt;span class=&quot;cui-profile__menu-greet&quot;&gt;You should login.&lt;br/&gt;
       &lt;/span&gt;
       &lt;hr/&gt;
     &lt;/div&gt;

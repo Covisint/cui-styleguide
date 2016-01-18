@@ -14,7 +14,8 @@ html {
   padding: 20px;
   width: 8rem; }
 
-.cui-header__user--avatar {
+.cui-header__user--avatar,
+.cui-profile__user-avatar {
   background-image: url(http://www.fillmurray.com/200/200); }
 
 .cui-styleguide__page-container,
