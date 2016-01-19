@@ -31,8 +31,8 @@
     "ssh_config"
   ],
   "devDependencies": {
-    "cui-icons": "git@github.com:thirdwavellc/cui-icons.git",
-    "cui-i18n": "git@github.com:thirdwavellc/cui-i18n.git",
+    "cui-icons": "#master",
+    "cui-i18n": "#master",
     "lato": "~0.3.0"
   }
 }

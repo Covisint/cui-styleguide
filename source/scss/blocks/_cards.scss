@@ -2,7 +2,7 @@
 Card
 
 Markup:
-<div class="cui-card__container">
+<div>
   <div class="cui-card">
     <div class="cui-card__image-container">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="88px"
@@ -21,17 +21,18 @@ Markup:
 Styleguide Blocks.Cards
 */
 
-
+// styles below to be removed with next relese
 .cui-card__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 500px;
+  min-height: em(500);
   @media screen and (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
   }
 }
+// styles above to be removed with next release
 
 .cui-card {
   background: #fff;
@@ -39,10 +40,11 @@ Styleguide Blocks.Cards
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 40px 40px;
+  height: em(460);
+  margin: em(10);
+  max-width: 20em;
+  padding: em(40) em(40);
   transition: box-shadow .2s ease, transform .2s ease;
-  width: 20em;
   
   &:hover {
     box-shadow: 0 1px 3px $cui-greyscale--medium-light;
@@ -86,4 +88,5 @@ p {
   @extend .cui-button;
   align-self: center;
   border-radius: em(12);
+  height: em(50, 12);
 }

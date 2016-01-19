@@ -10,9 +10,9 @@ html {
 .cui-styleguide__colors {
   color: #fff;
   display: inline-flex;
-  height: 8rem;
+  height: 10em;
   padding: 20px;
-  width: 8rem; }
+  width: 10em; }
 
 .cui-header__user-avatar,
 .cui-profile__user-avatar {
