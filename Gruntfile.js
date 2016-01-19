@@ -169,7 +169,8 @@ module.exports = function(grunt) {
     'copy:min',
     'exec',
     'copy:bowerImg', 
-    'copy:build', 
+    'copy:build',
+    'concat:js', 
     'copy:js'
     ]);
 }
