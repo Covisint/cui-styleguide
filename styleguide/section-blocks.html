@@ -107,14 +107,20 @@
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
-                  <a href="section-blocks.html#kssref-blocks-tile">
+                  <a href="section-blocks.html#kssref-blocks-step-indicator-with-icons">
                     <!-- <span class="cui-styleguide__nav__ref">2.12</span> -->
+                    <span class="cui-styleguide__nav__name">Step Indicator With Icons</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="section-blocks.html#kssref-blocks-tile">
+                    <!-- <span class="cui-styleguide__nav__ref">2.13</span> -->
                     <span class="cui-styleguide__nav__name">Tile</span>
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
                   <a href="section-blocks.html#kssref-blocks-wizard">
-                    <!-- <span class="cui-styleguide__nav__ref">2.13</span> -->
+                    <!-- <span class="cui-styleguide__nav__ref">2.14</span> -->
                     <span class="cui-styleguide__nav__name">Wizard</span>
                   </a>
                 </li>
@@ -223,14 +229,20 @@
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
-                  <a href="section-blocks.html#kssref-blocks-tile">
+                  <a href="section-blocks.html#kssref-blocks-step-indicator-with-icons">
                     <!-- <span class="cui-styleguide__nav__ref">2.12</span> -->
+                    <span class="cui-styleguide__nav__name">Step Indicator With Icons</span>
+                  </a>
+                </li>
+                <li class="cui-off-canvas__sub-section">
+                  <a href="section-blocks.html#kssref-blocks-tile">
+                    <!-- <span class="cui-styleguide__nav__ref">2.13</span> -->
                     <span class="cui-styleguide__nav__name">Tile</span>
                   </a>
                 </li>
                 <li class="cui-off-canvas__sub-section">
                   <a href="section-blocks.html#kssref-blocks-wizard">
-                    <!-- <span class="cui-styleguide__nav__ref">2.13</span> -->
+                    <!-- <span class="cui-styleguide__nav__ref">2.14</span> -->
                     <span class="cui-styleguide__nav__name">Wizard</span>
                   </a>
                 </li>
@@ -1260,6 +1272,129 @@
               </div>
               </div>
               </section>
+              <section id="kssref-blocks-step-indicator-with-icons" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
+            
+
+            <div class="cui-styleguide__style">
+              <div clas="cui-tile__title"></div>
+              <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2 h4">
+                <a class="cui-styleguide__title__permalink" href="#kssref-blocks-step-indicator-with-icons">
+                  <span class="cui-styleguide__title__ref">
+                      2.12
+                  </span>
+                  Step Indicator With Icons
+                </a>
+              </h2>
+
+            </div>
+
+            <div class="cui-tile__body">
+            
+
+              <div class="cui-styleguide-modifier__wrapper">
+                <div class="cui-styleguide-modifier__heading cui-styleguide__style">
+                  <div class="cui-styleguide-modifier__title h4">EXAMPLE: </div>
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <indicator-container class="indicator-container">
+<span class="step-indicator ng-binding ng-scope active">Step 1
+  <div class="icon-container">
+    <div class="icon">
+      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
+          <use xlink:href="public/img/icons/icons-out.svg#skyscraper"></use>
+        </svg>
+      </cui-icon>
+    </div>
+  </div>
+</span>
+<span class="step-indicator ng-binding ng-scope">Step 1
+  <div class="icon-container">
+    <div class="icon">
+      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
+          <use xlink:href="public/img/icons/icons-out.svg#user"></use>
+        </svg>
+      </cui-icon>
+    </div>
+  </div>
+</span>
+<span class="step-indicator ng-binding ng-scope">Step 1
+  <div class="icon-container">
+    <div class="icon">
+      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
+          <use xlink:href="public/img/icons/icons-out.svg#division"></use>
+        </svg>
+      </cui-icon>
+    </div>
+  </div>
+</span>
+<span class="step-indicator ng-binding ng-scope">Step 1
+  <div class="icon-container">
+    <div class="icon">
+      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
+          <use xlink:href="public/img/icons/icons-out.svg#review"></use>
+        </svg>
+      </cui-icon>
+    </div>
+  </div>
+</span>
+</indicator-container>
+                </div>
+              </div>
+              <div class="cui-styleguide__markup-title h4">CODE:</div>
+              <div class="cui-styleguide__markup-container cui-styleguide__style">
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;indicator-container class=&quot;indicator-container&quot;&gt;
+&lt;span class=&quot;step-indicator ng-binding ng-scope active&quot;&gt;Step 1
+  &lt;div class=&quot;icon-container&quot;&gt;
+    &lt;div class=&quot;icon&quot;&gt;
+      &lt;cui-icon cui-svg-icon=&quot;cui:skyscraper&quot; class=&quot;ng-isolate-scope&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;cui-icon-rotate&quot; fit=&quot;&quot; height=&quot;100%&quot; width=&quot;100%&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 48 48&quot; style=&quot;pointer-events: none; display: block;&quot;&gt;
+          &lt;use xlink:href=&quot;public/img/icons/icons-out.svg#skyscraper&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/cui-icon&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/span&gt;
+&lt;span class=&quot;step-indicator ng-binding ng-scope&quot;&gt;Step 1
+  &lt;div class=&quot;icon-container&quot;&gt;
+    &lt;div class=&quot;icon&quot;&gt;
+      &lt;cui-icon cui-svg-icon=&quot;cui:skyscraper&quot; class=&quot;ng-isolate-scope&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;cui-icon-rotate&quot; fit=&quot;&quot; height=&quot;100%&quot; width=&quot;100%&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 48 48&quot; style=&quot;pointer-events: none; display: block;&quot;&gt;
+          &lt;use xlink:href=&quot;public/img/icons/icons-out.svg#user&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/cui-icon&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/span&gt;
+&lt;span class=&quot;step-indicator ng-binding ng-scope&quot;&gt;Step 1
+  &lt;div class=&quot;icon-container&quot;&gt;
+    &lt;div class=&quot;icon&quot;&gt;
+      &lt;cui-icon cui-svg-icon=&quot;cui:skyscraper&quot; class=&quot;ng-isolate-scope&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;cui-icon-rotate&quot; fit=&quot;&quot; height=&quot;100%&quot; width=&quot;100%&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 48 48&quot; style=&quot;pointer-events: none; display: block;&quot;&gt;
+          &lt;use xlink:href=&quot;public/img/icons/icons-out.svg#division&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/cui-icon&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/span&gt;
+&lt;span class=&quot;step-indicator ng-binding ng-scope&quot;&gt;Step 1
+  &lt;div class=&quot;icon-container&quot;&gt;
+    &lt;div class=&quot;icon&quot;&gt;
+      &lt;cui-icon cui-svg-icon=&quot;cui:skyscraper&quot; class=&quot;ng-isolate-scope&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;cui-icon-rotate&quot; fit=&quot;&quot; height=&quot;100%&quot; width=&quot;100%&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; viewBox=&quot;0 0 48 48&quot; style=&quot;pointer-events: none; display: block;&quot;&gt;
+          &lt;use xlink:href=&quot;public/img/icons/icons-out.svg#review&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/cui-icon&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/span&gt;
+&lt;/indicator-container&gt;</code></pre>
+              </div>
+              </div>
+              </section>
               <section id="kssref-blocks-tile" class="cui-tile cui-styleguide__section cui-styleguide__section--depth-2">
             
 
@@ -1268,7 +1403,7 @@
               <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2 h4">
                 <a class="cui-styleguide__title__permalink" href="#kssref-blocks-tile">
                   <span class="cui-styleguide__title__ref">
-                      2.12
+                      2.13
                   </span>
                   Tile
                 </a>
@@ -1311,7 +1446,7 @@
               <h2 class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-2 h4">
                 <a class="cui-styleguide__title__permalink" href="#kssref-blocks-wizard">
                   <span class="cui-styleguide__title__ref">
-                      2.13
+                      2.14
                   </span>
                   Wizard
                 </a>
