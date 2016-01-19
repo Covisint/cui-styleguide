@@ -234,6 +234,11 @@ Styleguide Blocks.Wizard
 
 
 //Shane this was & .step-indicator , was there a reason for that, or just a mistake?
+
+.indicator-container {
+  border-bottom: 1px solid #ddd;
+}
+
 .step-indicator {
   color: #bbb;
   display: inline-block;
@@ -266,6 +271,10 @@ Styleguide Blocks.Wizard
     .icon {
       border: em(2) solid #429DD1;
     }
+
+    .cui-icon-rotate {
+      fill: $cui-primary-colors--medium;
+    }
   }
 
   &.visited {
@@ -278,6 +287,7 @@ Styleguide Blocks.Wizard
 }
 
 .cui-icon-rotate{
+  fill: $cui-greyscale--medium-light;
   height: em(24);
   width: em(24);
 

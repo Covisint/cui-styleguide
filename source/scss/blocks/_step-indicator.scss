@@ -2,12 +2,12 @@
 Step Indicator
 
 Markup:
-<indicator-container class="indicator-container">
+<div class="indicator-container">
   <span class="step-indicator active">Example Step 1</span>
   <span class="step-indicator">Example Step 2</span>
   <span class="step-indicator">Example Step 3</span>
   <span class="step-indicator">Example Step 4</span>
-</indicator-container>
+</div>
 
 Styleguide Blocks.Step-Indicator
 */
@@ -16,52 +16,53 @@ Styleguide Blocks.Step-Indicator
 Step Indicator With Icons
 
 Markup:
-<indicator-container class="indicator-container">
-<span class="step-indicator ng-binding ng-scope active">Step 1
-  <div class="icon-container">
-    <div class="icon">
-      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
-        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
-          <use xlink:href="public/img/icons/icons-out.svg#skyscraper"></use>
-        </svg>
-      </cui-icon>
+<div class="indicator-container indicator-container--icons">
+  <div class="steps-bar"><div class="steps-bar-fill"></div></div>
+  <span class="step-indicator ng-binding ng-scope active">Step 1
+    <div class="icon-container">
+      <div class="icon">
+        <div cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+          <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <use xlink:href="public/img/icons/icons-out.svg#skyscraper"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
-</span>
-<span class="step-indicator ng-binding ng-scope">Step 1
-  <div class="icon-container">
-    <div class="icon">
-      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
-        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
-          <use xlink:href="public/img/icons/icons-out.svg#user"></use>
-        </svg>
-      </cui-icon>
+  </span>
+  <span class="step-indicator ng-binding ng-scope">Step 2
+    <div class="icon-container">
+      <div class="icon">
+        <div cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+          <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <use xlink:href="public/img/icons/icons-out.svg#user"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
-</span>
-<span class="step-indicator ng-binding ng-scope">Step 1
-  <div class="icon-container">
-    <div class="icon">
-      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
-        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
-          <use xlink:href="public/img/icons/icons-out.svg#division"></use>
-        </svg>
-      </cui-icon>
+  </span>
+  <span class="step-indicator ng-binding ng-scope">Step 3
+    <div class="icon-container">
+      <div class="icon">
+        <div cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+          <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <use xlink:href="public/img/icons/icons-out.svg#division"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
-</span>
-<span class="step-indicator ng-binding ng-scope">Step 1
-  <div class="icon-container">
-    <div class="icon">
-      <cui-icon cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
-        <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48" style="pointer-events: none; display: block;">
-          <use xlink:href="public/img/icons/icons-out.svg#review"></use>
-        </svg>
-      </cui-icon>
+  </span>
+  <span class="step-indicator ng-binding ng-scope">Step 4
+    <div class="icon-container">
+      <div class="icon">
+        <div cui-svg-icon="cui:skyscraper" class="ng-isolate-scope">
+          <svg xmlns="http://www.w3.org/2000/svg" class="cui-icon-rotate" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+            <use xlink:href="public/img/icons/icons-out.svg#review"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-  </div>
-</span>
-</indicator-container>
+  </span>
+</div>
 
 Styleguide Blocks.Step-Indicator-With-Icons
 */

@@ -90,7 +90,7 @@ Styleguide Blocks.Expandable
 }
 
 .indicator-container {
-  border: 0;
+  border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -101,10 +101,11 @@ Styleguide Blocks.Expandable
     height: em(2);
     position: absolute;
     top: 62%;
+    width: 100%;
     z-index: 0;
 
     .steps-bar-fill {
-      background: #666;
+      background: #D0D0D0;
       display: inline-block;
       height: em(2);
       position: absolute;
@@ -112,7 +113,7 @@ Styleguide Blocks.Expandable
   }
 
   &.small {
-    &>.step-indicator {
+    & .step-indicator {
       display: none;
       pointer-events: none;
 
@@ -121,6 +122,21 @@ Styleguide Blocks.Expandable
         display:inline-block;
         margin:0 auto;
         text-align: center;
+        color: #bbb;
+      }
+    }
+  }
+}
+
+.indicator-container--icons {
+  border: 0;
+
+  &.small {
+    & .step-indicator {
+      display: none;
+      pointer-events: none;
+
+      &.active {
         color: #429DD1;
       }
 
