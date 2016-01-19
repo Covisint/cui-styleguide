@@ -40,9 +40,9 @@ Styleguide Blocks.Cards
   display: flex;
   flex-direction: column;
   margin: 10px;
+  max-width: 20em;
   padding: 40px 40px;
   transition: box-shadow .2s ease, transform .2s ease;
-  width: 20em;
   
   &:hover {
     box-shadow: 0 1px 3px $cui-greyscale--medium-light;
