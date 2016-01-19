@@ -119,7 +119,7 @@
 
             <div class="cui-styleguide__style">
               <div clas="cui-tile__title"></div>
-              <h{{depth}} class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-{{depth}}">
+              <h{{depth}} class="cui-tile__title cui-styleguide__title cui-styleguide__title--level-{{depth}} h4">
                 <a class="cui-styleguide__title__permalink" href="#kssref-{{referenceURI}}">
                   <span class="cui-styleguide__title__ref">
                     {{#ifNumeric reference}}
@@ -179,7 +179,7 @@
             {{else}}
             {{#if description}}
               <div class="cui-styleguide__description-container">
-                <span class="cui-styleguide__description">DESCRIPTION: </span>{{{description}}}
+                <span class="cui-styleguide__description h4">DESCRIPTION: </span>{{{description}}}
               </div>
             {{/if}}
             
@@ -187,11 +187,11 @@
             {{#if markup}}
               <div class="cui-styleguide-modifier__wrapper">
                 <div class="cui-styleguide-modifier__heading cui-styleguide__style">
-                  <div class="cui-styleguide-modifier__title">EXAMPLE: </div>{{#if modifiers}}{{/if}}
+                  <div class="cui-styleguide-modifier__title h4">EXAMPLE: </div>{{#if modifiers}}{{/if}}
                 </div>
               {{#if modifiers}}
-                <div class="cui-styleguide-modifier__default-name cui-styleguide__style">
-                  Default styling
+                <div class="cui-styleguide-modifier__default-name cui-styleguide__style h5">
+                  Base styles
                 </div>
               {{/if}}
               {{#ifReference  "Blocks.Cards"}}
@@ -204,7 +204,7 @@
                 </div>
               {{/ifReference}}
               {{#eachModifier}}
-                <div class="cui-styleguide-modifier__name cui-styleguide__style">
+                <div class="cui-styleguide-modifier__name cui-styleguide__style h5">
                   {{name}}
                 </div>
                 <div class="cui-styleguide-modifier__description cui-styleguide__style">
@@ -215,7 +215,7 @@
                 </div>
               {{/eachModifier}}
               </div>
-              <div class="cui-styleguide__markup-title">CODE:</div>
+              <div class="cui-styleguide__markup-title h4">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
               </div>
