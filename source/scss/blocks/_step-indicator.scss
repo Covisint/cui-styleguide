@@ -17,7 +17,7 @@ Step Indicator With Icons
 
 Markup:
 <div class="indicator-container indicator-container--icons">
-  <div class="steps-bar"><div class="steps-bar-fill"></div></div>
+  <div class="steps-bar steps-bar--no-js"><div class="steps-bar-fill"></div></div>
   <span class="step-indicator ng-binding ng-scope active">Step 1
     <div class="icon-container">
       <div class="icon">
