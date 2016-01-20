@@ -40,7 +40,7 @@ Styleguide Blocks.Cards
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: em(460);
+  min-height: em(460);
   margin: em(10);
   max-width: 20em;
   padding: em(40) em(40);
