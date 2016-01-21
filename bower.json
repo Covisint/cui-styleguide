@@ -32,7 +32,7 @@
   ],
   "devDependencies": {
     "cui-icons": "#master",
-    "cui-i18n": "#master",
-    "lato": "~0.3.0"
+    "lato": "~0.3.0",
+    "snapjs": "https://github.com/jakiestfu/Snap.js.git#master"
   }
 }

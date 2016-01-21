@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf bower_components
 bower install
 npm install
 $PATH kss-node --config kss-config.json
