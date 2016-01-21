@@ -1,5 +1,6 @@
 #!/bin/bash
 
+nvm use
 rm -rf bower_components
 bower install
 npm install
