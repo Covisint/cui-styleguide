@@ -31,8 +31,8 @@
     "ssh_config"
   ],
   "devDependencies": {
-    "cui-icons": "git@github.com:thirdwavellc/cui-icons.git",
-    "cui-i18n": "git@github.com:thirdwavellc/cui-i18n.git",
-    "lato": "~0.3.0"
+    "cui-icons": "#master",
+    "lato": "~0.3.0",
+    "snapjs": "https://github.com/jakiestfu/Snap.js.git#master"
   }
 }

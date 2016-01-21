@@ -86,15 +86,15 @@ Styleguide Elements.Forms.Input
 Email tags field
 
 Markup:
-<div name="emails" class="cui-tags-input">
-  <div class="host" tabindex="-1">
-    <div class="tags">
-      <ul class="tag-list">
-        <li class="tag-item"><span>example@gmail.com</span> 
-          <a class="remove-button">×</a>
+<div name="emails" class="cui-tags">
+  <div class="cui-tags__host" tabindex="-1">
+    <div class="cui-tags__container">
+      <ul class="cui-tags__tag-list">
+        <li class="cui-tags__tag"><span>example@gmail.com</span> 
+          <a class="cui-tags__remove">×</a>
         </li>
       </ul>
-      <input class="input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="input" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
+      <input class="cui-tags__input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="cui-tags__registered-tag" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
     </div> 
   </div>
 </div>
@@ -102,177 +102,201 @@ Markup:
 Styleguide Elements.Forms.Tags
 */
 
-.cui-tags-input {
+.cui-tags-input, 
+.cui-tags {
   display: block;
   font-size: em(14);
 
   &.ng-touched {
     &.ng-invalid {
-      & .tags {
+      & .tags,
+      & .cui-tags__container {
         border:1px solid $cui-input-border--invalid;
       }
     }
     &.ng-valid {
-      & .tags {
+      & .tags,
+      & .cui-tags__container {
         border:1px solid $cui-input-border--valid;
       }
     }
   }
 }
 
-.cui-tags-input *, .cui-tags-input *:before, .cui-tags-input *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+.cui-tags-input *, .cui-tags-input *:before, .cui-tags-input *:after { 
   box-sizing: border-box;
 }
 
-
-.cui-tags-input .host {
-  position: relative;
-  margin-top: 5px;
+.cui-tags-input .host,
+.cui-tags__host {
   margin-bottom: 20px;
+  margin-top: 5px;
+  position: relative;
 }
 
-.cui-tags-input .host:active {
+.cui-tags-input .host:active,
+.cui-tags__host:active {
   outline: 0;
 }
 
-.cui-tags-input .tags {
-  padding: $input-padding;
-  min-height: 56px;
-  overflow: hidden;
-  word-wrap: break-word;
-  cursor: text;
+.cui-tags-input .tags,
+.cui-tags__container {
   background-color: $cui-greyscale--light;
   border: 1px solid $cui-input-border;
+  cursor: text;
+  min-height: 56px;
+  overflow: hidden;
+  padding: $input-padding;
+  word-wrap: break-word;
 }
 
-.cui-tags-input .tags.focused {
+.cui-tags-input .tags.focused,
+.cui-tags__container--focused {
   border: 1px solid $cui-input-border--focus;
   outline: 0;
 }
 
-.cui-tags-input .tags .tag-list {
-  padding: 4px 20px 0 0;
-  margin: 0 10px 0 0;
+.cui-tags-input .tags .tag-list,
+.cui-tags__tag-list {
   list-style-type: none;
+  margin: 0 10px 0 0;
+  padding: 4px 20px 0 0;
 }
 
-.cui-tags-input .tags .tag-item {
+.cui-tags-input .tags .tag-item,
+.cui-tags__tag {
   background: $cui-primary-colors--medium-light;
   border-radius: 3px;
   color: $cui-greyscale--light;
   display: inline-block;
   float: left;
-  padding: 5px;
   margin: 0 10px 5px 0;
+  padding: 5px;
 }
 
-.cui-tags-input .tags .tag-item.selected {
+.cui-tags-input .tags .tag-item.selected,
+.cui-tags__tag--selected {
   background: $cui-secondary-colors--dark;
 }
 
-.cui-tags-input .tags .tag-item .remove-button {
+.cui-tags-input .tags .tag-item .remove-button,
+.cui-tags__remove {
+  background: none;
+  border: none;
+  color: $cui-greyscale--light;
+  cursor: pointer;
+  font: bold 16px Arial, sans-serif;
   margin: 0 0 0 5px;
   padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
   vertical-align: middle;
-  font: bold 16px Arial, sans-serif;
-  color: $cui-greyscale--light;
 }
 
-.cui-tags-input .tags .tag-item .remove-button:active {
+.cui-tags-input .tags .tag-item .remove-button:active,
+.cui-tags__remove:active {
   color: $cui-secondary-colors--medium-light;
 }
 
-.cui-tags-input .tags .input {
+.cui-tags-input .tags .input,
+.cui-tags__input {
   border: 0;
+  float: left;
   outline: 0;
   padding: 5px 0 0 0;
   width:3px;
-  float: left;
 }
 
-.cui-tags-input .tags .input.invalid-tag {
+.cui-tags-input .tags .input.invalid-tag,
+.cui-tags__input--invalid {
   color: $cui-secondary-colors--dark;
 }
 
-.cui-tags-input .tags .input::-ms-clear {
+.cui-tags-input .tags .input::-ms-clear,
+.cui-tags__input::-ms-clear {
   display: none;
 }
 
-.cui-tags-input[disabled] .host:focus {
+.cui-tags-input[disabled] .host:focus,
+.cui-tags__host:focus {
   outline: 0;
 }
 
-.cui-tags-input[disabled] .tags {
+.cui-tags-input[disabled] .tags,
+.cui-tags[disabled] .cui-tags__container {
   background-color: #eee;
   cursor: default;
 }
 
-.cui-tags-input[disabled] .tags .tag-item {
-  opacity: 0.65;
+.cui-tags-input[disabled] .tags .tag-item,
+.cui-tags[disabled] .cui-tags__tag {
   background: linear-gradient(to bottom, #f0f9ff 0%, rgba(203, 235, 255, 0.75) 47%, rgba(161, 219, 255, 0.62) 100%);
+  opacity: 0.65;
 }
 
-.cui-tags-input[disabled] .tags .tag-item .remove-button {
+.cui-tags-input[disabled] .tags .tag-item .remove-button,
+.cui-tags[disabled] .cui-tags__remove {
   cursor: default;
 }
 
-.cui-tags-input[disabled] .tags .tag-item .remove-button:active {
+.cui-tags-input[disabled] .tags .tag-item .remove-button:active,
+.cui-tags[disabled] .cui-tags__remove {
   color: #585858;
 }
 
-.cui-tags-input[disabled] .tags .input {
+.cui-tags-input[disabled] .tags .input,
+.cui-tags[disabled] .cui-tags__input {
   background-color: #eee;
   cursor: default;
 }
 
-.cui-tags-input .autocomplete {
+.cui-tags-input .autocomplete,
+.cui-tags .autocomplete {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin-top: 5px;
-  position: absolute;
   padding: 5px 0;
-  z-index: 999;
+  position: absolute;
   width: 100%;
+  z-index: 999;
 }
 
-.cui-tags-input .autocomplete .suggestion-list {
-  margin: 0;
-  padding: 0;
+.cui-tags-input .autocomplete .suggestion-list,
+.cui-tags .autocomplete .suggestion-list {
   list-style-type: none;
+  margin: 0;
   max-height: 280px;
   overflow-y: auto;
+  padding: 0;
   position: relative;
 }
 
-.cui-tags-input .autocomplete .suggestion-item {
-  padding: 5px 10px;
+.cui-tags-input .autocomplete .suggestion-item,
+.cui-tags .autocomplete .suggestion-item {
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
-  white-space: nowrap;
   overflow: hidden;
+  padding: 5px 10px;
   text-overflow: ellipsis;
-  color: #000;
-  background-color: #fff;
+  white-space: nowrap;
 }
 
-.cui-tags-input .autocomplete .suggestion-item.selected {
-  color: #fff;
+.cui-tags-input .autocomplete .suggestion-item.selected,
+.cui-tags .autocomplete .suggestion-item.selected {
   background-color: #0097cf;
-}
-
-.cui-tags-input .autocomplete .suggestion-item.selected em {
   color: #fff;
-  background-color: #0097cf;
 }
 
-.cui-tags-input .autocomplete .suggestion-item em {
-  color: #000;
+.cui-tags-input .autocomplete .suggestion-item.selected em,
+.cui-tags .autocomplete .suggestion-item.selected em {
+  background-color: #0097cf;
+  color: #fff;
+}
+
+.cui-tags-input .autocomplete .suggestion-item em,
+.cui-tags .autocomplete .suggestion-item em {
   background-color: #fff;
+  color: #000;
 }
 
 /*

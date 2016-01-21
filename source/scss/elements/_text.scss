@@ -1,34 +1,29 @@
 /* 
 Texts
 
-Styles for text. Heading tags have the same base font size and weight to encourage writing semantic markup.
+Styles for text. Please refer to _vars.scss for variable values.
+
+Styleguide Elements.Texts
+*/
+
+/*
+Headers
+
+Header styling is applied through the use of classes. Our recommended method for applying h1 styling is to @extend the %h1 placeholder selector in a class's CSS style declaration block and apply that class to your element.
 
 Markup: 
-<h1>H1 Heading</h1>
-<h2>H2 Heading</h2>
-<h3>H3 Heading</h3>
-<h4>H4 Heading</h4>
-<h5>H5 Heading</h5>
-<h6>H6 Heading</h6>
+<h1 class="h1">H1 Heading</h1>
+<h2 class="h2">H2 Heading</h2>
+<h3 class="h3">H3 Heading</h3>
+<h4 class="h4">H4 Heading</h4>
+<h5 class="h5">H5 Heading</h5>
+<h6 class="h6">H6 Heading</h6>
 <div class="cui-styleguide__text-section">
-  <span class="cui-italic">Italics should be used sparingly.</span><br>
-  <span class="cui-bold">Bolds should never be used.</span><br>
-  The heaviest weight of Helvetica Neue <br>
-  that should be used is Medium. <br>
-  <p>Paragraph text. Donec sed odio dui. Cras justo odio, dapibus 
-  ac facilisis in. Egestas eget quam. Maecenas faucibus mollis 
-  interdum maecenas faucibus.</p> 
 </div>
-<a class="cui-link" href="">Link Style</a>
-<ul class="cui-ul">
-  <li>Unordered List</li>
-  <li>Unordered List</li>
-</ul>
-<ol class="cui-ol">
-  <li>Ordered List</li>
-</ol>
 
-Styleguide Elements.Text
+Weight: -20
+
+Styleguide Elements.Texts.Headers
 */ 
 
 @include font-face('lato-regular','fonts/lato-regular', $file-formats: woff2 woff);
@@ -47,29 +42,65 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.h1 { font-size: $font-size-h1; }
-.h2 { font-size: $font-size-h2; }
-.h3 { font-size: $font-size-h3; }
-.h4 { font-size: $font-size-h4; }
-.h5 { font-size: $font-size-h5; }
-.h6 { font-size: $font-size-h6; }
+.h1, %h1 { font-size: $font-size-h1; }
+.h2, %h2 { font-size: $font-size-h2; }
+.h3, %h3 { font-size: $font-size-h3; }
+.h4, %h4 { font-size: $font-size-h4; }
+.h5, %h5 { font-size: $font-size-h5; }
+.h6, %h6 { font-size: $font-size-h6; }
 
-.h1, .h2, .h3, .h4, .h5, .h6 { font-weight: $font-header-weight; }
-
-.cui-italic,
-.cui-bold,
- {
-  color: $primary-font-color;
-  font-style: italic;
-}
+.h1, .h2, .h3, .h4, .h5, .h6, %h1, %h2, %h3, %h4, %h5, %h6 { font-weight: $font-header-weight; }
 
 p {
   color: $primary-font-color;
 }
 
-.cui-link {
+/* 
+Links
+
+Also available as the placeholder selector %cui-link.
+
+Markup: <a class="cui-link" href="">Link Style</a>
+
+Styleguide Elements.Texts.Links
+*/
+
+.cui-link,
+%cui-link {
   color: #429DD1;
 }
+
+/* 
+Paragraphs
+
+Default styling for paragraphs
+
+Markup:
+<p>Paragraph text. Donec sed odio dui. Cras justo odio, dapibus 
+ac facilisis in. Egestas eget quam. Maecenas faucibus mollis 
+interdum maecenas faucibus.</p>
+
+Weight: -10
+
+Styleguide Elements.Texts.Paragraphs
+*/
+
+/*
+Unordered Lists
+
+Browser styles are removed from lists in order to separate visual presentation from semantic meaning. If you want to restore the default styling, @extend the placeholder selector %cui-ul--default in your list's CSS style declaration block.
+
+.cui-ul--default    - restores browser styling
+
+Markup:
+<ul class="{{modifier_class}}">
+  <li>Unordered List</li>
+  <li>Unordered List</li>
+  <li>Unordered List</li>
+</ul>
+
+Styleguide Elements.Texts.Unordered-Lists
+*/
 
 ul,
 ol,
@@ -79,3 +110,34 @@ ol,
   padding-left: 0;
   margin: 0;
 }
+
+.cui-ul--default,
+%cui-ul--default {
+  list-style-type: disc; 
+  list-style-position: inside;
+}
+
+/*
+Ordered Lists
+
+Browser styles are removed from lists in order to separate visual presentation from semantic meaning. If you want to restore the default styling, @extend the placeholder selector %cui-ol--default in your list's CSS style declaration block.
+
+.cui-ol--default    - restores browser styling
+
+Markup:
+<ol class="{{modifier_class}}">
+  <li>Ordered List</li>
+  <li>Ordered List</li>
+  <li>Ordered List</li>
+</ol>
+
+Styleguide Elements.Texts.Ordered-Lists
+*/
+
+.cui-ol--default,
+%cui-ol--default {
+  list-style-type: decimal; 
+  list-style-position: inside;
+}
+
+

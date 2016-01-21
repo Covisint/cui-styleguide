@@ -9,9 +9,9 @@ Styleguide Blocks
 */
 
 @import 'wizard';
+@import 'profile';
 @import 'header';
-@import 'avatar';
-@import 'container';
+@import 'tile';
 @import 'off-canvas-nav';
 @import 'snap';
 @import 'desktop-menu';
@@ -23,3 +23,4 @@ Styleguide Blocks
 @import 'expandable-table';
 @import 'pagination';
 @import 'loader';
+@import 'step-indicator';
