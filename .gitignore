@@ -7,3 +7,5 @@ target/*
 .project
 .tmp
 styleguide/public/fonts
+*.iml
+npm-debug.log
