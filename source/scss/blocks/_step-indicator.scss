@@ -66,3 +66,142 @@ Markup:
 
 Styleguide Blocks.Step-Indicator-With-Icons
 */
+
+.cui-registration {
+  @extend .cui-tile;
+  margin: 0;
+  width: 100%;  
+
+  @media screen and (min-width: 700px) {
+    margin: em(30) auto;
+    width: 80%;
+  }  
+ 
+  &__title {
+    @extend .cui-tile__title;
+    left: -9999px;
+    position: absolute;
+
+    @media screen and (min-width: 700px) {
+      left: 0;
+      position: relative;
+    }
+  }
+ 
+  &__body {
+    @extend .cui-tile__body;
+    padding: 0;
+
+    @media screen and (min-width: 700px) {
+      padding: em(50);
+    }
+  }
+
+
+  .cui-expandable.mobile-element {
+    padding-bottom: 0;  
+  }
+
+  .mobile-element >  .cui-expandable__title {
+    background-color: #F3F3F3;
+  }
+
+  .mobile-element > .cui-expandable__title {
+    height: em(120);
+    padding-left: em(20);
+    padding-top: 0;
+    position: relative;
+
+    &::before {
+      background-color: #D0D0D0; 
+      content: '';
+      left: em(45);
+      height: 100%;
+      position: absolute;
+      width: em(1);
+    }
+
+  }
+
+  
+  .mobile-element.expanded > .cui-expandable__title {
+    background-color: #fff;
+
+    &::before {
+      background-color: #979797;
+    }
+  }
+
+  .mobile-element.visited > .cui-expandable__title {
+    background-color: #D9EAEE; 
+
+    &::before {
+      background-color: #979797;
+    }
+  }
+
+  .cui-expandable:first-of-type {
+    &.mobile-element > .cui-expandable__title {
+
+      &::before {
+        background-color: #979797; 
+        content: '';
+        left: em(45);
+        height: 100%;
+        position: absolute;
+        width: em(1);
+      }
+      
+      &:nth-of-type(1)::before {
+        bottom: 0;
+        height: 50%;
+      }
+
+    }
+  }
+
+  .cui-expandable:last-of-type {
+
+    &.mobile-element > .cui-expandable__title {
+
+      &:nth-of-type(1)::before {
+        top: 0;
+        height: 50%;
+      }
+
+    }
+  }
+    
+  .mobile-element.visited .icon {
+    border: em(2) solid #6D6D6D;
+  }
+
+  .mobile-element .icon {
+    background: #fff;
+    border: em(2) solid #D0D0D0;
+    border-radius: 50%;
+    height: 3.125em;
+    position: relative;
+    margin: 0 auto;
+    width: 3.125em;
+    z-index: 1; 
+  }
+
+  .mobile-element.expanded .icon {
+    border: em(2) solid #009FD3;
+  }
+
+  .mobile-element.expanded .cui-icon-rotate {
+    fill: #009FD3;
+  }
+
+  .cui-icon-rotate {
+    margin: em(10) auto;
+  }
+
+  .mobile-element .cui-expandable__title {
+    align-items: center;
+    display: flex;
+  }
+
+}

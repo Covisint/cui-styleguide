@@ -1,8 +1,9 @@
 #!/bin/bash
 
+nvm use
 rm -rf bower_components
-bower install
 npm install
+bower install
 $PATH kss-node --config kss-config.json
 grunt build
 mvn clean deploy -U
