@@ -29,7 +29,7 @@ Styleguide Elements.Texts.Headers
 @include font-face('lato-regular','fonts/lato-regular', $file-formats: woff2 woff);
 
 body {
-  color: $primary-font-color;
+  color: $base-font-color;
   font-size: $base-font-size;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .h1, .h2, .h3, .h4, .h5, .h6, %h1, %h2, %h3, %h4, %h5, %h6 { font-weight: $font-header-weight; }
 
 p {
-  color: $primary-font-color;
+  color: $base-font-color;
 }
 
 /* 

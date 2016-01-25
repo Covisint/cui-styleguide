@@ -16,7 +16,7 @@ Styleguide Elements.Buttons
 
 .cui-button {
   align-items: center;
-  background-color: $cui-primary-colors--medium-light;
+  background-color: $button-color;
   border-radius: em(4);
   border: 0;
   color: #fff;
@@ -36,7 +36,7 @@ Styleguide Elements.Buttons
 
   &:active,
   &.pseudo-class-active {
-    background-color: $cui-primary-colors--medium-dark;
+    background-color: $button-color--active;
   }
 
   &--error {
