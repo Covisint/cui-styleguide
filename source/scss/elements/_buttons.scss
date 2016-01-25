@@ -21,10 +21,10 @@ Styleguide Elements.Buttons
   border: 0;
   color: #fff;
   display: flex;
-  font-size: em(12);
-  height: em(37,12);
+  font-size: $button-font-size;
+  height: em(37,$button-font-size);
   justify-content: center;
-  width: em(160,12);
+  width: em(160,$button-font-size);
 
   &:focus,
   &.pseudo-class-focus,
