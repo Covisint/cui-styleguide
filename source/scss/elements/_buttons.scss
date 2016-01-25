@@ -22,9 +22,9 @@ Styleguide Elements.Buttons
   color: #fff;
   display: flex;
   font-size: em(12);
-  height: em(37);
+  height: em(37,12);
   justify-content: center;
-  width: 160px;
+  width: em(160,12);
 
   &:focus,
   &.pseudo-class-focus,
