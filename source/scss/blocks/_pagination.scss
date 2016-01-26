@@ -76,13 +76,13 @@ Styleguide Blocks.Pagination
   }
 
   .cui-pagination__link--current {
-    color: $primary-font-color;
+    color: $base-font-color;
     cursor: text;
   }
 }
 
 .cui-pagination__previous--disabled {
-  color: $primary-font-color;
+  color: $base-font-color;
   cursor: default;
 }
 

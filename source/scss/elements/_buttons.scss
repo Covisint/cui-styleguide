@@ -15,13 +15,16 @@ Styleguide Elements.Buttons
 */
 
 .cui-button {
-  background-color: $cui-primary-colors--medium-light;
+  align-items: center;
+  background-color: $button-color;
+  border-radius: em(4);
   border: 0;
-  border-radius: 4px;
   color: #fff;
-  font-size: em(12);
-  height: 37px;
-  width: 160px;
+  display: flex;
+  font-size: $button-font-size;
+  height: em(37,$button-font-size);
+  justify-content: center;
+  width: em(160,$button-font-size);
 
   &:focus,
   &.pseudo-class-focus,
@@ -33,7 +36,7 @@ Styleguide Elements.Buttons
 
   &:active,
   &.pseudo-class-active {
-    background-color: $cui-primary-colors--medium-dark;
+    background-color: $button-color--active;
   }
 
   &--error {
