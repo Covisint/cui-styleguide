@@ -514,7 +514,7 @@ Styleguide Elements.Forms.Switch
   cursor: pointer;
   height: calc(100% - 2px);
   position: absolute;
-  right: 1px;
+  left: 50%;
   top: 1px;
   transition: all .15s ease-in;
   width: 104px;
@@ -527,7 +527,7 @@ Styleguide Elements.Forms.Switch
   cursor: pointer;
   height: calc(100% - 2px);
   position: absolute;
-  right: 50%;
+  right: calc(50% - 1px);
   top: 1px;
   transition: all .15s ease-in;
   width: 0;
