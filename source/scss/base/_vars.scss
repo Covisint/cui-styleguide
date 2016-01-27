@@ -45,7 +45,14 @@ $cui-input-border: #DEE9EE;
 $cui-input-border--focus: #828483;
 $cui-input-border--invalid: #FF4400;
 $cui-input-border--valid: #47CBB4;
+$input-padding:8px 12px;
+$input-error-padding: 5px 0 5px;
 
+// Switch
+$cui-switch--checked: #00BD9C;
+$cui-switch--unchecked: #555;
+$cui-switch-height: 50px;
+$cui-switch-width: 209px;
 
 // Header
 
@@ -61,11 +68,6 @@ $container-padding-small: 20px;
 $container-title-background: #53abd0;
 $container-title-padding: 15px;
 $container-body-max-width: 100%;
-
-// inputs
-
-$input-padding:8px 12px;
-$input-error-padding: 5px 0 5px;
 
 // navigation
 $snap-menu-breaking-point: 1000px;
