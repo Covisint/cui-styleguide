@@ -481,9 +481,9 @@ Styleguide Elements.Forms.Switch
   cursor: pointer;
   display: flex;
   font-size: 12px;
-  height: 50px;
+  height: $cui-switch-height;
   justify-content: space-around;
-  width: 209px;
+  width: $cui-switch-width;
   
   span {
     margin-left: 15px;
@@ -508,26 +508,26 @@ Styleguide Elements.Forms.Switch
 }
 
 .cui-switch__label:before {
-  background-color: #00BD9C;
+  background-color: $cui-switch--unchecked;
   border-radius: 0 6px 6px 0;
   content: '';
   cursor: pointer;
   height: calc(100% - 2px);
   position: absolute;
-  right: 1px;
+  left: 50%;
   top: 1px;
   transition: all .15s ease-in;
-  width: 104px;
+  width: calc(50% - 1px);
 }
 
 .cui-switch__label:after {
-  background-color: red;
+  background-color: $cui-switch--checked;
   border-radius: 6px 0 0 6px;
   content: '';
   cursor: pointer;
   height: calc(100% - 2px);
   position: absolute;
-  right: 50%;
+  right: calc(50% - 1px);
   top: 1px;
   transition: all .15s ease-in;
   width: 0;
@@ -541,7 +541,7 @@ Styleguide Elements.Forms.Switch
   }
   
    & + .cui-switch__label:after {
-    width: 104px;
+    width: 50%;
     border-radius: 6px 0 0 6px;
   }
   
