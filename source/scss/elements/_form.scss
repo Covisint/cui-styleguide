@@ -520,11 +520,29 @@ Styleguide Elements.Forms.Switch
   width: 104px;
 }
 
+.cui-switch__label:after {
+  background-color: red;
+  border-radius: 6px 0 0 6px;
+  content: '';
+  cursor: pointer;
+  height: calc(100% - 2px);
+  position: absolute;
+  right: 50%;
+  top: 1px;
+  transition: all .15s ease-in;
+  width: 0;
+}
+
 .cui-switch__input:checked {
 
   & + .cui-switch__label:before {
+    width:0;
+    border-radius:0;
+  }
+  
+   & + .cui-switch__label:after {
+    width: 104px;
     border-radius: 6px 0 0 6px;
-    transform: translateX(-103px);
   }
   
   & + .cui-switch__label .cui-switch__unchecked-message {
