@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       options: {
         map: false,
         processors: [
-          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('autoprefixer')({browsers: 'last 3 versions'}),
           require('cssnano')({discardComments: 'true'})
         ]
       },
@@ -57,6 +57,10 @@ module.exports = function(grunt) {
       specificity: {
         src: ['.tmp/styles.specific.css'],
         dest: '.tmp/styles.specific.min.css'
+      },
+      styleguideStyles: {
+        src: ['source/cui-styleguide-styles.css'],
+        dest: 'source/cui-styleguide-styles.min.css'
       }
     },
     copy:{
@@ -81,7 +85,7 @@ module.exports = function(grunt) {
           'img/**/*.svg',
           'img/**/*.png',
           'img/*.ico',
-          'cui-styleguide-styles.css',
+          'cui-styleguide-styles.min.css',
           'off-canvas-iframe.html',
           ],
           dest: 'styleguide/public/',
@@ -166,6 +170,7 @@ module.exports = function(grunt) {
     'sass',
     'postcss:dist',
     'postcss:specificity',
+    'postcss:styleguideStyles',
     'copy:min',
     'exec',
     'copy:bowerImg', 
