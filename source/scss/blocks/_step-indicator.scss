@@ -118,7 +118,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
       left: em(45);
       height: 100%;
       position: absolute;
-      width: em(1);
+      width: 2px;
     }
 
   }
@@ -149,7 +149,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
         left: em(45);
         height: 100%;
         position: absolute;
-        width: em(1);
+        width: 2px;
       }
       
       &:nth-of-type(1)::before {
