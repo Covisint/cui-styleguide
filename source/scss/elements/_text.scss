@@ -26,7 +26,7 @@ Weight: -20
 Styleguide Elements.Texts.Headers
 */ 
 
-@include font-face('lato-regular','fonts/lato-regular', $file-formats: woff2 woff);
+@include font-face('lato-regular','bower_components/lato/font/lato-regular/lato-regular', $file-formats: woff2 woff);
 
 body {
   color: $base-font-color;
