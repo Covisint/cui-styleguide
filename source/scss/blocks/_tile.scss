@@ -17,18 +17,28 @@ Styleguide Blocks.Tile
 
   &__body {
     background: white;
-    border-radius: 0 0 $container-radius $container-radius;
+    border-radius: $container-body-radius--mobile;
     margin: 0 auto;
     max-width: $container-body-max-width;
-    padding: $container-padding;
+    padding: $container-padding--mobile;
+    position: relative;
+
+    @media screen and (min-width: 701px) {
+      border-radius: $container-body-radius;
+      padding: $container-padding;
+    }
   }
 
   &__title {
     @extend .cui-primary-colors--medium-light;
-    border-radius: $container-radius $container-radius 0 0;
+    border-radius: $container-body-radius--mobile;
     color: white;
     padding: $container-title-padding;
     text-align: center;
+
+    @media screen and (min-width: 701px) {
+      border-radius: $container-title-radius;
+    }
   }
 
   @media all and (max-width:600px){

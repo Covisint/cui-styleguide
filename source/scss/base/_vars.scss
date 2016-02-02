@@ -1,5 +1,4 @@
 // Colors
-
 $cui-primary-colors--light: #87CEEC;    
 $cui-primary-colors--medium-light: #429DD1;
 $cui-primary-colors--medium: #4582B4;
@@ -17,7 +16,6 @@ $cui-greyscale--medium: #828483;
 $cui-greyscale--dark: #343534;
 
 // Fonts
-
 $base-font-size: 16px;
 $base-font-family: 'lato-regular', sans-serif;
 $base-font-weight: 400;
@@ -55,21 +53,24 @@ $cui-switch-height: 50px;
 $cui-switch-width: 209px;
 
 // Header
-
 $header-padding: 0 30px;
 $header-top-padding: 0 0;
 $header-bottom-padding: 0 0;
 
-// Container
-
+// Tile
+$container-title-radius: 6px 6px 0 0;
+$container-title-radius--mobile: 0;
+$container-body-radius: 0 0 6px 6px;
+$container-body-radius--mobile: 0;
 $container-radius: 6px;
 $container-padding: 50px;
+$container-padding--mobile: em(28);
 $container-padding-small: 20px;
 $container-title-background: #53abd0;
 $container-title-padding: 15px;
 $container-body-max-width: 100%;
 
-// navigation
+// Navigation
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
 $desktop-menu-width: 300px;
@@ -89,7 +90,6 @@ fieldset {
 }
 
 // helpers
-
 %cui-sr-only {
   left: -999em;
   position: absolute;
