@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     watch:{
       css:{
         files: ['source/scss/**/*.scss','source/scripts/*.js','README.md'],
-        tasks: ['concat:dist','sass','postcss','copy:min','exec','copy:build','concat:js','copy:js','copy:md']
+        tasks: ['concat:dist','sass','postcss','copy:min','exec','copy:icons','copy:build','concat:js','copy:js','copy:md']
       },
       js: {
         files: ['source/scripts/*.js'],
@@ -64,15 +64,14 @@ module.exports = function(grunt) {
       }
     },
     copy:{
-      bowerImg: {
+      icons: {
         files: [{
-          cwd: 'bower_components/cui-icons/dist',
+          cwd: 'bower_components/cui-icons/',
           src: [
-            'logos/logos-out.svg',
-            'icons/icons-out.svg',
-            'favicon.ico'
+            'dist/logos/logos-out.svg',
+            'dist/icons/icons-out.svg'
           ],
-          dest: 'source/img',
+          dest: 'styleguide/public/bower_components/cui-icons/',
           expand: true
         }]
       },
@@ -98,7 +97,7 @@ module.exports = function(grunt) {
           '*.woff2',
           '*.ttf'
           ],
-          dest: 'styleguide/public/fonts',
+          dest: 'styleguide/public/bower_components/lato/font/lato-regular/',
           expand: true
         }]
       },
@@ -173,7 +172,7 @@ module.exports = function(grunt) {
     'postcss:styleguideStyles',
     'copy:min',
     'exec',
-    'copy:bowerImg', 
+    'copy:icons', 
     'copy:build',
     'concat:js', 
     'copy:js'
