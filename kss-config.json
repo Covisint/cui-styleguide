@@ -7,12 +7,12 @@
 
   "//": "The css and js paths are URLs relative to the generated style guide.",
   "css": [
-    "public/cui-styleguide-styles.min.css",
-    "public/styles.min.css"
+    "cui-styleguide-styles.min.css",
+    "styles.min.css"
   ],
   "js": [
     "https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js",
-    "public/scripts/cui-scripts.js"
+    "scripts/cui-scripts.js"
   ],
   "template": "source/template",
   "homepage": "README.md"
