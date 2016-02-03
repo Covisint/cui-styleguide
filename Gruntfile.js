@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         dest: 'source/styles.specific.scss'
       },
       js: {
-        src: ['bower_components/snapjs/snap.min.js','source/scripts/*.js'],
+        src: ['bower_components/snapjs/snap.min.js','bower_components/svg4everybody/dist/svg4everybody.min.js','source/scripts/*.js'],
         dest: '.tmp/scripts/cui-scripts.js'
       }
     },
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
             'dist/logos/logos-out.svg',
             'dist/icons/icons-out.svg'
           ],
-          dest: 'styleguide/public/bower_components/cui-icons/',
+          dest: 'styleguide/bower_components/cui-icons/',
           expand: true
         }]
       },
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
           'cui-styleguide-styles.min.css',
           'off-canvas-iframe.html',
           ],
-          dest: 'styleguide/public/',
+          dest: 'styleguide/',
           expand: true
         },
         {
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
           '*.woff2',
           '*.ttf'
           ],
-          dest: 'styleguide/public/bower_components/lato/font/lato-regular/',
+          dest: 'styleguide/bower_components/lato/font/lato-regular/',
           expand: true
         }]
       },
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
         files: [{
           cwd: '.tmp',
           src: ['scripts/*.js'],
-          dest: 'styleguide/public',
+          dest: 'styleguide',
           expand: true
         }]
       },
