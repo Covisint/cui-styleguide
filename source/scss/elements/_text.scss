@@ -1,4 +1,4 @@
-/* 
+/*
 Texts
 
 Styles for text. Please refer to _vars.scss for variable values.
@@ -11,7 +11,7 @@ Headers
 
 Header styling is applied through the use of classes. Our recommended method for applying h1 styling is to @extend the %h1 placeholder selector in a class's CSS style declaration block and apply that class to your element.
 
-Markup: 
+Markup:
 <h1 class="h1">H1 Heading</h1>
 <h2 class="h2">H2 Heading</h2>
 <h3 class="h3">H3 Heading</h3>
@@ -24,9 +24,9 @@ Markup:
 Weight: -20
 
 Styleguide Elements.Texts.Headers
-*/ 
+*/
 
-@include font-face('lato-regular','bower_components/lato/font/lato-regular/lato-regular', $file-formats: woff2 woff);
+@include font-face('lato-regular','/bower_components/lato/font/lato-regular/lato-regular', $file-formats: woff2 woff);
 
 body {
   color: $base-font-color;
@@ -55,7 +55,7 @@ p {
   color: $base-font-color;
 }
 
-/* 
+/*
 Links
 
 Also available as the placeholder selector %cui-link.
@@ -70,14 +70,14 @@ Styleguide Elements.Texts.Links
   color: #429DD1;
 }
 
-/* 
+/*
 Paragraphs
 
 Default styling for paragraphs
 
 Markup:
-<p>Paragraph text. Donec sed odio dui. Cras justo odio, dapibus 
-ac facilisis in. Egestas eget quam. Maecenas faucibus mollis 
+<p>Paragraph text. Donec sed odio dui. Cras justo odio, dapibus
+ac facilisis in. Egestas eget quam. Maecenas faucibus mollis
 interdum maecenas faucibus.</p>
 
 Weight: -10
@@ -104,7 +104,7 @@ Styleguide Elements.Texts.Unordered-Lists
 
 ul,
 ol,
-.cui-ul, 
+.cui-ul,
 .cui-ol {
   list-style-type: none;
   padding-left: 0;
@@ -113,7 +113,7 @@ ol,
 
 .cui-ul--default,
 %cui-ul--default {
-  list-style-type: disc; 
+  list-style-type: disc;
   list-style-position: inside;
 }
 
@@ -136,7 +136,7 @@ Styleguide Elements.Texts.Ordered-Lists
 
 .cui-ol--default,
 %cui-ol--default {
-  list-style-type: decimal; 
+  list-style-type: decimal;
   list-style-position: inside;
 }
 
