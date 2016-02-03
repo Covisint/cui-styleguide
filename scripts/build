@@ -6,5 +6,4 @@ npm install
 bower install
 $PATH kss-node --config kss-config.json
 grunt build
-grunt buildQa
 mvn clean deploy -U

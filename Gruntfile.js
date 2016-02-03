@@ -75,20 +75,6 @@ module.exports = function(grunt) {
           expand: true
         }]
       },
-      qa: {
-        files: [
-          {
-            cwd: 'bower_components/lato/font/lato-regular/',
-            src: [
-            '*.woff',
-            '*.woff2',
-            '*.ttf'
-            ],
-            dest: '../bower_components/lato/font/lato-regular/',
-            expand: true
-          }
-        ]
-      },
       build:{
         files: [{
           cwd: 'source/',
@@ -191,5 +177,4 @@ module.exports = function(grunt) {
     'concat:js',
     'copy:js'
     ]);
-  grunt.registerTask('buildQa', ['copy:qa']);
 }
