@@ -75,6 +75,20 @@ module.exports = function(grunt) {
           expand: true
         }]
       },
+      qa: {
+        files: [
+          {
+            cwd: 'bower_components/lato/font/lato-regular/',
+            src: [
+            '*.woff',
+            '*.woff2',
+            '*.ttf'
+            ],
+            dest: '../bower_components/lato/font/lato-regular/',
+            expand: true
+          }
+        ]
+      },
       build:{
         files: [{
           cwd: 'source/',
@@ -155,7 +169,7 @@ module.exports = function(grunt) {
     }
   });
 
- 
+
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-sass');
@@ -172,9 +186,10 @@ module.exports = function(grunt) {
     'postcss:styleguideStyles',
     'copy:min',
     'exec',
-    'copy:icons', 
+    'copy:icons',
     'copy:build',
-    'concat:js', 
+    'concat:js',
     'copy:js'
     ]);
+  grunt.registerTask('buildQa', ['copy:qa']);
 }
