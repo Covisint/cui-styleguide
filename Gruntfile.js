@@ -103,6 +103,7 @@ module.exports = function(grunt) {
         options:{
           process:function(content){
             if(grunt.option('env')==='qa') return content.replace('/bower_components','bower_components');
+            else return content;
           }
         }
       },
