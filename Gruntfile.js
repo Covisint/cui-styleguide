@@ -99,7 +99,12 @@ module.exports = function(grunt) {
           ],
           dest: 'styleguide/bower_components/lato/font/lato-regular/',
           expand: true
-        }]
+        }],
+        options:{
+          process:function(content){
+            if(grunt.option('env')==='qa') return content.replace('/bower_components','bower_components');
+          }
+        }
       },
       min:{
         files: [{
@@ -154,14 +159,6 @@ module.exports = function(grunt) {
       kss: 'node_modules/kss/bin/kss-node --config kss-config.json'
     }
   });
-
-
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['browserSync','watch:css','watch:js','watch:md']);
   grunt.registerTask('build', [
