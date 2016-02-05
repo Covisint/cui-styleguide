@@ -7,6 +7,12 @@ Markup:
 Styleguide Blocks.Loading
 */
 
+%center {
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+
 .cui-loading__container {
   background:white;
   bottom:0;
@@ -27,6 +33,24 @@ Styleguide Blocks.Loading
   border-top-color: $cui-primary-colors--light;
   height: em(80);
   width: em(80);
+}
+
+.cui-loading--medium {
+  @extend .cui-loading;
+  border: em(5) solid $cui-primary-colors--medium-light;
+  height: em(30);
+  width: em(30);
+}
+
+.cui-loading--center {
+  @extend %center;
+  transform:translate(-50%,-50%);
+  z-index:10;
+}
+
+.cui-loading--medium-ctr {
+  @extend .cui-loading--medium;
+  @extend %center;
 }
 
 @keyframes spin { 
