@@ -107,6 +107,14 @@ Styleguide Blocks.Form
   &__next {
     @extend .cui-button;
 
+    &.success {
+      background:$cui-secondary-colors--light;
+    }
+
+    &.fail {
+      background:$cui-secondary-colors--dark;
+    }
+
     &--error {
       @extend .cui-button--error
     }
@@ -235,6 +243,17 @@ Styleguide Blocks.Form
   }
 }
 
+.cui-error__status {
+    width: 9px;
+    height: 9px;
+    background: $cui-secondary-colors--dark;
+    display: inline-block;
+    border-radius: 50%;
+    transform:translate(0,-1px);
+    &.cui-error__status--pass {
+        background: $cui-secondary-colors--light;
+    }
+}
 
 //Shane this was & .step-indicator , was there a reason for that, or just a mistake?
 
