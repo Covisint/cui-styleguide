@@ -56,6 +56,11 @@ Styleguide Blocks.Expandable
     padding: 10px 0 0;
   }
 
+  &__title--error {
+    color:red;
+    font-weight: 700;
+  }
+
   &__review-item {
     color: #666;
     font-size: 14px;
@@ -113,6 +118,27 @@ Styleguide Blocks.Expandable
 
 .cui-expandable__body {
   padding-left: 10px;
+}
+
+.edit-button{
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-100%,0px);
+
+  .cui-icon-rotate{
+    fill: #333;
+    height: 30px;
+    width: 30px;
+  }
+
+  &:hover{
+    .cui-icon-rotate{
+        fill: $cui-primary-colors--medium-light;
+    }
+  }
+
 }
 
 .indicator-container {
