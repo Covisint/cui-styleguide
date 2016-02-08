@@ -555,3 +555,23 @@ Styleguide Elements.Forms.Switch
     transition: color .5s;
   }
 }
+
+/*
+Badge
+
+Markup: 
+<div class="cui-badge">5</div>
+
+Styleguide Elements.Forms.Badge
+*/
+
+.cui-badge {
+  background: red;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  font-size: 0.8em;
+  min-width: 25px;
+  padding: 5px 9px;
+  text-align: center;
+}

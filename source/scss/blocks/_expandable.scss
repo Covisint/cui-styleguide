@@ -46,6 +46,7 @@ Styleguide Blocks.Expandable
   border-bottom: 1px solid #ddd;
   display: block;
   padding-bottom: 10px;
+  position: relative;
   width: 100%;
 
   &__title {
@@ -83,6 +84,31 @@ Styleguide Blocks.Expandable
       transform: rotate(90deg);
     }
   }
+}
+
+.cui-expandable__review-button {
+  @extend .cui-link;
+  cursor:pointer;
+}
+
+.cui-expandable__review-input {
+  @extend .cui-input;
+  display: inline-block;
+  font-size: 1em;
+  height: auto;
+  margin: -6px 0 -6px 0;
+  padding: 0 2px;
+  width: 300px;
+}
+
+.cui-expandable__review-select {
+  @extend .cui-select;
+  display: inline-block;
+  font-size: 1em;
+  height: auto;
+  margin: -6px 0 -6px 0;
+  padding: 0 2px;
+  width: 300px;
 }
 
 .cui-expandable__body {
