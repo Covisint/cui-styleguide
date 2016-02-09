@@ -127,14 +127,14 @@ Styleguide Blocks.Expandable
   top: 0;
   transform: translate(-100%,0px);
 
-  .cui-icon-rotate{
+  .cui-expandable__edit-icon {
     fill: #333;
     height: 30px;
     width: 30px;
   }
 
   &:hover{
-    .cui-icon-rotate{
+    .cui-expandable__edit-icon {
         fill: $cui-primary-colors--medium-light;
     }
   }
