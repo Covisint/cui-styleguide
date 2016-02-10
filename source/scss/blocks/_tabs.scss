@@ -31,27 +31,32 @@ Styleguide Blocks.Tabs
 }
 
 .cui-tabs__tab-container {
+  border-left: $tabs-divider;
   display: flex;
   flex: 1;
   justify-content: center;
 }
 
+.cui-tabs__tab-container:first-of-type {
+  border-left: none;
+}
+
 .cui-tabs__tab {
   align-items: center;
-  background-color: $cui-greyscale--medium;
-  color: #fff;
+  background-color: $tabs-background-color;
+  color: $tabs-font-color;
   cursor: pointer;
   display: flex;
   flex: 1;
   font-size: em(12);
   justify-content: center;
-  padding: em(10);
+  padding: $tabs-padding;
   text-align: center;
   text-decoration: none;
 
   &--active {
-    background-color: #fff;
-    color: $cui-greyscale--dark;
+    background-color: $tabs-background-color--active;
+    color: $tabs-font-color--active;
   }
 
   @media screen and (min-width: 701px) {
@@ -66,7 +71,7 @@ Styleguide Blocks.Tabs
     display: flex;
     font-size: em(12);
     flex: 1;
-    padding: em(50) em(20);
+    padding: $tabs-content-padding;
   }
 
   @media screen and (min-width: 701px) {

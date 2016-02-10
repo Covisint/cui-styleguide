@@ -81,6 +81,14 @@ $snap-menu:true;
     $snap-menu-breaking-point-1: 0px;
 }
 
+// Tabs
+$tabs-background-color: $cui-greyscale--medium;
+$tabs-background-color--active: #fff;
+$tabs-font-color: #fff;
+$tabs-font-color--active: $cui-greyscale--dark;
+$tabs-padding: em(10);
+$tabs-content-padding: em(50) em(20);
+
 
 
 // normalize overrides
