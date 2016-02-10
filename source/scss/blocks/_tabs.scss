@@ -1,0 +1,75 @@
+/*
+Tabs
+
+Markup:
+<div class="cui-tabs">
+  <ul class="cui-tabs__nav">
+    <li class="cui-tabs__tab-container"><a class="cui-tabs__tab cui-tabs__tab--active" data-pane="tab1">Active Tab</a></li>
+    <li class="cui-tabs__tab-container"><a class="cui-tabs__tab" data-pane="tab2">Tab</a></li>
+    <li class="cui-tabs__tab-container"><a class="cui-tabs__tab" data-pane="tab3">Tab</a></li>
+    <li class="cui-tabs__tab-container"><a class="cui-tabs__tab" data-pane="tab4">Tab</a></li>
+  </ul>
+  <div class="cui-tabs__content">
+    <div id="tab1" class="cui-tabs__tab-pane cui-tabs__tab-pane--active"><p>Tab 1 Content</p></div>
+    <div id="tab2" class="cui-tabs__tab-pane"><p>Tab 2 Content</p></div>
+    <div id="tab3" class="cui-tabs__tab-pane"><p>Tab 3 Content</p></div>
+    <div id="tab4" class="cui-tabs__tab-pane"><p>Tab 4 Content</p></div>
+  </div>
+</div>
+
+Styleguide Blocks.Tabs
+*/
+
+.cui-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.cui-tabs__nav {
+  display: flex;
+  flex: 1;
+}
+
+.cui-tabs__tab-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.cui-tabs__tab {
+  align-items: center;
+  background-color: $cui-greyscale--medium;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-size: em(12);
+  justify-content: center;
+  padding: em(10);
+  text-align: center;
+  text-decoration: none;
+
+  &--active {
+    background-color: #fff;
+    color: $cui-greyscale--dark;
+  }
+
+  @media screen and (min-width: 701px) {
+    font-size: 1em;
+  }
+}
+
+.cui-tabs__tab-pane {
+  display: none;
+
+  &--active {
+    display: flex;
+    font-size: em(12);
+    flex: 1;
+    padding: em(50) em(20);
+  }
+
+  @media screen and (min-width: 701px) {
+    font-size: 1em;
+  }
+}
