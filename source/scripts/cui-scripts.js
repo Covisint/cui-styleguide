@@ -79,3 +79,29 @@ menuToggle.addEventListener('click', function() {
 
 });
 
+// Tabs Functions
+
+var Tabs = (function () {
+
+  var e = document.querySelectorAll('.cui-tabs__tab');
+  var p = document.querySelectorAll('.cui-tabs__tab-pane')
+
+  for (var i = 0; i < e.length; i++) {
+    e[i].addEventListener('click', function() {showTab(this);} );
+  }
+
+  function showTab(elem) {
+    elemPane = elem.getAttribute('data-pane');
+    pane = document.getElementById(elemPane);
+    for (var i = 0; i < e.length; i++) {
+      e[i].className = 'cui-tabs__tab';
+    }
+    for (var i = 0; i < e.length; i++) {
+      p[i].className = 'cui-tabs__tab-pane';
+    }
+    elem.className = 'cui-tabs__tab cui-tabs__tab--active';
+    pane.className = 'cui-tabs__tab-pane cui-tabs__tab-pane--active'
+  };
+
+}) ();
+
