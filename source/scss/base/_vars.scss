@@ -70,7 +70,9 @@ $container-title-background: #53abd0;
 $container-title-padding: 15px;
 $container-body-max-width: 100%;
 
-// Navigation
+// Off-canvas Menu Navigation
+$menu-toggle-color: $cui-primary-colors--medium-light;
+$menu-toggle-color--active: $cui-primary-colors--medium;
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
 $desktop-menu-width: 300px;

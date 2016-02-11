@@ -43,7 +43,7 @@
 
 .menu-toggle--button,
 .cui-menu__toggle-button {
-    background: $cui-primary-colors--medium-light;
+    background: $menu-toggle-color;
     border: none;
     width: 40px;
     height: 7px;
@@ -51,7 +51,7 @@
     transition: background 200ms ease-in-out;
     
     &:before {
-        background: $cui-primary-colors--medium-light;
+        background: $menu-toggle-color;
         content: '';
         height: 7px;
         left: 0;
@@ -62,7 +62,7 @@
     }
 
     &:after {
-        background: $cui-primary-colors--medium-light;
+        background: $menu-toggle-color;
         content:'';
         bottom: -12px;
         height: 7px;
@@ -94,14 +94,14 @@
   &.active {
     .menu-toggle--button,
     .cui-menu__toggle-button {
-      background: $cui-primary-colors--medium;
+      background: $menu-toggle-color--active;
 
       &:before{
-        background: $cui-primary-colors--medium;
+        background: $menu-toggle-color--active;
       }
 
       &:after{
-        background: $cui-primary-colors--medium;
+        background: $menu-toggle-color--active;
       }
     }
   }
