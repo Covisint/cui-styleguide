@@ -36,14 +36,14 @@ Styleguide Blocks.Media-Object
 }
 
 .cui-media__image {
-  border: 2px solid black;
-  border-radius: 50%;
+  border: $media-object-border;
+  border-radius: $media-object-border-radius;
   height: em(50);
   width: em(50);
 }
 
 .cui-media__content {
   margin: 0;
-  padding: em(5) 0;  
+  padding: $media-obejct-content-padding; 
 }
   
