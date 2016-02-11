@@ -1,0 +1,49 @@
+/*
+Media Object 
+
+Markup:
+<div class="cui-media">
+  <div class="cui-media__image-container">
+    <svg xmlns="http://www.w3.org/2000/svg" class="cui-media__image">
+      <use xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#user"></use>
+    </svg>
+  </div>
+  <div class="cui-media__body">
+    <h3 class="cui-media__title">Media Object body title</h3>
+    <p class="cui-media__content">Media Object body text</p>
+  </div>
+</div>
+
+Styleguide Blocks.Media-Object
+*/
+
+.cui-media {
+  display: flex;
+}
+
+.cui-media__image-container {
+  display: flex;
+  flex: .25;
+  justify-content: center;
+}
+
+.cui-media__body {
+  flex: .75;
+}
+
+.cui-media__title {
+  @extend %h5;
+}
+
+.cui-media__image {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: em(50);
+  width: em(50);
+}
+
+.cui-media__content {
+  margin: 0;
+  padding: em(5) 0;  
+}
+  
