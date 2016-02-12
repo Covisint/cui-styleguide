@@ -28,9 +28,9 @@ Styleguide Blocks.Loading
 .cui-loading {
   animation: spin 1s infinite linear;
   background-color: #fff;
-  border: em(10) solid $cui-primary-colors--medium-light;
+  border: em(10) solid $loader-circle-color;
   border-radius: em(40);
-  border-top-color: $cui-primary-colors--light;
+  border-top-color: $loader-spinner-color;
   height: em(80);
   width: em(80);
 }

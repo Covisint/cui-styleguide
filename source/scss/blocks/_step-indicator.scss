@@ -12,12 +12,8 @@ Markup:
 Styleguide Blocks.Step-Indicator
 */
 
-.indicator-container {
-  border-bottom: 1px solid #ddd;
-}
-
 .step-indicator {
-  color: #bbb;
+  color: $step-indicator-title-color;
   display: inline-block;
   margin-bottom: -2px;
   padding: 10px 0;
@@ -42,31 +38,39 @@ Styleguide Blocks.Step-Indicator
   }
 
   &.active {
-    border-bottom: 6px solid $cui-primary-colors--medium-light;;
-    color: #333;
+    border-bottom: $step-indicator-icon-underline--active;
+    color: $step-indicator-title-color--active;
 
     .icon {
-      border: em(2) solid #429DD1;
+      border: $step-indicator-icon-border--active;
     }
 
     .cui-icon-rotate {
-      fill: $cui-primary-colors--medium;
+      fill: $step-indicator-icon-color--active;
     }
   }
 
   &.visited {
-    color: #666;
+    color: $step-indicator-title-color--visited;
 
     .icon{
-      border: em(2) solid #666;
+      border: $step-indicator-icon-border--visited;
+    }
+  }
+}
+
+.indicator-container--icons {
+  & .step-indicator{
+    &.active {
+      border-bottom: 0;
     }
   }
 }
 
 .cui-icon-rotate{
-  fill: $cui-greyscale--medium-light;
-  height: em(24);
-  width: em(24);
+  fill: $step-indicator-icon-color;
+  height: $step-indicator-icon-height;
+  width: $step-indicator-icon-width;
 
   @media screen and (min-width: 700px) {
     margin: em(10) auto 0;
