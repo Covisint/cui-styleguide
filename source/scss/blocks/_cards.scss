@@ -35,15 +35,15 @@ Styleguide Blocks.Cards
 // styles above to be removed with next release
 
 .cui-card {
-  background: #fff;
-  border-radius: 6px;
+  background: $card-background-color;
+  border-radius: $card-border-radius;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: em(460);
   margin: em(10);
   max-width: 20em;
-  padding: em(40) em(40);
+  padding: $card-padding;
   transition: box-shadow .2s ease, transform .2s ease;
   
   &:hover {
@@ -74,19 +74,19 @@ p {
 
 .cui-card__content-header {
   align-self: center;
-  color: $cui-greyscale--medium;
-  font-size: 1.8em;
-  font-weight: 900;
-  margin: em(5) 0;
+  color: $card-header-color;
+  font-size: $card-header-font-size;
+  font-weight: $card-header-font-weight;
+  margin: $card-header-margin;
 }
 
 .cui-card__icon {
-  fill: $cui-primary-colors--medium-light;
+  fill: $card-icon-color;
 }
 
 .cui-card__button {
   @extend .cui-button;
   align-self: center;
-  border-radius: em(12);
-  height: em(50, 12);
+  border-radius: $card-button-border-radius;
+  height: $card-button-height;
 }
