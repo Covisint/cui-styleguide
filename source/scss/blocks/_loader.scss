@@ -37,7 +37,7 @@ Styleguide Blocks.Loading
 
 .cui-loading--medium {
   @extend .cui-loading;
-  border: em(5) solid $cui-primary-colors--medium-light;
+  border-width: em(5); 
   height: em(30);
   width: em(30);
 }
