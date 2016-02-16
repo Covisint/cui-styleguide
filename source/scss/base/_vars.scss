@@ -1,4 +1,8 @@
 // Colors
+
+$cui-v2-colors-dark: #1D6572;
+$cui-v2-colors-light: #6A98A0;
+$cui-v2-colors-secondary: #E8F0F3;
 $cui-primary-colors--light: #87CEEC;    
 $cui-primary-colors--medium-light: #429DD1;
 $cui-primary-colors--medium: #4582B4;
@@ -116,10 +120,11 @@ $snap-menu:true;
 }
 
 // Tabs
-$tabs-background-color: $cui-greyscale--medium;
+$tabs-background-color: $cui-v2-colors-secondary;
 $tabs-background-color--active: #fff;
-$tabs-font-color: #fff;
-$tabs-font-color--active: $cui-greyscale--dark;
+$tabs-border-bottom: 1px solid #eee;
+$tabs-font-color: $cui-v2-colors-light;
+$tabs-font-color--active: $cui-v2-colors-dark;
 $tabs-divider: 1px solid #fff;
 $tabs-padding: em(10);
 $tabs-content-padding: em(50) em(20);
