@@ -50,22 +50,22 @@ Styleguide Blocks.Expandable
   width: 100%;
 
   &__title {
-    color: #333;
+    color: $expandable-title-color;
     cursor: pointer;
     display: block;
     padding: 10px 0 0;
   }
 
   &__title--error {
-    color:red;
+    color: red;
     font-weight: 700;
   }
 
   &__review-item {
-    color: #666;
-    font-size: 14px;
+    color: $expandable-review-item-color;
+    font-size: $expandable-review-item-font-size;
     line-height: .75;
-    margin: 1em 0;
+    margin: $expandable-review-item-margin;
   }
 
   &:last-of-type {
@@ -77,7 +77,7 @@ Styleguide Blocks.Expandable
     display: block;
     max-height: 0;
     overflow: hidden;
-    transition: all 200ms ease-in-out;
+    transition: $expandable-transition;
   }
 
   &.expanded {
@@ -117,7 +117,8 @@ Styleguide Blocks.Expandable
 }
 
 .cui-expandable__body {
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cui-expandable__edit-button{
@@ -142,15 +143,15 @@ Styleguide Blocks.Expandable
 }
 
 .indicator-container {
-  border-bottom: 1px solid #ddd;
+  border-bottom: $step-indicator-border-bottom;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: $step-indicator-margin-bottom;
   position: relative;
 
   .steps-bar {
-    background: #ccc;
-    height: em(2);
+    background-color: $step-indicator-middle-bar-color;
+    height: $step-indicator-middle-bar-size;
     position: absolute;
     top: 62%;
     z-index: 0;
@@ -160,7 +161,7 @@ Styleguide Blocks.Expandable
     }
 
     .steps-bar-fill {
-      background: #D0D0D0;
+      background-color: #D0D0D0;
       display: inline-block;
       height: em(2);
       position: absolute;
@@ -184,19 +185,24 @@ Styleguide Blocks.Expandable
 }
 
 .indicator-container--icons {
-  border: 0;
+  border-bottom: 0;
 
   &.small {
+    
+    .steps-bar {
+      display: none;
+    }
+
     & .step-indicator {
       display: none;
       pointer-events: none;
 
       &.active {
-        color: #429DD1;
+        color: $step-indicator-title-color--small-active;
       }
 
       &.visited {
-        color: #666;
+        color: $step-indicator-title-color--small-visited;
       }
     }
   }

@@ -34,16 +34,23 @@ $primary-background: #fff;
 $secondary-background: #DEE9EE;
 
 // Buttons
+$button-border-radius: em(4);
 $button-color: $cui-primary-colors--medium-light;
 $button-color--active: $cui-primary-colors--medium-dark;
+$button-color--error: #dbdbdb;
+$button-color--error-hover: $cui-greyscale--medium-light; 
 $button-font-size: 12px;
+
+// Badge
+$badge-background-color: red;
+$badge-font-size: em(12);
 
 // Inputs
 $cui-input-border: #DEE9EE;
 $cui-input-border--focus: #828483;
 $cui-input-border--invalid: #FF4400;
 $cui-input-border--valid: #47CBB4;
-$input-padding:8px 12px;
+$input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
 
 // Switch
@@ -52,10 +59,31 @@ $cui-switch--unchecked: #555;
 $cui-switch-height: 50px;
 $cui-switch-width: 209px;
 
+// Card
+$card-background-color: #fff;
+$card-border-radius: 6px;
+$card-button-height: em(50, 12);
+$card-button-border-radius: em(12);
+$card-header-color: $cui-greyscale--medium;
+$card-header-font-size: $font-size-h3;
+$card-header-font-weight: 900;
+$card-header-margin: em(5) 0;
+$card-icon-color: $cui-primary-colors--medium-light;
+$card-padding: em(40);
+
 // Header
+$header-background-color: #fff;
+$header-bottom-divider: 1px solid #eee;
+$header-svg-logo-height: 45px;
+$header-svg-logo-width: 200px;
+$header-svg-logo-margin-left: 20px;
 $header-padding: 0 30px;
 $header-top-padding: 0 0;
 $header-bottom-padding: 0 0;
+
+// Loading
+$loader-circle-color: $cui-primary-colors--medium-light;
+$loader-spinner-color: $cui-primary-colors--light;
 
 // Tile
 $container-title-radius: 6px 6px 0 0;
@@ -70,7 +98,13 @@ $container-title-background: #53abd0;
 $container-title-padding: 15px;
 $container-body-max-width: 100%;
 
-// Navigation
+// Off-canvas Menu Navigation
+$menu-toggle-color: $cui-primary-colors--medium-light;
+$menu-toggle-color--active: $cui-primary-colors--medium;
+$menu-background-color: $cui-primary-colors--medium;
+$menu-section-background-color: $cui-primary-colors--medium-dark;
+$menu-section-font-color--hover: $cui-secondary-colors--medium;
+$menu-sub-section-font-color--hover: $cui-primary-colors--light;
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
 $desktop-menu-width: 300px;
@@ -80,6 +114,45 @@ $snap-menu:true;
     $snap-menu-breaking-point: 0px;
     $snap-menu-breaking-point-1: 0px;
 }
+
+// Tabs
+$tabs-background-color: $cui-greyscale--medium;
+$tabs-background-color--active: #fff;
+$tabs-font-color: #fff;
+$tabs-font-color--active: $cui-greyscale--dark;
+$tabs-divider: 1px solid #fff;
+$tabs-padding: em(10);
+$tabs-content-padding: em(50) em(20);
+
+// Expandable
+$expandable-title-color: #333;
+$expandable-review-item-color: #666;
+$expandable-review-item-font-size: em(14);
+$expandable-review-item-margin: 1em 0;
+$expandable-transition: all .3s linear;
+
+// Step Indicator
+$step-indicator-border-bottom: 1px solid #ddd;
+$step-indicator-margin-bottom: em(40);
+$step-indicator-middle-bar-color: #ccc;
+$step-indicator-middle-bar-size: em(2);
+$step-indicator-title-color: #bbb;
+$step-indicator-title-color--active: #333;
+$step-indicator-title-color--visited: #666;
+$step-indicator-title-color--small-active: #429DD1;
+$step-indicator-title-color--small-visited: #666;
+$step-indicator-icon-color: $cui-greyscale--medium-light;
+$step-indicator-icon-height: em(24);
+$step-indicator-icon-width: em(24);
+$step-indicator-icon-border--active: em(2) solid #429DD1;
+$step-indicator-icon-underline--active: 6px solid $cui-primary-colors--medium-light;
+$step-indicator-icon-color--active: $cui-primary-colors--medium;
+$step-indicator-icon-border--visited: em(2) solid #666;
+
+// Media Object
+$media-object-border: 2px solid black;
+$media-object-border-radius: 50%;
+$media-obejct-content-padding: em(5) 0;
 
 
 

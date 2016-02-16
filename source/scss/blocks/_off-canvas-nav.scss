@@ -163,12 +163,12 @@ Styleguide Blocks.Off-Canvas
 }
 
 .cui-off-canvas {
-  @extend .cui-primary-colors--medium;
+  background-color: $menu-background-color;
 }
 
 .cui-off-canvas__list-item,
 .cui-off-canvas__section {
-  @extend .cui-primary-colors--medium-dark;
+  background-color: $menu-section-background-color;
   display: block;
   margin: 10px 0;
   cursor: pointer;
@@ -207,20 +207,20 @@ Styleguide Blocks.Off-Canvas
 .cui-off-canvas__list-item.active a,
 .cui-off-canvas__section a:hover,
 .cui-off-canvas__section.active a {
-  color: $cui-secondary-colors--medium;
+  color: $menu-section-font-color--hover;
 }
 
 .cui-off-canvas__list--child,
 .cui-off-canvas__sub-section-list {
   @extend %cui-sr-only;
-  @extend .cui-primary-colors--medium;
   @extend .cui-ul;
+  background-color: $menu-background-color;
   padding-left: em(40);
   padding-top: em(10);
 
   & a:hover,
   &.active a {
-    color: $cui-primary-colors--light;
+    color: $menu-sub-section-font-color--hover;
   }
 
 }

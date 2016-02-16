@@ -29,7 +29,7 @@ Styleguide Blocks.Header
 // the code below is depricated, will be removed with next minor release
 
 .cui-header {
-  background: white;
+  background: $header-background-color;
   padding: $header-padding;
   &__user {
     flex-grow: 1;
@@ -87,7 +87,7 @@ Styleguide Blocks.Header
 // the code above is depricated, will be removed with next minor release
 
 .cui-header {
-  background: #fff;
+  background: $header-background-color;
   padding: $header-padding;
 
   &__user {
@@ -109,9 +109,9 @@ Styleguide Blocks.Header
   }
 
   &__svg-logo {
-    height: 45px;
-    width: 200px;
-    margin-left:20px;
+    height: $header-svg-logo-height;
+    width: $header-svg-logo-width;
+    margin-left: $header-svg-logo-margin-left;
   }
 
   &__top {
@@ -119,7 +119,7 @@ Styleguide Blocks.Header
     display: flex;
     height: 80px;
     padding: $header-top-padding;
-    border-bottom:1px solid #EEE;
+    border-bottom: $header-bottom-divider;
   }
 
   &__bottom {
