@@ -26,6 +26,7 @@ Styleguide Blocks.Tabs
 }
 
 .cui-tabs__nav {
+  border-bottom: $tabs-border-bottom;
   display: flex;
   flex: 1;
 }
@@ -35,10 +36,23 @@ Styleguide Blocks.Tabs
   display: flex;
   flex: 1;
   justify-content: center;
+  padding-right: 3px;
 }
 
 .cui-tabs__tab-container:first-of-type {
   border-left: none;
+
+  .cui-tabs__tab--active {
+    box-shadow: 1px -2px 2px #eee;
+  }
+}
+
+.cui-tabs__tab-container:last-of-type {
+  padding-right: 0;
+
+  .cui-tabs__tab--active {
+    box-shadow: -1px -2px 2px #eee;
+  }
 }
 
 .cui-tabs__tab {
@@ -56,7 +70,9 @@ Styleguide Blocks.Tabs
 
   &--active {
     background-color: $tabs-background-color--active;
+    box-shadow: 0px -2px 2px 1px #eee;
     color: $tabs-font-color--active;
+    margin-bottom: -1px;
   }
 
   @media screen and (min-width: 701px) {
