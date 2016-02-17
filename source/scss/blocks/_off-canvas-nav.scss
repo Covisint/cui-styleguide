@@ -218,7 +218,7 @@ Styleguide Blocks.Off-Canvas
   overflow: hidden;
   padding-left: em(40);
   padding-top: 0;
-  transition: max-height .5s linear, padding-top .05s .45s linear;
+  transition: max-height $menu-sub-section-animation linear, padding-top .05s $menu-sub-section-animation-offset linear;
 
   & a:hover,
   &.active a {
@@ -234,7 +234,7 @@ Styleguide Blocks.Off-Canvas
   .cui-off-canvas__sub-section-list {
     max-height: 3000px;
     padding-top: em(10);
-    transition: max-height .5s linear;
+    transition: max-height $menu-sub-section-animation linear;
   }
   
 }

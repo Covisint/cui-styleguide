@@ -1,5 +1,9 @@
-// Colors
+// Animations
+$animation-long: .5s;
+$animation-medium: .3s;
+$animation-short: .15s;
 
+// Colors
 $cui-v2-colors-dark: #1D6572;
 $cui-v2-colors-light: #6A98A0;
 $cui-v2-colors-secondary: #E8F0F3;
@@ -109,6 +113,8 @@ $menu-background-color: $cui-primary-colors--medium;
 $menu-section-background-color: $cui-primary-colors--medium-dark;
 $menu-section-font-color--hover: $cui-secondary-colors--medium;
 $menu-sub-section-font-color--hover: $cui-primary-colors--light;
+$menu-sub-section-animation: $animation-medium;
+$menu-sub-section-animation-offset: $menu-sub-section-animation - .05s;
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
 $desktop-menu-width: 300px;
