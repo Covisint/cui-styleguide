@@ -212,11 +212,13 @@ Styleguide Blocks.Off-Canvas
 
 .cui-off-canvas__list--child,
 .cui-off-canvas__sub-section-list {
-  @extend %cui-sr-only;
   @extend .cui-ul;
   background-color: $menu-background-color;
+  max-height: 0;
+  overflow: hidden;
   padding-left: em(40);
-  padding-top: em(10);
+  padding-top: 0;
+  transition: max-height .5s linear, padding-top .05s .45s linear;
 
   & a:hover,
   &.active a {
@@ -230,7 +232,9 @@ Styleguide Blocks.Off-Canvas
   
   .cui-off-canvas__list--child,
   .cui-off-canvas__sub-section-list {
-    position: inherit;
+    max-height: 3000px;
+    padding-top: em(10);
+    transition: max-height .5s linear;
   }
   
 }
