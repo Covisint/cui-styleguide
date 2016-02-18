@@ -22,9 +22,10 @@ Styleguide Elements.Buttons
   color: #fff;
   display: inline-flex;
   font-size: $button-font-size;
-  height: em(37,$button-font-size);
+  height: $button-height;
   justify-content: center;
-  width: em(160,$button-font-size);
+  position: relative;
+  width: $button-width;
 
   &:focus,
   &.pseudo-class-focus,

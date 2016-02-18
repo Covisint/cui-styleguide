@@ -2,7 +2,9 @@
 Loading
 
 Markup:
-<div class="cui-loading"></div>
+<div class="cui-loading__container">
+  <div class="cui-loading"></div>
+</div>
 
 Styleguide Blocks.Loading
 */
@@ -16,6 +18,7 @@ Styleguide Blocks.Loading
 .cui-loading__container {
   background:white;
   bottom:0;
+  display: flex;
   left:0;
   pointer-events:none;
   position:absolute;
@@ -23,6 +26,11 @@ Styleguide Blocks.Loading
   top:0;
   transition:all 200ms ease-in-out;
   z-index:10;
+
+  &--center {
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 .cui-loading {
@@ -44,13 +52,23 @@ Styleguide Blocks.Loading
 
 .cui-loading--center {
   @extend %center;
-  transform:translate(-50%,-50%);
   z-index:10;
 }
 
 .cui-loading--medium-ctr {
   @extend .cui-loading--medium;
   @extend %center;
+}
+
+.cui-loading--button {
+  @extend .cui-loading;
+  background: transparent;
+  border-width: em(3, $button-font-size); 
+  height: 21px;
+  left: $loader-button-center-horizontal;
+  position: absolute;
+  top: $loader-button-center-vertical;
+  width: 21px;
 }
 
 @keyframes spin { 

@@ -48,6 +48,8 @@ $button-color--active: $cui-primary-colors--medium-dark;
 $button-color--error: #dbdbdb;
 $button-color--error-hover: $cui-greyscale--medium-light; 
 $button-font-size: 12px;
+$button-height: em(37,$button-font-size);
+$button-width: em(160,$button-font-size);
 
 // Badge
 $badge-background-color: red;
@@ -92,6 +94,8 @@ $header-bottom-padding: 0 0;
 // Loading
 $loader-circle-color: $cui-primary-colors--medium-light;
 $loader-spinner-color: $cui-primary-colors--light;
+$loader-button-center-horizontal: calc(#{$button-width} / 2 - 10px);
+$loader-button-center-vertical: 8px; 
 
 // Tile
 $container-title-radius: 6px 6px 0 0;
