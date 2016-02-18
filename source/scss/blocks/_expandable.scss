@@ -75,14 +75,11 @@ Styleguide Blocks.Expandable
   &__body {
     @extend .cui-ul;
     display: block;
-    max-height: 0;
     overflow: hidden;
-    transition: $expandable-transition;
   }
 
   &.expanded {
     >.cui-expandable__body {
-      max-height: 2000px;
     }
 
     >.cui-expandable__title>.chevron {
