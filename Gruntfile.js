@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         dest: 'source/styles.specific.scss'
       },
       js: {
-        src: ['bower_components/snapjs/snap.min.js','bower_components/svg4everybody/dist/svg4everybody.min.js','source/scripts/*.js'],
+        src: ['bower_components/jquery/dist/jquery.min.js','bower_components/snapjs/snap.min.js','bower_components/svg4everybody/dist/svg4everybody.min.js','source/scripts/*.js'],
         dest: '.tmp/scripts/cui-scripts.js'
       }
     },

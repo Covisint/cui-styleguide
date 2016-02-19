@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="cui-styleguide-styles.min.css">
 <link rel="stylesheet" href="styles.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"> </script>
 </head>
 <body id="cui-styleguide__page-container">
 
@@ -121,25 +120,6 @@ Digital Style Guide for Core CUI Elements</p>
 </div>
 
 <!-- SCRIPTS -->
-<script>
-  $(document).ready(function(){
-  $(".cui-expandable__title").each(function(){
-    if (!$(this).parent().hasClass("expanded")) {
-      $(this).siblings(".cui-expandable__body").animate({height:0},200);
-    }
-  });
-  $(".cui-expandable__title").click(function(){
-    if ($(this).parent().hasClass("expanded")) {
-      $(this).parent().removeClass("expanded");
-      $(this).siblings(".cui-expandable__body").animate({height:0},200);
-    }
-    else {
-      $(this).parent().addClass("expanded");
-      $(this).siblings(".cui-expandable__body").animate({height:'100%'},200);
-    }
-  });
-});
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
 <script src="scripts/cui-scripts.js"></script>

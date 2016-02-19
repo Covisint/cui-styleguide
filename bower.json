@@ -33,7 +33,8 @@
   "devDependencies": {
     "cui-icons": "#master",
     "snapjs": "https://github.com/jakiestfu/Snap.js.git#master",
-    "svg4everybody": "https://github.com/jonathantneal/svg4everybody.git#master"
+    "svg4everybody": "https://github.com/jonathantneal/svg4everybody.git#master",
+    "jquery": "jQuery#~2.2.0"
   },
   "dependencies": {
     "lato": "~0.3.0"
