@@ -76,6 +76,7 @@ Styleguide Blocks.Expandable
     @extend .cui-ul;
     display: block;
     overflow: hidden;
+    width: 100%;
   }
 
   &.expanded {
