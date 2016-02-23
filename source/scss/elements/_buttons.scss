@@ -4,7 +4,6 @@ Buttons
 Styles for button elements
 
 :focus                      - Focus styling
-:hover                      - Hover styling
 :active                     - Selected styling
 .cui-button--error          - Error styling 
 .cui-button--error:active   - Error selected styling
@@ -28,11 +27,13 @@ Styleguide Elements.Buttons
   width: $button-width;
 
   &:focus,
-  &.pseudo-class-focus,
-  &:hover,
-  &.pseudo-class-hover {
+  &.pseudo-class-focus {
     box-shadow: 0 0 3px $cui-greyscale--medium-light, 0 0 7px $cui-greyscale--medium-light;
     outline: 0;
+  }
+
+  &--clicked {
+    animation: button-click 0.3s forwards;
   }
 
   &:active,
@@ -47,5 +48,17 @@ Styleguide Elements.Buttons
     &.pseudo-class-active {
       background-color: $button-color--error-hover;
     }
+  }
+}
+
+@keyframes button-click {
+  60% {
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
