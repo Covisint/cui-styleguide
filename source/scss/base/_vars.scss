@@ -13,6 +13,8 @@ $cui-primary-colors--medium: #6a98a0;
 $cui-primary-colors--medium-dark: #1d6572;
 $cui-primary-colors--dark: #343534;
 
+$cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--medium-dark, $cui-primary-colors--medium);
+
 $cui-secondary-colors--light: #3CB371;    
 $cui-secondary-colors--medium-light: #FFD700;
 $cui-secondary-colors--medium: #FF8C00;
@@ -82,8 +84,8 @@ $card-icon-color: $cui-primary-colors--medium-light;
 $card-padding: em(40);
 
 // Header
-$header-background-color: #fff;
-$header-bottom-divider: 1px solid #eee;
+$header-background-color: $cui-background-gradient;
+$header-bottom-divider: 0;
 $header-svg-logo-height: 45px;
 $header-svg-logo-width: 200px;
 $header-svg-logo-margin-left: 20px;
@@ -114,13 +116,15 @@ $container-body-max-width: 100%;
 $menu-toggle-color: $cui-primary-colors--medium-light;
 $menu-toggle-color--active: $cui-primary-colors--medium;
 $menu-background-color: $cui-primary-colors--medium;
-$menu-section-background-color: $cui-primary-colors--medium-dark;
+$menu-section-background-color: transparent;
 $menu-section-font-color--hover: $cui-secondary-colors--medium;
+$menu-sub-section-background-color: transparent;
 $menu-sub-section-font-color--hover: $cui-primary-colors--light;
 $menu-sub-section-animation: $animation-medium;
 $menu-sub-section-animation-offset: $menu-sub-section-animation - .05s;
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
+$snap-menu-background: $cui-background-gradient;
 $desktop-menu-width: 300px;
 $snap-menu:true;
 

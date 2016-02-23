@@ -213,7 +213,7 @@ Styleguide Blocks.Off-Canvas
 .cui-off-canvas__list--child,
 .cui-off-canvas__sub-section-list {
   @extend .cui-ul;
-  background-color: $menu-background-color;
+  background-color: $menu-sub-section-background-color;
   max-height: 0;
   overflow: hidden;
   padding-left: em(40);

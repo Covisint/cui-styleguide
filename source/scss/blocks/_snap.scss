@@ -29,8 +29,16 @@ snap-content {
 
 .snap-drawer,
 snap-drawer {
-  background: $cui-primary-colors--medium;
+  background: $snap-menu-background;
   min-height:100vh;
+
+  .cui-off-canvas {
+    background: transparent;
+  }
+
+  .cui-off-canvas__sub-section-list {
+    background: $menu-sub-section-background-color;
+  }
 }
 
 .snap-drawer {

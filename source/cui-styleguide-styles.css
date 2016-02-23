@@ -92,8 +92,12 @@ html {
   margin: 10px 0; }
 
 .cui-background,
-.cui-background--secondary {
+.cui-background--secondary,
+.cui-background--gradient {
   padding: 20px; }
+
+.cui-background--gradient {
+  color: #fff; }
 
 .cui-styleguide-modifier__example--with-bg {
   background-color: #DEE9EE;
