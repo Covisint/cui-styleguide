@@ -65,6 +65,9 @@ $cui-input-border--valid: #47CBB4;
 $input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
 
+// Checkbox
+$cui-checkbox-check-color: $cui-primary-colors--medium;
+
 // Switch
 $cui-switch--checked: #00BD9C;
 $cui-switch--unchecked: #555;
@@ -172,8 +175,6 @@ $step-indicator-icon-border--visited: em(2) solid #666;
 $media-object-border: 2px solid black;
 $media-object-border-radius: 50%;
 $media-obejct-content-padding: em(5) 0;
-
-
 
 // normalize overrides
 fieldset {
