@@ -69,8 +69,8 @@ $input-error-padding: 5px 0 5px;
 $cui-checkbox-check-color: $cui-primary-colors--medium;
 
 // Switch
-$cui-switch--checked: #00BD9C;
-$cui-switch--unchecked: #555;
+$cui-switch--checked: $cui-primary-colors--medium;
+$cui-switch--unchecked: $cui-greyscale--dark;
 $cui-switch-height: 50px;
 $cui-switch-width: 209px;
 
