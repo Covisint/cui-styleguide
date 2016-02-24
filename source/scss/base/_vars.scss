@@ -101,6 +101,10 @@ $loader-circle-color: $cui-primary-colors--medium-light;
 $loader-spinner-color: $cui-primary-colors--light;
 $loader-button-center-horizontal: calc(#{$button-width} / 2 - 10px);
 $loader-button-center-vertical: 8px; 
+$loader-large-border-width: em(10);
+$loader-large-height-and-width: em(80);
+$loader-medium-border-width: em(5);
+$loader-medium-height-and-width: em(60);
 
 // Tile
 $container-title-radius: 6px 6px 0 0;
