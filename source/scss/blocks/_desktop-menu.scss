@@ -45,31 +45,32 @@
 .cui-menu__toggle-button {
     background: $menu-toggle-color;
     border: none;
-    width: 40px;
-    height: 7px;
+    height: 2px;
+    padding: 0;
     position: relative;
     transition: background 200ms ease-in-out;
+    width: 15px;
     
     &:before {
         background: $menu-toggle-color;
         content: '';
-        height: 7px;
+        height: 2px;
         left: 0;
         position: absolute;
-        width: 40px;
-        top: -12px;
+        top: -9px;
         transition: background 200ms ease-in-out;
+        width: 20px;
     }
 
     &:after {
         background: $menu-toggle-color;
+        bottom: -9px;
         content:'';
-        bottom: -12px;
-        height: 7px;
+        height: 2px;
         left: 0;
         position: absolute;
-        width: 40px;
         transition: background 200ms ease-in-out;
+        width: 20px;
     }
 }
 

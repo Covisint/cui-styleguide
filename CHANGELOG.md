@@ -4,6 +4,11 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.0]
+### Added
+- Major style updates
+  - If you are using the styleguide as a dependency, some default colors, sizes and spacing have changed. Please refer to _vars.scss to make your own updates if you prefer. We tried our best to use current variables / add new variables for all v2.0 style changes.
+
 ## [1.6]
 ### Added
 - Media Block and Tabs to Blocks

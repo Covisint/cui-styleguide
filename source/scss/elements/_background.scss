@@ -1,8 +1,13 @@
-// Backgrounds
-//
-// Markup: <div class="cui-background">Primary</div><div class="cui-background--secondary">Secondary</div>
-//
-// Styleguide Elements.Backgrounds
+/* 
+Backgrounds
+
+Markup: 
+<div class="cui-background">Primary</div>
+<div class="cui-background--secondary">Secondary</div>
+<div class="cui-background--gradient">Gradient</div>
+
+Styleguide Elements.Backgrounds
+*/
 
 .cui-background {
     background-color: $primary-background;
@@ -11,3 +16,9 @@
 .cui-background--secondary {
     background-color: $secondary-background;
 }
+
+.cui-background--gradient {
+  background: $cui-background-gradient;
+}
+
+

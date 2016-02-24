@@ -207,5 +207,29 @@ $(document).ready(function(){
 
     };
     Expandable.init();
+
+    var Button = {
+
+      init: function() {
+        this.cacheDOM();
+        this.bindWatch();
+      },
+
+      cacheDOM: function() {
+        this.$el = $(".cui-button");
+      },
+
+      bindWatch: function() {
+        this.$el.on('click', this.clickAnimation);
+      },
+
+      clickAnimation: function(el) {
+        $(this).addClass("cui-button--clicked").delay(300).queue(function(){
+          $(this).removeClass("cui-button--clicked").dequeue();
+        });
+      }
+
+    };
+    Button.init();
   }) ()
 });

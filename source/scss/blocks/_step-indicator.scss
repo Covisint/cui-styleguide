@@ -56,6 +56,11 @@ Styleguide Blocks.Step-Indicator
     .icon{
       border: $step-indicator-icon-border--visited;
     }
+
+    .cui-icon-rotate {
+      fill: $step-indicator-title-color--visited;
+    }
+
   }
 }
 
@@ -234,7 +239,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
     }
 
     span {
-      color: #009FD3;
+      color: $mobile-step-title--expanded;
     }
   }
 
@@ -303,7 +308,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
   }
 
   .mobile-element.expanded .icon {
-    border: 2px solid #009FD3;
+    border: 2px solid $mobile-step-icon--expanded;
   }
 
   .mobile-element.visited .cui-icon-rotate {
@@ -311,7 +316,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
   }
 
   .mobile-element.expanded .cui-icon-rotate {
-    fill: #009FD3;
+    fill: $mobile-step-icon--expanded;
   }
 
   .mobile-element .cui-icon-rotate {
