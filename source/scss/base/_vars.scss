@@ -167,13 +167,18 @@ $step-indicator-title-color--active: #333;
 $step-indicator-title-color--visited: #666;
 $step-indicator-title-color--small-active: #429DD1;
 $step-indicator-title-color--small-visited: #666;
-$step-indicator-icon-color: $cui-greyscale--medium-light;
+$step-indicator-icon-color: #ccc;
 $step-indicator-icon-height: em(24);
 $step-indicator-icon-width: em(24);
-$step-indicator-icon-border--active: em(2) solid #429DD1;
+$step-indicator-icon-border--active: em(2) solid $cui-primary-colors--medium;
 $step-indicator-icon-underline--active: 6px solid $cui-primary-colors--medium-light;
 $step-indicator-icon-color--active: $cui-primary-colors--medium;
 $step-indicator-icon-border--visited: em(2) solid #666;
+
+// Mobile Step Indicator
+$mobile-step-icon--expanded: $cui-primary-colors--medium;
+$mobile-step-title--expanded: $cui-primary-colors--medium;
+
 
 // Media Object
 $media-object-border: 2px solid black;
