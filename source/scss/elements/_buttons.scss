@@ -7,6 +7,7 @@ Styles for button elements
 :active                     - Selected styling
 .cui-button--error          - Error styling 
 .cui-button--error:active   - Error selected styling
+.cui-button--cancel         - Cancel button styling
 
 Markup: <button class="cui-button {{modifier_class}}">Button</button>
 
@@ -48,6 +49,10 @@ Styleguide Elements.Buttons
     &.pseudo-class-active {
       background-color: $button-color--error-hover;
     }
+  }
+
+  &--cancel {
+    background-color: #FF8C00;
   }
 }
 

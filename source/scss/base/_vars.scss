@@ -44,13 +44,13 @@ $primary-background: #fff;
 $secondary-background: #DEE9EE;
 
 // Buttons
-$button-border-radius: em(4);
+$button-border-radius: em(3);
 $button-color: $cui-primary-colors--medium-light;
 $button-color--active: $cui-primary-colors--medium-dark;
 $button-color--error: #dbdbdb;
 $button-color--error-hover: $cui-greyscale--medium-light; 
-$button-font-size: 12px;
-$button-height: em(37,$button-font-size);
+$button-font-size: 15px;
+$button-height: em(42,$button-font-size);
 $button-width: em(160,$button-font-size);
 
 // Badge
