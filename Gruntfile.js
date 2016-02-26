@@ -69,7 +69,8 @@ module.exports = function(grunt) {
           cwd: 'bower_components/cui-icons/',
           src: [
             'dist/logos/logos-out.svg',
-            'dist/icons/icons-out.svg'
+            'dist/icons/icons-out.svg',
+            'dist/font-awesome/font-awesome-out.svg'
           ],
           dest: 'styleguide/bower_components/cui-icons/',
           expand: true
