@@ -62,7 +62,7 @@ Styleguide Blocks.Tabs
   cursor: pointer;
   display: flex;
   flex: 1;
-  font-size: em(12);
+  font-size: em(15);
   justify-content: center;
   padding: $tabs-padding;
   text-align: center;
@@ -85,12 +85,8 @@ Styleguide Blocks.Tabs
 
   &--active {
     display: flex;
-    font-size: em(12);
     flex: 1;
     padding: $tabs-content-padding;
   }
 
-  @media screen and (min-width: 701px) {
-    font-size: 1em;
-  }
 }

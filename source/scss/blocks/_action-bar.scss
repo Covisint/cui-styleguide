@@ -1,0 +1,62 @@
+/*
+Action Bar
+
+Markup:
+<div class="cui-action">
+  <span class="cui-action__title">Action Title</span>
+  <div class="cui-action__actions">
+    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+      <use xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#filter10"></use>
+    </svg>  
+    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+      <use xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#sort14"></use>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+      <use xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#plus25"></use>
+    </svg>
+  </div>
+</div>
+
+Styleguide Blocks.Action-Bar
+*/
+
+.cui-action {
+  align-items: center;
+  background-color: $secondary-background;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  min-height: 60px;
+  padding: 0 em(10);
+
+  @media screen and (min-width: 701px) {
+    padding: 0 em(50);
+  }
+
+  &__title {
+    @extend %h6;
+    color: $cui-primary-colors--dark;
+    display: flex;
+    flex: .5;
+
+    @media screen and (min-width: 701px) {
+      flex: .75
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex: .5;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 701px) {
+      flex: .25
+    }
+  }
+
+  &__icon {
+    fill: $cui-primary-colors--medium;
+    height: em(25);
+    width: auto;
+  }
+}

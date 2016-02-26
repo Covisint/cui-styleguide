@@ -23,7 +23,7 @@
 
 .snap-content,
 snap-content {
-  background: $secondary-background;
+  background: $primary-background;
   padding: 0;
 }
 
@@ -83,7 +83,7 @@ snap-drawers,
 .snap-drawers,
 .snap-content {
   position: static;
-  background: $secondary-background;
+  background: $primary-background;
   @media screen and (max-width:$snap-menu-breaking-point-1){
     position:absolute;
     height: auto;

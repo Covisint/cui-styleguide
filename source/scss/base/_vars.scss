@@ -39,6 +39,10 @@ $font-size-h5: 1.25em;
 $font-size-h6: 1em;
 $font-header-weight: 700;
 
+$letter-spacing-lg: 1.6px;
+$letter-spacing-md: 1.5px;
+$letter-spacing-sm: 1.2px;
+
 // Backgrounds
 $primary-background: #fff;
 $secondary-background: #DEE9EE;
@@ -184,6 +188,11 @@ $mobile-step-title--expanded: $cui-primary-colors--medium;
 $media-object-border: 2px solid black;
 $media-object-border-radius: 50%;
 $media-obejct-content-padding: em(5) 0;
+
+// Status
+$status--active: $cui-primary-colors--medium-light;
+$status--pending: $cui-secondary-colors--medium;
+$status--suspended: $cui-secondary-colors--dark;
 
 // normalize overrides
 fieldset {
