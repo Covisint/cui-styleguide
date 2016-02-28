@@ -158,7 +158,7 @@ module.exports = function(grunt) {
       }
     },
     exec: {
-      kss: 'node_modules/kss/bin/kss-node --config kss-config.json'
+      kss: 'node node_modules/kss/bin/kss-node --config kss-config.json'
     }
   });
 
