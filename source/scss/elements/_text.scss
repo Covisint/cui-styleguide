@@ -159,10 +159,10 @@ Styleguide Elements.Texts.Status
 %cui-status {
   font-family: 'lato-black', sans-serif;
   font-size: em(10);
-  text-transform: uppercase;
 
   @media screen and (min-width: 701px) {
-    font-size: em(18);
+    font-size: em(16);
+    letter-spacing: $letter-spacing-xs;
   }
 }
 

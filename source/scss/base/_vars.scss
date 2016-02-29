@@ -42,6 +42,7 @@ $font-header-weight: 700;
 $letter-spacing-lg: 1.6px;
 $letter-spacing-md: 1.5px;
 $letter-spacing-sm: 1.2px;
+$letter-spacing-xs: 1.1px;
 
 // Backgrounds
 $primary-background: #fff;
@@ -111,16 +112,21 @@ $loader-medium-border-width: em(5);
 $loader-medium-height-and-width: em(60);
 
 // Tile
-$container-title-radius: 6px 6px 0 0;
+$container-title-bg-color: #fff;
+$container-title-bg-color--light: $secondary-background;
+$container-title-radius: 0;
 $container-title-radius--mobile: 0;
-$container-body-radius: 0 0 6px 6px;
+$container-title-text-align: left;
+$container-body-border-size: 1px;
+$container-body-border-color: $cui-primary-colors--light;
+$container-body-radius: 0;
 $container-body-radius--mobile: 0;
 $container-radius: 6px;
-$container-padding: 50px;
-$container-padding--mobile: em(28);
+$container-padding: em(12) em(15) em(10) em(15);
+$container-padding--mobile: em(12) em(15) em(10) em(15);
 $container-padding-small: 20px;
 $container-title-background: #53abd0;
-$container-title-padding: 15px;
+$container-title-padding: 0 0 0 10px;
 $container-body-max-width: 100%;
 
 // Off-canvas Menu Navigation
