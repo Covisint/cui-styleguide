@@ -70,7 +70,8 @@ html {
   margin: 50px auto; }
 
 .cui-styleguide__title a {
-  color: #fff;
+  color: #6a98a0;
+  font-size: 1.5em;
   text-decoration: none; }
 
 .cui-styleguide__markup-container {
