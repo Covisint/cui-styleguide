@@ -8,6 +8,7 @@ Styles for button elements
 .cui-button--error          - Error styling 
 .cui-button--error:active   - Error selected styling
 .cui-button--cancel         - Cancel button styling
+.cui-button--full-width     - Full width of container
 
 Markup: <button class="cui-button {{modifier_class}}">Button</button>
 
@@ -53,6 +54,10 @@ Styleguide Elements.Buttons
 
   &--cancel {
     background-color: #FF8C00;
+  }
+
+  &--full-width {
+    width: 100%;
   }
 }
 
