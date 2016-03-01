@@ -18,8 +18,8 @@ Styleguide Elements.Forms.Input
 */
 
 .cui-input {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
+  appearance: none;
+  border-radius: 0;
   border: 1px solid $cui-input-border;
   box-sizing: border-box;
   font-size: em(14);
@@ -83,6 +83,53 @@ Styleguide Elements.Forms.Input
 }
 
 /*
+Input with button
+
+Markup:
+<div class="cui-input-button">
+  <input type="text" placeholder="This is placeholder text" class="cui-input-button__input"/>
+  <button class="cui-input-button__button">Go</button>
+</div>
+
+Styleguide Elements.Forms.Input-With-Button
+*/
+
+.cui-input-button {
+  display: flex;
+  height: em(42);
+}
+
+.cui-input-button__input {
+  appearance: none;
+  background-color: $cui-buttonput-input-bg-color;
+  border-bottom: 1px solid $cui-greyscale--light;
+  border-left: 1px solid $cui-greyscale--light;
+  border-right: 0;
+  border-top: 1px solid $cui-greyscale--light;
+  color: $cui-buttonput-input-font-color;
+  flex: .75;
+  font-size: em(14);
+  letter-spacing: $letter-spacing-xxl;
+
+  &::placeholder {
+    color: $cui-buttonput-input-font-color;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+
+.cui-input-button__button {
+  appearance: none;
+  background-color: $cui-buttonput-btn-bg-color;
+  border: 1px solid $cui-greyscale--light;
+  color: $cui-buttonput-btn-font-color;
+  flex: .25;
+  font-family: 'lato-black', sans-serif;
+  font-size: em(13);
+  letter-spacing: $letter-spacing-lg;
+}
+
+/*
 Email tags field
 
 Markup:
@@ -141,7 +188,7 @@ Styleguide Elements.Forms.Tags
 
 .cui-tags-input .tags,
 .cui-tags__container {
-  background-color: $cui-greyscale--light;
+  background-color: $cui-white;
   border: 1px solid $cui-input-border;
   cursor: text;
   min-height: 56px;
@@ -167,7 +214,7 @@ Styleguide Elements.Forms.Tags
 .cui-tags__tag {
   background: $cui-primary-colors--medium-light;
   border-radius: 3px;
-  color: $cui-greyscale--light;
+  color: $cui-white;
   display: inline-block;
   float: left;
   margin: 0 10px 5px 0;
@@ -183,7 +230,7 @@ Styleguide Elements.Forms.Tags
 .cui-tags__remove {
   background: none;
   border: none;
-  color: $cui-greyscale--light;
+  color: $cui-white;
   cursor: pointer;
   font: bold 16px Arial, sans-serif;
   margin: 0 0 0 5px;
