@@ -89,6 +89,10 @@ $cui-switch--unchecked: $cui-greyscale--dark;
 $cui-switch-height: 50px;
 $cui-switch-width: 209px;
 
+// Action Bar
+$action-bar-icon-height: em(25);
+$action-bar-icon-width: calc(#{$action-bar-icon-height} + 1px);
+
 // Card
 $card-background-color: #fff;
 $card-border-radius: 6px;
@@ -222,6 +226,8 @@ fieldset {
   position: absolute;
 }
 
-
+*[ui-sref] {
+  cursor: pointer;
+}
 
 
