@@ -27,7 +27,7 @@ Styleguide Blocks.Action-Bar
   display: flex;
   flex: 1;
   min-height: 60px;
-  padding: 0 em(10);
+  padding: 0 em(13);
 
   @media screen and (min-width: 701px) {
     padding: 0 em(55) 0 em(65);
@@ -55,8 +55,10 @@ Styleguide Blocks.Action-Bar
   }
 
   &__icon {
+    cursor: pointer;
     fill: $cui-primary-colors--medium;
-    height: em(25);
+    height: $action-bar-icon-height;
+    min-width: 26px;
     width: auto;
   }
 }
