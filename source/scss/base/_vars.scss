@@ -226,6 +226,8 @@ fieldset {
   position: absolute;
 }
 
-
+*[ui-sref] {
+  cursor: pointer;
+}
 
 
