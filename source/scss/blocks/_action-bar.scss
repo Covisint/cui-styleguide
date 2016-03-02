@@ -60,5 +60,9 @@ Styleguide Blocks.Action-Bar
     height: $action-bar-icon-height;
     min-width: 26px;
     width: auto;
+
+    use {
+      color: $cui-primary-colors--medium;
+    }
   }
 }
