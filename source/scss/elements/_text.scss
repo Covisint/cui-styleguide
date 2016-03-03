@@ -28,6 +28,7 @@ Styleguide Elements.Texts.Headers
 
 @include font-face('lato-regular','/bower_components/lato/font/lato-regular/lato-regular', $file-formats: woff2 woff);
 @include font-face('lato-black','/bower_components/lato/font/lato-black/lato-black', $file-formats: woff2 woff);
+@include font-face('lato-bold','/bower_components/lato/font/lato-bold/lato-bold', $file-formats: woff2 woff);
 
 body {
   color: $base-font-color;
@@ -52,6 +53,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .h1, .h2, .h3, .h4, .h5, .h6, %h1, %h2, %h3, %h4, %h5, %h6 { 
   font-family: 'lato-black', sans-serif; 
+  font-weight: $font-header-weight; 
+  letter-spacing: 1.6px;
+}
+
+.h1--bold, .h2--bold, .h3--bold, .h4--bold, .h5--bold, .h6--bold, %h1--bold, %h2--bold, %h3--bold, %h4--bold, %h5--bold, %h6--bold { 
+  font-family: 'lato-bold', sans-serif; 
   font-weight: $font-header-weight; 
   letter-spacing: 1.6px;
 }

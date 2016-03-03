@@ -49,11 +49,41 @@ Styleguide Blocks.Expandable
   position: relative;
   width: 100%;
 
+
+
   &__title {
     color: $expandable-title-color;
     cursor: pointer;
     display: block;
     padding: 10px 0 0;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cui-expandable__title-left,
+    .cui-expandable__title-middle,
+    .cui-expandable__title-end {
+      flex: 1;
+    }
+
+    .cui-expandable__title-left {
+      @extend %h5--bold;
+    }
+
+    .cui-expandable__title-middle {
+      color: $secondary-font-color;
+      display: flex;
+      justify-content: center;
+      font-size: em(14);
+    }  
+
+    .cui-expandable__title-end {
+      display: flex;
+      justify-content: flex-end;
+    }
+
   }
 
   &__title--error {
@@ -86,6 +116,58 @@ Styleguide Blocks.Expandable
     >.cui-expandable__title>.chevron {
       transform: rotate(90deg);
     }
+  }
+}
+
+.cui-expandable__body-pane {
+  background-color: $tertiary-background;
+  display: flex;
+  justify-content: space-between;
+  padding: em(60);
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+
+  .cui-expandable__body-close {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+
+    .cui-icon {
+      height: 14px;
+      width: 14px;
+    }
+  }
+
+  .cui-expandable__pane-title {
+    @extend %h4--bold;
+    color: $secondary-font-color;
+    margin-bottom: em(35);
+  }
+
+  .cui-expandable__pane-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cui-expandable__pane-content {
+    @extend %h5--bold;
+    color: $secondary-font-color;
+
+    .cui-checkbox__label:before {
+      background: transparent;
+      border: 2px solid $secondary-font-color;
+    }
+
+    .cui-checkbox:checked + .cui-checkbox__label:before {
+      box-shadow: none;
+    }
+  }
+
+  .cui-expandable__pane-content-item {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
