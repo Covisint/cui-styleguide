@@ -1,8 +1,10 @@
 /*
 Action Bar
 
+.cui-action--alt-bg     - Alternative background styling
+
 Markup:
-<div class="cui-action">
+<div class="cui-action {{modifier_class}}">
   <span class="cui-action__title">Action Title</span>
   <div class="cui-action__actions">
     <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
@@ -33,6 +35,10 @@ Styleguide Blocks.Action-Bar
     padding: 0 em(55) 0 em(65);
   }
 
+  &--alt-bg {
+    background-color: $tertiary-background;
+  }
+
   &__title {
     @extend %h6;
     color: $cui-primary-colors--dark;
@@ -54,7 +60,8 @@ Styleguide Blocks.Action-Bar
     }
   }
 
-  &__icon {
+  &__icon,
+  &__icon--lg, {
     cursor: pointer;
     fill: $cui-primary-colors--medium;
     height: $action-bar-icon-height;
@@ -64,5 +71,29 @@ Styleguide Blocks.Action-Bar
     use {
       color: $cui-primary-colors--medium;
     }
+  }
+
+  &__icon--lg {
+    height: em(40);
+    width: em(33);
+  }
+
+  &__icon-counter {
+    color: $cui-primary-colors--medium;
+    font-family: lato-bold;
+    margin-left: -8px;
+    top: 2px;
+  }
+
+  .cui-input-button {
+    height: em(40);
+  }
+  
+  .cui-input-button__input {
+    flex: .82;
+  }
+
+  .cui-input-button__button {
+    flex: .18;
   }
 }
