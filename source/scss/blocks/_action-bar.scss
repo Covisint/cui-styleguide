@@ -24,7 +24,7 @@ Styleguide Blocks.Action-Bar
 
 .cui-action {
   align-items: center;
-  background-color: $secondary-background;
+  background-color: $action-bar-background;
   cursor: pointer;
   display: flex;
   flex: 1;
@@ -36,7 +36,42 @@ Styleguide Blocks.Action-Bar
   }
 
   &--alt-bg {
-    background-color: $tertiary-background;
+    background-color: $action-bar-alt-background;
+
+      .cui-action__icon,
+      .cui-action__icon--lg, {
+        cursor: pointer;
+        fill: $cui-primary-colors--dark;
+        height: $action-bar-icon-height;
+        min-width: 26px;
+        width: auto;
+        transition: fill .15s;
+
+        use {
+          color: $cui-primary-colors--dark;
+          transition: color .15s;
+        }
+      }
+
+      .cui-action__icon-counter {
+        color: $cui-primary-colors--dark;
+        font-family: lato-bold;
+        margin-left: -8px;
+        top: -5px;
+        transition: color .15s;
+      }
+
+      .cui-action__icon--active,
+      .cui-action__icon-counter--active {
+        color: $cui-primary-colors--medium;
+        fill: $cui-primary-colors--medium;
+        transition: color .15s, fill .15s;
+
+        use {
+          color: $cui-primary-colors--medium;
+          transition: color .15s;
+        }
+      }
   }
 
   &__title {

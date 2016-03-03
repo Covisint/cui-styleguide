@@ -96,6 +96,7 @@ $cui-switch-width: 209px;
 // Action Bar
 $action-bar-icon-height: em(25);
 $action-bar-icon-width: calc(#{$action-bar-icon-height} + 1px);
+$action-bar-background: $secondary-background;
 $action-bar-alt-background: $tertiary-background;
 
 // Card
