@@ -97,6 +97,10 @@ Styleguide Elements.Forms.Input-With-Button
 .cui-input-button {
   display: flex;
   height: em(42);
+
+  &--alt-bg {
+    background-color: $cui-buttonput-btn-alt-bg-color;
+  }
 }
 
 .cui-input-button__input {
@@ -111,10 +115,17 @@ Styleguide Elements.Forms.Input-With-Button
   font-size: em(14);
   letter-spacing: $letter-spacing-xxl;
 
+  @media screen and (min-width: 701px) {
+    padding-left: em(29);
+  }
+
   &::placeholder {
     color: $cui-buttonput-input-font-color;
     text-align: center;
     vertical-align: center;
+    @media screen and (min-width: 701px) {
+      text-align: left;
+    }
   }
 }
 
@@ -127,6 +138,10 @@ Styleguide Elements.Forms.Input-With-Button
   font-family: 'lato-black', sans-serif;
   font-size: em(13);
   letter-spacing: $letter-spacing-lg;
+ 
+  @media screen and (min-width: 701px) {
+    font-size: em(18);
+  }
 }
 
 /*

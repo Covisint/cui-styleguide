@@ -1,8 +1,10 @@
 /*
 Action Bar
 
+.cui-action--alt-bg     - Alternative background styling
+
 Markup:
-<div class="cui-action">
+<div class="cui-action {{modifier_class}}">
   <span class="cui-action__title">Action Title</span>
   <div class="cui-action__actions">
     <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
@@ -22,7 +24,7 @@ Styleguide Blocks.Action-Bar
 
 .cui-action {
   align-items: center;
-  background-color: $secondary-background;
+  background-color: $action-bar-background;
   cursor: pointer;
   display: flex;
   flex: 1;
@@ -31,6 +33,45 @@ Styleguide Blocks.Action-Bar
 
   @media screen and (min-width: 701px) {
     padding: 0 em(55) 0 em(65);
+  }
+
+  &--alt-bg {
+    background-color: $action-bar-alt-background;
+
+      .cui-action__icon,
+      .cui-action__icon--lg, {
+        cursor: pointer;
+        fill: $cui-primary-colors--dark;
+        height: $action-bar-icon-height;
+        min-width: 26px;
+        width: auto;
+        transition: fill .15s;
+
+        use {
+          color: $cui-primary-colors--dark;
+          transition: color .15s;
+        }
+      }
+
+      .cui-action__icon-counter {
+        color: $cui-primary-colors--dark;
+        font-family: lato-bold;
+        margin-left: -8px;
+        top: -5px;
+        transition: color .15s;
+      }
+
+      .cui-action__icon--active,
+      .cui-action__icon-counter--active {
+        color: $cui-primary-colors--medium;
+        fill: $cui-primary-colors--medium;
+        transition: color .15s, fill .15s;
+
+        use {
+          color: $cui-primary-colors--medium;
+          transition: color .15s;
+        }
+      }
   }
 
   &__title {
@@ -54,7 +95,8 @@ Styleguide Blocks.Action-Bar
     }
   }
 
-  &__icon {
+  &__icon,
+  &__icon--lg, {
     cursor: pointer;
     fill: $cui-primary-colors--medium;
     height: $action-bar-icon-height;
@@ -64,5 +106,29 @@ Styleguide Blocks.Action-Bar
     use {
       color: $cui-primary-colors--medium;
     }
+  }
+
+  &__icon--lg {
+    height: em(40);
+    width: em(33);
+  }
+
+  &__icon-counter {
+    color: $cui-primary-colors--medium;
+    font-family: lato-bold;
+    margin-left: -8px;
+    top: 2px;
+  }
+
+  .cui-input-button {
+    height: em(40);
+  }
+  
+  .cui-input-button__input {
+    flex: .82;
+  }
+
+  .cui-input-button__button {
+    flex: .18;
   }
 }

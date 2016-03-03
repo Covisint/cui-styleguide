@@ -34,6 +34,8 @@ $base-font-family: 'lato-regular', sans-serif;
 $base-font-weight: 400;
 $base-font-color: #929292;
 
+$secondary-font-color: #4A4A4A;
+
 $font-size-h1: 2.5em;
 $font-size-h2: 2em;
 $font-size-h3: 1.75em;
@@ -50,7 +52,8 @@ $letter-spacing-xs: 1.1px;
 
 // Backgrounds
 $primary-background: #fff;
-$secondary-background: #DEE9EE;
+$secondary-background: #E8F0F3;
+$tertiary-background: #d4e2e6;
 
 // Buttons
 $button-border-radius: em(3);
@@ -75,9 +78,10 @@ $input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
 
 // Input with Button
-$cui-buttonput-btn-bg-color: rgba(232, 240, 243, 0.30);;
+$cui-buttonput-btn-bg-color: rgba(232, 240, 243, 0.30);
+$cui-buttonput-btn-alt-bg-color: $primary-background;
 $cui-buttonput-btn-font-color: $cui-primary-colors--medium;
-$cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.30);;
+$cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.30);
 $cui-buttonput-input-font-color: $cui-greyscale--medium-dark;
 
 // Checkbox
@@ -92,6 +96,8 @@ $cui-switch-width: 209px;
 // Action Bar
 $action-bar-icon-height: em(25);
 $action-bar-icon-width: calc(#{$action-bar-icon-height} + 1px);
+$action-bar-background: $secondary-background;
+$action-bar-alt-background: $tertiary-background;
 
 // Card
 $card-background-color: #fff;
@@ -165,7 +171,7 @@ $snap-menu:true;
 }
 
 // Tabs
-$tabs-background-color: $cui-v2-colors-secondary;
+$tabs-background-color: $secondary-background;
 $tabs-background-color--active: #fff;
 $tabs-border-bottom: 1px solid #eee;
 $tabs-font-color: $cui-v2-colors-light;
