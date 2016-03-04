@@ -1,0 +1,26 @@
+/*
+Field Value
+
+Markup:
+<div class="cui-field-val">
+  <span class="cui-field-val__field">Field: </span>
+  <span class="cui-field-val__val">value</span>
+</div>
+
+Styleguide Blocks.Field-Value
+*/
+
+.cui-field-val {
+  letter-spacing: $letter-spacing-xl;
+
+  &__field {
+    @extend %h5;
+    @extend %h5--bold;
+    color: $cui-primary-colors--dark;
+  }
+
+  &__val {
+    font-size: em(18);
+  }
+
+}
