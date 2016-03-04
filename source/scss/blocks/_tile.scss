@@ -60,3 +60,11 @@ Styleguide Blocks.Tile
   }
 }
 
+.cui-tile--headless {
+  border: 1px solid $cui-primary-colors--light;
+  display: flex;
+  flex-direction: column;
+  flex: .5;
+  justify-content: space-between;
+  padding: 0 em(30) em(30);
+}
