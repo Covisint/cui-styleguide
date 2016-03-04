@@ -17,8 +17,32 @@ Styleguide Elements.Icons
   &--link {
     cursor: pointer;
   }
+
+  &--light-grey {
+    fill: #9B9B9B;
+  }
+
+  &--grey {
+    fill: $cui-greyscale--medium;
+  }
+
+  &--dark {
+    fill: $cui-greyscale--medium-dark;
+  }
+
+  &--black {
+    fill: $cui-greyscale--dark;
+  }
+
+  &--folder {
+    fill: $cui-greyscale--dark;
+    height: 33px;
+    width: 40px
+  }
 }
 
 .cui-icon__ref {
   color: $cui-primary-colors--medium-light;
 }
+
+// Icon color helpers

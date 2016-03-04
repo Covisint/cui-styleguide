@@ -108,6 +108,11 @@ Styleguide Blocks.Form
     text-align: right;
   }
 
+  &__cancel {
+    font-size: em(18);
+    margin-right: em(28, 18);
+  }
+
   &__next {
     @extend .cui-button;
 
