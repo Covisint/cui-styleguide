@@ -79,7 +79,8 @@ Styleguide Elements.Texts.Links
 
 .cui-link,
 %cui-link {
-  color: #429DD1;
+  color: $cui-primary-colors--medium;
+  text-decoration: none;
 }
 
 /*
