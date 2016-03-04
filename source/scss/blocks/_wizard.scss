@@ -252,6 +252,19 @@ Styleguide Blocks.Form
   }
 }
 
+.cui-text-area {
+  background-color: #F7F7F7;
+  min-height: 235px;
+  padding: em(23) em(21);
+}
+
+.cui-text-area__label {
+  @extend %h5;
+  @extend %h5--bold;
+  color: $cui-primary-colors--dark;
+  margin-bottom: em(10);
+}
+
 .cui-error__status {
   width: 9px;
   height: 9px;

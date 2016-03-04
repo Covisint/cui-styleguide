@@ -9,6 +9,7 @@ Styles for button elements
 .cui-button--error:active   - Error selected styling
 .cui-button--cancel         - Cancel button styling
 .cui-button--full-width     - Full width of container
+.cui-button--small-rounded  - Small and rounded
 
 Markup: <button class="cui-button {{modifier_class}}">Button</button>
 
@@ -58,6 +59,11 @@ Styleguide Elements.Buttons
 
   &--full-width {
     width: 100%;
+  }
+
+  &--small-rounded {
+    font: em(14);
+    width: 100px;
   }
 }
 
