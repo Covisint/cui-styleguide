@@ -11,16 +11,28 @@ Styleguide Blocks.Field-Value
 */
 
 .cui-field-val {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
   letter-spacing: $letter-spacing-xl;
+  line-height: 1.4;
+  margin-bottom: em(5);
+
+  &--stack {
+    flex-direction: column;
+  }
 
   &__field {
     @extend %h5;
     @extend %h5--bold;
     color: $cui-primary-colors--dark;
+    margin-right: em(5);
+    margin-bottom: em(5);
   }
 
   &__val {
     font-size: em(18);
+    margin-bottom: em(5);
   }
 
 }
