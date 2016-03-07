@@ -6,6 +6,8 @@
 
 .cui-nav__content-wrapper,
 .cui-menu__content-wrapper {
+  display: flex;
+  flex-direction: column;
   margin-left:$desktop-menu-width;
   transition: all 150ms ease-in-out;
   &.desktop-menu--collapse {
@@ -16,6 +18,10 @@
         margin-left:0;
     }
   }
+}
+
+.cui-main {
+  flex: 1;
 }
 
 
