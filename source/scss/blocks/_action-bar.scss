@@ -31,7 +31,7 @@ Styleguide Blocks.Action-Bar
   padding: 0 em(13);
 
   @media screen and (min-width: 701px) {
-    padding: 0 em(55) 0 em(65);
+    padding: em(19) em(55) 0 em(65);
   }
 
   &--alt {
@@ -98,11 +98,27 @@ Styleguide Blocks.Action-Bar
     }
   }
 
+  &__action-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: em(15);
+
+    .cui-action__icon {
+      margin: 0 auto;
+    }
+  }
+
+  &__action-label {
+    color: $cui-primary-colors--medium;
+    font-size: 11px;
+    text-align: center;
+  }
+
   &__icon,
   &__icon--lg, {
     cursor: pointer;
     fill: $cui-primary-colors--medium;
-    height: $action-bar-icon-height;
     min-width: 26px;
     width: auto;
 
@@ -111,9 +127,29 @@ Styleguide Blocks.Action-Bar
     }
   }
 
+  &__icon {
+    height: $action-bar-icon-height;
+  }
+
   &__icon--lg {
     height: em(40);
     width: em(33);
+  }
+
+  &__icon--new,
+  &__icon--close {
+    fill: #fff;
+    height: em(45);
+    margin-left: em(30);
+    margin-top: -2px;
+    width: auto;
+  }
+
+  &__icon--new {
+
+    use {
+      color: $cui-primary-colors--medium-dark;
+    }
   }
 
   &__icon-counter {
