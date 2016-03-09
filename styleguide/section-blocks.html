@@ -18,7 +18,7 @@
 </head>
 <body id="cui-styleguide__page-container">
 
-<div class="cui-wrapper">
+<div class="cui-wrapper v2">
   <div class="snap-drawers">
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
@@ -155,14 +155,18 @@
     </div>
   </div>
   <snap-content class="snap-content">
-    <header class="cui-header">
-      <div class="cui-header__top">
-        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
-          <button class="cui-menu__toggle-button"></button>
-        </div>
-        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
-    </header>
+    
     <div class="cui-menu__content-wrapper">
+      <div class="cui-menu__toggle-button--desktop cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+        <button class="cui-menu__toggle-button"></button>
+      </div>
+      <header class="cui-header">
+        <div class="cui-header__top">
+          <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+            <button class="cui-menu__toggle-button"></button>
+          </div>
+          <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
+      </header>
       <div class="cui-styleguide__main-container">
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title"></h1>
@@ -1037,20 +1041,33 @@
                 <div class="cui-styleguide-modifier__example">
                   <header class="cui-header">
   <div class="cui-header__top">
+    <div class="cui-menu__toggle-button-container" snap-toggle="left" onclick="Nav.navToggle()">
+      <button class="cui-menu__toggle-button"></button>
+    </div>
+    <svg class="cui-header__search" viewBox="0 0 48 48">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#search" class="svg"></use>
+    </svg>
     <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
-    <div class="cui-header__user" onclick="toggle_visibility('cui-header__user-menu');">
-    <span class="cui-header__user-name">Bill Murray</span>
-    <div class="cui-header__chevron--left"></div>
-    <div class="cui-header__user-avatar">
-      <div id="cui-header__user-menu" class="cui-header__user-menu" style="opacity:0">
-        <span class="cui-header__menu-greet">
-          Hello, Bill!<br/>
-          <span class="small">Logged in as Bill Murray</span>
-        </span>
-        <span class="cui-header__menu-greet">You should login.<br/>
-        </span>
-        <hr/>
+    <div class="cui-profile" >
+      <span class="cui-profile__user-name">Bill Murray</span>
+      <div class="cui-profile__user-avatar"></div>
+      <div id="cui-profile__popup" class="cui-profile__user-menu">
+        <div class="cui-profile__menu-item">
+          <a href="" class="cui-profile__link">My Profile</a>
+          <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#profile" class="svg"></use>
+          </svg>
+        </div>
+        <div class="cui-profile__menu-item">
+          <a href="" class="cui-profile__link">Log Out</a>
+          <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#log-out" class="svg"></use>
+          </svg>
+        </div>
       </div>
+      <svg class="cui-profile__chevron" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459" class="svg"></use>
+      </svg>
     </div>
   </div>
   </div>
@@ -1061,20 +1078,33 @@
               <div class="cui-styleguide__markup-container cui-styleguide__style">
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;cui-header&quot;&gt;
   &lt;div class=&quot;cui-header__top&quot;&gt;
+    &lt;div class=&quot;cui-menu__toggle-button-container&quot; snap-toggle=&quot;left&quot; onclick=&quot;Nav.navToggle()&quot;&gt;
+      &lt;button class=&quot;cui-menu__toggle-button&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;svg class=&quot;cui-header__search&quot; viewBox=&quot;0 0 48 48&quot;&gt;
+      &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#search&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
     &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;div class=&quot;cui-header__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-header__user-menu&#x27;);&quot;&gt;
-    &lt;span class=&quot;cui-header__user-name&quot;&gt;Bill Murray&lt;/span&gt;
-    &lt;div class=&quot;cui-header__chevron--left&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;cui-header__user-avatar&quot;&gt;
-      &lt;div id=&quot;cui-header__user-menu&quot; class=&quot;cui-header__user-menu&quot; style=&quot;opacity:0&quot;&gt;
-        &lt;span class=&quot;cui-header__menu-greet&quot;&gt;
-          Hello, Bill!&lt;br/&gt;
-          &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
-        &lt;/span&gt;
-        &lt;span class=&quot;cui-header__menu-greet&quot;&gt;You should login.&lt;br/&gt;
-        &lt;/span&gt;
-        &lt;hr/&gt;
+    &lt;div class=&quot;cui-profile&quot; &gt;
+      &lt;span class=&quot;cui-profile__user-name&quot;&gt;Bill Murray&lt;/span&gt;
+      &lt;div class=&quot;cui-profile__user-avatar&quot;&gt;&lt;/div&gt;
+      &lt;div id=&quot;cui-profile__popup&quot; class=&quot;cui-profile__user-menu&quot;&gt;
+        &lt;div class=&quot;cui-profile__menu-item&quot;&gt;
+          &lt;a href=&quot;&quot; class=&quot;cui-profile__link&quot;&gt;My Profile&lt;/a&gt;
+          &lt;svg class=&quot;cui-profile__link-icon&quot; viewBox=&quot;-2 -2 52 52&quot;&gt;
+            &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#profile&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cui-profile__menu-item&quot;&gt;
+          &lt;a href=&quot;&quot; class=&quot;cui-profile__link&quot;&gt;Log Out&lt;/a&gt;
+          &lt;svg class=&quot;cui-profile__link-icon&quot; viewBox=&quot;-2 -2 52 52&quot;&gt;
+            &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#log-out&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
+      &lt;svg class=&quot;cui-profile__chevron&quot; viewBox=&quot;0 0 216 146&quot;&gt;
+        &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;/div&gt;
@@ -1571,39 +1601,51 @@
                   <div class="cui-styleguide-modifier__title h4">EXAMPLE: </div>
                 </div>
                 <div class="cui-styleguide-modifier__example">
-                  <div class="cui-profile" onclick="toggle_visibility('cui-profile__popup');">
+                  <div class="cui-profile" >
   <span class="cui-profile__user-name">Bill Murray</span>
-  <div class="cui-profile__chevron cui-profile__chevron--left"></div>
-  <div class="cui-profile__user-avatar">
-    <div id="cui-profile__popup" class="cui-profile__user-menu" style="opacity:0">
-      <span class="cui-profile__menu-greet">
-        Hello, Bill!<br/>
-        <span class="small">Logged in as Bill Murray</span>
-      </span>
-      <span class="cui-profile__menu-greet">You should login.<br/>
-      </span>
-      <hr/>
+  <div class="cui-profile__user-avatar"></div>
+  <div id="cui-profile__popup" class="cui-profile__user-menu">
+    <div class="cui-profile__menu-item">
+      <a href="" class="cui-profile__link">My Profile</a>
+      <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#profile" class="svg"></use>
+      </svg>
+    </div>
+    <div class="cui-profile__menu-item">
+      <a href="" class="cui-profile__link">Log Out</a>
+      <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#log-out" class="svg"></use>
+      </svg>
     </div>
   </div>
+  <svg class="cui-profile__chevron" viewBox="0 0 216 146">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459" class="svg"></use>
+  </svg>
 </div>
                 </div>
               </div>
               <div class="cui-styleguide__markup-title h4">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-profile&quot; onclick=&quot;toggle_visibility(&#x27;cui-profile__popup&#x27;);&quot;&gt;
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-profile&quot; &gt;
   &lt;span class=&quot;cui-profile__user-name&quot;&gt;Bill Murray&lt;/span&gt;
-  &lt;div class=&quot;cui-profile__chevron cui-profile__chevron--left&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;cui-profile__user-avatar&quot;&gt;
-    &lt;div id=&quot;cui-profile__popup&quot; class=&quot;cui-profile__user-menu&quot; style=&quot;opacity:0&quot;&gt;
-      &lt;span class=&quot;cui-profile__menu-greet&quot;&gt;
-        Hello, Bill!&lt;br/&gt;
-        &lt;span class=&quot;small&quot;&gt;Logged in as Bill Murray&lt;/span&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;cui-profile__menu-greet&quot;&gt;You should login.&lt;br/&gt;
-      &lt;/span&gt;
-      &lt;hr/&gt;
+  &lt;div class=&quot;cui-profile__user-avatar&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;cui-profile__popup&quot; class=&quot;cui-profile__user-menu&quot;&gt;
+    &lt;div class=&quot;cui-profile__menu-item&quot;&gt;
+      &lt;a href=&quot;&quot; class=&quot;cui-profile__link&quot;&gt;My Profile&lt;/a&gt;
+      &lt;svg class=&quot;cui-profile__link-icon&quot; viewBox=&quot;-2 -2 52 52&quot;&gt;
+        &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#profile&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cui-profile__menu-item&quot;&gt;
+      &lt;a href=&quot;&quot; class=&quot;cui-profile__link&quot;&gt;Log Out&lt;/a&gt;
+      &lt;svg class=&quot;cui-profile__link-icon&quot; viewBox=&quot;-2 -2 52 52&quot;&gt;
+        &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#log-out&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;svg class=&quot;cui-profile__chevron&quot; viewBox=&quot;0 0 216 146&quot;&gt;
+    &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
 &lt;/div&gt;</code></pre>
               </div>
               </div>

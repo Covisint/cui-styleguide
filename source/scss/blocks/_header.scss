@@ -4,20 +4,33 @@ Header
 Markup: 
 <header class="cui-header">
   <div class="cui-header__top">
+    <div class="cui-menu__toggle-button-container" snap-toggle="left" onclick="Nav.navToggle()">
+      <button class="cui-menu__toggle-button"></button>
+    </div>
+    <svg class="cui-header__search" viewBox="0 0 48 48">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#search" class="svg"></use>
+    </svg>
     <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
-    <div class="cui-header__user" onclick="toggle_visibility('cui-header__user-menu');">
-    <span class="cui-header__user-name">Bill Murray</span>
-    <div class="cui-header__chevron--left"></div>
-    <div class="cui-header__user-avatar">
-      <div id="cui-header__user-menu" class="cui-header__user-menu" style="opacity:0">
-        <span class="cui-header__menu-greet">
-          Hello, Bill!<br/>
-          <span class="small">Logged in as Bill Murray</span>
-        </span>
-        <span class="cui-header__menu-greet">You should login.<br/>
-        </span>
-        <hr/>
+    <div class="cui-profile" >
+      <span class="cui-profile__user-name">Bill Murray</span>
+      <div class="cui-profile__user-avatar"></div>
+      <div id="cui-profile__popup" class="cui-profile__user-menu">
+        <div class="cui-profile__menu-item">
+          <a href="" class="cui-profile__link">My Profile</a>
+          <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#profile" class="svg"></use>
+          </svg>
+        </div>
+        <div class="cui-profile__menu-item">
+          <a href="" class="cui-profile__link">Log Out</a>
+          <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#log-out" class="svg"></use>
+          </svg>
+        </div>
       </div>
+      <svg class="cui-profile__chevron" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459" class="svg"></use>
+      </svg>
     </div>
   </div>
   </div>
@@ -31,6 +44,14 @@ Styleguide Blocks.Header
 .cui-header {
   background: $header-background-color;
   padding: $header-padding;
+
+  &__search {
+    @extend .cui-icon;
+    color: white;
+    cursor: pointer;
+    fill: white;
+  }
+
   &__user {
     flex-grow: 1;
     height: 50px;
@@ -63,9 +84,17 @@ Styleguide Blocks.Header
   }
 
   &__svg-logo {
+    flex: 1;
     height: 45px;
     width: 200px;
     margin-left:20px;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
   }
 
   &__top {
@@ -89,6 +118,13 @@ Styleguide Blocks.Header
 .cui-header {
   background: $header-background-color;
   padding: $header-padding;
+
+  &__search {
+    @extend .cui-icon;
+    color: white;
+    cursor: pointer;
+    fill: white;
+  }
 
   &__user {
     @extend .cui-profile;

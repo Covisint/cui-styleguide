@@ -1,5 +1,73 @@
 //DESKTOP MENU CSS
 
+// New design styles for desktop menu.
+// To apply, add .v2 class to cui-wrapper elmement
+// and add menu toggle button as sibling before header element
+.v2 {
+
+  .cui-menu__content-wrapper {
+    margin-left: 180px;
+
+    &.desktop-menu--collapse {
+      margin-left: 80px;
+    }
+  }
+
+  .desktop-menu {
+    margin-top: 80px;
+    width: 180px;
+
+    &--collapse { 
+      left: -100px;
+    }
+  }
+
+  .cui-nav__content-wrapper,
+  .cui-menu__content-wrapper {
+
+    &.desktop-menu--collapse {
+      margin-left: 80px;
+    }
+    @if $snap-menu == true{
+      @media screen and (max-width:$snap-menu-breaking-point-1){
+          margin-left:0;
+      }
+    }
+  }
+
+
+  .cui-menu__toggle-button--desktop {
+    background: $cui-primary-colors--medium-dark;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80px;
+    padding-left: 27px;
+    width: 180px;
+    z-index: 1;
+
+    @media screen and (max-width: $snap-menu-breaking-point) {
+      display: none;
+    }
+  }
+
+  &--collapse {
+    
+  }
+
+  .cui-header {
+    z-index: 10;
+
+    .cui-menu__toggle-button-container {
+      @media screen and (min-width: $snap-menu-breaking-point) {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
 .desktop-menu{
   background: $menu-background-color;
   left: 0;
