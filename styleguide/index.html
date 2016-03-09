@@ -18,7 +18,7 @@
 </head>
 <body id="cui-styleguide__page-container">
 
-<div class="cui-wrapper">
+<div class="cui-wrapper v2">
   <div class="snap-drawers">
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
@@ -45,14 +45,18 @@
     </div>
   </div>
   <snap-content class="snap-content">
-    <header class="cui-header">
-      <div class="cui-header__top">
-        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
-          <button class="cui-menu__toggle-button"></button>
-        </div>
-        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
-    </header>
+    
     <div class="cui-menu__content-wrapper">
+      <div class="cui-menu__toggle-button--desktop cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+        <button class="cui-menu__toggle-button"></button>
+      </div>
+      <header class="cui-header">
+        <div class="cui-header__top">
+          <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+            <button class="cui-menu__toggle-button"></button>
+          </div>
+          <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
+      </header>
       <div class="cui-styleguide__main-container">
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title"></h1>

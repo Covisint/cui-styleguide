@@ -18,7 +18,7 @@
 </head>
 <body id="cui-styleguide__page-container">
 
-<div class="cui-wrapper">
+<div class="cui-wrapper v2">
   <div class="snap-drawers">
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
@@ -155,14 +155,18 @@
     </div>
   </div>
   <snap-content class="snap-content">
-    <header class="cui-header">
-      <div class="cui-header__top">
-        <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
-          <button class="cui-menu__toggle-button"></button>
-        </div>
-        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
-    </header>
+    
     <div class="cui-menu__content-wrapper">
+      <div class="cui-menu__toggle-button--desktop cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+        <button class="cui-menu__toggle-button"></button>
+      </div>
+      <header class="cui-header">
+        <div class="cui-header__top">
+          <div class="cui-menu__toggle-button-container active" snap-toggle="left" onclick="Nav.navToggle()">
+            <button class="cui-menu__toggle-button"></button>
+          </div>
+          <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo--light"></use></svg>
+      </header>
       <div class="cui-styleguide__main-container">
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title"></h1>
@@ -1037,10 +1041,15 @@
                 <div class="cui-styleguide-modifier__example">
                   <header class="cui-header">
   <div class="cui-header__top">
+    <div class="cui-menu__toggle-button-container" snap-toggle="left" onclick="Nav.navToggle()">
+      <button class="cui-menu__toggle-button"></button>
+    </div>
+    <svg class="cui-header__search" viewBox="0 0 48 48">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#search" class="svg"></use>
+    </svg>
     <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
     <div class="cui-header__user" onclick="toggle_visibility('cui-header__user-menu');">
     <span class="cui-header__user-name">Bill Murray</span>
-    <div class="cui-header__chevron--left"></div>
     <div class="cui-header__user-avatar">
       <div id="cui-header__user-menu" class="cui-header__user-menu" style="opacity:0">
         <span class="cui-header__menu-greet">
@@ -1051,6 +1060,7 @@
         </span>
         <hr/>
       </div>
+      <div class="cui-header__chevron--left"></div>
     </div>
   </div>
   </div>
@@ -1061,10 +1071,15 @@
               <div class="cui-styleguide__markup-container cui-styleguide__style">
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;header class=&quot;cui-header&quot;&gt;
   &lt;div class=&quot;cui-header__top&quot;&gt;
+    &lt;div class=&quot;cui-menu__toggle-button-container&quot; snap-toggle=&quot;left&quot; onclick=&quot;Nav.navToggle()&quot;&gt;
+      &lt;button class=&quot;cui-menu__toggle-button&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;svg class=&quot;cui-header__search&quot; viewBox=&quot;0 0 48 48&quot;&gt;
+      &lt;use xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#search&quot; class=&quot;svg&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
     &lt;svg class=&quot;cui-header__svg-logo&quot; viewBox=&quot;0 0 640 124&quot;&gt;&lt;use xlink:href=&quot;bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;div class=&quot;cui-header__user&quot; onclick=&quot;toggle_visibility(&#x27;cui-header__user-menu&#x27;);&quot;&gt;
     &lt;span class=&quot;cui-header__user-name&quot;&gt;Bill Murray&lt;/span&gt;
-    &lt;div class=&quot;cui-header__chevron--left&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;cui-header__user-avatar&quot;&gt;
       &lt;div id=&quot;cui-header__user-menu&quot; class=&quot;cui-header__user-menu&quot; style=&quot;opacity:0&quot;&gt;
         &lt;span class=&quot;cui-header__menu-greet&quot;&gt;
@@ -1075,6 +1090,7 @@
         &lt;/span&gt;
         &lt;hr/&gt;
       &lt;/div&gt;
+      &lt;div class=&quot;cui-header__chevron--left&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;/div&gt;
