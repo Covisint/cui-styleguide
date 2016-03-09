@@ -2,20 +2,26 @@
 Profile
 
 Markup: 
-<div class="cui-profile" onclick="toggle_visibility('cui-profile__popup');">
+<div class="cui-profile" >
   <span class="cui-profile__user-name">Bill Murray</span>
-  <div class="cui-profile__chevron cui-profile__chevron--left"></div>
-  <div class="cui-profile__user-avatar">
-    <div id="cui-profile__popup" class="cui-profile__user-menu" style="opacity:0">
-      <span class="cui-profile__menu-greet">
-        Hello, Bill!<br/>
-        <span class="small">Logged in as Bill Murray</span>
-      </span>
-      <span class="cui-profile__menu-greet">You should login.<br/>
-      </span>
-      <hr/>
+  <div class="cui-profile__user-avatar"></div>
+  <div id="cui-profile__popup" class="cui-profile__user-menu">
+    <div class="cui-profile__menu-item">
+      <a href="" class="cui-profile__link">My Profile</a>
+      <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#profile" class="svg"></use>
+      </svg>
+    </div>
+    <div class="cui-profile__menu-item">
+      <a href="" class="cui-profile__link">Log Out</a>
+      <svg class="cui-profile__link-icon" viewBox="-2 -2 52 52">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#log-out" class="svg"></use>
+      </svg>
     </div>
   </div>
+  <svg class="cui-profile__chevron" viewBox="0 0 216 146">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459" class="svg"></use>
+  </svg>
 </div>
 
 Styleguide Blocks.Profile
@@ -61,6 +67,7 @@ Styleguide Blocks.Profile
 .cui-avatar,
 .cui-profile {
   position: relative;
+  width: 250px;
 
   // the code below is depricated, will be removed with next minor release
 
@@ -69,14 +76,11 @@ Styleguide Blocks.Profile
     border-radius: 2px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .16);
     opacity: 0;
-    padding: 10px 0;
     position: absolute;
     right: 0;
-    top: 100%;
     transform: translate(0, 19px);
     transition: all 80ms ease-in-out;
-    width: 200px;
-    z-index: 3;
+    width: 250px;
     pointer-events: none;
 
     &.active {
@@ -89,16 +93,16 @@ Styleguide Blocks.Profile
       border-top:1px solid rgba(0,0,0,0.15);
     }
 
-    &::before {
-      color: white;
-      content: '▼';
-      font-size: em(16);
-      position: absolute;
-      text-shadow: 2px 2px rgba(0, 0, 0, .09);
-      top: 0;
-      transform: rotate(180deg) translate(20px, 15px);
-      right: 0;
-    }
+    // &::before {
+    //   color: white;
+    //   content: '▼';
+    //   font-size: em(16);
+    //   position: absolute;
+    //   text-shadow: 2px 2px rgba(0, 0, 0, .09);
+    //   top: 0;
+    //   transform: rotate(180deg) translate(20px, 15px);
+    //   right: 0;
+    // }
 
     &__greet {
       display:block;
@@ -153,28 +157,29 @@ Styleguide Blocks.Profile
   }
 
   &__user-name {
-    color: #AAA;
+    color: #fff;
     cursor: pointer;
-    margin-right: 15px;
+    flex: 1;
+    font-size: em(18);
+    letter-spacing: 0.9px;
+    margin: 0 15px;
+    text-transform: capitalize;
+
     @media all and (max-width:600px){
       display: none;
     }
   }
 
   &__user-menu {
-    background: white;
-    border-radius: 2px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .16);
+    background: $secondary-background;
     opacity: 0;
     padding: 10px 0;
     pointer-events: none;
     position: absolute;
     right: 0;
-    top: 100%;
-    transform: translate(0, 19px);
+    transform: translate(0, 80px);
     transition: all 80ms ease-in-out;
-    width: 200px;
-    z-index: 3;
+    width: 250px;
 
     &.active {
       opacity:1;
@@ -186,16 +191,16 @@ Styleguide Blocks.Profile
       border-top:1px solid rgba(0,0,0,0.15);
     }
 
-    &::before {
-      color: white;
-      content: '▼';
-      font-size: em(16);
-      position: absolute;
-      text-shadow: 2px 2px rgba(0, 0, 0, .09);
-      top: 0;
-      transform: rotate(180deg) translate(20px, 15px);
-      right: 0;
-    }
+    // &::before {
+    //   color: white;
+    //   content: '▼';
+    //   font-size: em(16);
+    //   position: absolute;
+    //   text-shadow: 2px 2px rgba(0, 0, 0, .09);
+    //   top: 0;
+    //   transform: rotate(180deg) translate(20px, 15px);
+    //   right: 0;
+    // }
   }
 
   &__menu-greet {
@@ -260,9 +265,60 @@ Styleguide Blocks.Profile
 .cui-profile {
   align-items:center;
   display:flex;
-  flex-grow: 1;
-  height: 50px;
-  justify-content:flex-end;
+  height: 80px;
+  justify-content: space-around;
+  width: 250px;
+  transition: all 80ms ease-in-out;
+
+  .cui-profile__menu-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 12px 24px;
+    cursor: pointer;
+
+    &:first-of-type {
+      padding: 9px 30px 12px 24px;
+    }
+  }
+
+  .cui-profile__link {
+    @extend %cui-link;
+    font-size: em(14);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .cui-profile__link-icon {
+    color: $cui-primary-colors--medium-dark;
+    height: 15px;
+    width: 15px;
+  }
+
+  .cui-profile__chevron {
+    @extend .cui-icon;
+    fill: #fff;
+  }
+
+  &--active {
+    background-color: $secondary-background;
+
+    .cui-profile__user-name {
+      color: $secondary-font-color;
+    }
+  
+    .cui-profile__user-menu {
+      opacity: 1;
+    }
+
+    .cui-profile__chevron {
+      @extend .cui-icon;
+      color: $secondary-font-color;
+      fill: $secondary-font-color;
+    }
+  }
 }
 
 

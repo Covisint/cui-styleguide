@@ -150,5 +150,27 @@ $(document).ready(function(){
 
     };
     Button.init();
+
+    var Profile = {
+
+      init: function() {
+        this.cacheDOM();
+        this.bindWatch();
+      },
+
+      cacheDOM: function() {
+        this.$el = $(".cui-profile");
+      },
+
+      bindWatch: function() {
+        this.$el.on('click', this.toggleProfileMenu);
+      },
+
+      toggleProfileMenu: function() {
+        $(this).toggleClass("cui-profile--active");
+      }
+
+    };
+    Profile.init();
   }) ()
 });
