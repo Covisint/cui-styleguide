@@ -58,6 +58,7 @@ Styleguide Blocks.Expandable
     padding: 10px 0 0;
 
     &--flex {
+      align-items: center;
       display: flex;
       justify-content: space-between;
     }
