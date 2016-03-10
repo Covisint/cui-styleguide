@@ -4,6 +4,12 @@
   position:relative;
 }
 
+.snapjs-left {
+  .cui-wrapper {
+    overflow: hidden;
+  }
+}
+
 .cui-nav__content-wrapper,
 .cui-menu__content-wrapper {
   display: flex;
@@ -31,6 +37,7 @@
 snap-content {
   background: $primary-background;
   padding: 0;
+  transition: all .15s linear;
 }
 
 .snap-drawer,
