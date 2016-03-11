@@ -2,6 +2,10 @@
   min-height:100vh;
   background: $secondary-background;
   position:relative;
+
+  @media screen and (min-width: $snap-menu-breaking-point) {
+    min-height: 1000px;
+  }
 }
 
 .snapjs-left {
