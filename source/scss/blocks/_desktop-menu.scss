@@ -65,18 +65,23 @@
     }
   }
 
+  .cui-off-canvas__section-link {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
 
 }
 
 .desktop-menu{
   background: $menu-background-color;
+  height: calc(100% - 80px);
   left: 0;
+  margin-top: 80px;
   position: absolute;
   top:0;
-  margin-top: 80px;
-  bottom: 0;
-  width: $desktop-menu-width;
   transition: all 150ms ease-in-out;
+  width: $desktop-menu-width;
 
   @if $snap-menu == true{
     display: none;
@@ -113,32 +118,32 @@
 .cui-menu__toggle-button {
     background: $menu-toggle-color;
     border: none;
-    height: 2px;
+    height: 1px;
     padding: 0;
     position: relative;
-    transition: background 200ms ease-in-out;
-    width: 15px;
+    transition: width .1s linear;
+    width: 25px;
     
     &:before {
         background: $menu-toggle-color;
         content: '';
-        height: 2px;
+        height: 1px;
         left: 0;
         position: absolute;
         top: -9px;
-        transition: background 200ms ease-in-out;
-        width: 20px;
+        transition: transform .1s ease-in-out, top .1s .1s ease-in-out;
+        width: 25px;
     }
 
     &:after {
         background: $menu-toggle-color;
         bottom: -9px;
         content:'';
-        height: 2px;
+        height: 1px;
         left: 0;
         position: absolute;
-        transition: background 200ms ease-in-out;
-        width: 20px;
+        transition: transform .1s ease-in-out, bottom .1s .1s ease-in-out;
+        width: 25px;
     }
 }
 
@@ -163,15 +168,21 @@
   &.active {
     .menu-toggle--button,
     .cui-menu__toggle-button {
-      background: $menu-toggle-color--active;
+      width: 0;
+      transition: width .1ms linear;
 
       &:before{
-        background: $menu-toggle-color--active;
+        top: 0;
+        transform: rotateZ(45deg);
+        transition: top .1s ease-in-out, transform .1s .1s ease-in-out;
       }
 
       &:after{
-        background: $menu-toggle-color--active;
+        bottom: 0;
+        transform: rotateZ(-45deg);
+        transition: bottom .1s ease-in-out, transform .1s .1s ease-in-out;
       }
     }
   }
 }
+
