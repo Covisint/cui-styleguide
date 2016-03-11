@@ -31,18 +31,39 @@ Styleguide Blocks.Media-Object
   display: flex;
   flex: .25;
   justify-content: center;
+
+  @media screen and (min-width: 701px) {
+    flex: .1;
+    justify-content: flex-start;
+  }
 }
 
 .cui-media__body {
   flex: .75;
 
   &--full {
+
     @media screen and (min-width: 701px) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex: 1;
     }
+  }
+}
+
+.cui-media__title,
+.cui-media__content {
+  @media screen and (min-width: 701px) {
+    flex: 1;
+  }
+}
+
+.cui-status {
+  @media screen and (min-width: 701px) {
+    align-content: center;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
