@@ -165,6 +165,21 @@
   width: 40px;
   display: flex;
   align-items: center;
+
+  &--desktop {
+    display: none;
+    @media screen and (min-width: 1001px) {
+      display: flex;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+    @media screen and (min-width: 1001px) {
+      display: none;
+    }
+  }
+  
   &.active {
     .menu-toggle--button,
     .cui-menu__toggle-button {
