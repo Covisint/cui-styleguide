@@ -79,9 +79,28 @@ Styleguide Elements.Texts.Links
 
 .cui-link,
 %cui-link {
-  color: $cui-primary-colors--medium;
+  color: $link-color;
   cursor: pointer;
   text-decoration: none;
+  transition: color .15s ease-in-out;
+
+  &:hover {
+    color: $link-color--hover;
+    transition: color .15s ease-in-out;
+  }
+}
+
+.cui-link--alt,
+%cui-link--alt {
+  color: $link-alt-color;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+
+  &:hover {
+    color: $link-alt-color--hover;
+    transition: color .15s ease-in-out;
+  }
 }
 
 /*
