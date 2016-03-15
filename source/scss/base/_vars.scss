@@ -252,3 +252,8 @@ fieldset {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+.tether-element {
+  position: absolute;
+  z-index:9999; 
+}
