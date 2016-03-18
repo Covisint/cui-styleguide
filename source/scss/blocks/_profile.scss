@@ -305,6 +305,12 @@ Styleguide Blocks.Profile
   &--active {
     background-color: $secondary-background;
 
+    .cui-profile__popup,
+    .cui-profile__user-menu {
+      opacity:1;
+      pointer-events: auto;
+    }
+
     .cui-profile__user-name {
       color: $secondary-font-color;
     }
