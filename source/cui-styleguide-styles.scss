@@ -51,7 +51,6 @@ html {
 
 .cui-styleguide__main {
   @include outer-container(95%);
-  background-color: #dfe9ee;
   flex: 1;
   min-height: 1000px;
   @media screen and (min-width: 999px) {
