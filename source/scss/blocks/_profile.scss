@@ -177,9 +177,11 @@ Styleguide Blocks.Profile
     pointer-events: none;
     position: absolute;
     right: 0;
+    top: 0;
     transform: translate(0, 80px);
     transition: all 80ms ease-in-out;
     width: 250px;
+    z-index: 100;
 
     &.active {
       opacity:1;
