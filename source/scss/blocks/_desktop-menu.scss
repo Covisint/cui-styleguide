@@ -65,6 +65,16 @@
     }
   }
 
+  .cui-header__svg-logo {
+    margin-left: -180px;
+    transition: margin-left .15s ease-in-out;
+  }
+
+  .desktop-menu--collapse .cui-header__svg-logo {
+    margin-left: -80px;
+    transition: margin-left .15s ease-in-out;
+  }
+
   .cui-off-canvas__section-link {
     display: flex;
     align-items: center;

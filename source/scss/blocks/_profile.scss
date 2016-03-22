@@ -269,8 +269,9 @@ Styleguide Blocks.Profile
   display:flex;
   height: 80px;
   justify-content: space-around;
-  width: 250px;
+  margin-left: auto;
   transition: all 80ms ease-in-out;
+  width: 250px;
 
   .cui-profile__menu-item {
     align-items: center;

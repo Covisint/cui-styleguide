@@ -3,6 +3,9 @@ Header
 
 Markup: 
 <header class="cui-header">
+  <div class="cui-header__svg-logo-container">
+    <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
+  </div>
   <div class="cui-header__top">
     <div class="cui-menu__toggle-button-container" snap-toggle="left" onclick="Nav.navToggle()">
       <button class="cui-menu__toggle-button"></button>
@@ -10,7 +13,6 @@ Markup:
     <svg class="cui-header__search" viewBox="0 0 48 48">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#search" class="svg"></use>
     </svg>
-    <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
     <div class="cui-profile" >
       <span class="cui-profile__user-name">Bill Murray</span>
       <div class="cui-profile__user-avatar"></div>
@@ -32,7 +34,6 @@ Markup:
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#arrow459" class="svg"></use>
       </svg>
     </div>
-  </div>
   </div>
 </header>
 
@@ -83,13 +84,6 @@ Styleguide Blocks.Header
     }
   }
 
-  &__svg-logo {
-    flex: 1;
-    height: 45px;
-    width: 200px;
-    margin-left:20px;
-  }
-
   &__logo {
     align-items: center;
     display: flex;
@@ -118,6 +112,7 @@ Styleguide Blocks.Header
 .cui-header {
   background: $header-background-color;
   padding: $header-padding;
+  position: relative;
 
   &__search {
     @extend .cui-icon;
@@ -144,10 +139,20 @@ Styleguide Blocks.Header
     }
   }
 
+  &__svg-logo-container {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 60px);
+  }
+
   &__svg-logo {
     height: $header-svg-logo-height;
+    position: relative;
     width: $header-svg-logo-width;
-    margin-left: $header-svg-logo-margin-left;
   }
 
   &__top {
