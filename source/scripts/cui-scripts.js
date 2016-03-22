@@ -66,7 +66,7 @@ menuToggle.addEventListener('click', function() {
 
 // Tabs Functions
 
-var Tabs = (function () {
+/*var Tabs = (function () {
 
   var e = document.querySelectorAll('.cui-tabs__tab');
   var p = document.querySelectorAll('.cui-tabs__tab-pane')
@@ -88,11 +88,36 @@ var Tabs = (function () {
     pane.className = 'cui-tabs__tab-pane cui-tabs__tab-pane--active';
   };
 
-}) ();
+}) ();*/
 
 $(document).ready(function(){
 
   (function() {
+
+    var Tab = {
+      init: function() {
+        this.cacheDOM();
+        this.bindWatch();
+      },
+      cacheDOM: function(){
+        this.$el = $('.cui-tabs');
+        this.$tabs = this.$el.find('.cui-tabs__tab');
+        this.$panes = this.$el.find('.cui-tabs__tab-pane');
+      },
+      bindWatch: function(){
+        this.$tabs.on('click', this.showTab.bind(this));
+      },
+      showTab: function(event){
+        $this = $(event.target); //The tab that was clicked
+        paneID = $this.data('pane');
+        pane = this.$panes.filter('#' + paneID); //Add # to make it a selector 
+        $this.addClass('cui-tabs__tab--active').parent('li').siblings().find('a').removeClass('cui-tabs__tab--active');
+        pane.addClass('cui-tabs__tab-pane--active').siblings().removeClass('cui-tabs__tab-pane--active');
+      }
+    }
+
+    Tab.init();
+
 
     var Expandable = {
 
