@@ -170,4 +170,41 @@ Styleguide Blocks.Action-Bar
   .cui-input-button__button {
     flex: .18;
   }
+
+  &__popover {
+    @extend .cui-popover;
+    @extend .cui-popover--top;
+    border-radius: em(3);
+    box-shadow: 0 1px em(5) 0 $cui-primary-colors--medium-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: em(200);
+    padding-right: em(30);
+    width: em(216);
+
+    &::before {
+      left: 75%;
+    }
+  }
+
+  &__popover-title {
+    @extend %h5;
+    @extend %h5--bold;
+    color: $cui-primary-colors--dark;
+  }
+
+  &__popover-section {
+    font-size: em(14);
+    padding: em(10) 0;
+  }
+
+  &__popover-button {
+    @extend .cui-button;
+    @extend .cui-button--full-width;
+    display: flex;
+    font-size: em(11);
+    height: em(32, 11);
+    letter-spacing: $letter-spacing-lg;
+  }
 }
