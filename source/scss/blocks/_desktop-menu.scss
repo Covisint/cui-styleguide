@@ -5,36 +5,95 @@
 // and add menu toggle button as sibling before header element
 .v2 {
 
-  .cui-menu__content-wrapper {
+  .cui-menu__content-wrapper,
+  .cui-nav__content-wrapper {
     margin-left: 180px;
 
-    &.desktop-menu--collapse {
+    @if $snap-menu == true {
+      @media screen and (max-width: $snap-menu-breaking-point-1){
+          margin-left:0;
+      }
+    }
+
+    &.cui-desktop-menu--collapse {
       margin-left: 80px;
+
+      @if $snap-menu == true{
+        @media screen and (max-width: $snap-menu-breaking-point-1){
+            margin-left:0;
+        }
+      }
     }
   }
 
-  .desktop-menu {
+  .cui-desktop-menu {
+    background: $menu-background-color;
+    height: calc(100% - 80px);
+    left: 0;
     margin-top: 80px;
+    position: absolute;
+    top:0;
+    transition: all 150ms ease-in-out;
     width: 180px;
+
+    @if $snap-menu == true {
+      display: none;
+      @media screen and (min-width:$snap-menu-breaking-point){
+          display: inline-block;
+      }
+    }
 
     &--collapse { 
       left: -100px;
     }
   }
 
-  .cui-nav__content-wrapper,
-  .cui-menu__content-wrapper {
+  .cui-desktop-menu__option {
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+    min-height: em(60);
+    padding: 10px 20px;
+    transition: background-color .15s linear, color .15s linear;
 
-    &.desktop-menu--collapse {
-      margin-left: 80px;
+    &:hover {
+      color: $menu-section-font-color--hover;
+      .cui-desktop-menu__icon {
+        fill: $menu-section-font-color--hover;
+      }
     }
-    @if $snap-menu == true{
-      @media screen and (max-width:$snap-menu-breaking-point-1){
-          margin-left:0;
+
+    &.active {
+      background: $secondary-background;
+      color: $cui-primary-colors--medium;
+
+      .cui-desktop-menu__icon {
+        fill: $cui-primary-colors--medium;
       }
     }
   }
 
+  .cui-desktop-menu__option:first-of-type {
+    margin-top: 0;
+  }
+
+  .cui-desktop-menu__option-name {
+    font-size: em(14);
+    flex: 1;
+  }
+
+  .cui-desktop-menu__icon {
+    @extend .cui-icon;
+    fill: #fff;
+    flex: .5;
+    height: em(32);
+    padding-left: 15px;
+    transition: fill .15s linear;
+  }
 
   .cui-menu__toggle-button--desktop {
     background: $cui-primary-colors--medium-dark;
@@ -49,10 +108,6 @@
     @media screen and (max-width: $snap-menu-breaking-point) {
       display: none;
     }
-  }
-
-  &--collapse {
-    
   }
 
   .cui-header {
@@ -70,7 +125,7 @@
     transition: margin-left .15s ease-in-out;
   }
 
-  .desktop-menu--collapse .cui-header__svg-logo {
+  .cui-desktop-menu--collapse .cui-header__svg-logo {
     margin-left: -80px;
     transition: margin-left .15s ease-in-out;
   }
@@ -83,7 +138,9 @@
 
 }
 
-.desktop-menu{
+// End styles for new menu
+
+.desktop-menu {
   background: $menu-background-color;
   height: calc(100% - 80px);
   left: 0;
