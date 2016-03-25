@@ -5,11 +5,24 @@
 // and add menu toggle button as sibling before header element
 .v2 {
 
-  .cui-menu__content-wrapper {
+  .cui-menu__content-wrapper,
+  .cui-nav__content-wrapper {
     margin-left: 180px;
+
+    @if $snap-menu == true {
+      @media screen and (max-width: $snap-menu-breaking-point-1){
+          margin-left:0;
+      }
+    }
 
     &.desktop-menu--collapse {
       margin-left: 80px;
+
+      @if $snap-menu == true{
+        @media screen and (max-width: $snap-menu-breaking-point-1){
+            margin-left:0;
+        }
+      }
     }
   }
 
@@ -22,19 +35,47 @@
     }
   }
 
-  .cui-nav__content-wrapper,
-  .cui-menu__content-wrapper {
+  .desktop-menu--option {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    min-height: em(60);
+    transition: background-color .15s linear, color .15s linear;
 
-    &.desktop-menu--collapse {
-      margin-left: 80px;
+    &:hover {
+      .desktop-menu__icon {
+        fill: $menu-section-font-color--hover;
+      }
     }
-    @if $snap-menu == true{
-      @media screen and (max-width:$snap-menu-breaking-point-1){
-          margin-left:0;
+
+    &.active {
+      background: $secondary-background;
+      color: $cui-primary-colors--medium;
+
+      .desktop-menu__icon {
+        fill: $cui-primary-colors--medium;
       }
     }
   }
 
+  .desktop-menu--option:first-of-type {
+    margin-top: 0;
+  }
+
+  .desktop-menu__option-name {
+    font-size: em(14);
+    flex: 1;
+  }
+
+  .desktop-menu__icon {
+    @extend .cui-icon;
+    fill: #fff;
+    flex: .5;
+    height: em(32);
+    padding-left: 15px;
+    transition: fill .15s linear;
+  }
 
   .cui-menu__toggle-button--desktop {
     background: $cui-primary-colors--medium-dark;
@@ -49,10 +90,6 @@
     @media screen and (max-width: $snap-menu-breaking-point) {
       display: none;
     }
-  }
-
-  &--collapse {
-    
   }
 
   .cui-header {
@@ -82,6 +119,8 @@
   }
 
 }
+
+// End styles for new menu
 
 .desktop-menu{
   background: $menu-background-color;
