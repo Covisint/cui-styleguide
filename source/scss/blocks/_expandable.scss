@@ -226,6 +226,7 @@ Styleguide Blocks.Expandable
 .indicator-container {
   border-bottom: $step-indicator-border-bottom;
   display: flex;
+  -ms-flex-pack: space-between;
   justify-content: space-between;
   margin-bottom: $step-indicator-margin-bottom;
   position: relative;
