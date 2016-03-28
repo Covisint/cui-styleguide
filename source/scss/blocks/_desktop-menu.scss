@@ -48,7 +48,8 @@
     }
   }
 
-  .cui-desktop-menu__option {
+  .cui-desktop-menu__option,
+  .snap-menu--option {
     align-items: center;
     background: transparent;
     color: #fff;
@@ -62,7 +63,8 @@
 
     &:hover {
       color: $menu-section-font-color--hover;
-      .cui-desktop-menu__icon {
+      .cui-desktop-menu__icon,
+      .snap-menu__icon {
         fill: $menu-section-font-color--hover;
       }
     }
@@ -71,22 +73,26 @@
       background: $secondary-background;
       color: $cui-primary-colors--medium;
 
-      .cui-desktop-menu__icon {
+      .cui-desktop-menu__icon,
+      .snap-menu__icon {
         fill: $cui-primary-colors--medium;
       }
     }
   }
 
-  .cui-desktop-menu__option:first-of-type {
+  .cui-desktop-menu__option:first-of-type,
+  .snap-menu--option:first-of-type {
     margin-top: 0;
   }
 
-  .cui-desktop-menu__option-name {
+  .cui-desktop-menu__option-name,
+  .snap-menu__option-name {
     font-size: em(14);
     flex: 1;
   }
 
-  .cui-desktop-menu__icon {
+  .cui-desktop-menu__icon,
+  .snap-menu__icon {
     @extend .cui-icon;
     fill: #fff;
     flex: .5;
@@ -105,7 +111,7 @@
     width: 180px;
     z-index: 1;
 
-    @media screen and (max-width: $snap-menu-breaking-point) {
+    @media screen and (max-width: $snap-menu-breaking-point-1) {
       display: none;
     }
   }
@@ -134,6 +140,45 @@
     display: flex;
     align-items: center;
     padding-left: 15px;
+  }
+
+  .cui-profile {
+    @media screen and (max-width: $snap-menu-breaking-point-1) {
+      display: none;
+    }
+  }
+
+  // styling for off-canvas profile
+
+  .cui-profile--mobile {
+    @extend .cui-profile--active;
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+    margin-top: 80px;
+
+    @media screen and (max-width: $snap-menu-breaking-point-1) {
+      display: flex;
+    }
+
+    .cui-profile__row {
+      display: flex;
+      align-items: center;
+    }
+
+    .cui-profile__user-menu {
+      transform: none;
+    }
+
+    .cui-profile__user-name {
+      display: block;
+    }
+  }
+
+  .menu-toggle--mobile {
+    @media screen and (min-width: $snap-menu-breaking-point) {
+      display: none;
+    }
   }
 
 }
