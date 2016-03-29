@@ -29,13 +29,13 @@ var TopNav = (function () {
 var Nav = (function () {
 
   var cache = new Array();
-  cache.push(document.querySelector('.desktop-menu'));
+  cache.push(document.querySelector('.cui-desktop-menu'));
   cache.push(document.querySelector('.cui-menu__content-wrapper'));
   cache.push(document.querySelector('.cui-menu__toggle-button-container'));
 
   function toggleDesktopNav() {
-    cache[0].classList.toggle('desktop-menu--collapse');
-    cache[1].classList.toggle('desktop-menu--collapse');
+    cache[0].classList.toggle('cui-desktop-menu--collapse');
+    cache[1].classList.toggle('cui-desktop-menu--collapse');
     cache[2].classList.toggle('active');
   };
 
