@@ -18,7 +18,30 @@ svg4everybody();
     elem.classList.toggle('expanded');
   };
 
+<<<<<<< HEAD
 }) ();*/
+=======
+}) ();
+
+// Desktop Navigation Functions
+
+var Nav = (function () {
+
+  var cache = new Array();
+  cache.push(document.querySelector('.cui-desktop-menu'));
+  cache.push(document.querySelector('.cui-menu__content-wrapper'));
+  cache.push(document.querySelector('.cui-menu__toggle-button-container'));
+
+  function toggleDesktopNav() {
+    cache[0].classList.toggle('cui-desktop-menu--collapse');
+    cache[1].classList.toggle('cui-desktop-menu--collapse');
+    cache[2].classList.toggle('active');
+  };
+
+  return {
+    navToggle: toggleDesktopNav
+  };
+>>>>>>> master
 
 
 
