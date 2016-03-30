@@ -348,5 +348,33 @@ Styleguide Blocks.Profile
   }
 }
 
+.cui-avatar__image-container {
+    background-size: cover;
+    border-radius: 50%;
+    height: 46px;
+    width: auto;
+}
 
+.cui-avatar__initials {
+    color: white;
+}
 
+.cui-avatar__color1 {
+    background-color: $cui-primary-colors--light;
+}
+
+.cui-avatar__color2 {
+    background-color: $cui-primary-colors--medium-light;
+}
+
+.cui-avatar__color3 {
+    background-color: $cui-primary-colors--medium;
+}
+
+.cui-avatar__color4 {
+    background-color: $cui-primary-colors--medium-dark;
+}
+
+.cui-avatar__color5 {
+    background-color: $cui-primary-colors--dark;
+}
