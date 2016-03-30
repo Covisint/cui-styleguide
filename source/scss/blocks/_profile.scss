@@ -1,7 +1,7 @@
 /*
 Profile
 
-Markup: 
+Markup:
 <div class="cui-profile" >
   <span class="cui-profile__user-name">Bill Murray</span>
   <div class="cui-profile__user-avatar"></div>
@@ -32,7 +32,7 @@ Styleguide Blocks.Profile
   width: 0;
   height: 0;
   position: relative;
-  
+
   &:after {
     content:'';
     position:absolute;
@@ -86,6 +86,9 @@ Styleguide Blocks.Profile
     &.active {
       opacity:1;
       pointer-events: auto;
+      .cui-chevron {
+        transform: rotate(180deg);
+      }
     }
 
     hr {
@@ -121,7 +124,7 @@ Styleguide Blocks.Profile
       display: block;
       font-size: em(14);
       padding: 3px 10px;
-      
+
       &:hover {
         color:#888;
       }
@@ -129,7 +132,7 @@ Styleguide Blocks.Profile
       &.logout {
         color: lighten(#386895,20%);
         text-align: right;
-        
+
         &:hover {
           color: #386895;
         }
@@ -222,7 +225,7 @@ Styleguide Blocks.Profile
     display: block;
     font-size: em(14);
     padding: 3px 10px;
-    
+
     &:hover {
       color:#888;
     }
@@ -230,7 +233,7 @@ Styleguide Blocks.Profile
     &.logout {
       color: lighten(#386895,20%);
       text-align: right;
-      
+
       &:hover {
         color: #386895;
       }
@@ -261,6 +264,21 @@ Styleguide Blocks.Profile
     &--bottom {
       @extend .cui-chevron--bottom;
     }
+  }
+
+  &__image-container {
+    background-size: cover;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__initials {
+    font-size: 1.3em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 
@@ -317,7 +335,7 @@ Styleguide Blocks.Profile
     .cui-profile__user-name {
       color: $secondary-font-color;
     }
-  
+
     .cui-profile__user-menu {
       opacity: 1;
     }
