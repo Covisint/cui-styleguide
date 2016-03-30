@@ -1,5 +1,5 @@
 /*
-Media Object 
+Media Object
 
 Markup:
 <div class="cui-media">
@@ -31,6 +31,7 @@ Styleguide Blocks.Media-Object
   display: flex;
   flex: .25;
   justify-content: center;
+  position: relative;
 
   @media screen and (min-width: 701px) {
     flex: .1;
@@ -105,7 +106,7 @@ Styleguide Blocks.Media-Object
   justify-content: flex-end;
   padding-top: 5px;
 }
-  
+
 .cui-media--vertical {
   @media screen and (max-width: 700px) {
     justify-content: center;
