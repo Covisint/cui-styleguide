@@ -321,6 +321,7 @@ Styleguide Blocks.Profile
   .cui-profile__chevron {
     @extend .cui-icon;
     fill: #fff;
+    transform: rotate(180deg);
   }
 
   &--active {
@@ -344,6 +345,7 @@ Styleguide Blocks.Profile
       @extend .cui-icon;
       color: $secondary-font-color;
       fill: $secondary-font-color;
+      transform: rotate(0deg);
     }
   }
 }
