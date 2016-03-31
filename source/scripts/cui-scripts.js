@@ -18,10 +18,7 @@ svg4everybody();
     elem.classList.toggle('expanded');
   };
 
-<<<<<<< HEAD
 }) ();*/
-=======
-}) ();
 
 // Desktop Navigation Functions
 
@@ -41,9 +38,8 @@ var Nav = (function () {
   return {
     navToggle: toggleDesktopNav
   };
->>>>>>> master
 
-
+}) ();
 
 $(document).ready(function(){
 
@@ -76,13 +72,13 @@ $(document).ready(function(){
       },
       cacheDOM: function(){
           this.$el                =   $('.snap-content');
-          this.$desktopMenu       =   this.$el.find('.desktop-menu');
+          this.$desktopMenu       =   this.$el.find('.cui-desktop-menu');
           this.$wrapper           =   this.$el.find('.cui-menu__content-wrapper');
           this.$buttonContainer   =   this.$el.find('.cui-menu__toggle-button-container');
       },
       doToggle: function(){
-          this.$desktopMenu.toggleClass('desktop-menu--collapse');
-          this.$wrapper.toggleClass('desktop-menu--collapse');
+          this.$desktopMenu.toggleClass('cui-desktop-menu--collapse');
+          this.$wrapper.toggleClass('cui-desktop-menu--collapse');
           this.$buttonContainer.toggleClass('active');
       },
       bindWatch: function(){
