@@ -1,11 +1,7 @@
 svg4everybody();
 
-function toggle_visibility(Id) {
-   var e = document.getElementById(Id);
-   e.style.opacity = ((e.style.opacity!='0') ? '0' : '1');
-}
 
-var TopNav = (function () {
+/*var TopNav = (function () {
 
   var e = document.querySelectorAll('.cui-top-nav__sub-title');
   var f = document.querySelectorAll('.cui-search__filter');
@@ -22,77 +18,131 @@ var TopNav = (function () {
     elem.classList.toggle('expanded');
   };
 
-}) ();
+}) ();*/
 
 // Desktop Navigation Functions
 
-var Nav = (function () {
+// var Nav = (function () {
 
-  var cache = new Array();
-  cache.push(document.querySelector('.cui-desktop-menu'));
-  cache.push(document.querySelector('.cui-menu__content-wrapper'));
-  cache.push(document.querySelector('.cui-menu__toggle-button-container'));
+//   var cache = new Array();
+//   cache.push(document.querySelector('.cui-desktop-menu'));
+//   cache.push(document.querySelector('.cui-menu__content-wrapper'));
+//   cache.push(document.querySelector('.cui-menu__toggle-button-container'));
 
-  function toggleDesktopNav() {
-    cache[0].classList.toggle('cui-desktop-menu--collapse');
-    cache[1].classList.toggle('cui-desktop-menu--collapse');
-    cache[2].classList.toggle('active');
-  };
+//   function toggleDesktopNav() {
+//     cache[0].classList.toggle('cui-desktop-menu--collapse');
+//     cache[1].classList.toggle('cui-desktop-menu--collapse');
+//     cache[2].classList.toggle('active');
+//   };
 
-  return {
-    navToggle: toggleDesktopNav
-  };
+//   return {
+//     navToggle: toggleDesktopNav
+//   };
 
-}) ();
-
-// Snap.js Mobile Navigation
-
-var snapMenu = new Snap({
-    element: document.querySelector('.snap-content'),
-    disable: 'right'
-});
-
-var menuToggle = document.querySelector('.cui-menu__toggle-button-container')
-
-menuToggle.addEventListener('click', function() {
-
-    if (snapMenu.state().state == "left") {
-        snapMenu.close();
-    } else {
-        snapMenu.open('left');
-    }
-
-});
-
-// Tabs Functions
-
-var Tabs = (function () {
-
-  var e = document.querySelectorAll('.cui-tabs__tab');
-  var p = document.querySelectorAll('.cui-tabs__tab-pane')
-
-  for (var i = 0; i < e.length; i++) {
-    e[i].addEventListener('click', function() {showTab(this);} );
-  }
-
-  function showTab(elem) {
-    elemPane = elem.getAttribute('data-pane');
-    pane = document.getElementById(elemPane);
-    for (var i = 0; i < e.length; i++) {
-      e[i].className = 'cui-tabs__tab';
-    }
-    for (var i = 0; i < e.length; i++) {
-      p[i].className = 'cui-tabs__tab-pane';
-    }
-    elem.className = 'cui-tabs__tab cui-tabs__tab--active';
-    pane.className = 'cui-tabs__tab-pane cui-tabs__tab-pane--active';
-  };
-
-}) ();
+// }) ();
 
 $(document).ready(function(){
 
   (function() {
+
+
+  //TopNav
+  var TopNav = {
+    init: function(){
+      this.cacheDOM();
+    },
+    cacheDom: function(){
+      this.$el = $('.cui-top-nav__sub-title, .cui-search__filter');
+    },
+    bindWatch: function(){
+      this.$el.click(this.expand.bind(this));
+    },
+    expand: function(event){
+      $this = $(event.target);
+      $this.toggleClass('expanded');
+    }
+  }
+
+
+  // Desktop Navigation Functions
+    var $Nav = {
+      init: function(){
+        this.cacheDOM();
+        this.bindWatch();
+      },
+      cacheDOM: function(){
+          this.$el                =   $('.snap-content');
+          this.$desktopMenu       =   this.$el.find('.cui-desktop-menu');
+          this.$wrapper           =   this.$el.find('.cui-menu__content-wrapper');
+          this.$buttonContainer   =   this.$el.find('.cui-menu__toggle-button--desktop');
+      },
+      doToggle: function(){
+          this.$desktopMenu.toggleClass('cui-desktop-menu--collapse');
+          this.$wrapper.toggleClass('cui-desktop-menu--collapse');
+          this.$buttonContainer.toggleClass('active');
+      },
+      bindWatch: function(){
+        this.$buttonContainer.click(this.doToggle.bind(this));
+      }
+    }
+    $Nav.init();
+
+  //Off Canvas Nav Functions
+    var offCanvasNav = {
+        init: function(){
+          this.cacheDOM();
+          this.bindWatch();
+      },
+      cacheDOM: function(){
+        this.$el = $('.snap-content');
+        this.$menuToggle = this.$el.find('.cui-menu__toggle-button--mobile');
+
+        // Initialize Snap.js Mobile Navigation
+        this.$snapMenu = new Snap({
+            element: this.$el[0], //Use index to mimic the output of querySelector.  Needs the element, not the jQuery object
+            disable: 'right'
+        });
+      },
+      bindWatch: function(){
+          this.$menuToggle.click(this.doSnapMenu.bind(this));
+      },
+      doSnapMenu: function(){
+    
+            if (this.$snapMenu.state().state == "left") {
+                this.$snapMenu.close();
+            } else {
+                this.$snapMenu.open('left');
+            }
+      }
+    }
+   offCanvasNav.init();
+
+	// Tabs Functions
+    var Tab = {
+      init: function() {
+        this.cacheDOM();
+        this.bindWatch();
+      },
+      cacheDOM: function(){
+        this.$el    = $('.cui-tabs');
+        this.$tabs  = this.$el.find('.cui-tabs__tab');
+        this.$panes = this.$el.find('.cui-tabs__tab-pane');
+      },
+      bindWatch: function(){
+        this.$tabs.on('click', this.showTab.bind(this));
+      },
+      showTab: function(event){
+        $this  = $(event.target); //The tab that was clicked
+        paneID = $this.data('pane');
+        pane   = this.$panes.filter('#' + paneID); //Add # to make it a selector 
+
+        $this.addClass('cui-tabs__tab--active').parent('li').siblings().find('a').removeClass('cui-tabs__tab--active');
+        pane.addClass('cui-tabs__tab-pane--active').siblings().removeClass('cui-tabs__tab-pane--active');
+      }
+    }
+
+    Tab.init();
+
 
     var Expandable = {
 
