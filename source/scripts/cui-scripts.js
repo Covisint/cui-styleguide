@@ -22,24 +22,24 @@ svg4everybody();
 
 // Desktop Navigation Functions
 
-var Nav = (function () {
+// var Nav = (function () {
 
-  var cache = new Array();
-  cache.push(document.querySelector('.cui-desktop-menu'));
-  cache.push(document.querySelector('.cui-menu__content-wrapper'));
-  cache.push(document.querySelector('.cui-menu__toggle-button-container'));
+//   var cache = new Array();
+//   cache.push(document.querySelector('.cui-desktop-menu'));
+//   cache.push(document.querySelector('.cui-menu__content-wrapper'));
+//   cache.push(document.querySelector('.cui-menu__toggle-button-container'));
 
-  function toggleDesktopNav() {
-    cache[0].classList.toggle('cui-desktop-menu--collapse');
-    cache[1].classList.toggle('cui-desktop-menu--collapse');
-    cache[2].classList.toggle('active');
-  };
+//   function toggleDesktopNav() {
+//     cache[0].classList.toggle('cui-desktop-menu--collapse');
+//     cache[1].classList.toggle('cui-desktop-menu--collapse');
+//     cache[2].classList.toggle('active');
+//   };
 
-  return {
-    navToggle: toggleDesktopNav
-  };
+//   return {
+//     navToggle: toggleDesktopNav
+//   };
 
-}) ();
+// }) ();
 
 $(document).ready(function(){
 
@@ -74,7 +74,7 @@ $(document).ready(function(){
           this.$el                =   $('.snap-content');
           this.$desktopMenu       =   this.$el.find('.cui-desktop-menu');
           this.$wrapper           =   this.$el.find('.cui-menu__content-wrapper');
-          this.$buttonContainer   =   this.$el.find('.cui-menu__toggle-button-container');
+          this.$buttonContainer   =   this.$el.find('.cui-menu__toggle-button--desktop');
       },
       doToggle: function(){
           this.$desktopMenu.toggleClass('cui-desktop-menu--collapse');
@@ -95,7 +95,7 @@ $(document).ready(function(){
       },
       cacheDOM: function(){
         this.$el = $('.snap-content');
-        this.$menuToggle = this.$el.find('.cui-menu__toggle-button-container');
+        this.$menuToggle = this.$el.find('.cui-menu__toggle-button--mobile');
 
         // Initialize Snap.js Mobile Navigation
         this.$snapMenu = new Snap({
@@ -116,9 +116,6 @@ $(document).ready(function(){
       }
     }
    offCanvasNav.init();
-
-
-
 
 	// Tabs Functions
     var Tab = {
