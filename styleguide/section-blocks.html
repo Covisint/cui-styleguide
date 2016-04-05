@@ -1170,14 +1170,40 @@
             </div>
 
             <div class="cui-tile__body">
+              <div class="cui-styleguide__description-container">
+                <span class="cui-styleguide__description h4">DESCRIPTION: </span><p>Modifiers for Media Object</p>
+
+              </div>
             
 
               <div class="cui-styleguide-modifier__wrapper">
                 <div class="cui-styleguide-modifier__heading cui-styleguide__style">
                   <div class="cui-styleguide-modifier__title h4">EXAMPLE: </div>
                 </div>
+                <div class="cui-styleguide-modifier__default-name cui-styleguide__style h5">
+                  Base styles
+                </div>
                 <div class="cui-styleguide-modifier__example">
-                  <div class="cui-media">
+                  <div class="cui-media [modifier class]">
+  <div class="cui-media__image-container">
+    <svg xmlns="http://www.w3.org/2000/svg" class="cui-media__image">
+      <use xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#user"></use>
+    </svg>
+  </div>
+  <div class="cui-media__body">
+    <h3 class="cui-media__title">Media Object title</h3>
+    <p class="cui-media__content">Media Object body</p>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style h5">
+                  .cui-media--centered
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  Centered Media Object
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-media cui-media--centered">
   <div class="cui-media__image-container">
     <svg xmlns="http://www.w3.org/2000/svg" class="cui-media__image">
       <use xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#user"></use>
@@ -1192,7 +1218,7 @@
               </div>
               <div class="cui-styleguide__markup-title h4">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
-                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-media&quot;&gt;
+                <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-media [modifier class]&quot;&gt;
   &lt;div class=&quot;cui-media__image-container&quot;&gt;
     &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;cui-media__image&quot;&gt;
       &lt;use xlink:href=&quot;bower_components/cui-icons/dist/icons/icons-out.svg#user&quot;&gt;&lt;/use&gt;
@@ -1488,8 +1514,8 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover [modifier class]">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1503,8 +1529,8 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover cui-popover--dark">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1518,8 +1544,8 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover cui-popover--left">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1533,8 +1559,8 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover cui-popover--right">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1548,8 +1574,8 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover cui-popover--top">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1563,8 +1589,23 @@
                   <div class="cui-styeguide__popover-container">
   <div class="cui-popover cui-popover--bottom">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
+  </div>
+</div>
+                </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style h5">
+                  .cui-popover__menu
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  border-separated menu
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <div class="cui-styeguide__popover-container">
+  <div class="cui-popover cui-popover__menu">
+    <p class="">Passwords must:</p>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
                 </div>
@@ -1574,8 +1615,8 @@
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;cui-styeguide__popover-container&quot;&gt;
   &lt;div class=&quot;cui-popover [modifier class]&quot;&gt;
     &lt;p class=&quot;&quot;&gt;Passwords must:&lt;/p&gt;
-    &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 lower case letter&lt;/div&gt;
-    &lt;div class=&quot;cui-error__message&quot;&gt;have at least 1 upper case letter&lt;/div&gt;
+    &lt;div class=&quot;cui-error__message&quot;&gt;&lt;p&gt;have at least 1 lower case letter&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;cui-error__message&quot;&gt;&lt;p&gt;have at least 1 upper case letter&lt;/p&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
               </div>

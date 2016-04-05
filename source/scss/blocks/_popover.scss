@@ -8,13 +8,14 @@ Modifiers for Popover Element
 .cui-popover--right         - right arrow
 .cui-popover--top           - top arrow
 .cui-popover--bottom        - bottom arrow
+.cui-popover__menu          - border-separated menu
 
 Markup:
 <div class="cui-styeguide__popover-container">
   <div class="cui-popover {{modifier_class}}">
     <p class="">Passwords must:</p>
-    <div class="cui-error__message">have at least 1 lower case letter</div>
-    <div class="cui-error__message">have at least 1 upper case letter</div>
+    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
+    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
   </div>
 </div>
 
@@ -93,6 +94,21 @@ Styleguide Blocks.Popover
     top: 30%;
     transform: rotate(-90deg);
   }
+
+    //Popover with border-separated menu
+    &__menu{
+        padding: 0;
+
+          p{
+            border-bottom: 1px solid #eee;
+            padding:1em 1.25em;
+            margin: 0;
+          }
+
+          >div:last-of-type p{
+            border: none;
+          }
+    }
 
   @media all and (max-width: 700px) {
     transform:translate(-50%,-em(10));

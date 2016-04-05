@@ -1,8 +1,12 @@
 /*
 Media Object
 
+Modifiers for Media Object
+
+.cui-media--centered       - Centered Media Object
+
 Markup:
-<div class="cui-media">
+<div class="cui-media {{modifier_class}}">
   <div class="cui-media__image-container">
     <svg xmlns="http://www.w3.org/2000/svg" class="cui-media__image">
       <use xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#user"></use>
@@ -24,6 +28,30 @@ Styleguide Blocks.Media-Object
 
   &--border {
     border-bottom: 1px solid $cui-primary-colors--light;
+  }
+
+  /* Centered Media Object */
+  &--centered{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+
+    .cui-media__image-container{
+      margin: 0;
+
+      svg{
+        margin: 0 auto;
+      }
+
+      a{
+        width: 100%;
+      }
+    }
+
+    .cui-media__content{
+      display: inline;
+    }
   }
 }
 
@@ -80,6 +108,7 @@ Styleguide Blocks.Media-Object
   border-radius: $media-object-border-radius;
   height: em(50);
   width: em(50);
+  position: relative;
 }
 
 .cui-media__content {
