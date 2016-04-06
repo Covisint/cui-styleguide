@@ -314,6 +314,10 @@ Styleguide Blocks.Step-Indicator-With-Icons
     z-index: 1; 
   }
 
+  .mobile-element .icon-container {
+    text-align: center;
+  }
+
   .mobile-element.expanded .icon {
     border: 2px solid $mobile-step-icon--expanded;
   }
@@ -335,6 +339,10 @@ Styleguide Blocks.Step-Indicator-With-Icons
   .mobile-element .cui-expandable__title {
     align-items: center;
     display: flex;
+  }
+
+  .mobile-element .cui-expandable__title--alt-layout {
+    justify-content: space-between;
   }
 
 }

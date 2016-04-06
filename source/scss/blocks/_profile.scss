@@ -67,7 +67,6 @@ Styleguide Blocks.Profile
 .cui-avatar,
 .cui-profile {
   position: relative;
-  width: 250px;
 
   // the code below is depricated, will be removed with next minor release
 
@@ -80,7 +79,6 @@ Styleguide Blocks.Profile
     right: 0;
     transform: translate(0, 19px);
     transition: all 80ms ease-in-out;
-    width: 250px;
     pointer-events: none;
 
     &.active {
@@ -183,7 +181,7 @@ Styleguide Blocks.Profile
     top: 0;
     transform: translate(0, 80px);
     transition: all 80ms ease-in-out;
-    width: 250px;
+    width: 100%;
     z-index: 100;
 
     &.active {
@@ -288,8 +286,9 @@ Styleguide Blocks.Profile
   height: 80px;
   justify-content: space-around;
   margin-left: auto;
+  max-width: 350px;
   transition: all 80ms ease-in-out;
-  width: 250px;
+  width: auto;
 
   .cui-profile__menu-item {
     align-items: center;
@@ -331,6 +330,7 @@ Styleguide Blocks.Profile
     .cui-profile__user-menu {
       opacity:1;
       pointer-events: auto;
+      width: 100%;
     }
 
     .cui-profile__user-name {
