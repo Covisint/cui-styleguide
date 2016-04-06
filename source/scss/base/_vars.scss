@@ -92,7 +92,7 @@ $cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.30);
 $cui-buttonput-input-font-color: $cui-greyscale--medium-dark;
 
 // Checkbox
-$cui-checkbox-check-color: $cui-primary-colors--medium;
+$cui-checkbox-check-color: #545454;
 
 // Switch
 $cui-switch--checked: $cui-primary-colors--medium;
@@ -223,7 +223,7 @@ $media-object-border-radius: 50%;
 $media-object-content-padding: em(5) 0;
 
 // Status
-$status--active: $cui-primary-colors--medium-light;
+$status--active: $cui-primary-colors--medium;
 $status--pending: $cui-secondary-colors--medium;
 $status--suspended: $cui-secondary-colors--dark;
 $status--locked:    #ff4400;
