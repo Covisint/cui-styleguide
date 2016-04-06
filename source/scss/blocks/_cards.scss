@@ -47,7 +47,7 @@ Styleguide Blocks.Cards
   transition: box-shadow .2s ease, transform .2s ease;
   
   &:hover {
-    box-shadow: 0 1px 3px $cui-greyscale--medium-light;
+    box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, .9);
     transform: translateY(-3px);
   }
 }

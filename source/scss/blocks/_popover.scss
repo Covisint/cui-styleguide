@@ -42,7 +42,7 @@ Styleguide Blocks.Popover
   @extend .cui-background;
   border-radius: em(7);
   border: em(1) solid #DDD;
-  box-shadow: 0 0 em(3) em(3) rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, .9);
   color: #888;
   display: block;
   padding: em(10) em(20) em(20);
@@ -67,7 +67,7 @@ Styleguide Blocks.Popover
   &--top::before {
     @extend %popover-arrow;
     left: 50%;
-    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
     top: 0;
     transform: rotate(180deg) translate(em(7),em(15));
   }
@@ -75,22 +75,22 @@ Styleguide Blocks.Popover
   &--bottom::before {
     @extend %popover-arrow;
     left: 50%;
-    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
     top: calc(100% - 5px);
   }
 
   &--left::before {
     @extend %popover-arrow;
-    left: 0;
-    text-shadow: em(2) em(2) rgba(0,0,0,0.09);
+    left: 2px;
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
     top: 30%;
     transform: rotate(90deg) translate(em(7),em(15));
   }
 
   &--right::before {
     @extend %popover-arrow;
-    left: calc(100% - 2px);
-    text-shadow: -2px em(2) rgba(0,0,0,0.09);
+    left: calc(100% - 4px);
+    text-shadow: -2px em(2) rgba($cui-primary-colors--medium, .09);
     top: 30%;
     transform: rotate(-90deg);
   }
