@@ -226,6 +226,7 @@ $media-object-content-padding: em(5) 0;
 $status--active: $cui-primary-colors--medium-light;
 $status--pending: $cui-secondary-colors--medium;
 $status--suspended: $cui-secondary-colors--dark;
+$status--locked:    #ff4400;
 
 // normalize overrides
 fieldset {

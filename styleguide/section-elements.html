@@ -334,6 +334,15 @@
                 <div class="cui-styleguide-modifier__example">
                   <button class="cui-button cui-button--small-rounded">Button</button>
                 </div>
+                <div class="cui-styleguide-modifier__name cui-styleguide__style h5">
+                  .cui-button--inverted
+                </div>
+                <div class="cui-styleguide-modifier__description cui-styleguide__style">
+                  Inverted
+                </div>
+                <div class="cui-styleguide-modifier__example">
+                  <button class="cui-button cui-button--inverted">Button</button>
+                </div>
               </div>
               <div class="cui-styleguide__markup-title h4">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
@@ -734,12 +743,20 @@
                   <fieldset class="cui-radio__fieldset">
   <legend class="cui-radio__legend">Accessible description for radio button collection</legend>
   <div class="cui-radio__container">
-    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
-    <label class="cui-radio__label" for="radio-choice-1">Choice 1</label>
+      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+      <label class="cui-radio__label" for="radio-choice-1"><span></span>Choice 1</label>
   </div>
   <div class="cui-radio__container">
-    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
-    <label class="cui-radio__label" for="radio-choice-2">Choice 2</label>
+      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+      <label class="cui-radio__label" for="radio-choice-2"><span></span>Choice 2</label>
+  </div>
+    <div class="cui-radio__container">
+      <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-approve" value="choice-2" />
+      <label class="cui-radio__label" for="radio-approve">Approve</label>
+  </div>
+    <div class="cui-radio__container">
+      <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-deny" value="choice-2" />
+      <label class="cui-radio__label" for="radio-deny">Deny</label>
   </div>
 </fieldset>
                 </div>
@@ -749,12 +766,20 @@
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;fieldset class=&quot;cui-radio__fieldset&quot;&gt;
   &lt;legend class=&quot;cui-radio__legend&quot;&gt;Accessible description for radio button collection&lt;/legend&gt;
   &lt;div class=&quot;cui-radio__container&quot;&gt;
-    &lt;input class=&quot;cui-radio&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-choice-1&quot; value=&quot;choice-1&quot; /&gt;
-    &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-choice-1&quot;&gt;Choice 1&lt;/label&gt;
+      &lt;input class=&quot;cui-radio&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-choice-1&quot; value=&quot;choice-1&quot; /&gt;
+      &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-choice-1&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 1&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class=&quot;cui-radio__container&quot;&gt;
-    &lt;input class=&quot;cui-radio&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-choice-2&quot; value=&quot;choice-2&quot; /&gt;
-    &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-choice-2&quot;&gt;Choice 2&lt;/label&gt;
+      &lt;input class=&quot;cui-radio&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-choice-2&quot; value=&quot;choice-2&quot; /&gt;
+      &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-choice-2&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 2&lt;/label&gt;
+  &lt;/div&gt;
+    &lt;div class=&quot;cui-radio__container&quot;&gt;
+      &lt;input class=&quot;cui-radio cui-radio--approve&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-approve&quot; value=&quot;choice-2&quot; /&gt;
+      &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-approve&quot;&gt;Approve&lt;/label&gt;
+  &lt;/div&gt;
+    &lt;div class=&quot;cui-radio__container&quot;&gt;
+      &lt;input class=&quot;cui-radio cui-radio--deny&quot; type=&quot;radio&quot; name=&quot;radio-choice&quot; id=&quot;radio-deny&quot; value=&quot;choice-2&quot; /&gt;
+      &lt;label class=&quot;cui-radio__label&quot; for=&quot;radio-deny&quot;&gt;Deny&lt;/label&gt;
   &lt;/div&gt;
 &lt;/fieldset&gt;</code></pre>
               </div>
@@ -1376,13 +1401,15 @@ interdum maecenas faucibus.&lt;/p&gt;</code></pre>
                   <span class="cui-status--active">Active</span>
 <span class="cui-status--pending">Pending</span>
 <span class="cui-status--suspended">Suspended</span>
+<span class="cui-status--locked">Locked</span>
                 </div>
               </div>
               <div class="cui-styleguide__markup-title h4">CODE:</div>
               <div class="cui-styleguide__markup-container cui-styleguide__style">
                 <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;cui-status--active&quot;&gt;Active&lt;/span&gt;
 &lt;span class=&quot;cui-status--pending&quot;&gt;Pending&lt;/span&gt;
-&lt;span class=&quot;cui-status--suspended&quot;&gt;Suspended&lt;/span&gt;</code></pre>
+&lt;span class=&quot;cui-status--suspended&quot;&gt;Suspended&lt;/span&gt;
+&lt;span class=&quot;cui-status--locked&quot;&gt;Locked&lt;/span&gt;</code></pre>
               </div>
               </div>
               </section>

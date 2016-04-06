@@ -10,6 +10,7 @@ Styles for button elements
 .cui-button--cancel         - Cancel button styling
 .cui-button--full-width     - Full width of container
 .cui-button--small-rounded  - Small and rounded
+.cui-button--inverted       - Inverted
 
 Markup: <button class="cui-button {{modifier_class}}">Button</button>
 
@@ -64,6 +65,12 @@ Styleguide Elements.Buttons
   &--small-rounded {
     font: em(14);
     width: 100px;
+  }
+
+  &--inverted{
+      background: #fff;
+      border: 1px solid $button-color;
+      color: $button-color;
   }
 }
 
