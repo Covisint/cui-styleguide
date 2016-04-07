@@ -36,6 +36,7 @@ Styleguide Blocks.Cards
 
 .cui-card {
   background: $card-background-color;
+  border: 1px solid $cui-primary-colors--light;
   border-radius: $card-border-radius;
   box-sizing: border-box;
   display: flex;
