@@ -49,6 +49,23 @@ Styleguide Blocks.Expandable
   position: relative;
   width: 100%;
 
+  &--wizard {
+    @media screen and (min-width: 701px) {
+      border-bottom: 0;
+    }
+
+    .step-indicator {
+      align-items: center;
+      border-bottom: 0;
+      display: flex;
+      font-size: em(16);
+      padding: 0;
+      @media screen and (min-width: 701px) {
+        font-size: em(24);
+      }
+    }
+  }
+
 
 
   &__title {
