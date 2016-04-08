@@ -396,16 +396,25 @@ select.cui-select {
 /*
 Radio
 
+
 Markup:
 <fieldset class="cui-radio__fieldset">
   <legend class="cui-radio__legend">Accessible description for radio button collection</legend>
   <div class="cui-radio__container">
-    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
-    <label class="cui-radio__label" for="radio-choice-1">Choice 1</label>
+      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+      <label class="cui-radio__label" for="radio-choice-1"><span></span>Choice 1</label>
   </div>
   <div class="cui-radio__container">
-    <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
-    <label class="cui-radio__label" for="radio-choice-2">Choice 2</label>
+      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+      <label class="cui-radio__label" for="radio-choice-2"><span></span>Choice 2</label>
+  </div>
+    <div class="cui-radio__container">
+      <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-approve" value="choice-2" />
+      <label class="cui-radio__label" for="radio-approve">Approve</label>
+  </div>
+    <div class="cui-radio__container">
+      <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-deny" value="choice-2" />
+      <label class="cui-radio__label" for="radio-deny">Deny</label>
   </div>
 </fieldset>
 
@@ -427,26 +436,56 @@ Styleguide Elements.Forms.Radio
 
   &__container {
     height: em(30);
+    position: relative;
   }
 
   &__label:before {
-    border: 1px solid $cui-greyscale--medium-light;
+    background: #d4e2e6;
     border-radius: 50%;
     content: "\00a0";
     display: inline-block;
     height: rem(20px);
     margin: em(-2px) em(8px) 0 0;
     vertical-align: top;
+    text-align: center;
     width: rem(20px);
   }
 
-  &:focus + .cui-radio__label.cui-radio__label:before {
+
+  /* &:focus + .cui-radio__label.cui-radio__label:before {
     box-shadow: inset 0 0 0 2px #fff,0 0 7px $cui-greyscale--medium-light;
-  }
+  } */
 
   &:checked + .cui-radio__label:before {
-    @extend .cui-primary-colors--medium-light;
-    box-shadow: inset 0 0 0 2px #fff;
+    /* @extend .cui-primary-colors--medium-light; */
+    border:4px solid #d4e2e6;
+    background: #006c77;
+    /* box-shadow: inset 0 0 0 2px #fff; */
+  }
+
+
+  &--approve{ 
+    + .cui-radio__label:before{
+        background: #fff;
+        border: 2px solid #0D6C76;
+    }
+
+    &:checked + .cui-radio__label:before{
+        background: #0D6C76;
+        border: none;
+    }
+  }
+
+  &--deny{
+    + .cui-radio__label:before{
+        background: #fff;
+        border: 2px solid #FC5729;
+    }
+
+    &:checked + .cui-radio__label:before{
+        background: #FC5729;
+        border: none;
+    }
   }
 
 }
@@ -496,7 +535,7 @@ Styleguide Elements.Forms.Checkbox
     &:before {
       background: white;
       border-radius: 2px;
-      border: 2px solid $cui-primary-colors--medium;
+      border: 2px solid rgba(84,84,84, 0.4);
       content: '\a0';
       display: inline-block;
       height: rem(24);
@@ -508,13 +547,14 @@ Styleguide Elements.Forms.Checkbox
     }
   }
   
-  &:focus + .cui-checkbox__label:before {
+  /* &:focus + .cui-checkbox__label:before {
     box-shadow: 0 0 7px $cui-greyscale--medium-light;
-  }
+  } */
   
   &:checked + .cui-checkbox__label:before {
     background: url('data:image/svg+xml;utf8, <svg width="14px" height="11px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Apps" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" ><g class="cui-svg__checked" transform="translate(-689.000000, -709.000000)" fill="' + #{$cui-checkbox-check-color} + '"><g transform="translate(25.000000, 516.000000)"><g transform="translate(0.000000, 180.000000)"><g transform="translate(654.000000, 0.000000)"><path d="M38.0349501,16.4514127 L34.7343616,13.1800554 L20.5418313,27.6270014 L13.3874572,20.8031544 L10.1426534,24.1418906 L20.6022646,34.1743629 L38.0349501,16.4537361 L38.0349501,16.4514127 Z"></path></g></g></g></g></g></svg>') center no-repeat;
     box-shadow: inset 0 0 0 2px #fff;
+    border-color: rgba(84,84,84,1);
   }
 }
 
