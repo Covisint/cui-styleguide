@@ -180,6 +180,7 @@ Markup:
 <span class="cui-status--active">Active</span>
 <span class="cui-status--pending">Pending</span>
 <span class="cui-status--suspended">Suspended</span>
+<span class="cui-status--locked">Locked</span>
 
 Styleguide Elements.Texts.Status
 */
@@ -209,6 +210,11 @@ Styleguide Elements.Texts.Status
   &--suspended {
     @extend %cui-status;
     color: $status--suspended;
+  }
+
+  &--locked{
+    @extend %cui-status;
+    color: $status--locked;
   }
 }
 
