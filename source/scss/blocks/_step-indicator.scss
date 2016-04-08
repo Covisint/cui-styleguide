@@ -23,7 +23,9 @@ Styleguide Blocks.Step-Indicator
   white-space: nowrap;
 
   .icon-container{
-    margin-top: em(10);
+    @media screen and (min-width: 701px) {
+      margin-top: em(10);
+    }
   }
 
   .icon {
@@ -38,14 +40,18 @@ Styleguide Blocks.Step-Indicator
   }
 
   &.active {
-    border-bottom: $step-indicator-icon-underline--active;
     color: $step-indicator-title-color--active;
+
+    @media screen and (min-width: 701px) {
+      border-bottom: $step-indicator-icon-underline--active;
+    }
 
     .icon {
       border: $step-indicator-icon-border--active;
     }
 
-    .cui-icon-rotate {
+    .cui-icon-rotate,
+    .icon-svg {
       fill: $step-indicator-icon-color--active;
     }
   }
@@ -57,7 +63,8 @@ Styleguide Blocks.Step-Indicator
       border: $step-indicator-icon-border--visited;
     }
 
-    .cui-icon-rotate {
+    .cui-icon-rotate,
+    .icon-svg {
       fill: $step-indicator-title-color--visited;
     }
 
@@ -72,7 +79,8 @@ Styleguide Blocks.Step-Indicator
   }
 }
 
-.cui-icon-rotate{
+.cui-icon-rotate,
+.icon-svg {
   fill: $step-indicator-icon-color;
   height: $step-indicator-icon-height;
   width: $step-indicator-icon-width;
@@ -99,6 +107,7 @@ step,
     }
   }
 
+  .mobile-element,
   .mobile-element {
     @media screen and (min-width: 701px) {
       display: none;
@@ -229,7 +238,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
       width: 1px;
     }
 
-    span {
+    .step-indicator__title {
       color: #D0D0D0;
       font-size: em(24);
       padding-left: em(25, 24);
@@ -245,7 +254,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
       background-color: #979797;
     }
 
-    span {
+    .step-indicator__title {
       color: $mobile-step-title--expanded;
     }
   }
@@ -257,7 +266,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
       background-color: #979797;
     }
 
-    span {
+    .step-indicator__title {
       color: #6D6D6D;
     }
   }
@@ -279,7 +288,7 @@ Styleguide Blocks.Step-Indicator-With-Icons
         height: 50%;
       }
 
-      span {
+      .step-indicator__title {
         font-size: em(24);
         padding-left: em(25, 24);
       }
@@ -314,19 +323,27 @@ Styleguide Blocks.Step-Indicator-With-Icons
     z-index: 1; 
   }
 
+  .mobile-element .icon-container {
+    order: -1;
+    text-align: center;
+  }
+
   .mobile-element.expanded .icon {
     border: 2px solid $mobile-step-icon--expanded;
   }
 
-  .mobile-element.visited .cui-icon-rotate {
+  .mobile-element.visited .cui-icon-rotate, 
+  .mobile-element.visited .icon-svg {
     fill: #6D6D6D;
   }
 
-  .mobile-element.expanded .cui-icon-rotate {
+  .mobile-element.expanded .cui-icon-rotate,
+  .mobile-element.expanded .icon-svg {
     fill: $mobile-step-icon--expanded;
   }
 
-  .mobile-element .cui-icon-rotate {
+  .mobile-element .cui-icon-rotate,
+  .mobile-element .icon-svg {
     height: em(20);
     margin: em(8) auto 0;
     width: em(20);
@@ -337,4 +354,14 @@ Styleguide Blocks.Step-Indicator-With-Icons
     display: flex;
   }
 
+  .mobile-element .cui-expandable__title--alt-layout {
+    justify-content: space-between;
+  }
+
+}
+
+.cui-expandable__title--wizard {
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
 }
