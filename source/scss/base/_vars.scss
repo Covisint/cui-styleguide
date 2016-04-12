@@ -197,8 +197,9 @@ $expandable-transition: all .3s linear;
 // Step Indicator
 $step-indicator-border-bottom: 1px solid #ddd;
 $step-indicator-margin-bottom: em(40);
-$step-indicator-middle-bar-color: #ccc;
-$step-indicator-middle-bar-size: em(2);
+$step-indicator-middle-bar-color: #D0D0D0;
+$step-indicator-middle-bar-color--visited: #545454;
+$step-indicator-middle-bar-size: 1px;
 $step-indicator-title-color: #bbb;
 $step-indicator-title-color--active: #333;
 $step-indicator-title-color--visited: #666;
