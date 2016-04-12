@@ -244,7 +244,7 @@ Styleguide Blocks.Expandable
     background-color: $step-indicator-middle-bar-color;
     height: $step-indicator-middle-bar-size;
     position: absolute;
-    top: 62%;
+    top: 68%;
     z-index: 0;
 
     &--no-js {
@@ -252,9 +252,9 @@ Styleguide Blocks.Expandable
     }
 
     .steps-bar-fill {
-      background-color: #D0D0D0;
+      background-color: $step-indicator-middle-bar-color--visited;
       display: inline-block;
-      height: em(2);
+      height: $step-indicator-middle-bar-size;
       position: absolute;
     }
   }
