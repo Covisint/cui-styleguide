@@ -9,3 +9,6 @@ target/*
 styleguide/public/fonts
 *.iml
 npm-debug.log
+source/styles.min.css
+source/styles.specific.min.css
+styleguide/*
