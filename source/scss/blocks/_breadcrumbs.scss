@@ -1,0 +1,57 @@
+/*
+Breadcrumb Navigation
+
+Markup:
+<nav class="cui-breadcrumb">
+	<ul class="cui-breadcrumb__links">
+		<li class="cui-breadcrumb__link cui-breadcrumb__link--current">
+			<a href="#">Organization Profile</a>
+		</li>
+		<li class="cui-breadcrumb__link">
+			<a href="#">Hierarchy</a>
+		</li>
+		<li class="cui-breadcrumb__link">
+			<a href="#">Directory</a>
+		</li>
+		<li class="cui-breadcrumb__link">
+			<a href="#">Roles</a>
+		</li>
+	</ul>
+</nav>
+
+Styleguide Blocks.Breadcrumb
+*/
+
+
+.cui-breadcrumb{
+
+	.cui-breadcrumb__links{
+		display: flex;
+		width: 100%;
+
+		.cui-breadcrumb__link{
+			border-right: 1px solid $cui-primary-colors--medium;
+			padding: 0 8px;
+
+			&:first-child{
+				padding-left: 0;
+			}
+
+			&:last-child{
+				padding-right: 0;
+				border-right: none;
+			}
+
+			a{
+				color: $cui-primary-colors--medium;
+				text-decoration: none;
+			}
+		}
+
+		.cui-breadcrumb__link--current{
+				a{
+					color: $cui-primary-colors--medium-dark;
+				}
+			}
+	}
+}
