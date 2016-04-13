@@ -463,7 +463,7 @@ Styleguide Elements.Forms.Radio
   }
 
   &__label:before {
-    background: #d4e2e6;
+    background: $cui-radio-button-background-color;
     border-radius: 50%;
     content: "\00a0";
     display: inline-block;
@@ -481,8 +481,8 @@ Styleguide Elements.Forms.Radio
 
   &:checked + .cui-radio__label:before {
     /* @extend .cui-primary-colors--medium-light; */
-    border:4px solid #d4e2e6;
-    background: #006c77;
+    border:4px solid $cui-radio-button-background-color;
+    background: $cui-radio-button-checked-color;
     /* box-shadow: inset 0 0 0 2px #fff; */
   }
 
@@ -490,11 +490,11 @@ Styleguide Elements.Forms.Radio
   &--approve{ 
     + .cui-radio__label:before{
         background: #fff;
-        border: 2px solid #0D6C76;
+        border: 2px solid $cui-radio-button-approve-color;
     }
 
     &:checked + .cui-radio__label:before{
-        background: #0D6C76;
+        background: $cui-radio-button-approve-color;
         border: none;
     }
   }
@@ -502,11 +502,11 @@ Styleguide Elements.Forms.Radio
   &--deny{
     + .cui-radio__label:before{
         background: #fff;
-        border: 2px solid #FC5729;
+        border: 2px solid $cui-radio-button-deny-color;
     }
 
     &:checked + .cui-radio__label:before{
-        background: #FC5729;
+        background: $cui-radio-button-deny-color;
         border: none;
     }
   }
