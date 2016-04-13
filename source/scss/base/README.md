@@ -1,3 +1,4 @@
+
 #Available Variables by Component
 
  - [Action Bar](#action-bar)
@@ -16,8 +17,11 @@
 
 
 ##Action Bar <a name="action-bar"></a>
+![action bar variables](https://www.evernote.com/l/AjIQcmbHOqxJ5JsMawGE3AO7r3vX0_zqoZQB/image.png "Action Bar variables")
 
 ##Breadcrumb<a name="breadcrumb-navigation"></a>
+
+![breadcrumb navigation variables](https://www.evernote.com/l/AjIr9XXvY1lD8rHn1x4Y7IWiDXf7ehBdMwgB/image.png "Breadcrumb Navigation variables")
 
 
 ##Card<a name="card"></a>
