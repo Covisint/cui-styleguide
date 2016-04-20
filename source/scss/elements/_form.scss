@@ -401,6 +401,10 @@ select.cui-select,
 }
 
 .cui-dropdown {
+  @extend .cui-select;
+}
+
+.cui-dropdown__wrapper {
   background-color: #fff;
   border: 1px solid $cui-primary-colors--light;
 }
