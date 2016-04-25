@@ -134,7 +134,7 @@ Styleguide Elements.Forms.Input-With-Button
   background-color: $cui-buttonput-btn-bg-color;
   border: 1px solid $cui-greyscale--light;
   color: $cui-buttonput-btn-font-color;
-  flex: .25;
+  flex: .25 auto;
   font-family: 'lato-black', sans-serif;
   font-size: em(13);
   letter-spacing: $letter-spacing-lg;
