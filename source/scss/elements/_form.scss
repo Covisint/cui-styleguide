@@ -577,7 +577,7 @@ Styleguide Elements.Forms.Checkbox
   /* &:focus + .cui-checkbox__label:before {
     box-shadow: 0 0 7px $cui-greyscale--medium-light;
   } */
-  
+
   &:checked + .cui-checkbox__label:before {
     background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxOCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UGF0aDwvdGl0bGU+PHBhdGggZD0iTTE3LjQzMyAyLjA0NUwxNS4zNyAwIDYuNSA5LjAzIDIuMDI3IDQuNzYzIDAgNi44NWw2LjUzNyA2LjI3TDE3LjQzMyAyLjA0NyIgZmlsbD0iIzU0NTQ1NCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+') center center no-repeat;
     background-size: 98% 60%;
