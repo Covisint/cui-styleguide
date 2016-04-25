@@ -1,21 +1,32 @@
 {
   "name": "cui-styleguide",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Digital Style Guide for Core CUI Elements",
+  "author": "Thirdwave LLC <help@thirdwavellc.com> (http://www.thirdwavellc.com/)",
+  "license": "ISC",
+  "homepage": "https://github.com/thirdwavellc/cui-styleguide#readme",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/thirdwavellc/cui-styleguide.git"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "scripts/npm-postversion"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.thirdwavellc.com/content/repositories/cui-npm/"
+  },
   "bugs": {
     "url": "https://github.com/thirdwavellc/cui-styleguide/issues"
   },
-  "homepage": "https://github.com/thirdwavellc/cui-styleguide#readme",
+  "files": [
+    "source/",
+    "styleguide/",
+    "style.css",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "bower": "^1.5.3",
