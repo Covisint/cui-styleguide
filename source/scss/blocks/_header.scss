@@ -198,6 +198,16 @@ Styleguide Blocks.Header
   &__menu-greet {
     @extend .cui-profile__menu-greet;
   }
+
+  &__search-container {
+    cursor: pointer;
+    display: flex;
+  }
+
+  &__search-icon {
+    height: 25px;
+    fill: #fff;
+  }
   
 }
 
