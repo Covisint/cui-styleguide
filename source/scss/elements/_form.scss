@@ -119,6 +119,10 @@ Styleguide Elements.Forms.Input-With-Button
     padding-left: em(29);
   }
 
+  &:focus {
+    outline: 0;
+  }
+
   &::placeholder {
     color: $cui-buttonput-input-font-color;
     text-align: center;
@@ -141,6 +145,47 @@ Styleguide Elements.Forms.Input-With-Button
  
   @media screen and (min-width: 701px) {
     font-size: em(18);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+// Styling specific for global search input
+.cui-input-button.cui-input-button--global-search {
+  background: $cui-v2-colors-secondary;
+  height: 60px;
+  position: absolute;
+  transition: transform .15s linear;
+  transform: translate3d(0, -80px, 0);
+  width: 49.105691056911%;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+
+  &.show {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .cui-input-button__input,
+  .cui-input-button__button {
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .cui-input-button__input {
+    flex: 1;
+  }
+
+  .cui-input-button__button {
+    flex: .1 30px;
+
+    @media screen and (min-width: 701px) {
+      font-size: em(26);
+    }
   }
 }
 
