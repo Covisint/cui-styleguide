@@ -7,3 +7,5 @@ bower install
 $PATH kss-node --config kss-config.json
 grunt build --env=qa
 mvn clean deploy -U
+npm version patch
+npm publish
