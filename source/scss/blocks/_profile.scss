@@ -290,6 +290,17 @@ Styleguide Blocks.Profile
   transition: all 80ms ease-in-out;
   width: auto;
 
+  &::before {
+    background-color: #e8f0f3;
+    content: '';
+    height: 80px;
+    position: absolute;
+    transition: transform .15s linear;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
   .cui-profile__menu-item {
     align-items: center;
     display: flex;
@@ -324,7 +335,11 @@ Styleguide Blocks.Profile
   }
 
   &--active {
-    background-color: $secondary-background;
+    &::before {
+      height: 80px;
+      transition: transform .15s linear;
+      transform: scaleY(1);
+    }
 
     .cui-profile__popup,
     .cui-profile__user-menu {
