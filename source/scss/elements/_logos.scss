@@ -1,11 +1,13 @@
 /* 
 Logos
 
-Markup: <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
+Markup: <svg class="cui__svg-logo" viewBox="0 0 640 124"><use xlink:href="bower_components/cui-icons/dist/logos/logos-out.svg#covisint-logo"></use></svg>
 
 Styleguide Elements.Logo
 */
 
 .cui__svg-logo {
-  
+  height: 45px;
+  position: relative;
+  width: 200px; 
 }
