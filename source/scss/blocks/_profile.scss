@@ -152,9 +152,11 @@ Styleguide Blocks.Profile
     background-size: contain;
     border-radius: 50%;
     cursor: pointer;
-    flex: 1 60px;
+    flex: 0 auto;
     height: 50px;
+    min-width: 50px;
     position: relative;
+    width: 50px;
   }
 
   &__user-name {
