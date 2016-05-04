@@ -80,12 +80,20 @@ Markup:
   </div>
   <div class="table-row__right table-row__multi">
     <div class="cui-radio__container">
-        <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-approve" value="choice-2" />
-        <label class="cui-radio__label" for="radio-approve"></label>
+      <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+      <label class="cui-radio__label" for="radio-choice-4">
+      <div class="cui-radio__outer-button">
+        <div class="cui-radio__inner-button"></div>
+      </div>
+      </label>
     </div>
-      <div class="cui-radio__container">
-        <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-deny" value="choice-2" />
-        <label class="cui-radio__label" for="radio-deny"></label>
+    <div class="cui-radio__container">
+      <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+      <label class="cui-radio__label" for="radio-choice-3">
+      <div class="cui-radio__outer-button">
+        <div class="cui-radio__inner-button"></div>
+      </div>
+      </label>
     </div>
   </div>
 </div>
@@ -177,7 +185,7 @@ Styleguide Blocks.Table-Row
     cursor: pointer;
 
     .table-row__title{
-      color: $cui-v2-colors-dark;
+      color: $cui-primary-colors--medium-dark;
     }
   }
 
@@ -190,7 +198,8 @@ Styleguide Blocks.Table-Row
     /* width: 33%; */
 
     &--stacked{
-      flex-flow: row wrap;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 
@@ -259,7 +268,7 @@ Styleguide Blocks.Table-Row
     }
 
     &--green{
-      color: $cui-v2-colors-dark;
+      color: $cui-primary-colors--medium-dark;
     }
 
     &--header{
