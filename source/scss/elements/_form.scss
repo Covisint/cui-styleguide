@@ -478,22 +478,31 @@ Radio
 
 Markup:
 <fieldset class="cui-radio__fieldset">
-  <legend class="cui-radio__legend">Accessible description for radio button collection</legend>
-  <div class="cui-radio__container">
-      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
-      <label class="cui-radio__label" for="radio-choice-1"><span></span>Choice 1</label>
+  <div class="cui-radio cui-radio--approve">
+    <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+    <label class="cui-radio__label" for="radio-choice-3">
+    <div class="cui-radio__outer-button">
+      <div class="cui-radio__inner-button"></div>
+    </div>
+    </label>
   </div>
-  <div class="cui-radio__container">
-      <input class="cui-radio" type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
-      <label class="cui-radio__label" for="radio-choice-2"><span></span>Choice 2</label>
+  <div class="cui-radio cui-radio--deny">
+    <input class="cui-radio__input cui-radio--deny" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+    <label class="cui-radio__label" for="radio-choice-4">
+    <div class="cui-radio__outer-button">
+      <div class="cui-radio__inner-button"></div>
+    </div>
+    </label>
   </div>
-    <div class="cui-radio__container">
-      <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-approve" value="choice-2" />
-      <label class="cui-radio__label" for="radio-approve">Approve</label>
+</fieldset>
+<fieldset>
+  <div class="cui-radio cui-radio--basic-ltr">
+    <input class="cui-radio__input" type="radio" name="radio-choice-basic" id="radio-choice-1" value="choice-1">
+    <label class="cui-radio__label" for="radio-choice-1"><span></span>Left Label</label>
   </div>
-    <div class="cui-radio__container">
-      <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-deny" value="choice-2" />
-      <label class="cui-radio__label" for="radio-deny">Deny</label>
+  <div class="cui-radio cui-radio--basic-rtl">
+    <input class="cui-radio__input" type="radio" name="radio-choice-basic" id="radio-choice-2" value="choice-2">
+    <label class="cui-radio__label" for="radio-choice-2"><span></span>Right Label</label>
   </div>
 </fieldset>
 
@@ -501,69 +510,126 @@ Styleguide Elements.Forms.Radio
 */
 
 .cui-radio {
-  @extend %cui-sr-only;
+  position: relative;
+  min-height: em(30);
+}
 
-  &__legend {
+.cui-radio--approve,
+.cui-radio--deny {
+
+  .cui-radio__input {
     left: -999em;
     position: absolute;
   }
 
-  &__fieldset {
-    border: 0;
-    display: flex;
+  .cui-radio__label {
+    padding-left: 40px;
   }
 
-  &__container {
-    height: em(30);
-    position: relative;
-  }
-
-  &__label:before {
-    background: $cui-radio-button-background-color;
-    border-radius: 50%;
+  .cui-radio__outer-button {
+    border-radius: 100%;
     content: "\00a0";
     display: inline-block;
-    height: rem(20px);
-    margin: em(-2px) em(8px) 0 0;
+    height: 30px;
+    margin: -2px 8px 0 0;
     vertical-align: top;
     text-align: center;
-    width: rem(20px);
+    left: 0;
+    width: 30px;
+    position: absolute;
+  }
+
+  .cui-radio__input:checked + .cui-radio__label .cui-radio__inner-button {
+    border-radius: 100%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+.cui-radio--approve {
+
+  .cui-radio__label .cui-radio__outer-button {
+    border: 2px solid #0D6C76;
+  }
+
+  .cui-radio__input:checked +.cui-radio__label .cui-radio__inner-button {
+    background: #0D6C76;
+  }
+}
+
+.cui-radio--deny {
+
+  .cui-radio__label .cui-radio__outer-button {
+    border: 2px solid #fc5729;
+  }
+
+  .cui-radio__input:checked + .cui-radio__label .cui-radio__inner-button {
+    background: #fc5729;
+  }
+}
+
+.cui-radio--basic {
+
+  &-ltr,
+  &-rtl {
+    .cui-radio__input {
+      @extend %cui-sr-only;
+    }
+
+    .cui-radio__legend {
+      left: -999em;
+      position: absolute;
+    }
+
+    .cui-radio__fieldset {
+      border: 0;
+      display: flex;
+    }
   }
 
 
-  /* &:focus + .cui-radio__label.cui-radio__label:before {
-    box-shadow: inset 0 0 0 2px #fff,0 0 7px $cui-greyscale--medium-light;
-  } */
-
-  &:checked + .cui-radio__label:before {
-    /* @extend .cui-primary-colors--medium-light; */
-    border:4px solid $cui-radio-button-background-color;
-    background: $cui-radio-button-checked-color;
-    /* box-shadow: inset 0 0 0 2px #fff; */
-  }
-
-
-  &--approve{ 
-    + .cui-radio__label:before{
-        background: #fff;
-        border: 2px solid $cui-radio-button-approve-color;
+  &-ltr {
+    .cui-radio__label:before {
+      background: $cui-radio-button-background-color;
+      border-radius: 50%;
+      content: "\00a0";
+      display: inline-block;
+      height: rem(20px);
+      margin: 0 em(8px) 0 0;
+      vertical-align: top;
+      text-align: center;
+      width: rem(20px);
     }
 
-    &:checked + .cui-radio__label:before{
-        background: $cui-radio-button-approve-color;
-        border: none;
+    .cui-radio__input:checked + .cui-radio__label:before {
+      /* @extend .cui-primary-colors--medium-light; */
+      border:4px solid $cui-radio-button-background-color;
+      background: $cui-radio-button-checked-color;
+      /* box-shadow: inset 0 0 0 2px #fff; */
     }
   }
 
-  &--deny{
-    + .cui-radio__label:before{
-        background: #fff;
-        border: 2px solid $cui-radio-button-deny-color;
+  &-rtl {
+    .cui-radio__label:after {
+      background: $cui-radio-button-background-color;
+      border-radius: 50%;
+      content: "\00a0";
+      display: inline-block;
+      height: rem(20px);
+      margin: 0 0 0 em(8);
+      vertical-align: top;
+      text-align: center;
+      width: rem(20px);
     }
 
-    &:checked + .cui-radio__label:before{
-        background: $cui-radio-button-deny-color;
-        border: none;
+    .cui-radio__input:checked + .cui-radio__label:after {
+      /* @extend .cui-primary-colors--medium-light; */
+      border:4px solid $cui-radio-button-background-color;
+      background: $cui-radio-button-checked-color;
+      /* box-shadow: inset 0 0 0 2px #fff; */
     }
   }
 
