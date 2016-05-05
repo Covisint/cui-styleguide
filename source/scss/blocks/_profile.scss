@@ -152,7 +152,9 @@ Styleguide Blocks.Profile
     background-size: contain;
     border-radius: 50%;
     cursor: pointer;
+    flex: 0 auto;
     height: 50px;
+    min-width: 50px;
     position: relative;
     width: 50px;
   }
@@ -165,24 +167,30 @@ Styleguide Blocks.Profile
     letter-spacing: 0.9px;
     margin: 0 15px;
     text-transform: capitalize;
+    z-index: 2;
 
-    @media all and (max-width:600px){
-      display: none;
+    @media screen and (max-width: 999px){
+      color: $secondary-font-color;
     }
   }
 
   &__user-menu {
     background: $secondary-background;
-    opacity: 0;
+    opacity: 1;
     padding: 10px 0;
     pointer-events: none;
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate(0, 80px);
-    transition: all 80ms ease-in-out;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: transform .15s linear;
     width: 100%;
     z-index: 100;
+
+    @media screen and (min-width: 1000px) {
+      top: 80px;
+    }
 
     &.active {
       opacity:1;
@@ -290,6 +298,17 @@ Styleguide Blocks.Profile
   transition: all 80ms ease-in-out;
   width: auto;
 
+  &::before {
+    background-color: #e8f0f3;
+    content: '';
+    height: 80px;
+    position: absolute;
+    transition: transform .15s linear;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
   .cui-profile__menu-item {
     align-items: center;
     display: flex;
@@ -324,7 +343,12 @@ Styleguide Blocks.Profile
   }
 
   &--active {
-    background-color: $secondary-background;
+    &::before {
+      height: 80px;
+      top: 0;
+      transition: transform .15s linear;
+      transform: scaleY(1);
+    }
 
     .cui-profile__popup,
     .cui-profile__user-menu {
@@ -339,6 +363,8 @@ Styleguide Blocks.Profile
 
     .cui-profile__user-menu {
       opacity: 1;
+      transition: transform .15s linear;
+      transform: scaleY(1);
     }
 
     .cui-profile__chevron {
