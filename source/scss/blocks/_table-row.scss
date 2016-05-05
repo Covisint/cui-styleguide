@@ -117,16 +117,16 @@ Markup:
     <p class="cui-flex-table__text">requested 01.06.2016</p>
   </div>
   <div class="cui-flex-table__right cui-flex-table__multi">
-    <div class="cui-radio__container">
-      <input class="cui-radio cui-radio--deny" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+    <div class="cui-radio cui-radio--deny">
+      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
       <label class="cui-radio__label" for="radio-choice-4">
       <div class="cui-radio__outer-button">
         <div class="cui-radio__inner-button"></div>
       </div>
       </label>
     </div>
-    <div class="cui-radio__container">
-      <input class="cui-radio cui-radio--approve" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+    <div class="cui-radio cui-radio--approve">
+      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
       <label class="cui-radio__label" for="radio-choice-3">
       <div class="cui-radio__outer-button">
         <div class="cui-radio__inner-button"></div>
