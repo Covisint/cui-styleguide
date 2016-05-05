@@ -5,6 +5,11 @@ Table Row
 Markup:
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Timing Control</h2>
   </div>
   <div class="table-row__middle">
@@ -15,9 +20,16 @@ Markup:
   </div>
 </div>
 <div class="table-row">
-  <div class="table-row__left table-row__left--stacked">
-    <h2 class="table-row__title  table-row__title--green">Lake Glenbury</h2>
-    <p class="table-row__text table-row__text--left table-row__text--stacked">granted: 10.11.13</p>
+  <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="table-row__left--stacked">
+      <h2 class="table-row__title  table-row__title--green">Lake Glenbury</h2>
+      <p class="table-row__text table-row__text--left table-row__text--stacked">granted: 10.11.13</p>
+    </div>
   </div>
   <div class="table-row__middle">
     <p class="table-row__text">Accounting</p>
@@ -29,6 +41,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Cora Murray</h2>
   </div>
   <div class="table-row__middle table-row__middle">
@@ -42,16 +59,28 @@ Markup:
   </div>
 </div>
 <div class="table-row">
-  <div class="table-row__left table-row__left--stacked">
-    <h2 class="table-row__title">Balistreriberg</h2>
-    <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Requested: </span>09.04.14</p>
-    <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Approved: </span>Yes</p>
-    <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Decision Date: </span>09.04.14</p>
-    <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Evaluator: </span>Bobby Jones</p>
+  <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="table-row__left--stacked">
+      <h2 class="table-row__title">Balistreriberg</h2>
+      <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Requested: </span>09.04.14</p>
+      <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Approved: </span>Yes</p>
+      <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Decision Date: </span>09.04.14</p>
+      <p class="table-row__text table-row__text--stacked"><span class="table-row__text--header">Evaluator: </span>Bobby Jones</p>
+    </div>
   </div>
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Accounting</h2>
   </div>
   <div class="table-row__right">
@@ -62,6 +91,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">East Petermouth</h2>
   </div>
   <div class="table-row__middle">
@@ -73,6 +107,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">West Blake</h2>
   </div>
   <div class="table-row__middle">
@@ -99,6 +138,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Marsha Applby</h2>
   </div>
   <div class="table-row__middle table-row__middle">
@@ -113,9 +157,16 @@ Markup:
   </div>
 </div>
 <div class="table-row">
-  <div class="table-row__left table-row__left--stacked">
-    <h2 class="table-row__title  table-row__title--green">Lake Glenbury</h2>
-    <p class="table-row__text table-row__text--left table-row__text--stacked">Security Admin | 3 More</p>
+  <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="table-row__left--stacked">
+      <h2 class="table-row__title  table-row__title--green">Lake Glenbury</h2>
+      <p class="table-row__text table-row__text--left table-row__text--stacked">Security Admin | 3 More</p>
+    </div>
   </div>
   <div class="table-row__middle table-row__middle">
     <p class="table-row__text">CoraMora</p>
@@ -130,6 +181,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Marsha Applby</h2>
   </div>
   <div class="table-row__middle table-row__middle">
@@ -147,6 +203,11 @@ Markup:
 </div>
 <div class="table-row">
   <div class="table-row__left">
+    <div class="table-row__avatar-col">
+      <div class="table-row__avatar-container">
+        <img class="table-row__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
     <h2 class="table-row__title">Stephen Silva</h2>
   </div>
   <div class="table-row__middle">
@@ -189,6 +250,25 @@ Styleguide Blocks.Table-Row
     }
   }
 
+  &__avatar-col {
+    margin-right: em(30);
+    width: em(50);
+  }
+
+  &__avatar-container {
+    border-radius: 50%;
+  }
+
+  &__avatar {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__left {
+    width: 35%;
+  }
+
   &__left,
   &__middle,
   &__right{
@@ -205,26 +285,11 @@ Styleguide Blocks.Table-Row
 
 
   &__left{
-      padding-left: 90px;
-      position: relative;
+    position: relative;
 
-      &::before{
-        background: url('http://www.fillmurray.com/140/100') no-repeat;
-        background-position: -26px -5px;
-        background-size: 179%;
-        border-radius: 50%;
-        content: "";
-        display: inline-block;
-        height: 50px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 50px;
-      }
-
-      &--stacked{
-        display: block;
-      }
+    &--stacked{
+      display: block;
+    }
   }
 
   &__middle{
@@ -244,11 +309,11 @@ Styleguide Blocks.Table-Row
   }
 
   .table-row__title{
-      color: $cui-primary-colors--dark;
-      font-size: 1.5em;
-      font-weight: bold;
-      line-height: 1.5em;
-      width: 100%;
+    color: $cui-primary-colors--dark;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 100%;
   }
 
   .table-row__text{
