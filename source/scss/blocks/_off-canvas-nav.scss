@@ -214,9 +214,11 @@ Styleguide Blocks.Off-Canvas
 .cui-off-canvas__sub-section-list {
   @extend .cui-ul;
   background-color: $menu-sub-section-background-color;
+  font-size: em(14);
   max-height: 0;
   overflow: hidden;
-  padding-left: em(40);
+  padding-left: em(15, 14);
+  padding-right: em(80, 14);
   padding-top: 0;
   transition: max-height $menu-sub-section-animation linear, padding-top .05s $menu-sub-section-animation-offset linear;
 

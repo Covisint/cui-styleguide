@@ -147,3 +147,110 @@ Styleguide Blocks.Media-Object
     }
   }
 }
+
+// modifier for desktop table row to mobile media object styling
+.cui-media--tr {
+  position: relative;
+
+  @media screen and (max-width: 700px) {
+    padding: em(7) em(40) em(7) 0;
+  }
+
+  .cui-media__body {
+    @media screen and (max-width: 700px) {
+      line-height: 1;
+    }
+  }
+
+  .cui-media__image-container {
+    flex: .09;
+
+    @media screen and (max-width: 700px) {
+      margin-right: em(36);
+    }
+  }
+
+  .cui-media__title {
+    color: $cui-primary-colors--medium;
+    padding-bottom: em(5);
+    transition: color .15s linear;
+  }
+
+  .cui-media__image-container {
+    @media screen and (max-width: 700px) {
+      flex: .1;
+      margin-right: em(36);
+    }
+  }
+
+  &:hover {
+
+    .cui-media__title {
+      color: $cui-primary-colors--medium-dark;
+      transition: color .15s linear;
+    }
+
+    .cui-media__app-launch-icon {
+      opacity: 1;
+      transition: opacity.15s linear;
+    }
+  }
+
+  .cui-status {
+    align-self: center;
+    font-size: em(14);
+
+    @media screen and (max-width: 700px) {
+      font-size: em(12);
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .cui-media__content {
+  align-self: center;
+
+    @media screen and (max-width: 700px) {
+      padding: 0;
+    }
+  }
+
+  .cui-media__title-container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+  }
+
+  .cui-media__app-launch {
+    order: 1;
+    margin-left: auto;
+    padding: em(20);
+    position: absolute;
+    top: calc(50% - 32px);
+    right: 0;
+
+    @media screen and (min-width: 701px) {
+      margin-right: em(30);
+      order: 0;
+      margin-left: 0;
+      min-width: 10px;
+      position: relative;
+    }
+
+    &--suspended,
+    &--pending {
+      visibility: hidden;
+    }
+  }
+
+  .cui-media__app-launch-icon {
+    color: $cui-primary-colors--dark;
+    height: em(20);
+    opacity: .3;
+    transition: opacity.15s linear;
+
+    @media screen and (min-width: 701px) {
+      height: em(14);
+    }
+  }
+
+}

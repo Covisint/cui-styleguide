@@ -1,0 +1,360 @@
+/*
+Flex Table Rows
+
+Markup:
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Timing Control</h2>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">Accounting</p>
+  </div>
+  <div class="cui-flex-table__right">
+    <p class="cui-flex-table__text cui-flex-table__text--right cui-status--pending">Pending</p>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="cui-flex-table__left--stacked">
+      <h2 class="cui-flex-table__title  cui-flex-table__title--green">Lake Glenbury</h2>
+      <p class="cui-flex-table__text cui-flex-table__text--left cui-flex-table__text--stacked">granted: 10.11.13</p>
+    </div>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">Accounting</p>
+  </div>
+  <div class="cui-flex-table__right cui-flex-table__right--stacked">
+    <p class="cui-flex-table__text cui-flex-table__text--stacked cui-status--pending">Pending</p>
+    <p class="cui-flex-table__text cui-flex-table__text--stacked cui-flex-table__text--right cui-flex-table__text--green">Review</p>  
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Cora Murray</h2>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">CoraMora</p>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">09.03.2011</p>
+  </div>
+  <div class="cui-flex-table__right">
+    <p class="cui-status--locked">locked</p>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="cui-flex-table__left--stacked">
+      <h2 class="cui-flex-table__title">Balistreriberg</h2>
+      <p class="cui-flex-table__text cui-flex-table__text--stacked"><span class="cui-flex-table__text--header">Requested: </span>09.04.14</p>
+      <p class="cui-flex-table__text cui-flex-table__text--stacked"><span class="cui-flex-table__text--header">Approved: </span>Yes</p>
+      <p class="cui-flex-table__text cui-flex-table__text--stacked"><span class="cui-flex-table__text--header">Decision Date: </span>09.04.14</p>
+      <p class="cui-flex-table__text cui-flex-table__text--stacked"><span class="cui-flex-table__text--header">Evaluator: </span>Bobby Jones</p>
+    </div>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Accounting</h2>
+  </div>
+  <div class="cui-flex-table__right">
+      <svg class="cui-flex-table__logo-holder cui-flex-table__text--right cui-flex-table__text--icon" viewBox="0 0 216 146" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <use xLink:href="bower_components/cui-icons/dist/font-awesome/font-awesome-out.svg#angle2"></use>
+      </svg>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">East Petermouth</h2>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">active</p>
+  </div>
+  <div class="cui-flex-table__right">
+      <input class="cui-checkbox" type="checkbox" id="option-1"/><label class="cui-checkbox__label" for="option-1"></label>  
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">West Blake</h2>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">requested 01.06.2016</p>
+  </div>
+  <div class="cui-flex-table__right cui-flex-table__multi">
+    <div class="cui-radio cui-radio--deny">
+      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+      <label class="cui-radio__label" for="radio-choice-4">
+      <div class="cui-radio__outer-button">
+        <div class="cui-radio__inner-button"></div>
+      </div>
+      </label>
+    </div>
+    <div class="cui-radio cui-radio--approve">
+      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+      <label class="cui-radio__label" for="radio-choice-3">
+      <div class="cui-radio__outer-button">
+        <div class="cui-radio__inner-button"></div>
+      </div>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Marsha Applby</h2>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">CoraMora</p>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">NorthWest</p>
+  </div>
+  <div class="cui-flex-table__right cui-flex-table__multi">
+    <p class="cui-flex-table__text cui-status--active">active</p>
+    <p class="cui-flex-table__text cui-flex-table__text--green">edit</p>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <div class="cui-flex-table__left--stacked">
+      <h2 class="cui-flex-table__title  cui-flex-table__title--green">Lake Glenbury</h2>
+      <p class="cui-flex-table__text cui-flex-table__text--left cui-flex-table__text--stacked">Security Admin | 3 More</p>
+    </div>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">CoraMora</p>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">NorthWest</p>
+  </div>
+  <div class="cui-flex-table__right cui-flex-table__multi">
+    <p class="cui-flex-table__text cui-status--locked">locked</p>
+    <p class="cui-flex-table__text cui-flex-table__text--green">edit</p> 
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Marsha Applby</h2>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">marshanator</p>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">Trompberg</p>
+  </div>
+  <div class="cui-flex-table__middle cui-flex-table__middle">
+    <p class="cui-flex-table__text">Nell Little</p>
+  </div>
+  <div class="cui-flex-table__right">
+    <p class="cui-flex-table__text cui-status--locked">locked</p>
+  </div>
+</div>
+<div class="cui-flex-table__tr">
+  <div class="cui-flex-table__left">
+    <div class="cui-flex-table__avatar-col">
+      <div class="cui-flex-table__avatar-container">
+        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
+      </div>
+    </div>
+    <h2 class="cui-flex-table__title">Stephen Silva</h2>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">CoraMora</p>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">Ethelview</p>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text cui-flex-table__text--green">Nina Vasquez</p>
+  </div>
+  <div class="cui-flex-table__middle">
+    <p class="cui-flex-table__text">apps(23)</p>
+  </div>
+  <div class="cui-flex-table__right">
+    <p class="cui-flex-table__text cui-status--suspended">suspended</p>
+  </div>
+</div>
+
+Styleguide Blocks.Flex-Table
+*/
+
+.cui-flex-table__tr {
+  border-top: 1px solid $cui-greyscale--x-light;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.cui-flex-table {
+
+  &:last-child {
+    border-width: 1px 0;
+  }
+
+  &__tr:hover {
+    
+    .cui-flex-table__title {
+      color: $cui-primary-colors--medium-dark;
+      cursor: pointer;
+    }
+  }
+
+  &__avatar-col {
+    margin-right: em(30);
+    width: em(50);
+  }
+
+  &__avatar-container {
+    border-radius: 50%;
+  }
+
+  &__avatar {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__left {
+    width: 35%;
+  }
+
+  &__left,
+  &__middle,
+  &__right {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    /* width: 33%; */
+
+    &--stacked {
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+
+  &__left {
+    position: relative;
+
+    &--stacked {
+      display: block;
+    }
+  }
+
+  &__middle {
+    text-align: left;
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__multi {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 15%;
+
+  }
+
+  &__title {
+    color: $cui-primary-colors--dark;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 100%;
+  }
+
+  &__text {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  &__text--left {
+    text-align: left;
+  }
+
+  &__text--right {
+    text-align: right;
+  }
+
+  &__text--middle {
+    test-align: center;
+  }
+
+  &__text--green {
+    color: $cui-primary-colors--medium-dark;
+  }
+
+  &__text--header {
+    color: #000;
+    font-weight: bold;
+  }
+
+  &__text--stacked {
+    margin: 0;
+  }
+
+  &__text--icon {
+    @extend .cui-flex-table__text;
+    fill: rgb(155,155,155);
+    margin: 0;
+  }
+
+  &__logo-holder {
+    height: 50px;
+    width: 75px;
+  }
+}
