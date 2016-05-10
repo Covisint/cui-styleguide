@@ -176,4 +176,4 @@ module.exports = function(grunt) {
     'concat:js',
     'copy:js'
     ]);
-}
+};

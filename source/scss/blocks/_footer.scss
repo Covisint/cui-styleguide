@@ -1,4 +1,66 @@
+/*
+Footer
+
+Markup:
+<div class="cui-footer">
+  <div class="cui-footer__col"><a href="" class="cui-footer__link">Covisint</a></div>
+  <div class="cui-footer__col"><a href="" class="cui-footer__link">Terms and Conditions </a></div>
+  <div class="cui-footer__col"><a href="" class="cui-footer__link">Help</a></div>
+  <div class="cui-footer__col">
+    <a href="" class="cui-footer__link">Learn more</a> about why we ask for this information
+  </div>
+  <div class="cui-footer__col">
+    <select class="cui-footer__translate">
+      <option label="English" value="string:English" selected="selected">English</option>
+      <option label="Português (Portuguese)" value="string:Português (Portuguese)">Português (Portuguese)</option>
+      <option label="Türk (Turkish)" value="string:Türk (Turkish)">Türk (Turkish)</option>
+      <option label="中文 (Chinese - Simplified)" value="string:中文 (Chinese - Simplified)">中文 (Chinese - Simplified)</option>
+      <option label="Français (French)" value="string:Français (French)">Français (French)</option>
+      <option label="Español (Spanish)" value="string:Español (Spanish)">Español (Spanish)</option>
+      <option label="Italiano (Italian)" value="string:Italiano (Italian)">Italiano (Italian)</option>
+      <option label="Pусский (Russian)" value="string:Pусский (Russian)">Pусский (Russian)</option>
+      <option label="ไทย (Thai)" value="string:ไทย (Thai)">ไทย (Thai)</option>
+      <option label="日本語 (Japanese)" value="string:日本語 (Japanese)">日本語 (Japanese)</option>
+      <option label="Deutsche (German)" value="string:Deutsche (German)">Deutsche (German)</option>
+    </select>
+  </div>
+</div>
+
+Styleguide Blocks.Footer
+*/
+
 .cui-footer {
-  padding-bottom: em(20);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: em(30);
   padding-top: em(20);
+
+  @media screen and (max-width: 701px) {
+  flex-direction: column;
+  }
+}
+
+.cui-footer {
+
+  &__col {
+  padding: 0 em(10);
+
+    &:first-of-type {
+      @media screen and (min-width: 701px) {
+        padding: 0 em(10) 0 0;
+      }
+    }
+
+    &:last-of-type {
+      order: -1;
+      @media screen and (min-width: 701px) {
+        padding: 0 0 0 em(10);
+        order: 1;
+      }
+    }
+  }
+
+  &__link {
+    @extend .cui-link;
+  }
 }
