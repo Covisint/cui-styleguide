@@ -22,33 +22,49 @@ Markup:
 Styleguide Blocks.Breadcrumb
 */
 
+.cui-breadcrumb{
+  display: flex;
+  flex: 1 auto;
+}
+
 
 .cui-breadcrumb__links {
+  @extend %bold;
   display: flex;
+  font-size: em(18);
+  max-width: 615px;
   width: 100%;
+}
 
-  .cui-breadcrumb__link {
-    border-right: $breadcrumb-seperator;
-    padding: 0 8px;
+.cui-breadcrumb__link {
+  align-items: center;
+  border-right: $breadcrumb-seperator;
+  display: flex;
+  flex: 1 auto;
+  padding: 0 8px;
 
-    &:first-child {
-      padding-left: 0;
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  a {
+    color: $breadcrumb-link-color;
+    text-decoration: none;
+
+    &.active {
+     color: $breadcrumb-link-color--active;
     }
+  }
+}
 
-    &:last-child {
-      padding-right: 0;
-      border-right: none;
-    }
-
+.cui-breadcrumb__link--current{
     a {
-      color: $breadcrumb-link-color;
-      text-decoration: none;
+      color: $breadcrumb-link-color--active;
     }
   }
 
-  .cui-breadcrumb__link--current{
-      a {
-        color: $breadcrumb-link-color--active;
-      }
-    }
-}
