@@ -454,11 +454,14 @@ select.cui-select,
 
 .cui-dropdown {
   @extend .cui-select;
+  background-color: #fff
 }
 
 .cui-dropdown__wrapper {
   background-color: #fff;
   border: 1px solid $cui-primary-colors--light;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .cui-dropdown__item {
