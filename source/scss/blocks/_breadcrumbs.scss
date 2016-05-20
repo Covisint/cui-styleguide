@@ -32,7 +32,6 @@ Styleguide Blocks.Breadcrumb
   @extend %bold;
   display: flex;
   font-size: em(18);
-  max-width: 615px;
   width: 100%;
 }
 
@@ -40,7 +39,7 @@ Styleguide Blocks.Breadcrumb
   align-items: center;
   border-right: $breadcrumb-seperator;
   display: flex;
-  flex: 1 auto;
+  flex: 0 auto;
   padding: 0 8px;
 
   &:first-child {
