@@ -159,6 +159,16 @@ Styleguide Blocks.Action-Bar
     top: 2px;
   }
 
+  &__icon--invite {
+    color: $cui-primary-colors--medium-dark;
+    height: em(40);
+    width: em(40);
+
+    use {
+      color: $cui-primary-colors--medium-dark;
+    }
+  }
+
   .cui-input-button {
     height: em(40);
   }
