@@ -32,13 +32,19 @@ Styleguide Blocks.Media-Object
 
   /* Centered Media Object */
   &--centered{
-    display: block;
+    display: flex;
     margin: 0 auto;
     text-align: center;
-    width: 20%;
+    width: 240px;
 
-    .cui-media__image-container{
-      margin: 0;
+    .cui-media__title {
+      @extend %bold;
+      font-size: em(24);
+      letter-spacing: 3px;
+    }
+
+    .cui-media__image-container {
+      justify-content: center;
 
       svg{
         margin: 0 auto;
@@ -49,8 +55,18 @@ Styleguide Blocks.Media-Object
       }
     }
 
+    .cui-media__body {
+      margin-top: em(6);
+    }
+
+    .cui-media__image {
+      height: em(70);
+      width: em(70);
+    }
+
     .cui-media__content{
-      display: inline;
+      display: inline-flex;
+      padding: 0;
     }
   }
 }
@@ -121,6 +137,11 @@ Styleguide Blocks.Media-Object
     font-size: em(14);
     margin: 0;
     padding: 0;
+  }
+
+  &--dark {
+    @extend %bold;
+    color: $secondary-font-color;
   }
 }
 
