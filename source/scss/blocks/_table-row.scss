@@ -384,7 +384,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__text--icon {
-    @extend .cui-flex-table__text;
     fill: rgb(155,155,155);
     margin: 0;
   }
