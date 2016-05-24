@@ -31,14 +31,27 @@ Styleguide Blocks.Media-Object
   }
 
   /* Centered Media Object */
-  &--centered{
-    display: block;
+  &--centered {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    width: 20%;
+    width: 240px;
 
-    .cui-media__image-container{
-      margin: 0;
+    @media screen and (max-width: 700px) {
+      flex-direction: row;
+      text-align: left;
+      width: auto;
+    }
+
+    .cui-media__title {
+      @extend %bold;
+      font-size: em(24);
+      letter-spacing: 3px;
+    }
+
+    .cui-media__image-container {
+      justify-content: center;
 
       svg{
         margin: 0 auto;
@@ -49,8 +62,37 @@ Styleguide Blocks.Media-Object
       }
     }
 
+    .cui-media__body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: em(6);
+
+      @media screen and (max-width: 700px) {
+        align-items: flex-start;
+      }
+    }
+
+    .cui-media__image {
+      height: em(70);
+      width: em(70);
+
+      @media screen and (max-width: 700px) {
+        height: em(50);
+        margin-top: em(10);
+        width: em(50);
+      }
+    }
+
     .cui-media__content{
-      display: inline;
+      display: inline-flex;
+      padding: 0;
+    }
+
+    .cui-status {
+      @media screen and (max-width: 700px) {
+        font-size: em(15);
+      }
     }
   }
 }
@@ -121,6 +163,11 @@ Styleguide Blocks.Media-Object
     font-size: em(14);
     margin: 0;
     padding: 0;
+  }
+
+  &--dark {
+    @extend %bold;
+    color: $secondary-font-color;
   }
 }
 
