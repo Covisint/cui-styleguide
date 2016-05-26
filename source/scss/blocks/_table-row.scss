@@ -105,35 +105,39 @@ Markup:
   </div>
 </div>
 <div class="cui-flex-table__tr">
-  <div class="cui-flex-table__left">
-    <div class="cui-flex-table__avatar-col">
-      <div class="cui-flex-table__avatar-container">
-        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
-      </div>
-    </div>
-    <h2 class="cui-flex-table__title">West Blake</h2>
-  </div>
-  <div class="cui-flex-table__middle">
-    <p class="cui-flex-table__text">requested 01.06.2016</p>
-  </div>
-  <div class="cui-flex-table__right cui-flex-table__multi">
-    <div class="cui-radio cui-radio--deny">
-      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
-      <label class="cui-radio__label" for="radio-choice-4">
-      <div class="cui-radio__outer-button">
-        <div class="cui-radio__inner-button"></div>
-      </div>
-      </label>
-    </div>
-    <div class="cui-radio cui-radio--approve">
-      <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
-      <label class="cui-radio__label" for="radio-choice-3">
-      <div class="cui-radio__outer-button">
-        <div class="cui-radio__inner-button"></div>
-      </div>
-      </label>
+  <div class="cui-flex-table__avatar-col">
+    <div class="cui-flex-table__avatar-container">
+      <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
     </div>
   </div>
+  <div class="cui-flex-table__mobile-stack">
+    <div class="cui-flex-table__left">
+      <h2 class="cui-flex-table__title">West Blake</h2>
+    </div>
+    <div class="cui-flex-table__middle">
+      <span class="cui-flex-table__text">requested 01.06.2016</span>
+    </div>
+  </div>
+  <fieldset class="cui-flex-table__fieldset">
+    <div class="cui-flex-table__right cui-flex-table__multi">
+      <div class="cui-radio cui-radio--deny">
+        <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
+        <label class="cui-radio__label" for="radio-choice-4">
+        <div class="cui-radio__outer-button">
+          <div class="cui-radio__inner-button"></div>
+        </div>
+        </label>
+      </div>
+      <div class="cui-radio cui-radio--approve">
+        <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+        <label class="cui-radio__label" for="radio-choice-3">
+        <div class="cui-radio__outer-button">
+          <div class="cui-radio__inner-button"></div>
+        </div>
+        </label>
+      </div>
+    </div>
+  </fieldset>
 </div>
 <div class="cui-flex-table__tr">
   <div class="cui-flex-table__left">
@@ -230,11 +234,15 @@ Styleguide Blocks.Flex-Table
 */
 
 .cui-flex-table__tr {
+  align-items: center;
   border-top: 1px solid $cui-greyscale--x-light;
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
   padding: 10px 0;
+}
+
+cui-expandable:first-of-type .cui-flex-table__tr {
+  border-top: 0;
 }
 
 .cui-flex-table {
@@ -284,6 +292,11 @@ Styleguide Blocks.Flex-Table
     }
   }
 
+  &__left,
+  &__middle {
+    flex: 1 auto;
+  }
+
 
   &__left {
     position: relative;
@@ -301,26 +314,49 @@ Styleguide Blocks.Flex-Table
     text-align: right;
   }
 
+  &__mobile-stack {
+    display: flex;
+    flex: 1 auto;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+
   &__multi {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     width: 15%;
+  }
+
+  &__fieldset {
+    padding: 0;
+    min-width: 230px;
+    width: 25%;
+
+    @media screen and (max-width: 700px) {
+      min-width: 180px;
+    }
+
+    & .cui-flex-table__multi {
+      width: 100%;
+    }
 
   }
 
   &__title {
     color: $cui-primary-colors--dark;
-    font-size: 1.5em;
+    font-size: em(18);
     font-weight: bold;
     line-height: 1.5em;
     width: 100%;
   }
 
-  &__text {
-    margin: 1em 0;
-    width: 100%;
-  }
+  // &__text {
+  //   margin: 1em 0;
+  //   width: 100%;
+  // }
 
   &__text--left {
     text-align: left;
@@ -348,7 +384,6 @@ Styleguide Blocks.Flex-Table
   }
 
   &__text--icon {
-    @extend .cui-flex-table__text;
     fill: rgb(155,155,155);
     margin: 0;
   }
@@ -358,3 +393,60 @@ Styleguide Blocks.Flex-Table
     width: 75px;
   }
 }
+
+.cui-flex-table__header {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.cui-flex-table__heading {
+  @extend %bold;
+  @extend %h5;
+  color: $cui-greyscale--dark;
+
+  @media screen and (max-width: 700px) {
+    font-size: em(15);
+  }
+}
+
+.cui-flex-table__th {
+  flex: 1 auto;
+}
+
+.cui-flex-table__th--radio {
+  display: flex;
+  flex: 0 auto;
+  min-width: 230px;
+  width: 25%;
+
+  @media screen and (max-width: 700px) {
+    min-width: 180px;
+  }
+
+  .cui-flex-table__heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .cui-flex-table__heading:first-of-type {
+    margin-right: 5px;
+  }
+}
+
+.cui-flex-table__tr {
+
+  .cui-radio {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .cui-radio__label {
+    position: relative;
+    padding-left: 30px;
+  }
+}
+

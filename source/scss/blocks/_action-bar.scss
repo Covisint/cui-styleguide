@@ -34,6 +34,11 @@ Styleguide Blocks.Action-Bar
     padding: em(19) em(55) 0 em(65);
   }
 
+  &--min {
+    padding-top: 10px;
+    min-height: 0;
+  }
+
   &--alt {
 
     .cui-action__title {
@@ -85,6 +90,10 @@ Styleguide Blocks.Action-Bar
 
     @media screen and (min-width: 701px) {
       flex: .75
+    }
+
+    &--dark {
+      color: $cui-greyscale--dark;
     }
   }
 
@@ -157,6 +166,16 @@ Styleguide Blocks.Action-Bar
     font-family: lato-bold;
     margin-left: -8px;
     top: 2px;
+  }
+
+  &__icon--invite {
+    color: $cui-primary-colors--medium-dark;
+    height: em(40);
+    width: em(40);
+
+    use {
+      color: $cui-primary-colors--medium-dark;
+    }
   }
 
   .cui-input-button {

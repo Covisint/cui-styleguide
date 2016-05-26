@@ -114,7 +114,7 @@ $action-bar-alt-background: $tertiary-background;
 // Breadcrumb
 $breadcrumb-link-color: $cui-primary-colors--medium;
 $breadcrumb-link-color--active: $cui-primary-colors--medium-dark;
-$breadcrumb-seperator: 1px solid $cui-primary-colors--medium;
+$breadcrumb-seperator: 2px solid $cui-primary-colors--medium;
 
 // Card
 $card-background-color: #fff;
@@ -274,3 +274,21 @@ fieldset {
   position: absolute;
   z-index:9999; 
 }
+
+// Layout helpers
+%flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-row-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+%flex-row--right-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
