@@ -312,7 +312,7 @@ Styleguide Blocks.Expandable
 .cui-expandable__body--alt-bg {
   background-color: $secondary-background;
   margin: 0 auto em(24);
-  padding: 0 em(22) em(40) em(50);
+  padding: em(20) em(22) em(40) em(50);
   position: relative;
   width: 80%;
 
@@ -351,11 +351,15 @@ Styleguide Blocks.Expandable
   }
 
   .cui-expandable__body-col {
-    flex: 1 auto;
+    flex: 1;
     margin-right: em(20);
 
     @media screen and (max-width: 700px) {
       margin-bottom: em(8);
+    }
+
+    &--small {
+      font-size: em(14);
     }
 
   }
@@ -386,7 +390,9 @@ Styleguide Blocks.Expandable
     color: $cui-primary-colors--medium-dark;
     height: em(16);
     margin-left: auto;
-    margin-top: 14px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
     width: em(16);
   }
 

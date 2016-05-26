@@ -42,6 +42,10 @@ Styleguide Blocks.Media-Object
       flex-direction: row;
       text-align: left;
       width: auto;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        max-width: inherit;
+      }
     }
 
     .cui-media__title {
@@ -104,13 +108,13 @@ Styleguide Blocks.Media-Object
   position: relative;
 
   @media screen and (min-width: 701px) {
-    flex: .1;
+    flex: .1 auto;
     justify-content: flex-start;
   }
 }
 
 .cui-media__body {
-  flex: .75;
+  flex: .75 auto;
 
   &--full {
 
@@ -126,7 +130,7 @@ Styleguide Blocks.Media-Object
 .cui-media__title,
 .cui-media__content {
   @media screen and (min-width: 701px) {
-    flex: 1;
+    flex: 1 auto;
   }
 }
 
