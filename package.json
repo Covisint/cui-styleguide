@@ -1,6 +1,6 @@
 {
   "name": "cui-styleguide",
-  "version": "0.1.0",
+  "version": "2.1.0",
   "description": "Digital Style Guide for Core CUI Elements",
   "author": "Thirdwave LLC <help@thirdwavellc.com> (http://www.thirdwavellc.com/)",
   "license": "ISC",
@@ -39,7 +39,15 @@
     "grunt-exec": "^0.4.6",
     "grunt-postcss": "^0.7.0",
     "grunt-sass": "^1.1.0",
-    "kss": "^2.1.0",
-    "load-grunt-tasks": "^3.3.0"
+    "kss": "~2.4.0",
+    "load-grunt-tasks": "^3.3.0",
+    "cui-styleguide": "^2.1.0",
+    "cui-icons": "^",
+    "snapjs": "https://github.com/jakiestfu/Snap.js.git#master",
+    "svg4everybody": "https://github.com/jonathantneal/svg4everybody.git#master",
+    "jquery": "jQuery#~2.2.0"
+  },
+  "dependencies": {
+    "lato-font": "^1.1.1"
   }
 }
