@@ -2,8 +2,8 @@
   "name": "cui-styleguide",
   "version": "0.1.0",
   "description": "Digital Style Guide for Core CUI Elements",
-  "author": "Thirdwave LLC <help@thirdwavellc.com> (http://www.thirdwavellc.com/)",
-  "license": "ISC",
+  "author": "Thirdwave LLC <info@thirdwavellc.com> (http://www.thirdwavellc.com/)",
+  "license": "LicenseRef-LICENSE",
   "homepage": "https://github.com/thirdwavellc/cui-styleguide#readme",
   "main": "index.js",
   "repository": {
