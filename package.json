@@ -1,24 +1,21 @@
 {
-  "name": "cui-styleguide",
-  "version": "0.1.0",
+  "name": "@covisint/cui-styleguide",
+  "version": "2.1.0",
   "description": "Digital Style Guide for Core CUI Elements",
-  "author": "Thirdwave LLC <help@thirdwavellc.com> (http://www.thirdwavellc.com/)",
-  "license": "ISC",
-  "homepage": "https://github.com/thirdwavellc/cui-styleguide#readme",
+  "author": "Thirdwave LLC <info@thirdwavellc.com> (http://www.thirdwavellc.com/)",
+  "license": "LicenseRef-LICENSE",
+  "homepage": "https://github.com/covisint/cui-styleguide#readme",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/thirdwavellc/cui-styleguide.git"
+    "url": "git+ssh://git@github.com/covisint/cui-styleguide.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "scripts/npm-postversion"
   },
-  "publishConfig": {
-    "registry": "http://nexus.thirdwavellc.com/content/repositories/cui-npm/"
-  },
   "bugs": {
-    "url": "https://github.com/thirdwavellc/cui-styleguide/issues"
+    "url": "https://github.com/covisint/cui-styleguide/issues"
   },
   "files": [
     "source/",
