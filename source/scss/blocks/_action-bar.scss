@@ -82,14 +82,15 @@ Styleguide Blocks.Action-Bar
   }
 
   &__title {
-    @extend %h5;
-    @extend %h5--bold;
+    @extend %bold;
     color: $cui-primary-colors--medium;
     display: flex;
-    flex: .5;
+    flex: .5 auto;
+    font-size: em(18);
 
     @media screen and (min-width: 701px) {
-      flex: .75
+      @extend %h5;
+      flex: .75 auto;
     }
 
     &--dark {
