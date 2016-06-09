@@ -89,7 +89,7 @@ Styleguide Blocks.Action-Bar
     font-size: em(18);
 
     @media screen and (min-width: 701px) {
-      @extend %h5;
+      font-size: em(20);      
       flex: .75 auto;
     }
 
