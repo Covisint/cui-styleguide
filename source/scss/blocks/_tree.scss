@@ -24,10 +24,10 @@ Styleguide Blocks.tree
   }
   .cui-tree__leaf {
     width:226px;
-    height:40px;
+    height:60px;
     border:1px solid rgb(106,152,160);
-    margin-bottom:10px;
-    margin-left:20px;
+    margin-bottom:32px;
+    margin-left:30px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -42,8 +42,8 @@ Styleguide Blocks.tree
     position:absolute;
     width:2px;
     left:0;
-    top:-10px;
-    bottom:18px;
+    top:-33px;
+    bottom:28px;
     background-color:rgb(106,152,160);
   }
   /*0 margin for first level, 50px margin left for each level after that*/
@@ -54,7 +54,7 @@ Styleguide Blocks.tree
   .cui-tree--nested {
     display:block;
     position: relative;
-    margin-left:50px;
+    margin-left:145px;
   }
   .cui-tree__leaf>span {
     width:100%;
@@ -71,12 +71,12 @@ Styleguide Blocks.tree
   /*Draw out the horizontal line before each leaf*/
   .cui-tree__leaf>span::before {
     content:'';
-    width:20px;
+    width:30px;
     background-color:rgb(106,152,160);
     height:2px;
     position:absolute;
     top:50%;
-    left:-20px;
+    left:-30px;
   }
   /*This removes the horizontal line unwanted trail*/
   .cui-tree__branch--last > .cui-tree--nested::before {
@@ -84,7 +84,7 @@ Styleguide Blocks.tree
     position: absolute;
     width: 3px;
     background-color: white;
-    left: -50px;
-    top: -28px;
+    left: -145px;
+    top: -60px;
     bottom: 0;
   }
