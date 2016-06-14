@@ -57,6 +57,12 @@ Styleguide Blocks.Media-Object
     .cui-media__image-container {
       justify-content: center;
 
+      @media screen and (max-width: 700px) {
+        flex: .25 auto;
+        min-width: 100px;
+        padding-right: 15px;
+      }
+
       svg{
         margin: 0 auto;
       }
@@ -74,6 +80,8 @@ Styleguide Blocks.Media-Object
 
       @media screen and (max-width: 700px) {
         align-items: flex-start;
+        line-height: 1.6;
+        max-width: none;
       }
     }
 
@@ -91,11 +99,24 @@ Styleguide Blocks.Media-Object
     .cui-media__content{
       display: inline-flex;
       padding: 0;
+      
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
     }
 
     .cui-status {
       @media screen and (max-width: 700px) {
         font-size: em(15);
+      }
+    }
+
+    .cui-media__link {
+      text-decoration: none;
+
+      @media screen and (max-width: 700px) {
+        max-width: 70%;
+        word-wrap: break-word;
       }
     }
   }
