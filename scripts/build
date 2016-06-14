@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. ~/.nvm/nvm.sh
 nvm use
 npm install
 $PATH kss-node --config kss-config.json
