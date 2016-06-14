@@ -88,3 +88,23 @@ Styleguide Blocks.tree
     top: -60px;
     bottom: 0;
   }
+
+  @media screen and (max-width: 375px){
+
+      .cui-tree{
+        margin-top: 30px;
+      }
+      
+      /* Vertical lines */
+      .cui-tree__leaf--last::before{
+        top: -60px;
+      }
+
+      .cui-tree--nested{
+        margin-left: 14px;
+      }
+
+      .cui-tree__branch--last > .cui-tree--nested::before{
+        left: -15px;
+      }
+  }
