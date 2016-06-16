@@ -500,3 +500,19 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 
 }
 
+
+.cui-flex-table__th--c {
+  border-top: 0;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.cui-flex-table__tr--c:first-of-type {
+  @media screen and (max-width: 700px) {
+    border-top: 0;
+  }
+}
+
+

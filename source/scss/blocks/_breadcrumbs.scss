@@ -22,48 +22,88 @@ Markup:
 Styleguide Blocks.Breadcrumb
 */
 
-.cui-breadcrumb{
+.cui-breadcrumb {
   display: flex;
   flex: 1 auto;
-}
 
-
-.cui-breadcrumb__links {
-  @extend %bold;
-  display: flex;
-  font-size: em(18);
-  width: 100%;
-}
-
-.cui-breadcrumb__link {
-  align-items: center;
-  border-right: $breadcrumb-seperator;
-  display: flex;
-  flex: 0 auto;
-  padding: 0 8px;
-
-  &:first-child {
-    padding-left: 0;
+  .cui-breadcrumb__links {
+    @extend %bold;
+    display: flex;
+    font-size: em(18);
+    width: 100%;
   }
 
-  &:last-child {
-    padding-right: 0;
-    border-right: none;
-  }
+  .cui-breadcrumb__link {
+    align-items: center;
+    border-right: $breadcrumb-seperator;
+    display: flex;
+    flex: 0 auto;
+    padding: 0 8px;
 
-  a {
-    color: $breadcrumb-link-color;
-    text-decoration: none;
+    &:first-child {
+      padding-left: 0;
+    }
 
-    &.active {
-     color: $breadcrumb-link-color--active;
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+
+    a {
+      color: $breadcrumb-link-color;
+      text-decoration: none;
+
+      &.active {
+       color: $breadcrumb-link-color--active;
+      }
     }
   }
-}
 
-.cui-breadcrumb__link--current{
+  .cui-breadcrumb__link--current { 
+
     a {
       color: $breadcrumb-link-color--active;
     }
   }
+}
+
+.cui-breadcrumb--mobile {
+  display: none;
+  flex: 1 100%;
+
+  @media screen and (max-width: 700px) {
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAzMyAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U2hhcGU8L3RpdGxlPjxwYXRoIGQ9Ik0zMi4wMTUuNzZjLjUuNDk2LjUgMS4yOTYgMCAxLjc5MkwxNy40MDUgMTcuMDJjLS41LjQ5NC0xLjMwNy40OTQtMS44MSAwTC45ODUgMi41NWMtLjUtLjQ5Ni0uNS0xLjI5NiAwLTEuNzkuNS0uNDk2IDEuMzEtLjQ5NiAxLjgwOCAwTDE2LjUgMTMuOTU0IDMwLjIwNy43NmMuNTAzLS40OTQgMS4zMS0uNDk0IDEuODEgMHoiIGZpbGw9IiMzNDM1MzQiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==') right 10px center no-repeat;
+    background-size: 18px;
+    display: flex;
+  }
+
+  .cui-breadcrumb__link--current .cui-breadcrumb__mobile-link {
+    @extend %bold;
+    color: #343534;
+    font-size: em(18);
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+}
+
+.cui-breadcrumb__popover {
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
+
+  .cui-breadcrumb__mobile-link {
+    color: #4a4a4a;
+    font-size: em(15, 14);
+    letter-spacing: 1.5px;
+    line-height: 1;
+    padding: em(10) 0;
+    text-decoration: none;
+  }
+}
+
+.cui-mobile-only {
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
+}
 
