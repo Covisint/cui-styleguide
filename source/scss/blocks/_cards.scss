@@ -36,7 +36,6 @@ Styleguide Blocks.Cards
 
 .cui-card {
   background: $card-background-color;
-  border: 1px solid $cui-primary-colors--light;
   border-radius: $card-border-radius;
   box-sizing: border-box;
   display: flex;
@@ -46,16 +45,17 @@ Styleguide Blocks.Cards
   max-width: 20em;
   padding: $card-padding;
   transition: box-shadow .2s ease, transform .2s ease;
-  
-  &:hover {
-    box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, .9);
-    transform: translateY(-3px);
-  }
+
 }
 
 .cui-card__image-container {
   justify-content: center;
   display: flex;
+  
+  svg{
+    height: 75px;
+    width:  75px;
+  }
 }
 
 .cui-card__image {
@@ -71,6 +71,10 @@ p {
   flex-direction: column;
   flex-grow: 2;
   line-height: 1.4;
+
+  p{
+    color: $card-content-color;
+  }
 }
 
 .cui-card__content-header {

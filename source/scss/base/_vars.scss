@@ -119,14 +119,15 @@ $breadcrumb-seperator: 2px solid $cui-primary-colors--medium;
 // Card
 $card-background-color: #fff;
 $card-border-radius: 6px;
-$card-button-height: em(42, 12);
+$card-button-height: em(28, 12);
 $card-button-border-radius: em(3);
-$card-header-color: $cui-greyscale--medium;
-$card-header-font-size: $font-size-h3;
+$card-header-color: $cui-greyscale--medium-dark;
+$card-header-font-size: $font-size-h4;
 $card-header-font-weight: 900;
 $card-header-margin: em(5) 0;
-$card-icon-color: $cui-primary-colors--medium-light;
-$card-padding: em(40);
+$card-icon-color: $cui-primary-colors--medium-dark;
+$card-content-color: $cui-greyscale--medium-dark;
+$card-padding: em(45);
 
 // Header
 $header-background-color: $cui-background-gradient;
