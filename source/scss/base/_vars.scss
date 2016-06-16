@@ -63,9 +63,12 @@ $tertiary-background: #d4e2e6;
 
 // Buttons
 $button-border-radius: em(3);
-$button-color: $cui-primary-colors--medium-light;
-$button-color--active: $cui-primary-colors--medium-dark;
+$button-color: #6A98A0; /* $cui-primary-colors--medium-light; */
+$button-color--active: #B1C5CE; /* $cui-primary-colors--medium-dark; */
 $button-color--error: #dbdbdb;
+$button-color--visited: #D4E2E6;
+$button-text-color--visited: #006C77;
+$button-color--hover: #006C77;
 $button-color--error-hover: $cui-greyscale--medium-light; 
 $button-font-size: 15px;
 $button-height: em(42,$button-font-size);
