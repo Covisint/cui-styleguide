@@ -5,8 +5,8 @@
   <link rel="stylesheet" href="styles.min.css">
   <link rel="stylesheet" href="cui-styleguide-styles.min.css">
 </head>
-<body style="height: 400px">
- <div class="cui-wrapper">
+<body style="height: 400px; position: relative;">
+ <div class="cui-wrapper v2">
   <div class="snap-drawers">
     <div class="snap-drawer">
       <nav class="cui-off-canvas">
@@ -65,17 +65,16 @@
   <snap-content class="snap-content">
     <header class="cui-header">
       <div class="cui-header__top">
-        <div class="cui-menu__toggle-button-container active" snap-toggle="left">
+        <div class="cui-menu__toggle-button-container cui-menu__toggle-button--mobile" snap-toggle="left">
           <button class="cui-menu__toggle-button"></button>
         </div>
-        <svg class="cui-header__svg-logo" viewBox="0 0 640 124"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#" disabled>
     </div></header>
     <div class="cui-menu__content-wrapper" style="min-height:0;height:400px">
       <div class="cui-styleguide__main-container" style="min-height:0;height:400px">
         <!--   <header class="cui-styleguide__header">
             <h1 class="cui-styleguide__doc-title"></h1>
           </header> -->
-      <nav id="desktop-menu" class="cui-off-canvas desktop-menu">
+      <nav id="desktop-menu" class="cui-off-canvas cui-desktop-menu">
         <ul class="cui-off-canvas__list">
           <li class="cui-off-canvas__section">
             <a class="cui-off-canvas__section-link" href="#" disabled>
