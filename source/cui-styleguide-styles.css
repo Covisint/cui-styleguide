@@ -11,6 +11,21 @@ fieldset {
 *[ui-sref] {
   cursor: pointer; }
 
+
+.cui-sr-only {
+  left: -999em;
+  position: absolute; }
+
+@media screen and (min-width: 701px) {
+  
+  .cui-mobile-only {
+    display: none !important; } }
+
+@media screen and (max-width: 700px) {
+  
+  .cui-desktop-only {
+    display: none !important; } }
+
 .hide {
   display: none !important; }
 
