@@ -38,7 +38,7 @@ Markup:
     <p class="cui-flex-table__text cui-flex-table__text--stacked cui-flex-table__text--right cui-flex-table__text--green">Review</p>  
   </div>
 </div>
-<div class="cui-flex-table__tr">
+<div class="cui-flex-table__tr cui-flex-table__tr--c">
   <div class="cui-flex-table__left">
     <div class="cui-flex-table__avatar-col">
       <div class="cui-flex-table__avatar-container">
@@ -233,7 +233,8 @@ Markup:
 Styleguide Blocks.Flex-Table
 */
 
-.cui-flex-table__tr {
+.cui-flex-table__tr,
+.cui-flex-table__th {
   align-items: center;
   border-top: 1px solid $cui-greyscale--x-light;
   display: flex;
@@ -246,6 +247,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 }
 
 .cui-flex-table {
+  width: 100%;
 
   &:last-child {
     border-width: 1px 0;
@@ -449,4 +451,68 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     padding-left: 30px;
   }
 }
+
+// Table Row C
+
+.cui-flex-table__tr--c,
+.cui-flex-table__th--c {
+
+  .cui-flex-table__left {
+    width: auto;
+
+    @media screen and (min-width: 701px) {
+      flex: 0 0 27.742520398912%;
+    }
+  }
+
+  .cui-flex-table__middle {
+    width: auto;
+
+    @media screen and (min-width: 701px) {
+      flex: 0 0 24.025385312783%;
+    }
+  }
+
+  .cui-flex-table__middle ~ .cui-flex-table__middle {
+    @media screen and (min-width: 701px) {
+      flex: 0 0 15%;
+    }
+  }
+
+  .cui-flex-table__right {
+    flex: 1;
+    width: auto;
+
+    @media screen and (min-width: 701px) {
+      justify-content: flex-end;
+    }
+  }
+
+  .cui-flex-table__left,
+  .cui-flex-table__middle,
+  .cui-flex-table__right {
+     word-break: break-word;
+
+     @media screen and (min-width: 701px) {
+      padding-right: 20px;
+     }
+  }
+
+}
+
+
+.cui-flex-table__th--c {
+  border-top: 0;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.cui-flex-table__tr--c:first-of-type {
+  @media screen and (max-width: 700px) {
+    border-top: 0;
+  }
+}
+
 
