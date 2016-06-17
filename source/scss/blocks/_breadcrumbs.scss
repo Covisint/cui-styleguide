@@ -75,6 +75,7 @@ Styleguide Blocks.Breadcrumb
     background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAzMyAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U2hhcGU8L3RpdGxlPjxwYXRoIGQ9Ik0zMi4wMTUuNzZjLjUuNDk2LjUgMS4yOTYgMCAxLjc5MkwxNy40MDUgMTcuMDJjLS41LjQ5NC0xLjMwNy40OTQtMS44MSAwTC45ODUgMi41NWMtLjUtLjQ5Ni0uNS0xLjI5NiAwLTEuNzkuNS0uNDk2IDEuMzEtLjQ5NiAxLjgwOCAwTDE2LjUgMTMuOTU0IDMwLjIwNy43NmMuNTAzLS40OTQgMS4zMS0uNDk0IDEuODEgMHoiIGZpbGw9IiMzNDM1MzQiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==') right 10px center no-repeat;
     background-size: 18px;
     display: flex;
+    padding-right: em(35);
   }
 
   .cui-breadcrumb__link--current .cui-breadcrumb__mobile-link {
@@ -100,10 +101,3 @@ Styleguide Blocks.Breadcrumb
     text-decoration: none;
   }
 }
-
-.cui-mobile-only {
-  @media screen and (min-width: 701px) {
-    display: none;
-  }
-}
-
