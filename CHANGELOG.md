@@ -4,6 +4,18 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.2.0]
+### Added
+- styles for items on the the following security admin screens
+  - 5. Org-Directory
+  - 6. Org-Dir-Divpulldown
+  - 60. Org Hierarchy
+
+### Updates
+- Cards no longer have a border or hover state
+- Buttons no longer have a hover state, active and visited colors are updated
+
+
 ## [2.0]
 ### Added
 - Major style updates
