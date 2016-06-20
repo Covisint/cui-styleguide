@@ -3,8 +3,9 @@ Buttons
 
 Styles for button elements
 
-:focus                      - Focus styling
+:hover                      - Hover styling
 :active                     - Selected styling
+:visited                    - Visited
 .cui-button--error          - Error styling 
 .cui-button--error:active   - Error selected styling
 .cui-button--cancel         - Cancel button styling
@@ -32,8 +33,18 @@ Styleguide Elements.Buttons
 
   &:focus,
   &.pseudo-class-focus {
-    box-shadow: 0 0 3px $cui-greyscale--medium-light, 0 0 7px $cui-greyscale--medium-light;
     outline: 0;
+  }
+
+  &:visited,
+  &.pseudo-class-visited{
+    background-color: $button-color--visited;
+    color: $button-text-color--visited;
+  }
+
+  &:hover,
+  &.pseudo-class-hover{
+    background-color: $button-color--hover;
   }
 
   &--clicked {

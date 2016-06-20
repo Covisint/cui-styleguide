@@ -5,7 +5,11 @@ Markup:
 <div class="cui-expandable expanded">
   <div class="cui-expandable__title">
     Expandable Group #1
-    <span class="chevron">></span>
+    <span class="chevron">
+      <svg class="cui-icon cui-icon--light-grey" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+        <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#chevron18"></use>
+      </svg>
+    </span>
   </div>
   <ul class="cui-expandable__body">
     <li class="cui-expandable__review-item">Revealed item</li>
@@ -17,7 +21,11 @@ Markup:
 <div class="cui-expandable">
   <div class="cui-expandable__title">
     Expandable Group #2
-    <span class="chevron">></span>
+    <span class="chevron">
+      <svg class="cui-icon cui-icon--light-grey" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+        <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#chevron18"></use>
+      </svg>
+    </span>
   </div>
   <ul class="cui-expandable__body">
     <li class="cui-expandable__review-item">Hidden item</li>
@@ -29,7 +37,11 @@ Markup:
 <div class="cui-expandable">
   <div class="cui-expandable__title">
     Expandable Group #3
-    <span class="chevron">></span>
+    <span class="chevron">
+      <svg class="cui-icon cui-icon--light-grey" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
+        <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#chevron18"></use>
+      </svg>
+    </span>
   </div>
   <ul class="cui-expandable__body">
     <li class="cui-expandable__review-item">Another hidden item</li>

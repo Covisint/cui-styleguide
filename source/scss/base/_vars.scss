@@ -63,9 +63,12 @@ $tertiary-background: #d4e2e6;
 
 // Buttons
 $button-border-radius: em(3);
-$button-color: $cui-primary-colors--medium-light;
-$button-color--active: $cui-primary-colors--medium-dark;
+$button-color: #6A98A0; /* $cui-primary-colors--medium-light; */
+$button-color--active: #B1C5CE; /* $cui-primary-colors--medium-dark; */
 $button-color--error: #dbdbdb;
+$button-color--visited: #D4E2E6;
+$button-text-color--visited: #006C77;
+$button-color--hover: #006C77;
 $button-color--error-hover: $cui-greyscale--medium-light; 
 $button-font-size: 15px;
 $button-height: em(42,$button-font-size);
@@ -119,14 +122,15 @@ $breadcrumb-seperator: 2px solid $cui-primary-colors--medium;
 // Card
 $card-background-color: #fff;
 $card-border-radius: 6px;
-$card-button-height: em(42, 12);
+$card-button-height: em(28, 12);
 $card-button-border-radius: em(3);
-$card-header-color: $cui-greyscale--medium;
-$card-header-font-size: $font-size-h3;
+$card-header-color: $cui-greyscale--medium-dark;
+$card-header-font-size: $font-size-h4;
 $card-header-font-weight: 900;
 $card-header-margin: em(5) 0;
-$card-icon-color: $cui-primary-colors--medium-light;
-$card-padding: em(40);
+$card-icon-color: $cui-primary-colors--medium-dark;
+$card-content-color: $cui-greyscale--medium-dark;
+$card-padding: em(28);
 
 // Header
 $header-background-color: $cui-background-gradient;
