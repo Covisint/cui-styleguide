@@ -130,7 +130,7 @@ $card-header-font-weight: 900;
 $card-header-margin: em(5) 0;
 $card-icon-color: $cui-primary-colors--medium-dark;
 $card-content-color: $cui-greyscale--medium-dark;
-$card-padding: em(45);
+$card-padding: em(28);
 
 // Header
 $header-background-color: $cui-background-gradient;
@@ -254,9 +254,24 @@ fieldset {
 }
 
 // helpers
-%cui-sr-only {
+%cui-sr-only,
+.cui-sr-only {
   left: -999em;
   position: absolute;
+}
+
+%cui-mobile-only,
+.cui-mobile-only {
+  @media screen and (min-width: 701px) {
+    display: none !important;
+  }
+}
+
+%cui-desktop-only,
+.cui-desktop-only {
+  @media screen and (max-width: 700px) {
+    display: none !important;
+  }
 }
 
 .hide, 

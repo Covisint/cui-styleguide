@@ -7,7 +7,7 @@ Markup:
     <div class="cui-card__image-container">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="88px"
          height="88px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-        <use class="cui-card__icon" xlink:href="bower_components/cui-icons/dist/icons/icons-out.svg#user"></use>
+        <use class="cui-card__icon" xlink:href="node_modules/cui-icons/dist/icons/icons-out.svg#user"></use>
       </svg>
     </div>
     <div class="cui-card__content">
@@ -74,6 +74,7 @@ p {
 
   p{
     color: $card-content-color;
+    letter-spacing: $letter-spacing-sm;
   }
 }
 
@@ -83,6 +84,8 @@ p {
   font-size: $card-header-font-size;
   font-weight: $card-header-font-weight;
   margin: $card-header-margin;
+  min-height: em(66,24);
+  text-align: center;
 }
 
 .cui-card__icon {
@@ -94,4 +97,5 @@ p {
   align-self: center;
   border-radius: $card-button-border-radius;
   height: $card-button-height;
+  margin-top: em(35);
 }

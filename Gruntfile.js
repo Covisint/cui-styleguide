@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         dest: 'source/styles.specific.scss'
       },
       js: {
-        src: ['bower_components/jquery/dist/jquery.min.js','bower_components/snapjs/snap.min.js','bower_components/svg4everybody/dist/svg4everybody.min.js','source/scripts/*.js'],
+        src: ['node_modules/jquery/dist/jquery.min.js','node_modules/snap.js/dist/snap.min.js','node_modules/svg4everybody/dist/svg4everybody.min.js','source/scripts/*.js'],
         dest: '.tmp/scripts/cui-scripts.js'
       }
     },
@@ -66,13 +66,13 @@ module.exports = function(grunt) {
     copy:{
       icons: {
         files: [{
-          cwd: 'bower_components/cui-icons/',
+          cwd: 'node_modules/@covisint/cui-icons/',
           src: [
             'dist/logos/logos-out.svg',
             'dist/icons/icons-out.svg',
             'dist/font-awesome/font-awesome-out.svg'
           ],
-          dest: 'styleguide/bower_components/cui-icons/',
+          dest: 'styleguide/node_modules/cui-icons/',
           expand: true
         }]
       },
@@ -92,18 +92,18 @@ module.exports = function(grunt) {
           expand: true
         },
         {
-          cwd: 'bower_components/lato/font/lato-regular/',
+          cwd: 'node_modules/lato/font/lato-regular/',
           src: [
           '*.woff',
           '*.woff2',
           '*.ttf'
           ],
-          dest: 'styleguide/bower_components/lato/font/lato-regular/',
+          dest: 'styleguide/node_modules/lato/font/lato-regular/',
           expand: true
         }],
         options:{
           process:function(content){
-            if(grunt.option('env')==='qa') return content.replace('/bower_components','bower_components');
+            if(grunt.option('env')==='qa') return content.replace('/node_modules','node_modules');
             else return content;
           }
         }

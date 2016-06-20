@@ -24,7 +24,7 @@
     "CHANGELOG.md",
     "README.md"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@covisint/cui-icons": "^1.0.2",
     "autoprefixer": "^6.0.3",
     "bower": "^1.5.3",
@@ -39,11 +39,9 @@
     "grunt-sass": "^1.1.0",
     "jquery": "2.2.0",
     "kss": "~2.4.0",
+    "lato-font": "^1.1.1",
     "load-grunt-tasks": "^3.3.0",
     "snap.js": "^2.0.9",
     "svg4everybody": "^2.0.3"
-  },
-  "dependencies": {
-    "lato-font": "^1.1.1"
   }
 }
