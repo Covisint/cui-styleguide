@@ -92,13 +92,30 @@ module.exports = function(grunt) {
           expand: true
         },
         {
-          cwd: 'node_modules/lato/font/lato-regular/',
+          cwd: 'node_modules/lato-font/fonts/lato-normal/',
           src: [
           '*.woff',
-          '*.woff2',
           '*.ttf'
           ],
-          dest: 'styleguide/node_modules/lato/font/lato-regular/',
+          dest: 'styleguide/node_modules/lato/font/lato-normal/',
+          expand: true
+        },
+        {
+          cwd: 'node_modules/lato-font/fonts/lato-black/',
+          src: [
+          '*.woff',
+          '*.ttf'
+          ],
+          dest: 'styleguide/node_modules/lato/font/lato-black/',
+          expand: true
+        },
+        {
+          cwd: 'node_modules/lato-font/fonts/lato-bold/',
+          src: [
+          '*.woff',
+          '*.ttf'
+          ],
+          dest: 'styleguide/node_modules/lato/font/lato-bold/',
           expand: true
         }],
         options:{
