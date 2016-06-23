@@ -26,9 +26,9 @@ Weight: -20
 Styleguide Elements.Texts.Headers
 */
 
-@include font-face('lato-regular','/node_modules/lato/font/lato-normal/lato-normal', $file-formats: woff);
-@include font-face('lato-black','/node_modules/lato/font/lato-black/lato-black', $file-formats: woff);
-@include font-face('lato-bold','/node_modules/lato/font/lato-bold/lato-bold', $file-formats: woff);
+@include font-face('lato-regular','/node_modules/lato-font/fonts/lato-normal/lato-normal', $file-formats: woff);
+@include font-face('lato-black','/node_modules/lato-font/fonts/lato-black/lato-black', $file-formats: woff);
+@include font-face('lato-bold','/node_modules/lato-font/fonts/lato-bold/lato-bold', $file-formats: woff);
 
 body {
   color: $base-font-color;
