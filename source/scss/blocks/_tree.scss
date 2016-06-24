@@ -36,6 +36,7 @@ Styleguide Blocks.tree
     font-weight: bold;
     cursor:pointer;
   }
+
   /* Vertical lines */
   .cui-tree__leaf--last::before {
     content:'';
@@ -56,6 +57,7 @@ Styleguide Blocks.tree
     position: relative;
     margin-left:145px;
   }
+
   .cui-tree__leaf>span {
     width:100%;
     height:100%;
@@ -89,7 +91,7 @@ Styleguide Blocks.tree
     bottom: 0;
   }
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 700px){
 
       .cui-tree{
         margin-top: 30px;
@@ -102,6 +104,24 @@ Styleguide Blocks.tree
 
       .cui-tree--nested{
         margin-left: 14px;
+
+            //Nested Leaves
+            .cui-tree__leaf{
+              margin-left: 40px;
+
+              > span::before{
+                left: -40px;
+                width: 40px;
+              }
+            }
+
+            .cui-tree--nested{
+              margin-left: 20px;
+            }
+
+              .cui-tree__branch--last > .cui-tree--nested::before{
+                left: -20px;
+              }
       }
 
       .cui-tree__branch--last > .cui-tree--nested::before{
