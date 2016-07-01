@@ -18,24 +18,23 @@ Markup:
     <p class="cui-flex-table__text cui-flex-table__text--right cui-status--pending">Pending</p>
   </div>
 </div>
-<div class="cui-flex-table__tr">
-  <div class="cui-flex-table__left">
-    <div class="cui-flex-table__avatar-col">
-      <div class="cui-flex-table__avatar-container">
-        <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
-      </div>
-    </div>
-    <div class="cui-flex-table__left--stacked">
-      <h2 class="cui-flex-table__title  cui-flex-table__title--green">Lake Glenbury</h2>
-      <p class="cui-flex-table__text cui-flex-table__text--left cui-flex-table__text--stacked">granted: 10.11.13</p>
+<div class="cui-flex-table__tr cui-flex-table__tr--b">
+  <div class="cui-flex-table__avatar-col">
+    <div class="cui-flex-table__avatar-container">
+      <img class="cui-flex-table__avatar" src="http://www.fillmurray.com/50/50"></img>
     </div>
   </div>
-  <div class="cui-flex-table__middle">
-    <p class="cui-flex-table__text">Accounting</p>
+  <div class="cui-flex-table__left--stacked">
+    <h2 class="cui-flex-table__title  cui-flex-table__title--green">Lake Glenbury</h2>
+    <p class="cui-flex-table__text cui-flex-table__text--left cui-flex-table__text--stacked">granted: 10.11.13</p>
+    <span class="cui-status cui-status--active cui-mobile-only">active</span>
+  </div>
+  <div class="cui-flex-table__middle cui-desktop-only">
+    <span class="cui-media__content">Accounting</span>
   </div>
   <div class="cui-flex-table__right cui-flex-table__right--stacked">
-    <p class="cui-flex-table__text cui-flex-table__text--stacked cui-status--pending">Pending</p>
-    <p class="cui-flex-table__text cui-flex-table__text--stacked cui-flex-table__text--right cui-flex-table__text--green">Review</p>  
+    <p class="cui-desktop-only cui-status--pending">Pending</p>
+    <p class="cui-flex-table__review">Review</p>  
   </div>
 </div>
 <div class="cui-flex-table__tr cui-flex-table__tr--c">
@@ -452,6 +451,50 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 }
 
+// Table Row B
+
+.cui-flex-table__tr--b {
+
+  .cui-flex-table__left--stacked {
+    display: flex;
+    width: 30%;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  .cui-flex-table__middle {
+    padding-left: em(20);
+    width: 30%;
+  }
+
+  .cui-media__content {
+    font-size: em(14);
+  }
+
+  .cui-flex-table__subtitle-info {
+    font-size: em(12);
+
+    @media screen and (max-width: 700px) {
+      font-size: em(15);
+    }
+  }
+
+  .cui-flex-table__right {
+    align-items: flex-end;
+    font-size: em(14);
+  }
+
+  .cui-flex-table__review {
+    @extend %bold;
+    @extend %cui-link;
+    font-size: em(11, 14);
+    letter-spacing: .6px;
+  }
+}
+
+
 // Table Row C
 
 .cui-flex-table__tr--c,
@@ -514,5 +557,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     border-top: 0;
   }
 }
+
 
 
