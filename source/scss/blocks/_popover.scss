@@ -54,7 +54,7 @@ Styleguide Blocks.Popover
 
   &--positionless {
     display: inline-block;
-    position: inherit;
+    position: relative;
     transform: none;
     top: auto;
   }
