@@ -4,6 +4,11 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.3.0] 2016-07-01
+### Added
+- styles for items on the organization.directory.user-directory page
+- a modifier class for cui-popover removing positioning styles
+
 ## [2.2.2] 2016-06-20
 ### Fixed
 - Resolves 404's from missing lato font(s).
