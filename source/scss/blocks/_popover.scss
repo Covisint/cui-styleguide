@@ -8,14 +8,14 @@ Modifiers for Popover Element
 .cui-popover--right         - right arrow
 .cui-popover--top           - top arrow
 .cui-popover--bottom        - bottom arrow
-.cui-popover__menu          - border-separated menu
+.cui-popover--menu          - border-separated menu
 
 Markup:
 <div class="cui-styeguide__popover-container">
   <div class="cui-popover {{modifier_class}}">
-    <p class="">Passwords must:</p>
-    <div class="cui-error__message"><p>have at least 1 lower case letter</p></div>
-    <div class="cui-error__message"><p>have at least 1 upper case letter</p></div>
+    <div class="cui-popover__row"><span>popover item</span></div>
+    <div class="cui-popover__row"><span>popover item</span></div>
+    <div class="cui-popover__row"><span>popover item</span></div>
   </div>
 </div>
 
