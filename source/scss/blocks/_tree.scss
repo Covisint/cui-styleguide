@@ -1,21 +1,25 @@
 /*
-Tree
+Default Tree
 
 Markup:
-<div class="cui-tree" cui-tree="directives.tree" cui-tree-leaf-display="object.id + '. ' + object.text" cui-tree-branch-wrapper="<div class='cui-tree__branch'></div>" cui-tree-leaf-wrapper="<div class='cui-tree__leaf'></div>" cui-tree-nest-prefix="cui-tree--nesting-" cui-tree-nest-x-class="cui-tree--nested" cui-tree-nest-0-class="cui-tree--nesting-0" cui-tree-last-leaf-class="cui-tree__leaf--last" cui-tree-last-branch-class="cui-tree__branch--last" ng-init="directives.tree= [{id:1,text:'Parent'}]" cui-tree-leaf-click-callback="directives.leafClickCallback"></div>
-
-<br/><br/>
-
-<div ng-if="directives.leafBeingHandled">
-  Selected leaf object: <pre>{{directives.leafBeingHandled | json:2}}</pre>
-
-  <input ng-model="directives.leafText" placeholder="Name of leaf to add"/>
-  <button ng-click="directives.addSibling(directives.leafBeingHandled.id,directives.leafText,directives.tree)">Add sibling</button>
-  <button ng-click="directives.addChild(directives.leafBeingHandled.id,directives.leafText,directives.tree)">Add child</button>
+<div class="cui-tree" cui-tree="orgHierarchy.organizationHierarchy" cui-tree-leaf-display="(object.name | cuiI18n)" cui-tree-leaf-click-callback="orgHierarchy.goToOrgProfile">
+<div class="cui-tree--nesting-0">
+  <div class="cui-tree__branch cui-tree__branch--last">
+    <div class="cui-tree__leaf cui-tree__leaf--last"><span>S-3RDWAVE-DEV01</span></div>
+    <div class="cui-tree--nesting-1 cui-tree--nested">
+      <div class="cui-tree__leaf"><span>BGTESTORG1</span></div>
+        <div class="cui-tree__branch cui-tree__branch--last">
+          <div class="cui-tree__leaf cui-tree__leaf--last"><span>S-3RDWAVE-DIV01</span></div>
+          <div class="cui-tree--nesting-2 cui-tree--nested">
+            <div class="cui-tree__leaf cui-tree__leaf--last"><span>Sub-Div</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<a class="cui-link" href="https://github.com/thirdwavellc/cui-ng/tree/master/directives/cui-tree" target="blank">Click here for the extended documentation.</a>
-Styleguide Blocks.tree
+Styleguide Tree.Default
 */
  .cui-tree {
     display:inline-block;

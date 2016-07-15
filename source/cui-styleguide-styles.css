@@ -189,3 +189,6 @@ html {
   width: 23.2317613015%; }
   .cui-styleguide__quarters:last-child {
     margin-right: 0; }
+
+#kssref-icons-cui svg {
+  fill: #fff; }
