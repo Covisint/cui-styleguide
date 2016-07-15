@@ -143,3 +143,7 @@ html {
   @include span-columns(3);
   @extend %cui-styleguide__cols;
 }
+
+#kssref-icons-cui svg {
+  fill: #fff;
+}

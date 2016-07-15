@@ -2,7 +2,7 @@
 //
 // Styles for form elements
 // 
-// Styleguide Elements.Forms
+// Styleguide Forms
 
 /*
 Inputs
@@ -14,7 +14,7 @@ Inputs
 
 Markup: <input type="text" class="cui-input {{modifier_class}} cui-input--full"/>
 
-Styleguide Elements.Forms.Input
+Styleguide Forms.Input
 */
 
 .cui-input {
@@ -91,7 +91,7 @@ Markup:
   <button class="cui-input-button__button">Go</button>
 </div>
 
-Styleguide Elements.Forms.Input-With-Button
+Styleguide Forms.Input-With-Button
 */
 
 .cui-input-button {
@@ -213,7 +213,7 @@ Markup:
   </div>
 </div>
 
-Styleguide Elements.Forms.Tags
+Styleguide Forms.Tags
 */
 
 .cui-tags-input, 
@@ -424,7 +424,7 @@ Markup:
   <option value="HELLO"></option>
 </select>
 
-Styleguide Elements.Forms.Dropdown
+Styleguide Forms.Dropdown
 */
 
 select.cui-select,
@@ -509,7 +509,7 @@ Markup:
   </div>
 </fieldset>
 
-Styleguide Elements.Forms.Radio
+Styleguide Forms.Radio
 */
 
 .cui-radio {
@@ -653,7 +653,7 @@ Markup:
   </ul>
 </fieldset>
 
-Styleguide Elements.Forms.Checkbox
+Styleguide Forms.Checkbox
 */
 
 .cui-checkbox {
@@ -778,7 +778,7 @@ Markup:
   </label> 
 </div>
 
-Styleguide Elements.Forms.Switch
+Styleguide Forms.Switch
 */
 
 .cui-switch {
@@ -877,7 +877,7 @@ Badge
 Markup: 
 <div class="cui-badge">5</div>
 
-Styleguide Elements.Forms.Badge
+Styleguide Forms.Badge
 */
 
 .cui-badge {
