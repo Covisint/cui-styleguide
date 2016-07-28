@@ -1,0 +1,68 @@
+/* 
+Table Row Headers With Arrow
+
+Markup:
+<div class="cui-flex-table__th cui-flex-table__th--c">
+  <div class="cui-flex-table__avatar-col">
+    <span>name
+      <svg class="cui-flex-table__th-arrow" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#arrowhead5" class="svg"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="cui-flex-table__left"></div>
+  <div class="cui-flex-table__middle">
+    <span>userid
+      <svg class="cui-flex-table__th-arrow" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#arrowhead5" class="svg"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="cui-flex-table__middle">
+    <span>registered
+      <svg class="cui-flex-table__th-arrow" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#arrowhead5" class="svg"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="cui-flex-table__right">
+    <span>status
+      <svg class="cui-flex-table__th-arrow" viewBox="0 0 216 146">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#arrowhead5" class="svg"></use>
+      </svg>
+    </span>
+  </div>
+</div>
+
+Styleguide Tables.Flex-Table-Headers
+*/
+
+.cui-flex-table__th {
+  .cui-flex-table__avatar-col,
+  .cui-flex-table__middle,
+  .cui-flex-table__right {
+    cursor: pointer;
+
+    & span {
+      position: relative; 
+    } 
+    
+  }
+}
+
+.cui-flex-table__th-arrow {
+  bottom: 0;
+  position: absolute;
+  right: -25px;
+  transform: rotate(180deg);
+  transition: transform .15s linear;
+  width: 25px;
+
+  &--asc {
+    transform: rotate(270deg);
+  }
+
+  &--desc {
+    transform: rotate(90deg);
+  }
+}
