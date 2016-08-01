@@ -289,6 +289,10 @@ fieldset {
   display: none !important;
 }
 
+[ui-view].ng-leave {
+  transition: none
+}
+
 .tether-element {
   position: absolute;
   z-index:9999; 
