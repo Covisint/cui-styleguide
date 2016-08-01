@@ -4,6 +4,17 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.4.0] 2016-08-01
+### Added
+- Table header row for table row version c
+- Borderless modifier for table headers
+
+### Fixes
+- Removes transition from ui-views originating from ngAnimate
+
+### Updates
+- Sidebar links are now reordered in the styleguide
+
 ## [2.3.0] 2016-07-01
 ### Added
 - styles for items on the organization.directory.user-directory page
