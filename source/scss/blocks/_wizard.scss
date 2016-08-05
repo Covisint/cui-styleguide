@@ -135,9 +135,7 @@ Styleguide Wizard.Default
   }
 
   &__previous {
-    background: #fff;
-    border: 0;
-    color: $container-title-background;
+    @extend .cui-button--link; 
     cursor: pointer;
     font-size: 12px;
     margin-right: 20px;

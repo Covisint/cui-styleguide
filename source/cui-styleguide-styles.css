@@ -6,6 +6,9 @@ html {
 
 /* $cui-primary-colors--medium-light; */
 /* $cui-primary-colors--medium-dark; */
+html, body {
+  height: 100%; }
+
 fieldset {
   border: 0;
   margin: 0; }
@@ -37,6 +40,9 @@ fieldset {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
+
+[ui-view].ng-leave {
+  transition: none; }
 
 .tether-element {
   position: absolute;
@@ -192,3 +198,7 @@ html {
 
 #kssref-icons-cui svg {
   fill: #fff; }
+
+.snap-content {
+  display: flex;
+  flex-direction: column; }
