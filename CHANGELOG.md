@@ -4,6 +4,14 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.4.1] 2016-08-05
+### Added
+- styling modifier for buttons to look like links
+
+### Fixed
+- left menu now goes all the way down to bottom of window on large displays
+- other action bar items still align right when breadcrumbs disappear on mobile
+
 ## [2.4.0] 2016-08-01
 ### Added
 - Table header row for table row version c
