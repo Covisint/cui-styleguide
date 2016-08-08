@@ -229,7 +229,7 @@ Markup:
   </div>
 </div>
 
-Styleguide Blocks.Flex-Table
+Styleguide Tables.Flex-Table
 */
 
 .cui-flex-table__tr,
@@ -396,8 +396,16 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 }
 
 .cui-flex-table__header {
+  align-items: center;
   display: flex;
   margin-bottom: 15px;
+
+  &--borderless {
+
+    .cui-flex-table__th {
+      border: 0;
+    }
+  }
 }
 
 .cui-flex-table__heading {

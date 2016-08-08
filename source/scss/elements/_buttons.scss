@@ -1,5 +1,10 @@
+// Buttons
+//
+// Styles for a variety of button types
+// 
+// Styleguide Buttons
 /* 
-Buttons
+Default Buttons
 
 Styles for button elements
 
@@ -7,15 +12,15 @@ Styles for button elements
 :active                     - Selected styling
 :visited                    - Visited
 .cui-button--error          - Error styling 
-.cui-button--error:active   - Error selected styling
 .cui-button--cancel         - Cancel button styling
 .cui-button--full-width     - Full width of container
 .cui-button--small-rounded  - Small and rounded
 .cui-button--inverted       - Inverted
+.cui-button--link           - Styled like a link
 
 Markup: <button class="cui-button {{modifier_class}}">Button</button>
 
-Styleguide Elements.Buttons
+Styleguide Buttons.Default
 */
 
 .cui-button {
@@ -24,11 +29,13 @@ Styleguide Elements.Buttons
   border-radius: $button-border-radius;
   border: 0;
   color: #fff;
+  cursor: pointer;
   display: inline-flex;
   font-size: $button-font-size;
   height: $button-height;
   justify-content: center;
   position: relative;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
   width: $button-width;
 
   &:focus,
@@ -59,9 +66,14 @@ Styleguide Elements.Buttons
   &--error {
     background-color: $button-color--error;
     cursor: default;
+
     &:active,
     &.pseudo-class-active {
-      background-color: $button-color--error-hover;
+      background-color: $button-color--error;
+    }
+
+    &:hover {
+      background-color: $button-color--error;
     }
   }
 
@@ -79,9 +91,26 @@ Styleguide Elements.Buttons
   }
 
   &--inverted{
-      background: #fff;
-      border: 1px solid $button-color;
-      color: $button-color;
+    background: #fff;
+    border: 1px solid $button-color;
+    color: $button-color;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &--link {
+    appearance: none;
+    border: none;
+    background: none;
+    color: $cui-primary-colors--medium;
+    width: auto;
+
+    &:hover {
+      background: none;
+      color: $cui-primary-colors--medium-dark;
+    }
   }
 }
 

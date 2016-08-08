@@ -244,6 +244,8 @@ $status--suspended: $cui-secondary-colors--dark;
 $status--locked:    #ff4400;
 
 // normalize overrides
+html, body { height: 100% };
+
 fieldset {
   border: 0;
   margin: 0;
@@ -287,6 +289,10 @@ fieldset {
 // angular styles
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+[ui-view].ng-leave {
+  transition: none
 }
 
 .tether-element {

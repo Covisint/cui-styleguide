@@ -143,3 +143,12 @@ html {
   @include span-columns(3);
   @extend %cui-styleguide__cols;
 }
+
+#kssref-icons-cui svg {
+  fill: #fff;
+}
+
+.snap-content {
+  display: flex;
+  flex-direction: column;
+}

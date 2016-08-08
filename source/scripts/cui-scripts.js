@@ -48,20 +48,21 @@ $(document).ready(function(){
 
   //TopNav
   var TopNav = {
-    init: function(){
+    init: function() {
       this.cacheDOM();
+      this.bindWatch();
     },
-    cacheDom: function(){
+    cacheDOM: function(){
       this.$el = $('.cui-top-nav__sub-title, .cui-search__filter');
     },
     bindWatch: function(){
-      this.$el.click(this.expand.bind(this));
+      this.$el.on('click', this.expand);
     },
-    expand: function(event){
-      $this = $(event.target);
-      $this.toggleClass('expanded');
+    expand: function(){
+      $(this).toggleClass('expanded');
     }
   }
+  TopNav.init();
 
 
   // Desktop Navigation Functions

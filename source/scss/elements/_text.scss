@@ -3,7 +3,7 @@ Texts
 
 Styles for text. Please refer to _vars.scss for variable values.
 
-Styleguide Elements.Texts
+Styleguide Texts
 */
 
 /*
@@ -23,7 +23,7 @@ Markup:
 
 Weight: -20
 
-Styleguide Elements.Texts.Headers
+Styleguide Texts.Headers
 */
 
 @include font-face('lato-normal','/node_modules/lato-font/fonts/lato-normal/lato-normal', $file-formats: woff);
@@ -74,7 +74,7 @@ Also available as the placeholder selector %cui-link.
 
 Markup: <a class="cui-link" href="">Link Style</a>
 
-Styleguide Elements.Texts.Links
+Styleguide Texts.Links
 */
 
 .cui-link,
@@ -115,7 +115,7 @@ interdum maecenas faucibus.</p>
 
 Weight: -10
 
-Styleguide Elements.Texts.Paragraphs
+Styleguide Texts.Paragraphs
 */
 
 /*
@@ -132,7 +132,7 @@ Markup:
   <li>Unordered List</li>
 </ul>
 
-Styleguide Elements.Texts.Unordered-Lists
+Styleguide Texts.Unordered-Lists
 */
 
 ul,
@@ -164,7 +164,7 @@ Markup:
   <li>Ordered List</li>
 </ol>
 
-Styleguide Elements.Texts.Ordered-Lists
+Styleguide Texts.Ordered-Lists
 */
 
 .cui-ol--default,
@@ -182,7 +182,7 @@ Markup:
 <span class="cui-status--suspended">Suspended</span>
 <span class="cui-status--locked">Locked</span>
 
-Styleguide Elements.Texts.Status
+Styleguide Texts.Status
 */
 
 %cui-status {

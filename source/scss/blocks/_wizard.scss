@@ -1,5 +1,10 @@
+// Wizard
+//
+// Styles for the dynamic Wizard
+// 
+// Styleguide Wizard
 /*
-Form
+Composite Wizard
 
 Markup: 
 <div class="cui-form">
@@ -63,7 +68,7 @@ Markup:
   </div>
 </div>
 
-Styleguide Blocks.Form
+Styleguide Wizard.Default
 */
 
 .cui-wizard,
@@ -130,9 +135,7 @@ Styleguide Blocks.Form
   }
 
   &__previous {
-    background: #fff;
-    border: 0;
-    color: $container-title-background;
+    @extend .cui-button--link; 
     cursor: pointer;
     font-size: 12px;
     margin-right: 20px;
