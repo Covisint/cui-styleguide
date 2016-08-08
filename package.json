@@ -2,21 +2,41 @@
   "name": "@covisint/cui-styleguide",
   "version": "2.3.0",
   "description": "Digital Style Guide for Core CUI Elements",
-  "author": "Thirdwave LLC <info@thirdwavellc.com> (http://www.thirdwavellc.com/)",
-  "license": "LicenseRef-LICENSE",
-  "homepage": "https://github.com/covisint/cui-styleguide#readme",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Thirdwave, LLC",
+    "email": "support@thirdwavellc.com",
+    "url": "http://www.thirdwavellc.com/"
+  },
+  "contibutors": [
+    {
+      "name": "Ricardo Marques"
+    },
+    {
+      "name": "Piotr Bogun"
+    },
+    {
+      "name": "Shane Ardell"
+    },
+    {
+      "name": "Orin Fink",
+      "email": "orin.fink@thirdwavellc.com"
+    }
+  ],
   "main": "index.js",
+  "homepage": "https://github.com/covisint/cui-styleguide#readme",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/covisint/cui-styleguide.git"
   },
+  "bugs": {
+    "url": "https://github.com/covisint/cui-styleguide/issues"
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "scripts/npm-postversion"
   },
-  "bugs": {
-    "url": "https://github.com/covisint/cui-styleguide/issues"
-  },
+
   "files": [
     "source/",
     "styleguide/",
