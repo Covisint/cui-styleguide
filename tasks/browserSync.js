@@ -3,10 +3,7 @@ module.exports = function(grunt,config){
     dev: {
       bsFiles: {
           src : [
-              'styleguide/*.html',
-              'styleguide/**/*',
-              'source/**/*.js',
-              'source/**/*.scss'
+              'styleguide/**/*'
           ]
       },
       options: {
