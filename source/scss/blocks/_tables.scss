@@ -6,38 +6,7 @@
 /*
 Tables
 
-Markup:
-<table class="cui-table cui-table--borderless">
-  <thead>
-    <tr>
-      <th scope="col">Column Title 1</th>
-      <th scope="col">Column Title 2</th>
-      <th scope="col">Column Title 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="">
-      <td data-label="Column Title 1 "scope="row">Row Information</td>
-      <td data-label="Column Title 2">Row Information</td>
-      <td data-label="Column Title 3">Row Information</td>
-    </tr>
-    <tr>
-      <td data-label="Column Title 1 "scope="row">Row Information</td>
-      <td data-label="Column Title 2">Row Information</td>
-      <td data-label="Column Title 3">Row Information</td>
-    </tr>
-    <tr>
-      <td data-label="Column Title 1 "scope="row">Row Information</td>
-      <td data-label="Column Title 2">Row Information</td>
-      <td data-label="Column Title 3">Row Information</td>
-    </tr>
-    <tr>
-      <td data-label="Column Title 1 "scope="row">Row Information</td>
-      <td data-label="Column Title 2">Row Information</td>
-      <td data-label="Column Title 3">Row Information</td>
-    </tr>      
-  </tbody>
-</table>
+Markup: ../../hbs/tables.hbs
 
 Styleguide Tables.Default
 

@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig(opts);
 
-  grunt.registerTask('default', ['browserSync','watch:css','watch:js']);
+  grunt.registerTask('default', ['browserSync','watch']);
   grunt.registerTask('build', [
     'concat:specificity',
     'sass',
