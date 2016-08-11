@@ -1,134 +1,111 @@
-/*
-Default Tree
+.cui-tree {
+  display:inline-block;
+  position: relative;
+  margin-top:20px;
+}
+.cui-tree__leaf {
+  width:226px;
+  height:60px;
+  border:1px solid rgb(106,152,160);
+  margin-bottom:32px;
+  margin-left:30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0,108,119);
+  font-size:15px;
+  font-weight: bold;
+  cursor:pointer;
+}
 
-Markup:
-<div class="cui-tree" cui-tree="orgHierarchy.organizationHierarchy" cui-tree-leaf-display="(object.name | cuiI18n)" cui-tree-leaf-click-callback="orgHierarchy.goToOrgProfile">
-<div class="cui-tree--nesting-0">
-  <div class="cui-tree__branch cui-tree__branch--last">
-    <div class="cui-tree__leaf cui-tree__leaf--last"><span>S-3RDWAVE-DEV01</span></div>
-    <div class="cui-tree--nesting-1 cui-tree--nested">
-      <div class="cui-tree__leaf"><span>BGTESTORG1</span></div>
-        <div class="cui-tree__branch cui-tree__branch--last">
-          <div class="cui-tree__leaf cui-tree__leaf--last"><span>S-3RDWAVE-DIV01</span></div>
-          <div class="cui-tree--nesting-2 cui-tree--nested">
-            <div class="cui-tree__leaf cui-tree__leaf--last"><span>Sub-Div</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+/* Vertical lines */
+.cui-tree__leaf--last::before {
+  content:'';
+  position:absolute;
+  width:2px;
+  left:0;
+  top:-33px;
+  bottom:28px;
+  background-color:rgb(106,152,160);
+}
+/*0 margin for first level, 50px margin left for each level after that*/
+.cui-tree--nesting-0 {
+  display:block;
+  position: relative
+}
+.cui-tree--nested {
+  display:block;
+  position: relative;
+  margin-left:145px;
+}
 
-Styleguide Tree.Default
-*/
- .cui-tree {
-    display:inline-block;
-    position: relative;
-    margin-top:20px;
-  }
-  .cui-tree__leaf {
-    width:226px;
-    height:60px;
-    border:1px solid rgb(106,152,160);
-    margin-bottom:32px;
-    margin-left:30px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0,108,119);
-    font-size:15px;
-    font-weight: bold;
-    cursor:pointer;
-  }
+.cui-tree__leaf>span {
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+.cui-tree__leaf.active{
+  background-color:rgb(106,152,160);
+  color:white;
+}
+/*Draw out the horizontal line before each leaf*/
+.cui-tree__leaf>span::before {
+  content:'';
+  width:30px;
+  background-color:rgb(106,152,160);
+  height:2px;
+  position:absolute;
+  top:50%;
+  left:-30px;
+}
+/*This removes the horizontal line unwanted trail*/
+.cui-tree__branch--last > .cui-tree--nested::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: white;
+  left: -145px;
+  top: -60px;
+  bottom: 0;
+}
 
-  /* Vertical lines */
-  .cui-tree__leaf--last::before {
-    content:'';
-    position:absolute;
-    width:2px;
-    left:0;
-    top:-33px;
-    bottom:28px;
-    background-color:rgb(106,152,160);
-  }
-  /*0 margin for first level, 50px margin left for each level after that*/
-  .cui-tree--nesting-0 {
-    display:block;
-    position: relative
-  }
-  .cui-tree--nested {
-    display:block;
-    position: relative;
-    margin-left:145px;
-  }
+@media screen and (max-width: 700px){
 
-  .cui-tree__leaf>span {
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-  }
-  .cui-tree__leaf.active{
-    background-color:rgb(106,152,160);
-    color:white;
-  }
-  /*Draw out the horizontal line before each leaf*/
-  .cui-tree__leaf>span::before {
-    content:'';
-    width:30px;
-    background-color:rgb(106,152,160);
-    height:2px;
-    position:absolute;
-    top:50%;
-    left:-30px;
-  }
-  /*This removes the horizontal line unwanted trail*/
-  .cui-tree__branch--last > .cui-tree--nested::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    background-color: white;
-    left: -145px;
-    top: -60px;
-    bottom: 0;
-  }
+    .cui-tree{
+      margin-top: 30px;
+    }
+    
+    /* Vertical lines */
+    .cui-tree__leaf--last::before{
+      top: -60px;
+    }
 
-  @media screen and (max-width: 700px){
+    .cui-tree--nested{
+      margin-left: 14px;
 
-      .cui-tree{
-        margin-top: 30px;
-      }
-      
-      /* Vertical lines */
-      .cui-tree__leaf--last::before{
-        top: -60px;
-      }
+          //Nested Leaves
+          .cui-tree__leaf{
+            margin-left: 40px;
 
-      .cui-tree--nested{
-        margin-left: 14px;
-
-            //Nested Leaves
-            .cui-tree__leaf{
-              margin-left: 40px;
-
-              > span::before{
-                left: -40px;
-                width: 40px;
-              }
+            > span::before{
+              left: -40px;
+              width: 40px;
             }
+          }
 
-            .cui-tree--nested{
-              margin-left: 20px;
+          .cui-tree--nested{
+            margin-left: 20px;
+          }
+
+            .cui-tree__branch--last > .cui-tree--nested::before{
+              left: -20px;
             }
+    }
 
-              .cui-tree__branch--last > .cui-tree--nested::before{
-                left: -20px;
-              }
-      }
-
-      .cui-tree__branch--last > .cui-tree--nested::before{
-        left: -15px;
-      }
-  }
+    .cui-tree__branch--last > .cui-tree--nested::before{
+      left: -15px;
+    }
+}
