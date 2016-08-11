@@ -89,9 +89,10 @@
                 <ul class="cui-off-canvas__sub-section-list">
                   {{#each children}}
                     <li class="cui-off-canvas__sub-section">
-                      <a href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">
+                      <a href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
+                        <span class="cui-styleguide__nav__name {{#if isGrandChild}}kss-nav__ref-child{{/if}}">{{referenceNumber}}</span>
                         <span class="cui-styleguide__nav__name">{{header}}</span>
-                      </a>
+                      </a>  
                     </li>
                   {{/each}}
                 </ul>
