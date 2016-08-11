@@ -8,4 +8,10 @@ module.exports = function (Handlebars) {
       return block.fn(this);
     }
   });
+
+  Handlebars.registerHelper('does_not_eq', function(val, val2, block) {
+    if(val !== val2){
+      return block.fn(this);
+    }
+  });
 };

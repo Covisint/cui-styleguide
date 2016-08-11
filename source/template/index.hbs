@@ -123,7 +123,6 @@
                   <a class="cui-styleguide__title__permalink" href="#kssref-{{referenceURI}}">
                     <span class="cui-styleguide__title__ref">
                       {{referenceNumber}}
-                      
                       <span class="kss-title__permalink-hash">
                         {{!-- {{#if @root.hasNumericReferences}}
                           #permalink
@@ -139,6 +138,39 @@
               </div>
 
               <div class="cui-tile__body">
+
+                {{#eq reference "Navigation.Off-Canvas"}}
+                  <div class="cui-styleguide__markup-title">EXAMPLE: </div>
+                    <iframe src="off-canvas-iframe.html" style="width:100%;height:500px;border:1px solid #eee"></iframe>
+
+                    <div class="cui-styleguide__description">DESCRIPTION: </div>
+                    <p>The off canvas menu component requires two menus to be implemented in markup:</p>
+                    <ol>
+                      <li>The mobile menu wrapped in Snap.js specific classes </li>
+                      <li>The desktop menu wrapped in with the .cui-off-canvas class</li>
+                    </ol>
+                    <p>The markup example below contains a few very important elements with classes that are necessary in order to enable the off canvas' functionality</p>
+                    <ul>
+                      <li><strong>.snap-drawers</strong> - This is where you put your markup for your mobile off-canvas menu</li>
+                      <li><strong>.snap-drawer</strong> - in our case, we use a single drawer</li>
+                      <li><strong>.cui-off-canvas</strong> - this block-level class, its elements and modifiers are used to apply style to the navigation menu</li>
+                      <li><strong>the snap-content element with .snap-content</strong> - this is where the content of your page should go that should be "pushed" when the mobile menu is expanded, including your header </li>
+                      <li><strong>.cui-menu__toggle-button-container</strong> - applied to the button used to open and close the menu</li>
+                      <li><strong>.cui-menu__content-wrapper</strong> - this div wraps your main content that should be shifted on the desktop. Should not contain items you don't want shifted, like your header element contents</li>
+                      <li><strong>.desktop-menu</strong> - applied to the nav element for your desktop menu</li>
+                    </ul>
+
+                    <p>In addition to these items, please be sure to load the cui javascript dependency file, cui-scripts.js</p>
+
+                    <div class="cui-styleguide__markup-container cui-styleguide__style">
+                    </div>
+
+                    <div class="cui-styleguide__markup-title">HTML: </div>
+                    <pre class="cui-styleguide__markup prettyprint linenums lang-html"><code data-language="html">{{markup}}</code></pre>
+
+                  </div>
+                {{/eq}}
+                {{#does_not_eq reference "Navigation.Off-Canvas"}}
 
                 {{#if description}}
                   <div class="cui-styleguide__description-container">
@@ -178,9 +210,17 @@
                     </div>
                   {{/if}}
 
+                  {{#does_not_eq reference "Cards.Default-Cards"}}
                   <div class="cui-styleguide__example">
                     {{{example}}}
                   </div>
+                  {{/does_not_eq}}
+
+                  {{#eq reference "Cards.Default-Cards"}}
+                    <div class="cui-styleguide__example cui-styleguide-modifier__example--with-bg">
+                      {{{example}}}
+                    </div>
+                  {{/eq}}
 
                   {{#each modifiers}}
                     <div class="cui-styleguide-modifier__name cui-styleguide__style h5">
@@ -189,9 +229,16 @@
                     <div class="cui-styleguide-modifier__description cui-styleguide__style">
                       {{{description}}}
                     </div>
+                    {{#eq reference "Cards.Default-Cards"}}
+                    <div class="cui-styleguide-modifier__example--with-bg">
+                      {{{markup}}}
+                    </div>
+                    {{/eq}}
+                    {{#does_not_eq reference "Cards.Default-Cards"}}
                     <div class="cui-styleguide-modifier__example">
                       {{{markup}}}
                     </div>
+                    {{/does_not_eq}}
                   {{/each}}
                 </div>
                 {{#if example}}
@@ -201,6 +248,7 @@
                 {{/if}}
               {{/if}}
               </div>
+              {{/does_not_eq}}
 
               {{!-- {{#if sourceFile.name}}
                 <div class="kss-source kss-style">
