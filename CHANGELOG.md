@@ -4,6 +4,12 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.5.0] 2016-08-11 
+### Changed
+- upgraded to KSS 3.0.0
+- Gruntfile tasks are now broken down into partials located in the /tasks directory
+- markup for examples is now moved to the source/hbs directory
+
 ## [2.4.1] 2016-08-05
 ### Added
 - styling modifier for buttons to look like links
