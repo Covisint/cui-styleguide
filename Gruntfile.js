@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     'postcss:specificity',
     'postcss:styleguideStyles',
     'copy:min',
-    'exec',
+    'kss',
     'copy:icons',
     'copy:build',
     'concat:js',
