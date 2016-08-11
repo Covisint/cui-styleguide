@@ -1,23 +1,7 @@
 /*
 Breadcrumb Navigation
 
-Markup:
-<nav class="cui-breadcrumb">
-  <ul class="cui-breadcrumb__links">
-    <li class="cui-breadcrumb__link cui-breadcrumb__link--current">
-      <a href="#">Organization Profile</a>
-    </li>
-    <li class="cui-breadcrumb__link">
-      <a href="#">Hierarchy</a>
-    </li>
-    <li class="cui-breadcrumb__link">
-      <a href="#">Directory</a>
-    </li>
-    <li class="cui-breadcrumb__link">
-      <a href="#">Roles</a>
-    </li>
-  </ul>
-</nav>
+Markup: ../../hbs/breadcrumbs.hbs
 
 Styleguide Navigation.Breadcrumb
 */

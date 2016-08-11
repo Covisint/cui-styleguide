@@ -1,24 +1,9 @@
 /*
 Default Cards
 
-Markup:
-<div>
-  <div class="cui-card">
-    <div class="cui-card__image-container">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="88px"
-         height="88px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-        <use class="cui-card__icon" xlink:href="node_modules/cui-icons/dist/icons/icons-out.svg#user"></use>
-      </svg>
-    </div>
-    <div class="cui-card__content">
-      <h3 class="cui-card__content-header">Header</h3>
-      <p>Some text that appropriately describes the context of this card. Some text that appropriately describes the context of this card.</p>
-    </div>
-    <button class="cui-card__button">Button</button>
-  </div>
-</div>
+Markup: ../../hbs/cards.hbs
 
-Styleguide Cards.Default Cards
+Styleguide Cards.Default-Cards
 */
 
 // styles below to be removed with next relese

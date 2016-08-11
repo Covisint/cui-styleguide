@@ -66,32 +66,6 @@
 
 // End of old pagination styles
 
-/*
-Pagination
-
-Markup:
-<div class="cui-paginate__container">
-  <span class="cui-paginate__results-label">Number of results per page</span>
-  <select class="cui-paginate__select">
-    <option label="3" value="number:3" selected="selected">3</option>
-    <option label="10" value="number:10">10</option><option label="25" value="number:25">25</option>
-    <option label="50" value="number:50">50</option><option label="100" value="number:100">100</option>
-    <option label="200" value="number:200">200</option>
-  </select>
-  <div class="cui-paginate">
-    <span class="cui-paginate__previous"></span>
-    <span class="cui-paginate__page-container">
-      <span class="cui-paginate__page cui-paginate__page--active">1</span>
-      <span class="cui-paginate__page">2</span>
-      <span class="cui-paginate__page">3</span>
-    </span>
-    <span class="cui-paginate__next"></span>
-  </div>
-</div>
-
-Styleguide Navigation.Pagination
-*/
-
 .cui-paginate__container {
   align-items: center;
   display: flex;

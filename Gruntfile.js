@@ -12,7 +12,8 @@ module.exports = function(grunt) {
     'sass',
     'postcss',
     'copy',
-    'exec'
+    'exec',
+    'kss'
   ];
 
   var opts = {
@@ -25,7 +26,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig(opts);
 
-  grunt.registerTask('default', ['browserSync','watch:css','watch:js','watch:md']);
+  grunt.registerTask('default', ['browserSync','watch']);
   grunt.registerTask('build', [
     'concat:specificity',
     'sass',
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
     'postcss:specificity',
     'postcss:styleguideStyles',
     'copy:min',
-    'exec',
+    'kss',
     'copy:icons',
     'copy:build',
     'concat:js',

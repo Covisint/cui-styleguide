@@ -66,6 +66,14 @@ module.exports = function(grunt,config){
         expand: true
       }]
     },
+    css_to_kss: {
+      files: [{
+        cwd: 'source/',
+        src: ['styles.min.css','styles.specific.min.css'],
+        dest: 'styleguide/',
+        expand: true
+      }]
+    },
     js: {
       files: [{
         cwd: '.tmp',

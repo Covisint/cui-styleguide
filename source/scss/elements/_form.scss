@@ -12,7 +12,7 @@ Inputs
 .cui-input--error       - Styling after user has entered input that is invalid
 .cui-input--valid       - Styling after user has entered input that is valid
 
-Markup: <input type="text" class="cui-input {{modifier_class}} cui-input--full"/>
+Markup: ../../hbs/forms.input.hbs
 
 Styleguide Forms.Input
 */
@@ -85,11 +85,7 @@ Styleguide Forms.Input
 /*
 Input with button
 
-Markup:
-<div class="cui-input-button">
-  <input type="text" placeholder="This is placeholder text" class="cui-input-button__input"/>
-  <button class="cui-input-button__button">Go</button>
-</div>
+Markup: ../../hbs/forms.input-with-button.hbs
 
 Styleguide Forms.Input-With-Button
 */
@@ -199,19 +195,7 @@ Styleguide Forms.Input-With-Button
 /*
 Email tags field
 
-Markup:
-<div name="emails" class="cui-tags">
-  <div class="cui-tags__host" tabindex="-1">
-    <div class="cui-tags__container">
-      <ul class="cui-tags__tag-list">
-        <li class="cui-tags__tag"><span>example@gmail.com</span> 
-          <a class="cui-tags__remove">×</a>
-        </li>
-      </ul>
-      <input class="cui-tags__input" autocomplete="off" type="text" placeholder="" spellcheck="true"><span class="cui-tags__registered-tag" style="visibility: hidden; width: auto; white-space: pre; display: none;">example@gmail.com</span>
-    </div> 
-  </div>
-</div>
+Markup: ../../hbs/forms.tags.hbs
 
 Styleguide Forms.Tags
 */
@@ -416,13 +400,7 @@ Styleguide Forms.Tags
 /*
 Dropdown
 
-Markup: 
-<select class="cui-input cui-input--full cui-select">
-  <option value="helloo"></option>
-  <option value="hellloooo"></option>
-  <option value="hellllooooooo"></option>
-  <option value="HELLO"></option>
-</select>
+Markup: ../../hbs/forms.dropdown.hbs
 
 Styleguide Forms.Dropdown
 */
@@ -478,36 +456,7 @@ select.cui-select,
 /*
 Radio
 
-
-Markup:
-<fieldset class="cui-radio__fieldset">
-  <div class="cui-radio cui-radio--approve">
-    <input class="cui-radio__input" type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
-    <label class="cui-radio__label" for="radio-choice-3">
-    <div class="cui-radio__outer-button">
-      <div class="cui-radio__inner-button"></div>
-    </div>
-    </label>
-  </div>
-  <div class="cui-radio cui-radio--deny">
-    <input class="cui-radio__input cui-radio--deny" type="radio" name="radio-choice" id="radio-choice-4" value="choice-4" />
-    <label class="cui-radio__label" for="radio-choice-4">
-    <div class="cui-radio__outer-button">
-      <div class="cui-radio__inner-button"></div>
-    </div>
-    </label>
-  </div>
-</fieldset>
-<fieldset>
-  <div class="cui-radio cui-radio--basic-ltr">
-    <input class="cui-radio__input" type="radio" name="radio-choice-basic" id="radio-choice-1" value="choice-1">
-    <label class="cui-radio__label" for="radio-choice-1"><span></span>Left Label</label>
-  </div>
-  <div class="cui-radio cui-radio--basic-rtl">
-    <input class="cui-radio__input" type="radio" name="radio-choice-basic" id="radio-choice-2" value="choice-2">
-    <label class="cui-radio__label" for="radio-choice-2"><span></span>Right Label</label>
-  </div>
-</fieldset>
+Markup: ../../hbs/forms.radio.hbs
 
 Styleguide Forms.Radio
 */
@@ -642,16 +591,7 @@ Styleguide Forms.Radio
 /*
 Checkbox
 
-Markup:
-<fieldset>
-  <legend class="cui-checkbox__legend">Accessible description for checkbox collection</legend>
-  <ul class="cui-checkbox__group">
-    <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-1"/><label class="cui-checkbox__label" for="option-1">Option 1</label></li>
-    <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-2"/><label class="cui-checkbox__label" for="option-2">Option 2</label></li>
-    <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-3"/><label class="cui-checkbox__label" for="option-3">Option 3</label></li>
-    <li class="cui-checkbox__container"><input class="cui-checkbox" type="checkbox" id="option-4"/><label class="cui-checkbox__label" for="option-4">Option 4</label></li>
-  </ul>
-</fieldset>
+Markup: ../../hbs/forms.checkbox.hbs
 
 Styleguide Forms.Checkbox
 */
@@ -767,16 +707,7 @@ Styleguide Forms.Checkbox
 /*
 Switch
 
-Markup:
-<div class="cui-switch">
-  <input class="cui-switch__input" name="switch" id="cui-switch-1" type="checkbox" /> 
-  <label class="cui-switch__label" for="cui-switch-1">
-    <div class="cui-switch__container">
-      <span class="cui-switch__checked-message">Accept</span>
-      <span class="cui-switch__unchecked-message">Don't Accept</span>
-    </div>
-  </label> 
-</div>
+Markup: ../../hbs/forms.switch.hbs
 
 Styleguide Forms.Switch
 */
@@ -874,8 +805,7 @@ Styleguide Forms.Switch
 /*
 Badge
 
-Markup: 
-<div class="cui-badge">5</div>
+Markup: ../../hbs/forms.badge.hbs
 
 Styleguide Forms.Badge
 */

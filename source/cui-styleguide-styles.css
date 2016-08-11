@@ -196,6 +196,9 @@ html {
   .cui-styleguide__quarters:last-child {
     margin-right: 0; }
 
+.cui-styleguide__section--depth-1 {
+  display: none; }
+
 #kssref-icons-cui svg {
   fill: #fff; }
 
