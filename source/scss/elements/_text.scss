@@ -11,15 +11,7 @@ Headers
 
 Header styling is applied through the use of classes. Our recommended method for applying h1 styling is to @extend the %h1 placeholder selector in a class's CSS style declaration block and apply that class to your element.
 
-Markup:
-<h1 class="h1">H1 Heading</h1>
-<h2 class="h2">H2 Heading</h2>
-<h3 class="h3">H3 Heading</h3>
-<h4 class="h4">H4 Heading</h4>
-<h5 class="h5">H5 Heading</h5>
-<h6 class="h6">H6 Heading</h6>
-<div class="cui-styleguide__text-section">
-</div>
+Markup: ../../hbs/text.headers.hbs
 
 Weight: -20
 
@@ -72,7 +64,7 @@ Links
 
 Also available as the placeholder selector %cui-link.
 
-Markup: <a class="cui-link" href="">Link Style</a>
+Markup: ../../hbs/text.link.hbs
 
 Styleguide Texts.Links
 */
@@ -108,10 +100,7 @@ Paragraphs
 
 Default styling for paragraphs
 
-Markup:
-<p>Paragraph text. Donec sed odio dui. Cras justo odio, dapibus
-ac facilisis in. Egestas eget quam. Maecenas faucibus mollis
-interdum maecenas faucibus.</p>
+Markup: ../../hbs/text.paragraph.hbs
 
 Weight: -10
 
@@ -125,12 +114,7 @@ Browser styles are removed from lists in order to separate visual presentation f
 
 .cui-ul--default    - restores browser styling
 
-Markup:
-<ul class="{{modifier_class}}">
-  <li>Unordered List</li>
-  <li>Unordered List</li>
-  <li>Unordered List</li>
-</ul>
+Markup: ../../hbs/text.ul.hbs
 
 Styleguide Texts.Unordered-Lists
 */
@@ -157,12 +141,7 @@ Browser styles are removed from lists in order to separate visual presentation f
 
 .cui-ol--default    - restores browser styling
 
-Markup:
-<ol class="{{modifier_class}}">
-  <li>Ordered List</li>
-  <li>Ordered List</li>
-  <li>Ordered List</li>
-</ol>
+Markup: ../../hbs/text.ol.hbs
 
 Styleguide Texts.Ordered-Lists
 */
@@ -176,11 +155,7 @@ Styleguide Texts.Ordered-Lists
 /*
 Status
 
-Markup:
-<span class="cui-status--active">Active</span>
-<span class="cui-status--pending">Pending</span>
-<span class="cui-status--suspended">Suspended</span>
-<span class="cui-status--locked">Locked</span>
+Markup: text.status.hbs
 
 Styleguide Texts.Status
 */

@@ -144,6 +144,10 @@ html {
   @extend %cui-styleguide__cols;
 }
 
+.cui-styleguide__section--depth-1 {
+  display: none;
+}
+
 #kssref-icons-cui svg {
   fill: #fff;
 }

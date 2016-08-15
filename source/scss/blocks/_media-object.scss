@@ -3,18 +3,7 @@ Default Media Object
 
 .cui-media--centered       - Centered Media Object
 
-Markup:
-<div class="cui-media {{modifier_class}}">
-  <div class="cui-media__image-container">
-    <svg xmlns="http://www.w3.org/2000/svg" class="cui-media__image">
-      <use xlink:href="node_modules/cui-icons/dist/icons/icons-out.svg#user"></use>
-    </svg>
-  </div>
-  <div class="cui-media__body">
-    <h3 class="cui-media__title">Media Object title</h3>
-    <p class="cui-media__content">Media Object body</p>
-  </div>
-</div>
+Markup: ../../hbs/media-object.hbs
 
 Styleguide Media Object.Default
 */

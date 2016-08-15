@@ -15,14 +15,7 @@ Modifiers for Popover Element
 .cui-popover--bottom        - bottom arrow
 .cui-popover--menu          - border-separated menu
 
-Markup:
-<div class="cui-styeguide__popover-container">
-  <div class="cui-popover {{modifier_class}}">
-    <div class="cui-popover__row"><span>popover item</span></div>
-    <div class="cui-popover__row"><span>popover item</span></div>
-    <div class="cui-popover__row"><span>popover item</span></div>
-  </div>
-</div>
+Markup: ../../hbs/popover.hbs
 
 Styleguide Popover.Default
 */

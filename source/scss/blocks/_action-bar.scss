@@ -3,21 +3,7 @@ Action Bar
 
 .cui-action--alt-bg     - Alternative background styling
 
-Markup:
-<div class="cui-action {{modifier_class}}">
-  <span class="cui-action__title">Action Title</span>
-  <div class="cui-action__actions">
-    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
-      <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#filter10"></use>
-    </svg>  
-    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
-      <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#sort14"></use>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="cui-action__icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 216 146">
-      <use xlink:href="node_modules/cui-icons/dist/font-awesome/font-awesome-out.svg#plus25"></use>
-    </svg>
-  </div>
-</div>
+Markup: ../../hbs/action-bar.hbs
 
 Styleguide Navigation.Action-Bar
 */
