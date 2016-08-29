@@ -1,0 +1,6 @@
+applications:
+- name: cui-styleguide
+  memory: 64M
+  instances: 1
+  host: cui-styleguide
+  path: ./styleguide/
