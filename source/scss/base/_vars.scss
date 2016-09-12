@@ -286,6 +286,12 @@ fieldset {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+.cui-padding--h-5,
+%cui-padding--h-5 {
+  padding: 0 em(5);
+}
+
 // angular styles
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
