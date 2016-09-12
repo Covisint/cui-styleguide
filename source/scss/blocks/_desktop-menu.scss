@@ -102,8 +102,11 @@
     fill: #fff;
     flex: .5;
     height: em(32);
-    padding-left: 15px;
     transition: fill .15s linear;
+  }
+
+  .cui-desktop-menu__icon {
+    padding-left: 15px;
   }
 
   .cui-menu__toggle-button--desktop {
