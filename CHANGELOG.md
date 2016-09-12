@@ -4,6 +4,13 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.5.1] 2016-09-12
+### Added
+- padding class for links in sentences
+
+### Fixed
+- tiny icons in left mobile menu now regular size
+
 ## [2.5.0] 2016-08-11 
 ### Changed
 - upgraded to KSS 3.0.0
