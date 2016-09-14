@@ -168,6 +168,7 @@ Styleguide Forms.Input-With-Button
 
   .cui-input-button__input,
   .cui-input-button__button {
+    border-radius: 0;
     &:focus {
       outline: 0;
     }
