@@ -4,7 +4,7 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
-## [2.5.2] 2016-09-14
+## [2.5.3] 2016-09-14
 ### Fixed
 - horizontally center centered media object images that are smaller than expected
 - small button now has tighter radius
