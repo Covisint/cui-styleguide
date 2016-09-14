@@ -17,9 +17,7 @@
     color: white;
     display: flex;
     height: em(50);
-    justify-content: center;
-    padding: $container-title-padding;
-    text-align: center;
+    padding: 0 0 0 3.125em;;
   }
 
   @media all and (max-width:600px){
