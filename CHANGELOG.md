@@ -4,6 +4,17 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.5.2] 2016-09-14
+### Fixed
+- horizontally center centered media object images that are smaller than expected
+- small button now has tighter radius
+- active state color for folder icon
+- wizard title styling
+
+### Changed
+- Update input button styles
+- Update popover styles
+
 ## [2.5.1] 2016-09-12
 ### Added
 - padding class for links in sentences

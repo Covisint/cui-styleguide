@@ -178,7 +178,10 @@ Styleguide Wizard.Step-Indicator-With-Icons
    
  
   & .cui-form__title {
-    @extend .cui-tile__title;
+    @extend %h6;
+    @extend %h6--bold;
+    background: #fff;
+    color: $cui-greyscale--medium-light;
     left: -9999px;
     position: absolute;
 
@@ -193,7 +196,7 @@ Styleguide Wizard.Step-Indicator-With-Icons
     padding: 0;
 
     @media screen and (min-width: 700px) {
-      padding: em(50);
+      padding: em(30) em(50);
     }
   }
 

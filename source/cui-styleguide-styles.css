@@ -38,6 +38,9 @@ fieldset {
   opacity: 0 !important;
   pointer-events: none !important; }
 
+.cui-padding--h-5 {
+  padding: 0 0.3125em; }
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
 
