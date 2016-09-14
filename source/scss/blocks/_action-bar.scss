@@ -56,12 +56,12 @@ Styleguide Navigation.Action-Bar
 
     .cui-action__icon--active,
     .cui-action__icon-counter--active {
-      color: $cui-primary-colors--medium;
-      fill: $cui-primary-colors--medium;
+      color: $cui-primary-colors--medium-dark;
+      fill: $cui-primary-colors--medium-dark;
       transition: color .15s, fill .15s;
 
       use {
-        color: $cui-primary-colors--medium;
+        color: $cui-primary-colors--medium-dark;
         transition: color .15s;
       }
     }
