@@ -106,10 +106,10 @@ Styleguide Forms.Input-With-Button
   border-left: 1px solid $cui-greyscale--light;
   border-right: 0;
   border-top: 1px solid $cui-greyscale--light;
+  border-radius: 3px 0 0 3px;
   color: $cui-buttonput-input-font-color;
   flex: .75;
   font-size: em(14);
-  letter-spacing: $letter-spacing-xxl;
 
   @media screen and (min-width: 701px) {
     padding-left: em(29);
@@ -133,6 +133,7 @@ Styleguide Forms.Input-With-Button
   appearance: none;
   background-color: $cui-buttonput-btn-bg-color;
   border: 1px solid $cui-greyscale--light;
+  border-radius: 0 3px 3px 0;
   color: $cui-buttonput-btn-font-color;
   flex: .25 auto;
   font-family: 'lato-black', sans-serif;
@@ -167,6 +168,7 @@ Styleguide Forms.Input-With-Button
 
   .cui-input-button__input,
   .cui-input-button__button {
+    border-radius: 0;
     &:focus {
       outline: 0;
     }

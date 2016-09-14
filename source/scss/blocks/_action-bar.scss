@@ -56,12 +56,12 @@ Styleguide Navigation.Action-Bar
 
     .cui-action__icon--active,
     .cui-action__icon-counter--active {
-      color: $cui-primary-colors--medium;
-      fill: $cui-primary-colors--medium;
+      color: $cui-primary-colors--medium-dark;
+      fill: $cui-primary-colors--medium-dark;
       transition: color .15s, fill .15s;
 
       use {
-        color: $cui-primary-colors--medium;
+        color: $cui-primary-colors--medium-dark;
         transition: color .15s;
       }
     }
@@ -142,7 +142,8 @@ Styleguide Navigation.Action-Bar
     width: auto;
   }
 
-  &__icon--new {
+  &__icon--new,
+  &__icon--close {
 
     use {
       color: $cui-primary-colors--medium-dark;
@@ -180,7 +181,6 @@ Styleguide Navigation.Action-Bar
 
   &__popover {
     @extend .cui-popover;
-    @extend .cui-popover--top;
     border-radius: em(3);
     box-shadow: 0 1px em(5) 0 $cui-primary-colors--medium-dark;
     display: flex;
