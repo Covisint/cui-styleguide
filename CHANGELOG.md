@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project tries its best to adhere to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.5.4] 2016-09-20
 ### Fixed
 - aligns icons in action bar
 - style tweaks for mobile profile menu
