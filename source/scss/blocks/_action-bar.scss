@@ -98,7 +98,8 @@ Styleguide Navigation.Action-Bar
   &__action-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 36px;
+    justify-content: space-between;
     margin-left: em(15);
 
     .cui-action__icon {
