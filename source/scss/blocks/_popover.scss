@@ -36,6 +36,14 @@ Styleguide Popover.Default
   max-width: em(310);
 }
 
+.cui-popover__container {
+  filter: drop-shadow(0 1px 5px rgba($cui-primary-colors--medium, .9));
+}
+
+.cui-popover__pointer {
+  z-index: 5;
+}
+
 .cui-popover {
   @extend .cui-background;
   border-radius: em(7);
@@ -111,8 +119,7 @@ Styleguide Popover.Default
     justify-content: space-between;
     border-bottom: 1px solid #f1f1f1;
     font-size: em(14);
-    margin: 0 em(16);
-    padding: em(12) 0;
+    padding: em(12) em(16);
 
     &:last-of-type {
       border-bottom: 0;

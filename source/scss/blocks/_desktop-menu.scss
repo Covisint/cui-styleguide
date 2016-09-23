@@ -102,8 +102,11 @@
     fill: #fff;
     flex: .5;
     height: em(32);
-    padding-left: 15px;
     transition: fill .15s linear;
+  }
+
+  .cui-desktop-menu__icon {
+    padding-left: 15px;
   }
 
   .cui-menu__toggle-button--desktop {
@@ -183,12 +186,30 @@
     .cui-profile__user-name {
       display: block;
     }
+
+    .cui-media__image-container {
+      order: -2;
+    }
+
+    .cui-profile__menu-item {
+      padding: 0 20px 12px 20px;
+
+      &:first-of-type {
+        padding: 9px 20px 12px 20px;
+      }
+    }
+    
   }
 
   .menu-toggle--mobile {
     @media screen and (min-width: $snap-menu-breaking-point) {
       display: none;
     }
+  }
+
+  .cui-profile__link-icon {
+    height: em(20);
+    width: em(20);
   }
 
 }
