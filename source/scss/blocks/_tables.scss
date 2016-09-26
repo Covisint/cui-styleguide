@@ -27,7 +27,8 @@ Styleguide Tables.Default
     }
   }
 
-  th, td {
+  th,
+  td {
     border: 1px solid $cui-greyscale--medium-light;
     padding: 1.5rem;
   }
@@ -44,53 +45,67 @@ Styleguide Tables.Default
     }
   }
 
-  th, td {
+  th,
+  td {
     border: {
       left: 0;
       right: 0;
     }
   }
-  @media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
 
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr { 
-    display: flex; 
-  }
-  
-  thead tr { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  
-  tbody { flex-direction: column; }
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
 
-  tr { 
-    border: 1px solid #ccc;
-    flex-direction: column;
-  }
-  
-  td { 
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee; 
-  }
-  
-  td:before { 
-    display: flex;
-    font-weight: 900;
-    padding-right: 20px;
-    max-width: 40%;
-  }
-  
-  /*
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: flex;
+    }
+
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tbody {
+      flex-direction: column;
+    }
+
+    tr {
+      border: 1px solid #ccc;
+      flex-direction: column;
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    td:before {
+      display: flex;
+      font-weight: 900;
+      padding-right: 20px;
+      max-width: 40%;
+    }
+
+    /*
   Label the data
   */
-  td:nth-of-type(1):before { content: attr(data-label); }
-  td:nth-of-type(2):before { content: attr(data-label); }
-  td:nth-of-type(3):before { content: attr(data-label); }
-  
+    td:nth-of-type(1):before {
+      content: attr(data-label);
+    }
+
+    td:nth-of-type(2):before {
+      content: attr(data-label);
+    }
+
+    td:nth-of-type(3):before {
+      content: attr(data-label);
+    }
   }
 }

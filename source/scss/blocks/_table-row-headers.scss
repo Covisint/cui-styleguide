@@ -13,9 +13,8 @@ Styleguide Tables.Flex-Table-Headers
     cursor: pointer;
 
     & .cui-flex-table__th-container {
-      position: relative; 
-    } 
-    
+      position: relative;
+    }
   }
 }
 
@@ -24,7 +23,7 @@ Styleguide Tables.Flex-Table-Headers
   position: absolute;
   right: -25px;
   transform: rotate(180deg);
-  transition: transform .15s linear;
+  transition: transform 0.15s linear;
   width: 25px;
 
   &--asc {

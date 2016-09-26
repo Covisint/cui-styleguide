@@ -18,6 +18,7 @@ Styleguide Header.Default
   padding: $header-padding;
 
   &__search {
+
     @extend .cui-icon;
     color: white;
     cursor: pointer;
@@ -27,9 +28,9 @@ Styleguide Header.Default
   &__user {
     flex-grow: 1;
     height: 50px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     &--avatar {
       background-size: contain;
@@ -40,15 +41,16 @@ Styleguide Header.Default
     }
 
     &--name {
-      color: #AAA;
+      color: #aaa;
       cursor: pointer;
       margin-right: 15px;
-      @media all and (max-width:600px){
+
+      @media all and (max-width: 600px) {
         display: none;
       }
     }
 
-    @media all and (max-width:600px){
+    @media all and (max-width: 600px) {
       > .cui-chevron--left {
         display: none;
       }
@@ -67,7 +69,7 @@ Styleguide Header.Default
     display: flex;
     height: 80px;
     padding: $header-top-padding;
-    border-bottom:1px solid #EEE;
+    border-bottom: 1px solid #eee;
   }
 
   &__bottom {
@@ -86,6 +88,7 @@ Styleguide Header.Default
   position: relative;
 
   &__search {
+
     @extend .cui-icon;
     color: white;
     cursor: pointer;
@@ -93,18 +96,21 @@ Styleguide Header.Default
   }
 
   &__user {
+
     @extend .cui-profile;
   }
 
   &__user-avatar {
+
     @extend .cui-profile__user-avatar;
   }
 
   &__user-name {
+
     @extend .cui-profile__user-name;
   }
 
-  @media all and (max-width:600px){
+  @media all and (max-width: 600px) {
     > .cui-chevron--left {
       display: none;
     }
@@ -142,31 +148,42 @@ Styleguide Header.Default
   }
 
   &__chevron {
+
     @extend .cui-chevron;
 
     &:after {
+
       @extend .cui-chevron:after;
     }
 
     &--left {
+
       @extend .cui-chevron--left;
     }
+
     &--right {
+
       @extend .cui-chevron--right;
     }
+
     &--top {
+
       @extend .cui-chevron--top;
     }
+
     &--bottom {
+
       @extend .cui-chevron--bottom;
     }
   }
 
   &__user-menu {
+
     @extend .cui-profile__user-menu;
   }
 
   &__menu-greet {
+
     @extend .cui-profile__menu-greet;
   }
 
@@ -179,7 +196,6 @@ Styleguide Header.Default
     height: 25px;
     fill: #fff;
   }
-  
 }
 
 

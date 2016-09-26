@@ -18,9 +18,11 @@ Weight: -20
 Styleguide Texts.Headers
 */
 
-@include font-face('lato-normal','/node_modules/lato-font/fonts/lato-normal/lato-normal', $file-formats: woff);
-@include font-face('lato-black','/node_modules/lato-font/fonts/lato-black/lato-black', $file-formats: woff);
-@include font-face('lato-bold','/node_modules/lato-font/fonts/lato-bold/lato-bold', $file-formats: woff);
+@include font-face('lato-normal', '/node_modules/lato-font/fonts/lato-normal/lato-normal', $file-formats: woff);
+
+@include font-face('lato-black', '/node_modules/lato-font/fonts/lato-black/lato-black', $file-formats: woff);
+
+@include font-face('lato-bold', '/node_modules/lato-font/fonts/lato-bold/lato-bold', $file-formats: woff);
 
 body {
   color: $base-font-color;
@@ -29,29 +31,81 @@ body {
   font-weight: $base-font-weight;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
   font-size: em(16);
   font-weight: 400;
   margin: 0;
 }
 
-.h1, %h1 { font-size: $font-size-h1; }
-.h2, %h2 { font-size: $font-size-h2; }
-.h3, %h3 { font-size: $font-size-h3; }
-.h4, %h4 { font-size: $font-size-h4; }
-.h5, %h5 { font-size: $font-size-h5; }
-.h6, %h6 { font-size: $font-size-h6; }
+.h1,
+%h1 {
+  font-size: $font-size-h1;
+}
 
-.h1, .h2, .h3, .h4, .h5, .h6, %h1, %h2, %h3, %h4, %h5, %h6 { 
-  font-family: 'lato-black', sans-serif; 
-  font-weight: $font-header-weight; 
+.h2,
+%h2 {
+  font-size: $font-size-h2;
+}
+
+.h3,
+%h3 {
+  font-size: $font-size-h3;
+}
+
+.h4,
+%h4 {
+  font-size: $font-size-h4;
+}
+
+.h5,
+%h5 {
+  font-size: $font-size-h5;
+}
+
+.h6,
+%h6 {
+  font-size: $font-size-h6;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+%h1,
+%h2,
+%h3,
+%h4,
+%h5,
+%h6 {
+  font-family: 'lato-black', sans-serif;
+  font-weight: $font-header-weight;
   letter-spacing: 1.6px;
 }
 
-.h1--bold, .h2--bold, .h3--bold, .h4--bold, .h5--bold, .h6--bold, .bold, %h1--bold, %h2--bold, %h3--bold, %h4--bold, %h5--bold, %h6--bold, %bold { 
-  font-family: 'lato-bold', sans-serif; 
-  font-weight: $font-header-weight; 
+.h1--bold,
+.h2--bold,
+.h3--bold,
+.h4--bold,
+.h5--bold,
+.h6--bold,
+.bold,
+%h1--bold,
+%h2--bold,
+%h3--bold,
+%h4--bold,
+%h5--bold,
+%h6--bold,
+%bold {
+  font-family: 'lato-bold', sans-serif;
+  font-weight: $font-header-weight;
   letter-spacing: 1.6px;
 }
 
@@ -74,11 +128,11 @@ Styleguide Texts.Links
   color: $link-color;
   cursor: pointer;
   text-decoration: none;
-  transition: color .15s ease-in-out;
+  transition: color 0.15s ease-in-out;
 
   &:hover {
     color: $link-color--hover;
-    transition: color .15s ease-in-out;
+    transition: color 0.15s ease-in-out;
   }
 }
 
@@ -87,11 +141,11 @@ Styleguide Texts.Links
   color: $link-alt-color;
   cursor: pointer;
   text-decoration: none;
-  transition: color .15s ease-in-out;
+  transition: color 0.15s ease-in-out;
 
   &:hover {
     color: $link-alt-color--hover;
-    transition: color .15s ease-in-out;
+    transition: color 0.15s ease-in-out;
   }
 }
 
@@ -171,23 +225,26 @@ Styleguide Texts.Status
 }
 
 .cui-status {
-  
   &--active {
+
     @extend %cui-status;
     color: $status--active;
   }
 
   &--pending {
+
     @extend %cui-status;
     color: $status--pending;
   }
 
   &--suspended {
+
     @extend %cui-status;
     color: $status--suspended;
   }
 
-  &--locked{
+  &--locked {
+
     @extend %cui-status;
     color: $status--locked;
   }

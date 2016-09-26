@@ -12,6 +12,7 @@ Styleguide Cards.Default-Cards
   flex-direction: column;
   justify-content: center;
   min-height: em(500);
+
   @media screen and (min-width: 600px) {
     flex-direction: row;
     justify-content: space-between;
@@ -29,17 +30,16 @@ Styleguide Cards.Default-Cards
   margin: em(10);
   max-width: 20em;
   padding: $card-padding;
-  transition: box-shadow .2s ease, transform .2s ease;
-
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .cui-card__image-container {
   justify-content: center;
   display: flex;
-  
-  svg{
+
+  svg {
     height: 75px;
-    width:  75px;
+    width: 75px;
   }
 }
 
@@ -57,7 +57,7 @@ p {
   flex-grow: 2;
   line-height: 1.4;
 
-  p{
+  p {
     color: $card-content-color;
     letter-spacing: $letter-spacing-sm;
   }
@@ -69,7 +69,7 @@ p {
   font-size: $card-header-font-size;
   font-weight: $card-header-font-weight;
   margin: $card-header-margin;
-  min-height: em(66,24);
+  min-height: em(66, 24);
   text-align: center;
 }
 
@@ -78,6 +78,7 @@ p {
 }
 
 .cui-card__button {
+
   @extend .cui-button;
   align-self: center;
   border-radius: $card-button-border-radius;

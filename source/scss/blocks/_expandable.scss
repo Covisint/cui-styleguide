@@ -6,6 +6,7 @@
   width: 100%;
 
   &--wizard {
+
     @media screen and (min-width: 701px) {
       border-bottom: 0;
     }
@@ -16,13 +17,12 @@
       display: flex;
       font-size: em(16);
       padding: 0;
+
       @media screen and (min-width: 701px) {
         font-size: em(24);
       }
     }
   }
-
-
 
   &__title {
     color: $expandable-title-color;
@@ -43,6 +43,7 @@
     }
 
     .cui-expandable__title-left {
+
       @extend %h5--bold;
     }
 
@@ -51,13 +52,12 @@
       display: flex;
       justify-content: center;
       font-size: em(14);
-    }  
+    }
 
     .cui-expandable__title-end {
       display: flex;
       justify-content: flex-end;
     }
-
   }
 
   &__title--error {
@@ -68,7 +68,7 @@
   &__review-item {
     color: $expandable-review-item-color;
     font-size: $expandable-review-item-font-size;
-    line-height: .75;
+    line-height: 0.75;
     margin: $expandable-review-item-margin;
   }
 
@@ -77,6 +77,7 @@
   }
 
   &__body {
+
     @extend .cui-ul;
     display: block;
     overflow: hidden;
@@ -84,10 +85,10 @@
   }
 
   &.expanded {
-    >.cui-expandable__body {
+    > .cui-expandable__body {
     }
 
-    >.cui-expandable__title>.chevron {
+    > .cui-expandable__title > .chevron {
       transform: rotate(90deg);
     }
   }
@@ -114,6 +115,7 @@
   }
 
   .cui-expandable__pane-title {
+
     @extend %h4--bold;
     color: $secondary-font-color;
     margin-bottom: em(35);
@@ -126,6 +128,7 @@
   }
 
   .cui-expandable__pane-content {
+
     @extend %h5--bold;
     color: $secondary-font-color;
 
@@ -146,11 +149,13 @@
 }
 
 .cui-expandable__review-button {
+
   @extend .cui-link;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .cui-expandable__review-input {
+
   @extend .cui-input;
   display: inline-block;
   font-size: 1em;
@@ -161,6 +166,7 @@
 }
 
 .cui-expandable__review-select {
+
   @extend .cui-select;
   display: inline-block;
   font-size: 1em;
@@ -175,12 +181,12 @@
   padding-right: 20px;
 }
 
-.cui-expandable__edit-button{
+.cui-expandable__edit-button {
   cursor: pointer;
   left: 0;
   position: absolute;
   top: 0;
-  transform: translate(-100%,0px);
+  transform: translate(-100%, 0px);
 
   .cui-expandable__edit-icon {
     fill: #333;
@@ -188,33 +194,31 @@
     width: 30px;
   }
 
-  &:hover{
+  &:hover {
     .cui-expandable__edit-icon {
-        fill: $cui-primary-colors--medium-light;
+      fill: $cui-primary-colors--medium-light;
     }
   }
-
 }
 
-  .steps-bar {
-    background-color: $step-indicator-middle-bar-color;
-    height: $step-indicator-middle-bar-size;
-    position: absolute;
-    top: 68%;
-    z-index: 0;
+.steps-bar {
+  background-color: $step-indicator-middle-bar-color;
+  height: $step-indicator-middle-bar-size;
+  position: absolute;
+  top: 68%;
+  z-index: 0;
 
-    &--no-js {
-      width: 100%;
-    }
-
-    .steps-bar-fill {
-      background-color: $step-indicator-middle-bar-color--visited;
-      display: inline-block;
-      height: $step-indicator-middle-bar-size;
-      position: absolute;
-    }
+  &--no-js {
+    width: 100%;
   }
 
+  .steps-bar-fill {
+    background-color: $step-indicator-middle-bar-color--visited;
+    display: inline-block;
+    height: $step-indicator-middle-bar-size;
+    position: absolute;
+  }
+}
 
 .indicator-container {
   border-bottom: $step-indicator-border-bottom;
@@ -224,7 +228,6 @@
   margin-bottom: $step-indicator-margin-bottom;
   position: relative;
 
-
   &.small {
     & .step-indicator {
       display: none;
@@ -232,8 +235,8 @@
 
       &.active {
         border: 0;
-        display:inline-block;
-        margin:0 auto;
+        display: inline-block;
+        margin: 0 auto;
         text-align: center;
         color: #bbb;
       }
@@ -245,7 +248,6 @@
   border-bottom: 0;
 
   &.small {
-    
     .steps-bar {
       display: none;
     }
@@ -299,6 +301,7 @@
   }
 
   .cui-expandable__body-row {
+
     @extend %flex-row;
 
     @media screen and (max-width: 700px) {
@@ -317,7 +320,6 @@
     &--small {
       font-size: em(14);
     }
-
   }
 
   .cui-expandable__body-col:last-of-type {
@@ -325,7 +327,9 @@
   }
 
   .cui-expandable__body-header {
+
     @extend %h5;
+
     @extend %bold;
     color: $cui-greyscale--dark;
     margin-bottom: em(25, 20);
@@ -336,12 +340,15 @@
   }
 
   .cui-expandable__link {
+
     @extend .cui-link;
+
     @extend %bold;
     font-size: em(18);
   }
 
   .cui-expandable__close {
+
     @extend .cui-link;
     color: $cui-primary-colors--medium-dark;
     height: em(16);

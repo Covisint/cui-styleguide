@@ -28,7 +28,7 @@ Styleguide Forms.Input
   padding: $input-padding;
   position: relative;
   width: 100%;
-  
+
   &.pseudo-class-focus,
   &:focus {
     border: 1px solid $cui-input-border--focus;
@@ -75,8 +75,8 @@ Styleguide Forms.Input
     border: 1px solid $cui-input-border--valid;
   }
 
-  @media all and (max-width:700px){
-   &--half {
+  @media all and (max-width: 700px) {
+    &--half {
       width: 100%;
     }
   }
@@ -108,7 +108,7 @@ Styleguide Forms.Input-With-Button
   border-top: 1px solid $cui-greyscale--light;
   border-radius: 3px 0 0 3px;
   color: $cui-buttonput-input-font-color;
-  flex: .75;
+  flex: 0.75;
   font-size: em(14);
 
   @media screen and (min-width: 701px) {
@@ -123,6 +123,7 @@ Styleguide Forms.Input-With-Button
     color: $cui-buttonput-input-font-color;
     text-align: center;
     vertical-align: center;
+
     @media screen and (min-width: 701px) {
       text-align: left;
     }
@@ -135,11 +136,11 @@ Styleguide Forms.Input-With-Button
   border: 1px solid $cui-greyscale--light;
   border-radius: 0 3px 3px 0;
   color: $cui-buttonput-btn-font-color;
-  flex: .25 auto;
+  flex: 0.25 auto;
   font-family: 'lato-black', sans-serif;
   font-size: em(13);
   letter-spacing: $letter-spacing-lg;
- 
+
   @media screen and (min-width: 701px) {
     font-size: em(18);
   }
@@ -154,7 +155,7 @@ Styleguide Forms.Input-With-Button
   background: $cui-v2-colors-secondary;
   height: 60px;
   position: absolute;
-  transition: transform .15s linear;
+  transition: transform 0.15s linear;
   transform: translate3d(0, -60px, 0);
   width: 49.105691056911%;
 
@@ -169,6 +170,7 @@ Styleguide Forms.Input-With-Button
   .cui-input-button__input,
   .cui-input-button__button {
     border-radius: 0;
+
     &:focus {
       outline: 0;
     }
@@ -179,14 +181,14 @@ Styleguide Forms.Input-With-Button
     flex: 1;
 
     &::placeholder {
-      color: $cui-primary-colors--medium
+      color: $cui-primary-colors--medium;
     }
   }
 
   .cui-input-button__button {
     border: 0;
-    border-left: 2px solid $cui-primary-colors--medium; 
-    flex: .1 30px;
+    border-left: 2px solid $cui-primary-colors--medium;
+    flex: 0.1 30px;
 
     @media screen and (min-width: 701px) {
       font-size: em(26);
@@ -202,7 +204,7 @@ Markup: ../../hbs/forms.tags.hbs
 Styleguide Forms.Tags
 */
 
-.cui-tags-input, 
+.cui-tags-input,
 .cui-tags {
   display: block;
   font-size: em(14);
@@ -211,19 +213,22 @@ Styleguide Forms.Tags
     &.ng-invalid {
       & .tags,
       & .cui-tags__container {
-        border:1px solid $cui-input-border--invalid;
+        border: 1px solid $cui-input-border--invalid;
       }
     }
+
     &.ng-valid {
       & .tags,
       & .cui-tags__container {
-        border:1px solid $cui-input-border--valid;
+        border: 1px solid $cui-input-border--valid;
       }
     }
   }
 }
 
-.cui-tags-input *, .cui-tags-input *:before, .cui-tags-input *:after { 
+.cui-tags-input *,
+.cui-tags-input *:before,
+.cui-tags-input *:after {
   box-sizing: border-box;
 }
 
@@ -302,7 +307,7 @@ Styleguide Forms.Tags
   float: left;
   outline: 0;
   padding: 5px 0 0 0;
-  width:3px;
+  width: 3px;
 }
 
 .cui-tags-input .tags .input.invalid-tag,
@@ -409,6 +414,7 @@ Styleguide Forms.Dropdown
 
 select.cui-select,
 .cui-select {
+
   @extend .cui-input;
   align-items: center;
   appearance: none;
@@ -429,12 +435,12 @@ select.cui-select,
   &:focus {
     outline: 0;
   }
-
 }
 
 .cui-dropdown {
+
   @extend .cui-select;
-  background-color: #fff
+  background-color: #fff;
 }
 
 .cui-dropdown__wrapper {
@@ -445,7 +451,7 @@ select.cui-select,
 }
 
 .cui-dropdown__item {
-  font-color: #ECEAEA;
+  font-color: #eceaea;
   padding: em(10) em(30);
 
   &:hover {
@@ -470,7 +476,6 @@ Styleguide Forms.Radio
 
 .cui-radio--approve,
 .cui-radio--deny {
-
   .cui-radio__input {
     left: -999em;
     position: absolute;
@@ -505,18 +510,16 @@ Styleguide Forms.Radio
 }
 
 .cui-radio--approve {
-
   .cui-radio__label .cui-radio__outer-button {
-    border: 2px solid #0D6C76;
+    border: 2px solid #0d6c76;
   }
 
-  .cui-radio__input:checked +.cui-radio__label .cui-radio__inner-button {
-    background: #0D6C76;
+  .cui-radio__input:checked + .cui-radio__label .cui-radio__inner-button {
+    background: #0d6c76;
   }
 }
 
 .cui-radio--deny {
-
   .cui-radio__label .cui-radio__outer-button {
     border: 2px solid #fc5729;
   }
@@ -527,10 +530,10 @@ Styleguide Forms.Radio
 }
 
 .cui-radio--basic {
-
   &-ltr,
   &-rtl {
     .cui-radio__input {
+
       @extend %cui-sr-only;
     }
 
@@ -544,7 +547,6 @@ Styleguide Forms.Radio
       display: flex;
     }
   }
-
 
   &-ltr {
     .cui-radio__label:before {
@@ -561,7 +563,7 @@ Styleguide Forms.Radio
 
     .cui-radio__input:checked + .cui-radio__label:before {
       /* @extend .cui-primary-colors--medium-light; */
-      border:4px solid $cui-radio-button-background-color;
+      border: 4px solid $cui-radio-button-background-color;
       background: $cui-radio-button-checked-color;
       /* box-shadow: inset 0 0 0 2px #fff; */
     }
@@ -582,12 +584,11 @@ Styleguide Forms.Radio
 
     .cui-radio__input:checked + .cui-radio__label:after {
       /* @extend .cui-primary-colors--medium-light; */
-      border:4px solid $cui-radio-button-background-color;
+      border: 4px solid $cui-radio-button-background-color;
       background: $cui-radio-button-checked-color;
       /* box-shadow: inset 0 0 0 2px #fff; */
     }
   }
-
 }
 
 /*
@@ -603,41 +604,42 @@ Styleguide Forms.Checkbox
   position: absolute;
 
   &__legend {
+
     @extend %cui-sr-only;
   }
-  
+
   &__group {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding-left: 0;
   }
-  
+
   &__container {
     display: flex;
     height: 40px;
   }
-  
+
   &__label {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
-    
+
     &:before {
       background-color: white;
       border-radius: 2px;
-      border: 2px solid rgba(84,84,84, 0.4);
+      border: 2px solid rgba(84, 84, 84, 0.4);
       content: '\a0';
       display: inline-block;
       height: rem(24);
       line-height: 1.4;
-      margin-right: .6em;
-      text-indent: .15em;
-      vertical-align: .2em;
+      margin-right: 0.6em;
+      text-indent: 0.15em;
+      vertical-align: 0.2em;
       width: rem(24);
     }
   }
-  
+
   /* &:focus + .cui-checkbox__label:before {
     box-shadow: 0 0 7px $cui-greyscale--medium-light;
   } */
@@ -646,7 +648,7 @@ Styleguide Forms.Checkbox
     background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxOCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+UGF0aDwvdGl0bGU+PHBhdGggZD0iTTE3LjQzMyAyLjA0NUwxNS4zNyAwIDYuNSA5LjAzIDIuMDI3IDQuNzYzIDAgNi44NWw2LjUzNyA2LjI3TDE3LjQzMyAyLjA0NyIgZmlsbD0iIzU0NTQ1NCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+') center center no-repeat;
     background-size: 98% 60%;
     box-shadow: inset 0 0 0 2px #fff;
-    border-color: rgba(84,84,84,1);
+    border-color: rgba(84, 84, 84, 1);
   }
 }
 
@@ -666,16 +668,17 @@ Styleguide Forms.Checkbox
   }
 
   .cui-checkbox__legend {
+
     @extend %cui-sr-only;
   }
-  
+
   .cui-checkbox__group {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding-left: 0;
   }
-  
+
   .cui-checkbox__label {
     align-items: center;
     cursor: pointer;
@@ -688,7 +691,7 @@ Styleguide Forms.Checkbox
     &:before {
       display: none;
     }
-    
+
     &:after {
       background-color: transparent;
       border-radius: 2px;
@@ -697,9 +700,9 @@ Styleguide Forms.Checkbox
       display: inline-block;
       height: rem(24);
       line-height: 1.4;
-      margin-right: .6em;
-      text-indent: .15em;
-      vertical-align: .2em;
+      margin-right: 0.6em;
+      text-indent: 0.15em;
+      vertical-align: 0.2em;
       width: rem(24);
     }
   }
@@ -719,12 +722,13 @@ Styleguide Forms.Switch
 }
 
 .cui-switch__input {
+
   @extend %cui-sr-only;
 }
 
 .cui-switch__container {
   align-items: center;
-  border: 1px solid #6D6D6D;
+  border: 1px solid #6d6d6d;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -732,7 +736,7 @@ Styleguide Forms.Switch
   height: $cui-switch-height;
   justify-content: space-around;
   width: $cui-switch-width;
-  
+
   span {
     margin-left: 15px;
   }
@@ -740,13 +744,13 @@ Styleguide Forms.Switch
 
 .cui-switch__checked-message {
   color: black;
-  transition: color .5s ease-in-out;
+  transition: color 0.5s ease-in-out;
   z-index: 10;
 }
 
 .cui-switch__unchecked-message {
   color: white;
-  transition: color .5s ease-in-out;
+  transition: color 0.5s ease-in-out;
   z-index: 10;
 }
 
@@ -764,7 +768,7 @@ Styleguide Forms.Switch
   position: absolute;
   left: 50%;
   top: 1px;
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
   width: calc(50% - 1px);
 }
 
@@ -777,30 +781,29 @@ Styleguide Forms.Switch
   position: absolute;
   right: calc(50% - 1px);
   top: 1px;
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
   width: 0;
 }
 
 .cui-switch__input:checked {
-
   & + .cui-switch__label:before {
-    width:0;
-    border-radius:0;
+    width: 0;
+    border-radius: 0;
   }
-  
-   & + .cui-switch__label:after {
+
+  & + .cui-switch__label:after {
     width: 50%;
     border-radius: 6px 0 0 6px;
   }
-  
+
   & + .cui-switch__label .cui-switch__unchecked-message {
     color: black;
-    transition: color .5s;
+    transition: color 0.5s;
   }
-  
+
   & + .cui-switch__label .cui-switch__checked-message {
     color: white;
-    transition: color .5s;
+    transition: color 0.5s;
   }
 }
 

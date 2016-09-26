@@ -1,7 +1,7 @@
 .cui-wrapper {
-  min-height:100vh;
+  min-height: 100vh;
   background: $secondary-background;
-  position:relative;
+  position: relative;
 
   @media screen and (min-width: $snap-menu-breaking-point) {
     min-height: 1000px;
@@ -18,14 +18,17 @@
 .cui-menu__content-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left:$desktop-menu-width;
+  margin-left: $desktop-menu-width;
   transition: all 150ms ease-in-out;
+
   &.desktop-menu--collapse {
-    margin-left:0;
+    margin-left: 0;
   }
-  @if $snap-menu == true{
-    @media screen and (max-width:$snap-menu-breaking-point-1){
-        margin-left:0;
+
+  @if $snap-menu == true {
+
+    @media screen and (max-width: $snap-menu-breaking-point-1) {
+      margin-left: 0;
     }
   }
 }
@@ -44,13 +47,13 @@ snap-content {
   flex-direction: column;
   min-height: 100%;
   padding: 0;
-  transition: all .15s linear;
+  transition: all 0.15s linear;
 }
 
 .snap-drawer,
 snap-drawer {
   background: $snap-menu-background;
-  min-height:100vh;
+  min-height: 100vh;
 
   .cui-off-canvas {
     background: transparent;
@@ -62,17 +65,18 @@ snap-drawer {
 }
 
 .snap-drawer {
-  @media screen and (min-width:$snap-menu-breaking-point) {
+
+  @media screen and (min-width: $snap-menu-breaking-point) {
     display: none;
   }
 }
 
 .snap-menu--option {
   background: $cui-primary-colors--medium-dark;
-  color:white;
-  display:block;
+  color: white;
+  display: block;
   padding: 10px 20px;
-  margin:10px 0;
+  margin: 10px 0;
   cursor: pointer;
 
   &:hover {
@@ -104,8 +108,9 @@ snap-drawers,
 .snap-content {
   position: static;
   background: $primary-background;
-  @media screen and (max-width:$snap-menu-breaking-point-1){
-    position:absolute;
+
+  @media screen and (max-width: $snap-menu-breaking-point-1) {
+    position: absolute;
     height: auto;
     top: 0;
     // bottom: 0;
@@ -114,6 +119,7 @@ snap-drawers,
     right: 0;
   }
 }
+
 snap-drawer,
 [snap\:drawer],
 [snap-drawer],
@@ -141,10 +147,11 @@ snap-drawer,
   overflow-scrolling: touch;
   width: 265px;
   // @media screen and (max-width:$snap-menu-breaking-point-1){
-    position:absolute;
-    // display:inline-block;
+  position: absolute;
+  // display:inline-block;
   // }
 }
+
 .snap-content {
   z-index: 2;
   -webkit-transform: translate3d(0, 0, 0);
@@ -157,20 +164,24 @@ snap-drawer,
   -o-overflow-scrolling: touch;
   overflow-scrolling: touch;
 }
+
 .snap-drawer-left {
   height: 100vh;
   left: 0;
   z-index: 1;
 }
+
 .snap-drawer-right {
   height: 100vh;
   right: 0;
   z-index: 1;
 }
+
 .snapjs-left .snap-drawer-right,
 .snapjs-right .snap-drawer-left {
   display: none;
 }
+
 .snapjs-expand-left .snap-drawer-left,
 .snapjs-expand-right .snap-drawer-right {
   width: 100%;
@@ -180,18 +191,18 @@ snap-drawer,
   .menu-toggle--button,
   .cui-menu__toggle-button {
     width: 0;
-    transition: width .1s linear;
+    transition: width 0.1s linear;
 
-    &:before{
+    &:before {
       top: 0;
       transform: rotateZ(45deg);
-      transition: top .1s ease-in-out, transform .1s .1s ease-in-out;
+      transition: top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
     }
 
-    &:after{
+    &:after {
       bottom: 0;
       transform: rotateZ(-45deg);
-      transition: bottom .1s ease-in-out, transform .1s .1s ease-in-out;
+      transition: bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
     }
   }
 }

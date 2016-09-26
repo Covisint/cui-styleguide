@@ -27,7 +27,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__tr:hover {
-    
     .cui-flex-table__title {
       color: $cui-primary-colors--medium-dark;
       cursor: pointer;
@@ -71,7 +70,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   &__middle {
     flex: 1 auto;
   }
-
 
   &__left {
     position: relative;
@@ -117,7 +115,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     & .cui-flex-table__multi {
       width: 100%;
     }
-
   }
 
   &__title {
@@ -159,7 +156,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__text--icon {
-    fill: rgb(155,155,155);
+    fill: rgb(155, 155, 155);
     margin: 0;
   }
 
@@ -175,7 +172,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   margin-bottom: 15px;
 
   &--borderless {
-
     .cui-flex-table__th {
       border: 0;
     }
@@ -183,7 +179,9 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 }
 
 .cui-flex-table__heading {
+
   @extend %bold;
+
   @extend %h5;
   color: $cui-greyscale--dark;
 
@@ -219,7 +217,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 }
 
 .cui-flex-table__tr {
-
   .cui-radio {
     display: flex;
     justify-content: center;
@@ -236,7 +233,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 // Table Row B
 
 .cui-flex-table__tr--b {
-
   .cui-flex-table__left--stacked {
     display: flex;
     width: 30%;
@@ -269,10 +265,12 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   .cui-flex-table__review {
+
     @extend %bold;
+
     @extend %cui-link;
     font-size: em(11, 14);
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -281,7 +279,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 
 .cui-flex-table__tr--c,
 .cui-flex-table__th--c {
-
   .cui-flex-table__left {
     width: auto;
 
@@ -299,6 +296,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   .cui-flex-table__middle ~ .cui-flex-table__middle {
+
     @media screen and (min-width: 701px) {
       flex: 0 0 15%;
     }
@@ -316,15 +314,13 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   .cui-flex-table__left,
   .cui-flex-table__middle,
   .cui-flex-table__right {
-     word-break: break-word;
+    word-break: break-word;
 
-     @media screen and (min-width: 701px) {
+    @media screen and (min-width: 701px) {
       padding-right: 20px;
-     }
+    }
   }
-
 }
-
 
 .cui-flex-table__th--c {
   border-top: 0;
@@ -335,6 +331,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 }
 
 .cui-flex-table__tr--c:first-of-type {
+
   @media screen and (max-width: 700px) {
     border-top: 0;
   }

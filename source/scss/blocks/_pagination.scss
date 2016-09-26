@@ -7,6 +7,7 @@
   justify-content: space-between;
   max-width: 550px;
   text-align: center;
+
   @media screen and (min-width: 500px) {
     flex-direction: row;
     height: auto;
@@ -24,6 +25,7 @@
   justify-content: space-between;
   padding-left: 20px;
   text-align: center;
+
   @media screen and (min-width: 500px) {
     border-left: 1px solid black;
     margin-left: -1px;
@@ -34,11 +36,13 @@
   flex-grow: 1;
   list-style-type: none;
   padding: 0 10px;
+
   @media screen and (min-width: 500px) {
     padding: 0;
   }
 
   a {
+
     @extend .cui-link;
     text-decoration: none;
   }
@@ -55,9 +59,11 @@
 }
 
 .cui-pagination__display-amount {
+
   @extend .cui-link;
   flex-grow: 1;
   text-decoration: none;
+
   @media screen and (min-width: 500px) {
     border-left: 1px solid black;
     margin-left: -1px;
@@ -72,6 +78,7 @@
 }
 
 .cui-paginate__select {
+
   @extend %h5;
   appearance: none;
   align-items: center;
@@ -161,7 +168,7 @@
 }
 
 .cui-paginate__page--active {
-  background: rgb(247,247,247);
+  background: rgb(247, 247, 247);
 }
 
 .cui-paginate__ellipses {
@@ -169,7 +176,7 @@
   border-right: 1px solid #f1f1f1;
   display: inline-block;
   line-height: 40px;
-  text-align:center;
+  text-align: center;
   width: 60px;
 }
 

@@ -16,7 +16,8 @@ Styleguide Wizard.Step-Indicator
   text-transform: capitalize;
   white-space: nowrap;
 
-  .icon-container{
+  .icon-container {
+
     @media screen and (min-width: 701px) {
       margin-top: em(10);
     }
@@ -53,7 +54,7 @@ Styleguide Wizard.Step-Indicator
   &.visited {
     color: $step-indicator-title-color--visited;
 
-    .icon{
+    .icon {
       border: $step-indicator-icon-border--visited;
     }
 
@@ -61,12 +62,11 @@ Styleguide Wizard.Step-Indicator
     .icon-svg {
       fill: $step-indicator-title-color--visited;
     }
-
   }
 }
 
 .indicator-container--icons {
-  & .step-indicator{
+  & .step-indicator {
     &.active {
       border-bottom: 0;
     }
@@ -96,6 +96,7 @@ step,
 .cui-wizard[mobile-stack] {
   .desktop-element,
   .indicator-container {
+
     @media screen and (max-width: 700px) {
       display: none;
     }
@@ -103,6 +104,7 @@ step,
 
   .mobile-element,
   .mobile-element {
+
     @media screen and (min-width: 701px) {
       display: none;
     }
@@ -111,9 +113,9 @@ step,
 
 .cui-steps,
 .steps {
-  display:flex;
-  justify-content:space-between;
-  width:100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /*
@@ -174,11 +176,13 @@ Styleguide Wizard.Step-Indicator-With-Icons
 */
 
 .cui-form--mobile-steps {
+
   @extend .cui-tile;
-   
- 
+
   & .cui-form__title {
+
     @extend %h6;
+
     @extend %h6--bold;
     background: #fff;
     color: $cui-greyscale--medium-light;
@@ -190,8 +194,9 @@ Styleguide Wizard.Step-Indicator-With-Icons
       position: relative;
     }
   }
- 
+
   & .cui-form__body {
+
     @extend .cui-tile__body;
     padding: 0;
 
@@ -200,9 +205,8 @@ Styleguide Wizard.Step-Indicator-With-Icons
     }
   }
 
-
   .cui-expandable.mobile-element {
-    padding-bottom: 0;  
+    padding-bottom: 0;
   }
 
   .mobile-element.cui-expandable:first-of-type {
@@ -220,14 +224,14 @@ Styleguide Wizard.Step-Indicator-With-Icons
   }
 
   .mobile-element > .cui-expandable__title {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     height: em(120);
     padding-left: em(20);
     padding-top: 0;
     position: relative;
 
     &::before {
-      background-color: #D0D0D0; 
+      background-color: #d0d0d0;
       content: '';
       left: em(40);
       height: 100%;
@@ -236,13 +240,12 @@ Styleguide Wizard.Step-Indicator-With-Icons
     }
 
     .step-indicator__title {
-      color: #D0D0D0;
+      color: #d0d0d0;
       font-size: em(24);
       padding-left: em(25, 24);
     }
   }
 
-  
   .mobile-element.expanded > .cui-expandable__title {
     background-color: #fff;
     border-bottom: 1px solid $base-font-color;
@@ -257,29 +260,28 @@ Styleguide Wizard.Step-Indicator-With-Icons
   }
 
   .mobile-element.visited > .cui-expandable__title {
-    background-color: #D9EAEE; 
+    background-color: #d9eaee;
 
     &::before {
       background-color: #979797;
     }
 
     .step-indicator__title {
-      color: #6D6D6D;
+      color: #6d6d6d;
     }
   }
 
   .cui-expandable:first-of-type {
     &.mobile-element > .cui-expandable__title {
-
       &::before {
-        background-color: #979797; 
+        background-color: #979797;
         content: '';
         left: em(40);
         height: 100%;
         position: absolute;
         width: 1px;
       }
-      
+
       &:nth-of-type(1)::before {
         bottom: 0;
         height: 50%;
@@ -289,35 +291,31 @@ Styleguide Wizard.Step-Indicator-With-Icons
         font-size: em(24);
         padding-left: em(25, 24);
       }
-
     }
   }
 
   .cui-expandable:last-of-type {
-
     &.mobile-element > .cui-expandable__title {
-
       &:nth-of-type(1)::before {
         top: 0;
         height: 50%;
       }
-
     }
   }
-    
+
   .mobile-element.visited .icon {
-    border: 2px solid #6D6D6D;
+    border: 2px solid #6d6d6d;
   }
 
   .mobile-element .icon {
     background: #fff;
-    border: 2px solid #D0D0D0;
+    border: 2px solid #d0d0d0;
     border-radius: 50%;
     height: em(40);
     position: relative;
     margin: 0 auto;
     width: em(40);
-    z-index: 1; 
+    z-index: 1;
   }
 
   .mobile-element .icon-container {
@@ -329,9 +327,9 @@ Styleguide Wizard.Step-Indicator-With-Icons
     border: 2px solid $mobile-step-icon--expanded;
   }
 
-  .mobile-element.visited .cui-icon-rotate, 
+  .mobile-element.visited .cui-icon-rotate,
   .mobile-element.visited .icon-svg {
-    fill: #6D6D6D;
+    fill: #6d6d6d;
   }
 
   .mobile-element.expanded .cui-icon-rotate,
@@ -354,10 +352,10 @@ Styleguide Wizard.Step-Indicator-With-Icons
   .mobile-element .cui-expandable__title--alt-layout {
     justify-content: space-between;
   }
-
 }
 
 .cui-expandable__title--wizard {
+
   @media screen and (min-width: 701px) {
     display: none;
   }

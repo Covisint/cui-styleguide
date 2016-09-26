@@ -19,7 +19,9 @@ Styleguide Forms.Field-Value
   }
 
   &__field {
+
     @extend %h5;
+
     @extend %h5--bold;
     color: $cui-primary-colors--dark;
     margin-right: em(5);
@@ -30,5 +32,4 @@ Styleguide Forms.Field-Value
     font-size: em(18);
     margin-bottom: em(5);
   }
-
 }

@@ -18,32 +18,36 @@ Styleguide Profile.Default
   position: relative;
 
   &:after {
-    content:'';
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    border-right:8px solid #AAA;
-    border-top:8px solid transparent;
-    border-bottom:8px solid transparent;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 8px solid #aaa;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
   }
 
   &--left {
+
     @extend .cui-chevron;
     cursor: pointer;
   }
 
   &--right {
+
     @extend .cui-chevron;
     transform: rotate(-90deg);
   }
 
   &--top {
+
     @extend .cui-chevron;
     transform: rotate(180deg);
   }
 
   &--bottom {
+
     @extend .cui-chevron;
   }
 }
@@ -57,7 +61,7 @@ Styleguide Profile.Default
   &--popup {
     background: white;
     border-radius: 2px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .16);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
     opacity: 0;
     position: absolute;
     right: 0;
@@ -66,16 +70,17 @@ Styleguide Profile.Default
     pointer-events: none;
 
     &.active {
-      opacity:1;
+      opacity: 1;
       pointer-events: auto;
+
       .cui-chevron {
         transform: rotate(180deg);
       }
     }
 
     hr {
-      border:0;
-      border-top:1px solid rgba(0,0,0,0.15);
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
     }
 
     // &::before {
@@ -90,29 +95,29 @@ Styleguide Profile.Default
     // }
 
     &__greet {
-      display:block;
-      color: #AAA;
+      display: block;
+      color: #aaa;
       font-size: em(15);
       padding: 3px 10px;
       cursor: default;
 
-      .small{
-        font-size:13px;
+      .small {
+        font-size: 13px;
       }
     }
 
     &__option {
-      color: #AAA;
+      color: #aaa;
       display: block;
       font-size: em(14);
       padding: 3px 10px;
 
       &:hover {
-        color:#888;
+        color: #888;
       }
 
       &.logout {
-        color: lighten(#386895,20%);
+        color: lighten(#386895, 20%);
         text-align: right;
 
         &:hover {
@@ -125,11 +130,11 @@ Styleguide Profile.Default
   // the code above is depricated, will be removed with next minor release
 
   &__user {
-    align-items:center;
-    display:flex;
+    align-items: center;
+    display: flex;
     flex-grow: 1;
     height: 50px;
-    justify-content:flex-end;
+    justify-content: flex-end;
   }
 
   &__user-avatar {
@@ -153,7 +158,7 @@ Styleguide Profile.Default
     text-transform: capitalize;
     z-index: 2;
 
-    @media screen and (max-width: 999px){
+    @media screen and (max-width: 999px) {
       color: $secondary-font-color;
     }
   }
@@ -168,7 +173,7 @@ Styleguide Profile.Default
     top: 0;
     transform-origin: top center;
     transform: scaleY(0);
-    transition: transform .15s linear;
+    transition: transform 0.15s linear;
     width: 100%;
     z-index: 100;
 
@@ -177,13 +182,13 @@ Styleguide Profile.Default
     }
 
     &.active {
-      opacity:1;
+      opacity: 1;
       pointer-events: auto;
     }
 
     hr {
-      border:0;
-      border-top:1px solid rgba(0,0,0,0.15);
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
     }
 
     // &::before {
@@ -199,29 +204,29 @@ Styleguide Profile.Default
   }
 
   &__menu-greet {
-    display:block;
-    color: #AAA;
+    display: block;
+    color: #aaa;
     font-size: em(15);
     padding: 3px 10px;
     cursor: default;
 
-    .small{
-      font-size:13px;
+    .small {
+      font-size: 13px;
     }
   }
 
   &__option {
-    color: #AAA;
+    color: #aaa;
     display: block;
     font-size: em(14);
     padding: 3px 10px;
 
     &:hover {
-      color:#888;
+      color: #888;
     }
 
     &.logout {
-      color: lighten(#386895,20%);
+      color: lighten(#386895, 20%);
       text-align: right;
 
       &:hover {
@@ -236,22 +241,31 @@ Styleguide Profile.Default
   }
 
   &__chevron {
+
     @extend .cui-chevron;
 
     &:after {
+
       @extend .cui-chevron:after;
     }
 
     &--left {
+
       @extend .cui-chevron--left;
     }
+
     &--right {
+
       @extend .cui-chevron--right;
     }
+
     &--top {
+
       @extend .cui-chevron--top;
     }
+
     &--bottom {
+
       @extend .cui-chevron--bottom;
     }
   }
@@ -268,13 +282,13 @@ Styleguide Profile.Default
     left: 50%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
 .cui-profile {
-  align-items:center;
-  display:flex;
+  align-items: center;
+  display: flex;
   height: 80px;
   justify-content: space-around;
   margin-left: auto;
@@ -287,7 +301,7 @@ Styleguide Profile.Default
     content: '';
     height: 80px;
     position: absolute;
-    transition: transform .15s linear;
+    transition: transform 0.15s linear;
     width: 100%;
     transform: scaleY(0);
     transform-origin: bottom center;
@@ -306,6 +320,7 @@ Styleguide Profile.Default
   }
 
   .cui-profile__link {
+
     @extend %cui-link;
     font-size: em(14);
 
@@ -321,6 +336,7 @@ Styleguide Profile.Default
   }
 
   .cui-profile__chevron {
+
     @extend .cui-icon;
     fill: #fff;
     transform: rotate(180deg);
@@ -330,13 +346,13 @@ Styleguide Profile.Default
     &::before {
       height: 80px;
       top: 0;
-      transition: transform .15s linear;
+      transition: transform 0.15s linear;
       transform: scaleY(1);
     }
 
     .cui-profile__popup,
     .cui-profile__user-menu {
-      opacity:1;
+      opacity: 1;
       pointer-events: auto;
       width: 100%;
     }
@@ -347,11 +363,12 @@ Styleguide Profile.Default
 
     .cui-profile__user-menu {
       opacity: 1;
-      transition: transform .15s linear;
+      transition: transform 0.15s linear;
       transform: scaleY(1);
     }
 
     .cui-profile__chevron {
+
       @extend .cui-icon;
       color: $secondary-font-color;
       fill: $secondary-font-color;
@@ -361,33 +378,33 @@ Styleguide Profile.Default
 }
 
 .cui-avatar__image-container {
-    background-size: cover;
-    border-radius: 50%;
-    height: 46px;
-    margin: 0 auto;
-    width: 46px;
+  background-size: cover;
+  border-radius: 50%;
+  height: 46px;
+  margin: 0 auto;
+  width: 46px;
 }
 
 .cui-avatar__initials {
-    color: white;
+  color: white;
 }
 
 .cui-avatar__color1 {
-    background-color: $cui-primary-colors--light;
+  background-color: $cui-primary-colors--light;
 }
 
 .cui-avatar__color2 {
-    background-color: $cui-primary-colors--medium-light;
+  background-color: $cui-primary-colors--medium-light;
 }
 
 .cui-avatar__color3 {
-    background-color: $cui-primary-colors--medium;
+  background-color: $cui-primary-colors--medium;
 }
 
 .cui-avatar__color4 {
-    background-color: $cui-primary-colors--medium-dark;
+  background-color: $cui-primary-colors--medium-dark;
 }
 
 .cui-avatar__color5 {
-    background-color: $cui-primary-colors--dark;
+  background-color: $cui-primary-colors--dark;
 }
