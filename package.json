@@ -31,12 +31,12 @@
   },
   "bugs": {
     "url": "https://github.com/covisint/cui-styleguide/issues"
-  }, 
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt",
+    "lint:style": "stylelint source/**/*.scss",
     "postversion": "scripts/npm-postversion"
   },
-
   "files": [
     "source/",
     "styleguide/",
@@ -60,6 +60,7 @@
     "jquery": "2.2.0",
     "load-grunt-tasks": "^3.3.0",
     "snap.js": "^2.0.9",
+    "stylelint-config-standard": "^13.0.2",
     "svg4everybody": "^2.0.3"
   },
   "dependencies": {
