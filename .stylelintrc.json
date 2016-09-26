@@ -1,6 +1,7 @@
 {
     "extends": "stylelint-config-standard",
     "rules": {
-        "at-rule-empty-line-before":"true"
+        "at-rule-empty-line-before":"always",
+        "number-leading-zero": "always"
     }
 }
