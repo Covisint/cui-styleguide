@@ -31,7 +31,7 @@ Styleguide Tile.Default
     background: $container-title-bg-color;
     border: $container-body-border-size solid $container-body-border-color;
     border-radius: $container-body-radius--mobile;
-    color: #000;
+    color: $cui-greyscale--dark;
     display: flex;
     height: em(50);
     padding: $container-title-padding;

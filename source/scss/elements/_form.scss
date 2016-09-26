@@ -373,7 +373,7 @@ Styleguide Forms.Tags
 .cui-tags-input .autocomplete .suggestion-item,
 .cui-tags .autocomplete .suggestion-item {
   background-color: #fff;
-  color: #000;
+  color: $cui-greyscale--dark;
   cursor: pointer;
   overflow: hidden;
   padding: 5px 10px;
@@ -396,7 +396,7 @@ Styleguide Forms.Tags
 .cui-tags-input .autocomplete .suggestion-item em,
 .cui-tags .autocomplete .suggestion-item em {
   background-color: #fff;
-  color: #000;
+  color: $cui-greyscale--dark;
 }
 
 /*
