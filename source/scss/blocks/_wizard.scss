@@ -63,8 +63,8 @@
   }
 
   &__previous {
-
     @extend .cui-button--link;
+
     cursor: pointer;
     font-size: 12px;
     margin-right: 20px;
@@ -131,7 +131,7 @@
   }
 
   &.ng-inactive {
-    min-height: 0px;
+    min-height: 0;
     opacity: 0;
     padding: 0;
     transition: min-height 0.15s ease-out, opacity 0.3s ease-out;
@@ -180,7 +180,7 @@
       width: 90%;
       transform: translate(-50%, -10px);
 
-      &:before {
+      &::before {
         top: 3px;
         left: 20%;
         transform: rotate(180deg) translate(0, 100%);
@@ -235,7 +235,7 @@
 }
 
 .angucomplete-dropdown {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: em(2);
   border: em(1) solid #ececec;
   cursor: pointer;

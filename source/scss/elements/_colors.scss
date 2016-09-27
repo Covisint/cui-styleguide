@@ -1,4 +1,4 @@
-/* 
+/*
 Colors
 
 A color palette for the Covisint Next Gen UI Framework. Values are available as Sass variables. Variable names are indicated inside each color panel.
@@ -6,14 +6,10 @@ A color palette for the Covisint Next Gen UI Framework. Values are available as 
 Styleguide Colors
 */
 
-.cui-primary-colors,
-.cui-secondary-colors {
-}
-
 /*
 Primary Colors
 
-Markup: ../../hbs/primary-colors.hbs 
+Markup: ../../hbs/primary-colors.hbs
 
 Styleguide Colors.Primary-Colors
 */
@@ -37,10 +33,6 @@ Styleguide Colors.Primary-Colors
 .cui-primary-colors--dark {
   background-color: $cui-primary-colors--dark;
 }
-
-
-
-
 
 /*
 Secondary Colors

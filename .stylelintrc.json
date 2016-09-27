@@ -5,8 +5,8 @@
           "ignoreAtRules": ["extend", "include"]
         }],
         "number-leading-zero": "always",
-        "selector-type-no-unknown": ["true", {
-          "ignoreTypes": ["/[%]/", "/^snap-/"]
+        "selector-type-no-unknown": [true, {
+          "ignoreTypes": ["/[%]/", "/^snap-/", "/^step/", "/^cui-/"]
         }]
     }
 }
