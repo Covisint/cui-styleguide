@@ -3,10 +3,11 @@
 // Styles for common header options
 // 
 // Styleguide Header
+
 /*
 Default Header
 
-Markup: ../../hbs/header.hbs 
+Markup: ../../hbs/header.hbs
 
 Styleguide Header.Default
 */
@@ -151,7 +152,7 @@ Styleguide Header.Default
 
     @extend .cui-chevron;
 
-    &:after {
+    &::after {
 
       @extend .cui-chevron:after;
     }
@@ -197,7 +198,3 @@ Styleguide Header.Default
     fill: #fff;
   }
 }
-
-
-
-
