@@ -37,7 +37,6 @@
   flex: 1;
 }
 
-
 //SNAP CSS
 
 .snap-content,
@@ -88,7 +87,6 @@ snap-drawer {
   }
 }
 
-
 //vendor css (modified)
 snap-content,
 [snap\:content],
@@ -133,18 +131,11 @@ snap-drawer,
   height: auto;
   // bottom: 0;
   overflow: auto;
-  -webkit-transition: top 0.2s linear;
-  -moz-transition: top 0.2s linear;
-  -o-transition: top 0.2s linear;
   transition: top 0.2s linear;
-  -webkit-transition: bottom 0.2s linear;
-  -moz-transition: bottom 0.2s linear;
-  -o-transition: bottom 0.2s linear;
   transition: bottom 0.2s linear;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -o-overflow-scrolling: touch;
-  overflow-scrolling: touch;
   width: 265px;
   // @media screen and (max-width:$snap-menu-breaking-point-1){
   position: absolute;
@@ -154,15 +145,11 @@ snap-drawer,
 
 .snap-content {
   z-index: 2;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -o-overflow-scrolling: touch;
-  overflow-scrolling: touch;
 }
 
 .snap-drawer-left {
@@ -193,13 +180,13 @@ snap-drawer,
     width: 0;
     transition: width 0.1s linear;
 
-    &:before {
+    &::before {
       top: 0;
       transform: rotateZ(45deg);
       transition: top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
     }
 
-    &:after {
+    &::after {
       bottom: 0;
       transform: rotateZ(-45deg);
       transition: bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
