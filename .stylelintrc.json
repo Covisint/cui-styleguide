@@ -1,7 +1,12 @@
 {
     "extends": "stylelint-config-standard",
     "rules": {
-        "at-rule-empty-line-before":"always",
-        "number-leading-zero": "always"
+        "at-rule-empty-line-before": ["always", { 
+          "ignoreAtRules": ["extend", "include"]
+        }],
+        "number-leading-zero": "always",
+        "selector-type-no-unknown": [true, {
+          "ignoreTypes": ["/[%]/"]
+        }]
     }
 }

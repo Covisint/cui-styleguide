@@ -55,7 +55,6 @@ html {
 }
 
 .cui-styleguide__main {
-
   @include outer-container(95%);
   flex: 1;
   min-height: 1000px;
@@ -114,7 +113,6 @@ html {
 }
 
 .cui-styleguide__outer-container {
-
   @include outer-container;
   background-color: $secondary-background;
   margin-bottom: 3em;

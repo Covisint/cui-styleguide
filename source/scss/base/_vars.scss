@@ -1,7 +1,7 @@
 // Animations
-$animation-long: .5s;
-$animation-medium: .3s;
-$animation-short: .15s;
+$animation-long: 0.5s;
+$animation-medium: 0.3s;
+$animation-short: 0.15s;
 
 // Colors
 $cui-v2-colors-secondary: #e8f0f3;
@@ -14,7 +14,7 @@ $cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--medium
 $cui-secondary-colors--light: #3cb371;
 $cui-secondary-colors--medium-light: #ffd700;
 $cui-secondary-colors--medium: #ff8c00;
-$cui-secondary-colors--dark: #ff4400;
+$cui-secondary-colors--dark: #f40;
 $cui-greyscale--x-light: #eceaea;
 $cui-greyscale--light: #c3c3c3;
 $cui-greyscale--medium-light: #343534;
@@ -72,16 +72,16 @@ $badge-font-size: em(12);
 // Inputs
 $cui-input-border: #dee9ee;
 $cui-input-border--focus: #828483;
-$cui-input-border--invalid: #ff4400;
+$cui-input-border--invalid: #f40;
 $cui-input-border--valid: #47cbb4;
 $input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
 
 // Input with Button
-$cui-buttonput-btn-bg-color: rgba(232, 240, 243, 0.30);
+$cui-buttonput-btn-bg-color: rgba(232, 240, 243, 0.3);
 $cui-buttonput-btn-alt-bg-color: $primary-background;
 $cui-buttonput-btn-font-color: $cui-primary-colors--medium;
-$cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.30);
+$cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.3);
 $cui-buttonput-input-font-color: $cui-greyscale--medium-light;
 
 // Checkbox
@@ -170,7 +170,7 @@ $menu-section-font-color--hover: $cui-secondary-colors--medium;
 $menu-sub-section-background-color: transparent;
 $menu-sub-section-font-color--hover: $cui-primary-colors--light;
 $menu-sub-section-animation: $animation-medium;
-$menu-sub-section-animation-offset: $menu-sub-section-animation - .05s;
+$menu-sub-section-animation-offset: $menu-sub-section-animation - 0.05s;
 $snap-menu-breaking-point: 1000px;
 $snap-menu-breaking-point-1: 999px;
 $snap-menu-background: $cui-background-gradient;
@@ -178,8 +178,8 @@ $desktop-menu-width: 300px;
 $snap-menu: true;
 
 @if $snap-menu == false {
-  $snap-menu-breaking-point: 0px;
-  $snap-menu-breaking-point-1: 0px;
+  $snap-menu-breaking-point: 0;
+  $snap-menu-breaking-point-1: 0;
 }
 
 // Tabs
@@ -197,7 +197,7 @@ $expandable-title-color: #333;
 $expandable-review-item-color: #666;
 $expandable-review-item-font-size: em(14);
 $expandable-review-item-margin: 1em 0;
-$expandable-transition: all .3s linear;
+$expandable-transition: all 0.3s linear;
 
 // Step Indicator
 $step-indicator-border-bottom: 1px solid #ddd;
@@ -222,7 +222,6 @@ $step-indicator-icon-border--visited: em(2) solid #666;
 $mobile-step-icon--expanded: $cui-primary-colors--medium;
 $mobile-step-title--expanded: $cui-primary-colors--medium;
 
-
 // Media Object
 $media-object-border: 0;
 $media-object-border-radius: 50%;
@@ -232,7 +231,7 @@ $media-object-content-padding: em(5) 0;
 $status--active: $cui-primary-colors--medium;
 $status--pending: $cui-secondary-colors--medium;
 $status--suspended: $cui-secondary-colors--dark;
-$status--locked: #ff4400;
+$status--locked: #f40;
 
 // normalize overrides
 html,
