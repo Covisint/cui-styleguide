@@ -38,6 +38,7 @@ Styleguide Media Object.Default
     .cui-media__title {
 
       @extend %bold;
+
       font-size: em(24);
       letter-spacing: 3px;
     }
@@ -184,6 +185,7 @@ Styleguide Media Object.Default
   &--dark {
 
     @extend %bold;
+
     color: $secondary-font-color;
   }
 }
@@ -191,6 +193,7 @@ Styleguide Media Object.Default
 .cui-media__link {
 
   @extend .cui-link;
+
   cursor: pointer;
   text-decoration: underline;
 }

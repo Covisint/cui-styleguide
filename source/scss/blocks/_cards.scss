@@ -80,6 +80,7 @@ p {
 .cui-card__button {
 
   @extend .cui-button;
+
   align-self: center;
   border-radius: $card-button-border-radius;
   height: $card-button-height;

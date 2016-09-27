@@ -228,24 +228,28 @@ Styleguide Texts.Status
   &--active {
 
     @extend %cui-status;
+
     color: $status--active;
   }
 
   &--pending {
 
     @extend %cui-status;
+
     color: $status--pending;
   }
 
   &--suspended {
 
     @extend %cui-status;
+
     color: $status--suspended;
   }
 
   &--locked {
 
     @extend %cui-status;
+
     color: $status--locked;
   }
 }

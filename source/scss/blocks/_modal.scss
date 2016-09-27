@@ -50,6 +50,7 @@ Modal example to be added via iframe
   &__primary-message {
 
     @extend %h3--bold;
+
     color: $cui-primary-colors--dark;
     font-size: em(30);
     margin-top: em(25, 30);
@@ -58,8 +59,8 @@ Modal example to be added via iframe
   &__secondary-message {
 
     @extend %h4;
-
     @extend %h4--bold;
+
     color: $cui-primary-colors--dark;
     margin-top: em(18, 24);
     max-width: em(225, 24);

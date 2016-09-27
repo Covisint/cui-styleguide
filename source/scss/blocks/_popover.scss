@@ -1,7 +1,7 @@
 // Popover
 //
 // Styles for the popover control
-// 
+//
 // Styleguide Popover
 
 /*
@@ -48,6 +48,7 @@ Styleguide Popover.Default
 .cui-popover {
 
   @extend .cui-background;
+
   border-radius: em(7);
   border: em(1) solid #ddd;
   box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, 0.9);
@@ -84,6 +85,7 @@ Styleguide Popover.Default
   &--top::before {
 
     @extend %popover-arrow;
+
     left: 50%;
     text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 0;
@@ -93,6 +95,7 @@ Styleguide Popover.Default
   &--bottom::before {
 
     @extend %popover-arrow;
+
     left: 50%;
     text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: calc(100% - 5px);
@@ -101,6 +104,7 @@ Styleguide Popover.Default
   &--left::before {
 
     @extend %popover-arrow;
+
     left: 2px;
     text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 30%;
@@ -110,6 +114,7 @@ Styleguide Popover.Default
   &--right::before {
 
     @extend %popover-arrow;
+
     left: calc(100% - 4px);
     text-shadow: -2px em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 30%;

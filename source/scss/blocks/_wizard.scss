@@ -140,6 +140,7 @@
   &--half {
 
     @extend .cui-error;
+
     width: 48%;
 
     @media all and (max-width: 700px) {
@@ -150,6 +151,7 @@
   &__password {
 
     @extend .cui-background;
+
     display: none;
     border: 1px solid #ddd;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.09);
@@ -198,8 +200,8 @@
 .cui-text-area__label {
 
   @extend %h5;
-
   @extend %h5--bold;
+
   color: $cui-primary-colors--dark;
   margin-bottom: em(10);
 }

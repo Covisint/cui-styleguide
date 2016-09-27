@@ -1,7 +1,7 @@
 // Profile
 //
 // Styles for navigation features
-// 
+//
 // Styleguide Profile
 
 /*
@@ -32,18 +32,21 @@ Styleguide Profile.Default
   &--left {
 
     @extend .cui-chevron;
+
     cursor: pointer;
   }
 
   &--right {
 
     @extend .cui-chevron;
+
     transform: rotate(-90deg);
   }
 
   &--top {
 
     @extend .cui-chevron;
+
     transform: rotate(180deg);
   }
 
@@ -323,6 +326,7 @@ Styleguide Profile.Default
   .cui-profile__link {
 
     @extend %cui-link;
+
     font-size: em(14);
 
     &:hover {
@@ -339,6 +343,7 @@ Styleguide Profile.Default
   .cui-profile__chevron {
 
     @extend .cui-icon;
+
     fill: #fff;
     transform: rotate(180deg);
   }
@@ -371,6 +376,7 @@ Styleguide Profile.Default
     .cui-profile__chevron {
 
       @extend .cui-icon;
+
       color: $secondary-font-color;
       fill: $secondary-font-color;
       transform: rotate(0deg);

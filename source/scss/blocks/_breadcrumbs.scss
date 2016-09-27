@@ -13,6 +13,7 @@ Styleguide Navigation.Breadcrumb
   .cui-breadcrumb__links {
 
     @extend %bold;
+
     display: flex;
     font-size: em(18);
     width: 100%;
@@ -65,6 +66,7 @@ Styleguide Navigation.Breadcrumb
   .cui-breadcrumb__link--current .cui-breadcrumb__mobile-link {
 
     @extend %bold;
+
     color: #343534;
     font-size: em(18);
     letter-spacing: 1.5px;

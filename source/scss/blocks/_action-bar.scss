@@ -69,6 +69,7 @@ Styleguide Navigation.Action-Bar
   &__title {
 
     @extend %bold;
+
     color: $cui-primary-colors--medium;
     display: flex;
     flex: 0.5 auto;
@@ -182,6 +183,7 @@ Styleguide Navigation.Action-Bar
   &__popover {
 
     @extend .cui-popover;
+
     border-radius: em(3);
     box-shadow: 0 1px em(5) 0 $cui-primary-colors--medium-dark;
     display: flex;
@@ -199,8 +201,8 @@ Styleguide Navigation.Action-Bar
   &__popover-title {
 
     @extend %h5;
-
     @extend %h5--bold;
+
     color: $cui-primary-colors--dark;
   }
 
@@ -212,8 +214,8 @@ Styleguide Navigation.Action-Bar
   &__popover-button {
 
     @extend .cui-button;
-
     @extend .cui-button--full-width;
+
     display: flex;
     font-size: em(11);
     height: em(32, 11);

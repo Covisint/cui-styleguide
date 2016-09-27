@@ -42,10 +42,7 @@
       flex: 1;
     }
 
-    .cui-expandable__title-left {
-
-      @extend %h5--bold;
-    }
+    .cui-expandable__title-left { @extend %h5--bold; }
 
     .cui-expandable__title-middle {
       color: $secondary-font-color;
@@ -79,6 +76,7 @@
   &__body {
 
     @extend .cui-ul;
+
     display: block;
     overflow: hidden;
     width: 100%;
@@ -112,6 +110,7 @@
   .cui-expandable__pane-title {
 
     @extend %h4--bold;
+
     color: $secondary-font-color;
     margin-bottom: em(35);
   }
@@ -125,6 +124,7 @@
   .cui-expandable__pane-content {
 
     @extend %h5--bold;
+
     color: $secondary-font-color;
 
     .cui-checkbox__label::before {
@@ -146,12 +146,14 @@
 .cui-expandable__review-button {
 
   @extend .cui-link;
+
   cursor: pointer;
 }
 
 .cui-expandable__review-input {
 
   @extend .cui-input;
+
   display: inline-block;
   font-size: 1em;
   height: auto;
@@ -163,6 +165,7 @@
 .cui-expandable__review-select {
 
   @extend .cui-select;
+
   display: inline-block;
   font-size: 1em;
   height: auto;
@@ -324,8 +327,8 @@
   .cui-expandable__body-header {
 
     @extend %h5;
-
     @extend %bold;
+
     color: $cui-greyscale--dark;
     margin-bottom: em(25, 20);
 
@@ -337,14 +340,15 @@
   .cui-expandable__link {
 
     @extend .cui-link;
-
     @extend %bold;
+
     font-size: em(18);
   }
 
   .cui-expandable__close {
 
     @extend .cui-link;
+
     color: $cui-primary-colors--medium-dark;
     height: em(16);
     margin-left: auto;

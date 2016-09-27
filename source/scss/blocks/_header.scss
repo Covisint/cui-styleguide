@@ -1,7 +1,7 @@
 // Header
 //
 // Styles for common header options
-// 
+//
 // Styleguide Header
 
 /*
@@ -21,6 +21,7 @@ Styleguide Header.Default
   &__search {
 
     @extend .cui-icon;
+
     color: white;
     cursor: pointer;
     fill: white;
@@ -91,6 +92,7 @@ Styleguide Header.Default
   &__search {
 
     @extend .cui-icon;
+
     color: white;
     cursor: pointer;
     fill: white;

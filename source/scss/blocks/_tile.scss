@@ -28,6 +28,7 @@ Styleguide Tile.Default
   &__title {
 
     @extend %h6;
+
     align-items: center;
     background: $container-title-bg-color;
     border: $container-body-border-size solid $container-body-border-color;

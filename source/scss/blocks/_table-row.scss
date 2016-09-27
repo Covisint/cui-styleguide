@@ -177,6 +177,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   @extend %bold;
 
   @extend %h5;
+
   color: $cui-greyscale--dark;
 
   @media screen and (max-width: 700px) {
@@ -261,8 +262,8 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   .cui-flex-table__review {
 
     @extend %bold;
-
     @extend %cui-link;
+
     font-size: em(11, 14);
     letter-spacing: 0.6px;
   }

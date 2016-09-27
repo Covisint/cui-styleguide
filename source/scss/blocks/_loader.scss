@@ -43,6 +43,7 @@ Styleguide Loading.Default
 .cui-loading--medium {
 
   @extend .cui-loading;
+
   border-width: $loader-medium-border-width;
   height: $loader-medium-height-and-width;
   width: $loader-medium-height-and-width;
@@ -58,6 +59,7 @@ Styleguide Loading.Default
 .cui-loading--medium-ctr {
 
   @extend .cui-loading--medium;
+
   left: calc(50% - (#{$loader-medium-height-and-width} / 2 + #{$loader-medium-border-width}));
   position: absolute;
   top: calc(50% - (#{$loader-medium-height-and-width} / 2 + #{$loader-medium-border-width}));
@@ -66,6 +68,7 @@ Styleguide Loading.Default
 .cui-loading--button {
 
   @extend .cui-loading;
+
   background: transparent;
   border-width: em(3, $button-font-size);
   height: 21px;

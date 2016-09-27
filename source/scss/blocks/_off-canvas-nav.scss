@@ -32,6 +32,7 @@ Styleguide Navigation.Off-Canvas
 .cui-off-canvas__option {
 
   @extend .cui-primary-colors--medium-dark;
+
   color: white;
   cursor: pointer;
   display: block;
@@ -66,6 +67,7 @@ Styleguide Navigation.Off-Canvas
 .cui-off-canvas__sub-section-list {
 
   @extend .cui-ul;
+
   background-color: $menu-sub-section-background-color;
   font-size: em(14);
   max-height: 0;
