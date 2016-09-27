@@ -220,6 +220,7 @@ Styleguide Media Object.Default
 // modifier for desktop table row to mobile media object styling
 .cui-media--tr {
   position: relative;
+  padding: 0;
 
   @media screen and (max-width: 700px) {
     padding: em(7) em(40) em(7) 0;
@@ -240,8 +241,13 @@ Styleguide Media Object.Default
     }
   }
 
+  .cui-media__image {
+    align-items: center;
+    display: flex;
+  }
+
   .cui-media__title {
-    color: $cui-primary-colors--medium;
+    color: $cui-primary-colors--medium-dark;
     padding-bottom: em(5);
     transition: color 0.15s linear;
   }
@@ -278,6 +284,7 @@ Styleguide Media Object.Default
 
   .cui-media__content {
     align-self: center;
+    color: $cui-greyscale--dark;
 
     @media screen and (max-width: 700px) {
       padding: 0;
@@ -304,6 +311,7 @@ Styleguide Media Object.Default
       margin-left: 0;
       min-width: 10px;
       position: relative;
+      top: auto;
     }
 
     &--suspended,

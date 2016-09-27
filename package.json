@@ -42,7 +42,8 @@
     "styleguide/",
     "style.css",
     "CHANGELOG.md",
-    "README.md"
+    "README.md",
+    "stylelintrc.json"
   ],
   "devDependencies": {
     "@covisint/cui-icons": "^1.4.1",
