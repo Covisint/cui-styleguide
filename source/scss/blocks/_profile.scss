@@ -3,6 +3,7 @@
 // Styles for navigation features
 // 
 // Styleguide Profile
+
 /*
 Default Profile
 
@@ -17,7 +18,7 @@ Styleguide Profile.Default
   height: 0;
   position: relative;
 
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -244,7 +245,7 @@ Styleguide Profile.Default
 
     @extend .cui-chevron;
 
-    &:after {
+    &::after {
 
       @extend .cui-chevron:after;
     }
