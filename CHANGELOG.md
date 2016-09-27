@@ -3,7 +3,15 @@ All notable changes to this project will be documented in this file.
 This project tries its best to adhere to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
-### Added Stylehint Linting for SCSS. Requires `npm install stylehint -g`
+### Added
+- Stylehint Linting for SCSS. Requires `npm install stylehint -g`
+
+### Fixed
+- correct hover color for left menu
+- #000 now charcoal grey
+- app launch icon position on desktop now aligned in row
+- center image for avatar directive
+- tr title color now charcoal
 
 ## [2.5.4] 2016-09-20
 ### Fixed
@@ -28,7 +36,7 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 ### Fixed
 - tiny icons in left mobile menu now regular size
 
-## [2.5.0] 2016-08-11 
+## [2.5.0] 2016-08-11
 ### Changed
 - upgraded to KSS 3.0.0
 - Gruntfile tasks are now broken down into partials located in the /tasks directory
