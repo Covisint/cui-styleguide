@@ -22,7 +22,7 @@ Styleguide Icons.CUI
   }
 
   &--light-grey {
-    fill: #9B9B9B;
+    fill: #9b9b9b;
   }
 
   &--grey {
@@ -40,12 +40,10 @@ Styleguide Icons.CUI
   &--folder {
     fill: $cui-greyscale--dark;
     height: 33px;
-    width: 40px
+    width: 40px;
   }
 }
 
 .cui-icon__ref {
   color: $cui-primary-colors--medium-light;
 }
-
-// Icon color helpers

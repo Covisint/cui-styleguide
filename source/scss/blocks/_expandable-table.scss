@@ -1,30 +1,35 @@
 .cui-expandable__container {
   font-size: em(12);
   overflow-x: scroll;
+
   @media screen and (min-width: 500px) {
     font-size: 1em;
   }
 }
 
 .cui-expandable__tr {
+
   @include fill-parent();
+
   @include row();
 }
 
 .cui-expandable__td {
+
   @include span-columns(3);
 
   &:nth-of-type(2) {
+
     @include span-columns(6);
   }
 
   &:nth-of-type(3) {
     text-align: center;
   }
-
 }
 
 .cui-expandable__link {
+
   @extend .cui-link;
 }
 

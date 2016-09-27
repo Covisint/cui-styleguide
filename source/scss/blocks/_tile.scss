@@ -26,7 +26,9 @@ Styleguide Tile.Default
   }
 
   &__title {
+
     @extend %h6;
+
     align-items: center;
     background: $container-title-bg-color;
     border: $container-body-border-size solid $container-body-border-color;
@@ -42,11 +44,9 @@ Styleguide Tile.Default
     }
   }
 
-
-  @media all and (max-width:600px){
-
+  @media all and (max-width: 600px) {
     &__body {
-      padding:$container-padding-small;
+      padding: $container-padding-small;
     }
   }
 }
@@ -55,7 +55,7 @@ Styleguide Tile.Default
   border: 1px solid $cui-primary-colors--light;
   display: flex;
   flex-direction: column;
-  flex: .5;
+  flex: 0.5;
   justify-content: space-between;
   padding: 0 em(30) em(30);
 }

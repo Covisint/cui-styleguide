@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /// Adds padding to the element.
 ///
@@ -17,6 +17,7 @@
 
 @mixin pad($padding: flex-gutter()) {
   $padding-list: null;
+
   @each $value in $padding {
     $value: if($value == 'default', flex-gutter(), $value);
     $padding-list: join($padding-list, $value);

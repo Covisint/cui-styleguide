@@ -1,8 +1,9 @@
 // Popover
 //
 // Styles for the popover control
-// 
+//
 // Styleguide Popover
+
 /*
 Default Popover
 
@@ -37,7 +38,7 @@ Styleguide Popover.Default
 }
 
 .cui-popover__container {
-  filter: drop-shadow(0 1px 5px rgba($cui-primary-colors--medium, .9));
+  filter: drop-shadow(0 1px 5px rgba($cui-primary-colors--medium, 0.9));
 }
 
 .cui-popover__pointer {
@@ -45,10 +46,12 @@ Styleguide Popover.Default
 }
 
 .cui-popover {
+
   @extend .cui-background;
+
   border-radius: em(7);
-  border: em(1) solid #DDD;
-  box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, .9);
+  border: em(1) solid #ddd;
+  box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, 0.9);
   color: #888;
   display: block;
   padding: em(10) em(20) em(20);
@@ -69,47 +72,57 @@ Styleguide Popover.Default
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: none;
     color: #fff;
+
     p {
       color: #fff;
     }
+
     &::before {
       color: rgba(0, 0, 0, 0.9);
     }
   }
 
   &--top::before {
+
     @extend %popover-arrow;
+
     left: 50%;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 0;
-    transform: rotate(180deg) translate(em(7),em(15));
+    transform: rotate(180deg) translate(em(7), em(15));
   }
 
   &--bottom::before {
+
     @extend %popover-arrow;
+
     left: 50%;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: calc(100% - 5px);
   }
 
   &--left::before {
+
     @extend %popover-arrow;
+
     left: 2px;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, .09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 30%;
-    transform: rotate(90deg) translate(em(7),em(15));
+    transform: rotate(90deg) translate(em(7), em(15));
   }
 
   &--right::before {
+
     @extend %popover-arrow;
+
     left: calc(100% - 4px);
-    text-shadow: -2px em(2) rgba($cui-primary-colors--medium, .09);
+    text-shadow: -2px em(2) rgba($cui-primary-colors--medium, 0.09);
     top: 30%;
     transform: rotate(-90deg);
   }
 
-    //Popover with border-separated menu
-  &--menu{
+  //Popover with border-separated menu
+  &--menu {
     padding: 0;
   }
 
@@ -127,14 +140,13 @@ Styleguide Popover.Default
   }
 
   @media all and (max-width: 700px) {
-    transform:translate(-50%,-em(10));
-    width:90%;
+    transform: translate(-50%, -em(10));
+    width: 90%;
 
-    &::before{
+    &::before {
       left: 50%;
       top: 0;
-      transform: rotate(180deg) translate(em(7),em(15));
+      transform: rotate(180deg) translate(em(7), em(15));
     }
-
   }
 }

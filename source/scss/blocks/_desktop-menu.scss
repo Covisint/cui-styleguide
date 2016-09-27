@@ -11,8 +11,9 @@
     margin-left: 180px;
 
     @if $snap-menu == true {
-      @media screen and (max-width: $snap-menu-breaking-point-1){
-          margin-left:0;
+
+      @media screen and (max-width: $snap-menu-breaking-point-1) {
+        margin-left: 0;
       }
     }
 
@@ -23,9 +24,10 @@
     &.cui-desktop-menu--collapse {
       margin-left: 80px;
 
-      @if $snap-menu == true{
-        @media screen and (max-width: $snap-menu-breaking-point-1){
-            margin-left:0;
+      @if $snap-menu == true {
+
+        @media screen and (max-width: $snap-menu-breaking-point-1) {
+          margin-left: 0;
         }
       }
     }
@@ -37,18 +39,19 @@
     left: 0;
     margin-top: 80px;
     position: absolute;
-    top:0;
+    top: 0;
     transition: all 150ms ease-in-out;
     width: 180px;
 
     @if $snap-menu == true {
       display: none;
-      @media screen and (min-width:$snap-menu-breaking-point){
-          display: inline-block;
+
+      @media screen and (min-width: $snap-menu-breaking-point) {
+        display: inline-block;
       }
     }
 
-    &--collapse { 
+    &--collapse {
       left: -100px;
     }
   }
@@ -61,13 +64,14 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    margin:10px 0;
+    margin: 10px 0;
     min-height: em(60);
     padding: 10px 20px;
-    transition: background-color .15s linear, color .15s linear;
+    transition: background-color 0.15s linear, color 0.15s linear;
 
     &:hover {
       color: $menu-section-font-color--hover;
+
       .cui-desktop-menu__icon,
       .snap-menu__icon {
         fill: $menu-section-font-color--hover;
@@ -98,11 +102,13 @@
 
   .cui-desktop-menu__icon,
   .snap-menu__icon {
+
     @extend .cui-icon;
+
     fill: #fff;
-    flex: .5;
+    flex: 0.5;
     height: em(32);
-    transition: fill .15s linear;
+    transition: fill 0.15s linear;
   }
 
   .cui-desktop-menu__icon {
@@ -128,6 +134,7 @@
     z-index: 10;
 
     .cui-menu__toggle-button-container {
+
       @media screen and (min-width: $snap-menu-breaking-point) {
         display: none;
       }
@@ -136,12 +143,12 @@
 
   .cui-header__svg-logo {
     margin-left: -180px;
-    transition: margin-left .15s ease-in-out;
+    transition: margin-left 0.15s ease-in-out;
   }
 
   .cui-desktop-menu--collapse .cui-header__svg-logo {
     margin-left: -80px;
-    transition: margin-left .15s ease-in-out;
+    transition: margin-left 0.15s ease-in-out;
   }
 
   .cui-off-canvas__section-link {
@@ -151,6 +158,7 @@
   }
 
   .cui-profile {
+
     @media screen and (max-width: $snap-menu-breaking-point-1) {
       display: none;
     }
@@ -159,7 +167,7 @@
   // styling for off-canvas profile
 
   .cui-profile--mobile {
-    background: #E8F0F3;
+    background: #e8f0f3;
     flex-direction: column;
     height: auto;
     margin-left: 0;
@@ -192,16 +200,16 @@
     }
 
     .cui-profile__menu-item {
-      padding: 0 20px 12px 20px;
+      padding: 0 20px 12px;
 
       &:first-of-type {
-        padding: 9px 20px 12px 20px;
+        padding: 9px 20px 12px;
       }
     }
-    
   }
 
   .menu-toggle--mobile {
+
     @media screen and (min-width: $snap-menu-breaking-point) {
       display: none;
     }
@@ -211,7 +219,6 @@
     height: em(20);
     width: em(20);
   }
-
 }
 
 // End styles for new menu
@@ -222,27 +229,29 @@
   left: 0;
   margin-top: 80px;
   position: absolute;
-  top:0;
+  top: 0;
   transition: all 150ms ease-in-out;
   width: $desktop-menu-width;
 
-  @if $snap-menu == true{
+  @if $snap-menu == true {
     display: none;
-    @media screen and (min-width:$snap-menu-breaking-point){
-        display: inline-block;
+
+    @media screen and (min-width: $snap-menu-breaking-point) {
+      display: inline-block;
     }
   }
-  &--collapse{
-    left:(-$desktop-menu-width);
+
+  &--collapse {
+    left: (- $desktop-menu-width);
   }
 }
 
 .desktop-menu--option {
-  background:$cui-primary-colors--medium-dark;
-  color:white;
+  background: $cui-primary-colors--medium-dark;
+  color: white;
   cursor: pointer;
-  display:block;
-  margin:10px 0;
+  display: block;
+  margin: 10px 0;
   padding: 10px 20px;
 
   &:hover {
@@ -254,48 +263,47 @@
   }
 }
 
-
 // MENU TOGGLE
 
 .menu-toggle--button,
 .cui-menu__toggle-button {
-    background: $menu-toggle-color;
-    border: none;
-    height: 1px;
-    padding: 0;
-    position: relative;
-    transition: width .1s linear;
-    width: 25px;
-    
-    &:before {
-        background: $menu-toggle-color;
-        content: '';
-        height: 1px;
-        left: 0;
-        position: absolute;
-        top: -9px;
-        transition: transform .1s ease-in-out, top .1s .1s ease-in-out;
-        width: 25px;
-    }
+  background: $menu-toggle-color;
+  border: none;
+  height: 1px;
+  padding: 0;
+  position: relative;
+  transition: width 0.1s linear;
+  width: 25px;
 
-    &:after {
-        background: $menu-toggle-color;
-        bottom: -9px;
-        content:'';
-        height: 1px;
-        left: 0;
-        position: absolute;
-        transition: transform .1s ease-in-out, bottom .1s .1s ease-in-out;
-        width: 25px;
-    }
+  &::before {
+    background: $menu-toggle-color;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -9px;
+    transition: transform 0.1s ease-in-out, top 0.1s 0.1s ease-in-out;
+    width: 25px;
+  }
+
+  &::after {
+    background: $menu-toggle-color;
+    bottom: -9px;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: transform 0.1s ease-in-out, bottom 0.1s 0.1s ease-in-out;
+    width: 25px;
+  }
 }
 
 .cui-menu__toggle-button:focus {
   box-shadow: 0 1px 3px rgba(100, 100, 100, 0.6);
   outline: 0;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.6);
     outline: 0;
   }
@@ -311,6 +319,7 @@
 
   &--desktop {
     display: none;
+
     @media screen and (min-width: 1001px) {
       display: flex;
     }
@@ -318,27 +327,28 @@
 
   &--mobile {
     display: flex;
+
     @media screen and (min-width: 1001px) {
       display: none;
     }
   }
-  
+
   &.active {
     .menu-toggle--button,
     .cui-menu__toggle-button {
       width: 0;
-      transition: width .1ms linear;
+      transition: width 0.1ms linear;
 
-      &:before{
+      &::before {
         top: 0;
         transform: rotateZ(45deg);
-        transition: top .1s ease-in-out, transform .1s .1s ease-in-out;
+        transition: top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
       }
 
-      &:after{
+      &::after {
         bottom: 0;
         transform: rotateZ(-45deg);
-        transition: bottom .1s ease-in-out, transform .1s .1s ease-in-out;
+        transition: bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
       }
     }
   }

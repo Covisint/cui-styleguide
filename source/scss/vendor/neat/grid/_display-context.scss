@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /// Changes the display property used by other mixins called in the code block argument.
 ///
@@ -23,6 +23,5 @@
   $container-display-table: $display == table !global;
 
   @content;
-
   $container-display-table: $scope-display !global;
 }
