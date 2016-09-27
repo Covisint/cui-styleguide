@@ -19,16 +19,16 @@ Styleguide Footer.Default
   padding-top: em(20);
 
   @media screen and (max-width: 701px) {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .cui-footer {
-
   &__col {
-  padding: 0 em(10);
+    padding: 0 em(10);
 
     &:first-of-type {
+
       @media screen and (min-width: 701px) {
         padding: 0 em(10) 0 0;
       }
@@ -36,6 +36,7 @@ Styleguide Footer.Default
 
     &:last-of-type {
       order: -1;
+
       @media screen and (min-width: 701px) {
         padding: 0 0 0 em(10);
         order: 1;
@@ -44,6 +45,7 @@ Styleguide Footer.Default
   }
 
   &__link {
+
     @extend .cui-link;
   }
 }

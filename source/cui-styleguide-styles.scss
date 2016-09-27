@@ -1,5 +1,7 @@
 @import 'scss/vendor/bourbon/bourbon';
+
 @import 'scss/vendor/neat/neat';
+
 @import 'scss/base/vars';
 
 html {
@@ -26,6 +28,7 @@ html {
 }
 
 .cui-styleguide__main-container {
+
   @media screen and (min-width: 1000px) {
     flex-direction: row;
     flex: 1;
@@ -33,6 +36,7 @@ html {
 }
 
 .cui-styleguide__main-container {
+
   @media screen and (min-width: 1000px) {
     flex: 1 0 auto;
   }
@@ -40,6 +44,7 @@ html {
 
 .cui-styleguide__nav {
   justify-content: center;
+
   @media screen and (min-width: 1000px) {
     flex: 0 0 15em;
   }
@@ -51,9 +56,12 @@ html {
 
 .cui-styleguide__main {
   @include outer-container(95%);
+
   flex: 1;
   min-height: 1000px;
+
   @media screen and (min-width: 999px) {
+
     @include outer-container(80%);
   }
 }
@@ -101,12 +109,13 @@ html {
 }
 
 .cui-styleguide-modifier__example--with-bg {
-  background-color: #DEE9EE;
+  background-color: #dee9ee;
   padding: 10px;
 }
 
 .cui-styleguide__outer-container {
   @include outer-container;
+
   background-color: $secondary-background;
   margin-bottom: 3em;
   margin-left: auto;
@@ -120,27 +129,34 @@ html {
 }
 
 %cui-styleguide__cols {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, 0.75);
   height: em(100);
   margin-bottom: em(25);
 }
 
 .cui-styleguide__half {
+
   @include span-columns(6);
+
   @extend %cui-styleguide__cols;
 }
 
 .cui-styleguide__row {
+
   @include row();
 }
 
 .cui-styleguide__thirds {
+
   @include span-columns(4);
+
   @extend %cui-styleguide__cols;
 }
 
 .cui-styleguide__quarters {
+
   @include span-columns(3);
+
   @extend %cui-styleguide__cols;
 }
 

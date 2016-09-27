@@ -1,4 +1,4 @@
-/* 
+/*
 Colors
 
 A color palette for the Covisint Next Gen UI Framework. Values are available as Sass variables. Variable names are indicated inside each color panel.
@@ -6,41 +6,33 @@ A color palette for the Covisint Next Gen UI Framework. Values are available as 
 Styleguide Colors
 */
 
-.cui-primary-colors,
-.cui-secondary-colors {
-}
-
 /*
 Primary Colors
 
-Markup: ../../hbs/primary-colors.hbs 
+Markup: ../../hbs/primary-colors.hbs
 
 Styleguide Colors.Primary-Colors
 */
 
-.cui-primary-colors--light  {
+.cui-primary-colors--light {
   background-color: $cui-primary-colors--light;
-}   
+}
 
-.cui-primary-colors--medium-light  {
+.cui-primary-colors--medium-light {
   background-color: $cui-primary-colors--medium-light;
 }
 
-.cui-primary-colors--medium  {
+.cui-primary-colors--medium {
   background-color: $cui-primary-colors--medium;
-}   
-
-.cui-primary-colors--medium-dark  {
-  background-color: $cui-primary-colors--medium-dark;
-} 
-
-.cui-primary-colors--dark  {
-  background-color: $cui-primary-colors--dark;
 }
 
+.cui-primary-colors--medium-dark {
+  background-color: $cui-primary-colors--medium-dark;
+}
 
-
-
+.cui-primary-colors--dark {
+  background-color: $cui-primary-colors--dark;
+}
 
 /*
 Secondary Colors
@@ -50,18 +42,18 @@ Markup: ../../hbs/secondary-colors.hbs
 Styleguide Colors.Secondary-Colors
 */
 
-.cui-secondary-colors--light  {
+.cui-secondary-colors--light {
   background-color: $cui-secondary-colors--light;
-}   
+}
 
-.cui-secondary-colors--medium-light  {
+.cui-secondary-colors--medium-light {
   background-color: $cui-secondary-colors--medium-light;
 }
 
-.cui-secondary-colors--medium  {
+.cui-secondary-colors--medium {
   background-color: $cui-secondary-colors--medium;
 }
 
-.cui-secondary-colors--dark  {
+.cui-secondary-colors--dark {
   background-color: $cui-secondary-colors--dark;
 }

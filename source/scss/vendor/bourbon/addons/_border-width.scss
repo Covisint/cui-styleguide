@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /// Provides a quick method for targeting `border-width` on specific sides of a box. Use a `null` value to “skip” a side.
 ///
@@ -21,5 +21,6 @@
 /// @output `border-width`
 
 @mixin border-width($vals...) {
+
   @include directional-property(border, width, $vals...);
 }

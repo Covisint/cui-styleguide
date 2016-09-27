@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /// Changes the direction property used by other mixins called in the code block argument.
 ///
@@ -23,11 +23,12 @@
 
   @if to-lower-case($direction) == "left-to-right" {
     $layout-direction: LTR !global;
-  } @else if to-lower-case($direction) == "right-to-left" {
+  }
+
+  @else if to-lower-case($direction) == "right-to-left" {
     $layout-direction: RTL !global;
   }
 
   @content;
-
   $layout-direction: $scope-direction !global;
 }

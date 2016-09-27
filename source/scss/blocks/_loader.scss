@@ -7,22 +7,22 @@ Styleguide Loading.Default
 */
 
 %center {
-  position:absolute;
-  top:50%;
-  left:50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .cui-loading__container {
-  background:white;
-  bottom:0;
+  background: white;
+  bottom: 0;
   display: flex;
-  left:0;
-  pointer-events:none;
-  position:absolute;
-  right:0;
-  top:0;
-  transition:all 200ms ease-in-out;
-  z-index:10;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 200ms ease-in-out;
+  z-index: 10;
 
   &--center {
     align-content: center;
@@ -41,8 +41,10 @@ Styleguide Loading.Default
 }
 
 .cui-loading--medium {
+
   @extend .cui-loading;
-  border-width: $loader-medium-border-width; 
+
+  border-width: $loader-medium-border-width;
   height: $loader-medium-height-and-width;
   width: $loader-medium-height-and-width;
 }
@@ -51,20 +53,24 @@ Styleguide Loading.Default
   left: calc(50% - (#{$loader-large-height-and-width} / 2 + #{$loader-large-border-width}));
   position: absolute;
   top: calc(50% - (#{$loader-large-height-and-width} / 2 + #{$loader-large-border-width}));
-  z-index:10;
+  z-index: 10;
 }
 
 .cui-loading--medium-ctr {
+
   @extend .cui-loading--medium;
+
   left: calc(50% - (#{$loader-medium-height-and-width} / 2 + #{$loader-medium-border-width}));
   position: absolute;
   top: calc(50% - (#{$loader-medium-height-and-width} / 2 + #{$loader-medium-border-width}));
 }
 
 .cui-loading--button {
+
   @extend .cui-loading;
+
   background: transparent;
-  border-width: em(3, $button-font-size); 
+  border-width: em(3, $button-font-size);
   height: 21px;
   left: $loader-button-center-horizontal;
   position: absolute;
@@ -72,8 +78,8 @@ Styleguide Loading.Default
   width: 21px;
 }
 
-@keyframes spin { 
-  100% { 
-    transform: rotate(360deg); 
-  } 
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

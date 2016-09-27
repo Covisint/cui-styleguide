@@ -11,7 +11,9 @@ Styleguide Navigation.Breadcrumb
   flex: 1 auto;
 
   .cui-breadcrumb__links {
+
     @extend %bold;
+
     display: flex;
     font-size: em(18);
     width: 100%;
@@ -38,13 +40,12 @@ Styleguide Navigation.Breadcrumb
       text-decoration: none;
 
       &.active {
-       color: $breadcrumb-link-color--active;
+        color: $breadcrumb-link-color--active;
       }
     }
   }
 
-  .cui-breadcrumb__link--current { 
-
+  .cui-breadcrumb__link--current {
     a {
       color: $breadcrumb-link-color--active;
     }
@@ -63,7 +64,9 @@ Styleguide Navigation.Breadcrumb
   }
 
   .cui-breadcrumb__link--current .cui-breadcrumb__mobile-link {
+
     @extend %bold;
+
     color: #343534;
     font-size: em(18);
     letter-spacing: 1.5px;
@@ -72,6 +75,7 @@ Styleguide Navigation.Breadcrumb
 }
 
 .cui-breadcrumb__popover {
+
   @media screen and (min-width: 701px) {
     display: none;
   }

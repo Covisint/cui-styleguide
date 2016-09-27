@@ -17,16 +17,17 @@
     color: white;
     display: flex;
     height: em(50);
-    padding: 0 0 0 3.125em;;
+    padding: 0 0 0 3.125em;
   }
 
-  @media all and (max-width:600px){
-    width:90%;
+  @media all and (max-width: 600px) {
+    width: 90%;
 
     &__body {
-      padding:$container-padding-small;
+      padding: $container-padding-small;
     }
   }
+
   &__contents {
     display: block;
     margin: 0 auto;
@@ -44,23 +45,26 @@
   }
 
   &__next {
+
     @extend .cui-button;
 
     &.success {
-      background:$cui-secondary-colors--light;
+      background: $cui-secondary-colors--light;
     }
 
     &.fail {
-      background:$cui-secondary-colors--dark;
+      background: $cui-secondary-colors--dark;
     }
 
     &--error {
-      @extend .cui-button--error
+
+      @extend .cui-button--error;
     }
   }
 
   &__previous {
-    @extend .cui-button--link; 
+    @extend .cui-button--link;
+
     cursor: pointer;
     font-size: 12px;
     margin-right: 20px;
@@ -72,15 +76,15 @@
 
   &__skip {
     background: #fff;
-    border:0;
+    border: 0;
     color: $container-title-background;
     cursor: pointer;
     font-size: 12px;
-    display:none;
-    margin-left:20px;
+    display: none;
+    margin-left: 20px;
 
-    &--show{
-      display:inline-block;
+    &--show {
+      display: inline-block;
     }
   }
 
@@ -88,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @media screen and (min-width: 700px) {
       flex-direction: row;
     }
@@ -97,7 +102,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &--half {
+
       @media screen and (min-width: 700px) {
         width: 48%;
       }
@@ -107,7 +114,6 @@
   label {
     text-transform: capitalize;
   }
-
 }
 
 .cui-error {
@@ -118,33 +124,37 @@
   position: relative;
 
   &.ng-active {
-    animation: error-opacity .3s;
+    animation: error-opacity 0.3s;
     min-height: 26px;
     opacity: 1;
-    transition: min-height .15s ease-in, opacity .3s ease-in;
+    transition: min-height 0.15s ease-in, opacity 0.3s ease-in;
   }
 
   &.ng-inactive {
-    min-height: 0px;
+    min-height: 0;
     opacity: 0;
     padding: 0;
-    transition: min-height .15s ease-out, opacity .3s ease-out;
+    transition: min-height 0.15s ease-out, opacity 0.3s ease-out;
   }
 
   &--half {
+
     @extend .cui-error;
+
     width: 48%;
 
-    @media all and (max-width:700px){
-      width: 100%;    
+    @media all and (max-width: 700px) {
+      width: 100%;
     }
   }
 
   &__password {
+
     @extend .cui-background;
+
     display: none;
-    border: 1px solid #DDD;
-    box-shadow: 0 0 3px 3px rgba(0,0,0,0.09);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.09);
     padding: 10px 20px 20px;
     position: absolute;
     left: 100%;
@@ -158,37 +168,40 @@
     &::before {
       color: white;
       content: '▼';
-      font-size:16px;
+      font-size: 16px;
       left: 0;
       position: absolute;
-      text-shadow: 2px 2px rgba(0,0,0,0.09);
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.09);
       top: 30%;
-      transform: rotate(90deg) translate(7px,15px);
+      transform: rotate(90deg) translate(7px, 15px);
     }
 
-    @media all and (max-width:700px){
-      left:50%;
-      top:100%;
-      width:90%;
-      transform:translate(-50%,-10px);
-      &:before{
-        top:3px;
-        left:20%;
-        transform:rotate(180deg) translate(0,100%);
+    @media all and (max-width: 700px) {
+      left: 50%;
+      top: 100%;
+      width: 90%;
+      transform: translate(-50%, -10px);
+
+      &::before {
+        top: 3px;
+        left: 20%;
+        transform: rotate(180deg) translate(0, 100%);
       }
     }
   }
 }
 
 .cui-text-area {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   min-height: 235px;
   padding: em(23) em(21);
 }
 
 .cui-text-area__label {
+
   @extend %h5;
   @extend %h5--bold;
+
   color: $cui-primary-colors--dark;
   margin-bottom: em(10);
 }
@@ -199,10 +212,10 @@
   background: $cui-secondary-colors--dark;
   display: inline-block;
   border-radius: 50%;
-  transform:translate(0,-1px);
-  
+  transform: translate(0, -1px);
+
   &.cui-error__status--pass {
-      background: $cui-secondary-colors--light;
+    background: $cui-secondary-colors--light;
   }
 }
 
@@ -220,11 +233,11 @@
 }
 
 .angucomplete-holder {
-    position: relative;
+  position: relative;
 }
 
 .angucomplete-dropdown {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: em(2);
   border: em(1) solid #ececec;
   cursor: pointer;
@@ -257,8 +270,8 @@
   background-color: $cui-secondary-colors--medium;
   color: #fff;
 
-  .highlight{
-      color: #fff;
+  .highlight {
+    color: #fff;
   }
 }
 
@@ -277,7 +290,7 @@
 }
 
 .angucomplete-image-default {
-    /* Add your own default image here
+  /* Add your own default image here
      background-image: url('/assets/default.png');
     */
   background-position: center;

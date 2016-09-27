@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project tries its best to adhere to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added Stylehint Linting for SCSS. Requires `npm install stylehint -g`
 
 ## [2.5.4] 2016-09-20
 ### Fixed

@@ -26,23 +26,22 @@ Styleguide Navigation.Action-Bar
   }
 
   &--alt {
-
     .cui-action__title {
       color: $cui-primary-colors--dark;
     }
 
     .cui-action__icon,
-    .cui-action__icon--lg, {
+    .cui-action__icon--lg {
       cursor: pointer;
       fill: $cui-primary-colors--dark;
       height: $action-bar-icon-height;
       min-width: 26px;
       width: auto;
-      transition: fill .15s;
+      transition: fill 0.15s;
 
       use {
         color: $cui-primary-colors--dark;
-        transition: color .15s;
+        transition: color 0.15s;
       }
     }
 
@@ -51,32 +50,34 @@ Styleguide Navigation.Action-Bar
       font-family: lato-bold;
       margin-left: -8px;
       top: -5px;
-      transition: color .15s;
+      transition: color 0.15s;
     }
 
     .cui-action__icon--active,
     .cui-action__icon-counter--active {
       color: $cui-primary-colors--medium-dark;
       fill: $cui-primary-colors--medium-dark;
-      transition: color .15s, fill .15s;
+      transition: color 0.15s, fill 0.15s;
 
       use {
         color: $cui-primary-colors--medium-dark;
-        transition: color .15s;
+        transition: color 0.15s;
       }
     }
   }
 
   &__title {
+
     @extend %bold;
+
     color: $cui-primary-colors--medium;
     display: flex;
-    flex: .5 auto;
+    flex: 0.5 auto;
     font-size: em(18);
 
     @media screen and (min-width: 701px) {
-      font-size: em(20);      
-      flex: .75 auto;
+      font-size: em(20);
+      flex: 0.75 auto;
     }
 
     &--dark {
@@ -86,12 +87,12 @@ Styleguide Navigation.Action-Bar
 
   &__actions {
     display: flex;
-    flex: .5;
+    flex: 0.5;
     justify-content: flex-end;
     margin-left: auto;
 
     @media screen and (min-width: 701px) {
-      flex: .25
+      flex: 0.25;
     }
   }
 
@@ -114,7 +115,7 @@ Styleguide Navigation.Action-Bar
   }
 
   &__icon,
-  &__icon--lg, {
+  &__icon--lg {
     cursor: pointer;
     fill: $cui-primary-colors--medium;
     min-width: 26px;
@@ -145,7 +146,6 @@ Styleguide Navigation.Action-Bar
 
   &__icon--new,
   &__icon--close {
-
     use {
       color: $cui-primary-colors--medium-dark;
     }
@@ -171,17 +171,19 @@ Styleguide Navigation.Action-Bar
   .cui-input-button {
     height: em(40);
   }
-  
+
   .cui-input-button__input {
-    flex: .82;
+    flex: 0.82;
   }
 
   .cui-input-button__button {
-    flex: .18;
+    flex: 0.18;
   }
 
   &__popover {
+
     @extend .cui-popover;
+
     border-radius: em(3);
     box-shadow: 0 1px em(5) 0 $cui-primary-colors--medium-dark;
     display: flex;
@@ -197,8 +199,10 @@ Styleguide Navigation.Action-Bar
   }
 
   &__popover-title {
+
     @extend %h5;
     @extend %h5--bold;
+
     color: $cui-primary-colors--dark;
   }
 
@@ -208,8 +212,10 @@ Styleguide Navigation.Action-Bar
   }
 
   &__popover-button {
+
     @extend .cui-button;
     @extend .cui-button--full-width;
+
     display: flex;
     font-size: em(11);
     height: em(32, 11);

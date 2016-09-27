@@ -3,7 +3,8 @@
 // Styles for a variety of button types
 // 
 // Styleguide Buttons
-/* 
+
+/*
 Default Buttons
 
 Styles for button elements
@@ -11,7 +12,7 @@ Styles for button elements
 :hover                      - Hover styling
 :active                     - Selected styling
 :visited                    - Visited
-.cui-button--error          - Error styling 
+.cui-button--error          - Error styling
 .cui-button--cancel         - Cancel button styling
 .cui-button--full-width     - Full width of container
 .cui-button--small-rounded  - Small and rounded
@@ -35,7 +36,7 @@ Styleguide Buttons.Default
   height: $button-height;
   justify-content: center;
   position: relative;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   width: $button-width;
 
   &:focus,
@@ -44,13 +45,13 @@ Styleguide Buttons.Default
   }
 
   &:visited,
-  &.pseudo-class-visited{
+  &.pseudo-class-visited {
     background-color: $button-color--visited;
     color: $button-text-color--visited;
   }
 
   &:hover,
-  &.pseudo-class-hover{
+  &.pseudo-class-hover {
     background-color: $button-color--hover;
   }
 
@@ -78,7 +79,7 @@ Styleguide Buttons.Default
   }
 
   &--cancel {
-    background-color: #FF8C00;
+    background-color: #ff8c00;
   }
 
   &--full-width {
@@ -91,7 +92,7 @@ Styleguide Buttons.Default
     width: 100px;
   }
 
-  &--inverted{
+  &--inverted {
     background: #fff;
     border: 1px solid $button-color;
     color: $button-color;
@@ -119,9 +120,11 @@ Styleguide Buttons.Default
   60% {
     transform: scale3d(0.8, 0.8, 1);
   }
+
   85% {
     transform: scale3d(1.1, 1.1, 1);
   }
+
   100% {
     transform: scale3d(1, 1, 1);
   }
