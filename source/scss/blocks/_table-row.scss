@@ -58,7 +58,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     align-items: center;
     display: flex;
     flex-flow: row;
-    /* width: 33%; */
 
     &--stacked {
       flex-direction: column;
@@ -125,11 +124,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     width: 100%;
   }
 
-  // &__text {
-  //   margin: 1em 0;
-  //   width: 100%;
-  // }
-
   &__text--left {
     text-align: left;
   }
@@ -139,7 +133,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__text--middle {
-    test-align: center;
+    text-align: center;
   }
 
   &__text--green {
@@ -274,7 +268,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 }
 
-
 // Table Row C
 
 .cui-flex-table__tr--c,
@@ -336,6 +329,3 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     border-top: 0;
   }
 }
-
-
-
