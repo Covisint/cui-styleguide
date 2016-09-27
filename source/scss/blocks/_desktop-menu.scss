@@ -199,10 +199,10 @@
     }
 
     .cui-profile__menu-item {
-      padding: 0 20px 12px 20px;
+      padding: 0 20px 12px;
 
       &:first-of-type {
-        padding: 9px 20px 12px 20px;
+        padding: 9px 20px 12px;
       }
     }
   }
@@ -262,7 +262,6 @@
   }
 }
 
-
 // MENU TOGGLE
 
 .menu-toggle--button,
@@ -275,7 +274,7 @@
   transition: width 0.1s linear;
   width: 25px;
 
-  &:before {
+  &::before {
     background: $menu-toggle-color;
     content: '';
     height: 1px;
@@ -286,7 +285,7 @@
     width: 25px;
   }
 
-  &:after {
+  &::after {
     background: $menu-toggle-color;
     bottom: -9px;
     content: '';
@@ -302,8 +301,8 @@
   box-shadow: 0 1px 3px rgba(100, 100, 100, 0.6);
   outline: 0;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.6);
     outline: 0;
   }
@@ -339,13 +338,13 @@
       width: 0;
       transition: width 0.1ms linear;
 
-      &:before {
+      &::before {
         top: 0;
         transform: rotateZ(45deg);
         transition: top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
       }
 
-      &:after {
+      &::after {
         bottom: 0;
         transform: rotateZ(-45deg);
         transition: bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
