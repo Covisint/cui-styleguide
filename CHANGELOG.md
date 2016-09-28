@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project tries its best to adhere to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [2.6.0] 2016-09-28
 ### Added
 - Stylehint Linting for SCSS. Requires `npm install stylehint -g`
 
@@ -12,6 +14,9 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 - app launch icon position on desktop now aligned in row
 - center image for avatar directive
 - tr title color now charcoal
+
+### Changed
+- dropdown font color now matches standard font color
 
 ## [2.5.4] 2016-09-20
 ### Fixed
