@@ -250,7 +250,7 @@ Styleguide Profile.Default
 
     &::after {
 
-      @extend .cui-chevron:after;
+      @extend .cui-chevron::after;
     }
 
     &--left {

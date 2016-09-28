@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 /// Provides a quick method for targeting `margin` on specific sides of a box. Use a `null` value to “skip” a side.
 ///
@@ -22,6 +22,5 @@
 /// @output `margin`
 
 @mixin margin($vals...) {
-
   @include directional-property(margin, false, $vals...);
 }

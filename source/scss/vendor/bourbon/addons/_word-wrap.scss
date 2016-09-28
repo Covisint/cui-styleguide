@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 /// Provides an easy way to change the `word-wrap` property.
 ///
@@ -23,9 +23,7 @@
 
   @if $wrap == break-word {
     word-break: break-all;
-  }
-
-  @else {
+  } @else {
     word-break: $wrap;
   }
 }

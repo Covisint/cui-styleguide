@@ -1,6 +1,5 @@
 @mixin transform($property: none) {
   // none | <transform-function>
-
   @include prefixer(transform, $property, webkit moz ms o spec);
 }
 
@@ -8,11 +7,9 @@
   // x-axis - left | center | right  | length | %
   // y-axis - top  | center | bottom | length | %
   // z-axis -                          length
-
   @include prefixer(transform-origin, $axes, webkit moz ms o spec);
 }
 
 @mixin transform-style($style: flat) {
-
   @include prefixer(transform-style, $style, webkit moz ms o spec);
 }

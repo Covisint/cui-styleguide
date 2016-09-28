@@ -1,4 +1,4 @@
-@mixin image-rendering($mode: auto) {
+@mixin image-rendering ($mode:auto) {
 
   @if ($mode == crisp-edges) {
     -ms-interpolation-mode: nearest-neighbor; // IE8+
