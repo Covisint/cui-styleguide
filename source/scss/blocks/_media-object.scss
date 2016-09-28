@@ -248,8 +248,11 @@ Styleguide Media Object.Default
 
   .cui-media__title {
     color: $cui-primary-colors--medium-dark;
-    padding-bottom: em(5);
     transition: color 0.15s linear;
+
+    @media screen and (max-width: 700px) {
+      padding-bottom: em(5);
+    }
   }
 
   .cui-media__image-container {
