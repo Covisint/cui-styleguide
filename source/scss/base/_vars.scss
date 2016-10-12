@@ -282,6 +282,11 @@ fieldset {
   pointer-events: none !important;
 }
 
+.cui-no-padding,
+%cui-no-padding {
+  padding: 0 !important;
+}
+
 .cui-padding--h-5,
 %cui-padding--h-5 {
   padding: 0 em(5);
