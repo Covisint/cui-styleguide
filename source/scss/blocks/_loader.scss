@@ -83,3 +83,156 @@ Styleguide Loading.Default
     transform: rotate(360deg);
   }
 }
+
+/*
+Content Loader
+
+Markup: ../../hbs/loader--content.hbs
+
+Styleguide Loading.Content-Loader
+*/
+
+%loader-background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+}
+
+@keyframes placeHolderShimmer{
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.cui-loader--content {
+  background: #fff;
+  height: 100%;
+  padding: em(15) em(13);
+  width: 100%;
+
+  @media screen and (min-width: 701px) {
+    padding: em(15) em(55) 0 em(65);
+  }
+}
+
+.cui-loader__header,
+.cui-loader__row {
+  display: flex;
+}
+
+.cui-loader__header {
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.cui-loader__row {
+  align-items: center;
+  padding: 10px 0;
+}
+
+.cui-loader__row-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+
+  @media screen and (min-width: 700px) {
+    flex-direction: row;
+  }
+}
+
+.cui-loader__breadcrumb,
+.cui-loader__actions,
+.cui-loader__row-img,
+.cui-loader__row-item {
+  @extend %loader-background;
+}
+
+.cui-loader__breadcrumb {
+  height: 20px;
+  width: 152px;
+}
+
+.cui-loader__actions {
+  height: 20px;
+  width: 200px;
+}
+
+.cui-loader__row-img {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 20px;
+  width: 40px;
+
+}
+
+.cui-loader__row-item {
+  height: 20px;
+  margin: 5px 0;
+  width: 75%;
+
+  @media screen and (min-width: 700px) {
+    margin: 0;
+    width: 20%;
+  }
+
+}
+
+// Modifiers
+
+.cui-loader--content-sm {
+
+  .cui-loader__row-item {
+    width: 100%;
+  }
+
+}
+
+.cui-loader--content-vert {
+
+  .cui-loader__row {
+
+    @media screen and (min-width: 700px) {
+      flex-direction: column;
+    }
+
+  }
+
+  .cui-loader__row-img {
+    margin-bottom: 20px;
+    margin-right: 50px;
+
+    @media screen and (min-width: 700px) {
+      margin-right: 0;
+    }
+
+  }
+
+  .cui-loader__row-items {
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 700px) {
+      margin: 5px 0;
+      width: 400px;
+    }
+
+  }
+
+  .cui-loader__row-item {
+    width: 100%;
+
+    @media screen and (min-width: 700px) {
+      margin: 5px 0;
+    }
+
+  }
+}

@@ -6,7 +6,8 @@ html {
 
 /* $cui-primary-colors--medium-light; */
 /* $cui-primary-colors--medium-dark; */
-html, body {
+html,
+body {
   height: 100%; }
 
 fieldset {
@@ -41,7 +42,12 @@ fieldset {
 .cui-padding--h-5 {
   padding: 0 0.3125em; }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
   display: none !important; }
 
 [ui-view].ng-leave {
@@ -143,14 +149,14 @@ html {
   color: #fff; }
 
 .cui-styleguide-modifier__example--with-bg {
-  background-color: #DEE9EE;
+  background-color: #dee9ee;
   padding: 10px; }
 
 .cui-styleguide__outer-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #E8F0F3;
+  background-color: #e8f0f3;
   margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
