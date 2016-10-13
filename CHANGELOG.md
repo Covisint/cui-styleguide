@@ -4,6 +4,10 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.7.0] 2016-10-13
+### Added
+- content loading placeholder
+
 ## [2.6.0] 2016-09-28
 ### Added
 - Stylehint Linting for SCSS. Requires `npm install stylehint -g`
