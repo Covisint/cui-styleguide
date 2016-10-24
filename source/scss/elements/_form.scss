@@ -459,6 +459,25 @@ select.cui-select,
   }
 }
 
+.cui-dropdown--results-per-page {
+  min-width: 38px;
+
+  @media screen and (min-width: 700px) {
+    min-width: 50px;
+  }
+
+  .cui-dropdown__item {
+    font-size: em(12);
+    padding: em(10);
+
+    @media screen and (min-width: 700px) {
+      font-size: inherit;
+      padding: em(10) em(10);
+    }
+
+  }
+}
+
 /*
 Radio
 
