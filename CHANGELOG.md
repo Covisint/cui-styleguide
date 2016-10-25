@@ -4,6 +4,10 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.7.2] 2016-10-25
+### Fixed
+- pagination ellipses now align with page numbers
+
 ## [2.7.1] 2016-10-25
 
 ### Fixed
