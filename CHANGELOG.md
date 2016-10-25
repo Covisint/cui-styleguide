@@ -4,6 +4,14 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.7.1] 2016-10-25
+
+### Fixed
+- pagination mobile styles have been adjusted to match designs
+
+### Changed
+- action titles are always charcoal instead of alternatively matching the breadcrumb color
+
 ## [2.7.0] 2016-10-13
 ### Added
 - content loading placeholder
