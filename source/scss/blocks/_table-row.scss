@@ -49,6 +49,8 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__left {
+    overflow: hidden;
+    text-overflow: ellipsis;
     width: 35%;
   }
 
@@ -121,6 +123,8 @@ cui-expandable:first-of-type .cui-flex-table__tr {
     font-size: em(18);
     font-weight: bold;
     line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
     width: 100%;
   }
 
@@ -308,7 +312,6 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   .cui-flex-table__left,
   .cui-flex-table__middle,
   .cui-flex-table__right {
-    word-break: break-word;
 
     @media screen and (min-width: 701px) {
       padding-right: 20px;
