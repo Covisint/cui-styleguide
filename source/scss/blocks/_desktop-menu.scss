@@ -8,6 +8,8 @@
 
   .cui-menu__content-wrapper,
   .cui-nav__content-wrapper {
+    display: flex;
+    flex: 1;
     margin-left: 180px;
 
     @if $snap-menu == true {
