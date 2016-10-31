@@ -8,6 +8,8 @@
 
   .cui-menu__content-wrapper,
   .cui-nav__content-wrapper {
+    display: flex;
+    flex: 1;
     margin-left: 180px;
 
     @if $snap-menu == true {
@@ -127,6 +129,14 @@
 
     @media screen and (max-width: $snap-menu-breaking-point-1) {
       display: none;
+    }
+
+    &:hover {
+      .cui-menu__toggle-button,
+      .cui-menu__toggle-button::before,
+      .cui-menu__toggle-button::after {
+        background: $menu-hamburger-color--hover;
+      }
     }
   }
 
@@ -267,33 +277,33 @@
 
 .menu-toggle--button,
 .cui-menu__toggle-button {
-  background: $menu-toggle-color;
+  background: $menu-hamburger-color;
   border: none;
   height: 1px;
   padding: 0;
   position: relative;
-  transition: width 0.1s linear;
+  transition: background $animation-short ease-in-out, width 0.1s linear;
   width: 25px;
 
   &::before {
-    background: $menu-toggle-color;
+    background: $menu-hamburger-color;
     content: '';
     height: 1px;
     left: 0;
     position: absolute;
     top: -9px;
-    transition: transform 0.1s ease-in-out, top 0.1s 0.1s ease-in-out;
+    transition: background $animation-short ease-in-out, transform 0.1s ease-in-out, top 0.1s 0.1s ease-in-out;
     width: 25px;
   }
 
   &::after {
-    background: $menu-toggle-color;
+    background: $menu-hamburger-color;
     bottom: -9px;
     content: '';
     height: 1px;
     left: 0;
     position: absolute;
-    transition: transform 0.1s ease-in-out, bottom 0.1s 0.1s ease-in-out;
+    transition: background $animation-short ease-in-out, transform 0.1s ease-in-out, bottom 0.1s 0.1s ease-in-out;
     width: 25px;
   }
 }
@@ -337,18 +347,18 @@
     .menu-toggle--button,
     .cui-menu__toggle-button {
       width: 0;
-      transition: width 0.1ms linear;
+      transition: background $animation-short ease-in-out, width 0.1ms linear;
 
       &::before {
         top: 0;
         transform: rotateZ(45deg);
-        transition: top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
+        transition: background $animation-short ease-in-out, top 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
       }
 
       &::after {
         bottom: 0;
         transform: rotateZ(-45deg);
-        transition: bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
+        transition: background $animation-short ease-in-out, bottom 0.1s ease-in-out, transform 0.1s 0.1s ease-in-out;
       }
     }
   }

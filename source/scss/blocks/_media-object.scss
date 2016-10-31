@@ -230,6 +230,8 @@ Styleguide Media Object.Default
 
     @media screen and (max-width: 700px) {
       line-height: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -248,6 +250,8 @@ Styleguide Media Object.Default
 
   .cui-media__title {
     color: $cui-primary-colors--medium-dark;
+    overflow: hidden;
+    text-overflow: ellipsis;
     transition: color 0.15s linear;
 
     @media screen and (max-width: 700px) {
@@ -298,6 +302,7 @@ Styleguide Media Object.Default
     align-items: center;
     display: flex;
     flex: 1;
+    overflow: hidden;
   }
 
   .cui-media__app-launch {
