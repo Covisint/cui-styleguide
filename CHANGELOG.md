@@ -4,6 +4,14 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [2.7.3] 2016-10-31
+### Fixed
+- text overflow in flex table rows now shows ellipsis
+- footer now forced to bottom of page
+
+### Added
+- '$menu-hamburger-color' and '$menu-hamburger-color--hover' vars allow user to control hover state color
+
 ## [2.7.2] 2016-10-25
 ### Fixed
 - pagination ellipses now align with page numbers
