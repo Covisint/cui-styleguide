@@ -39,6 +39,9 @@ fieldset {
   opacity: 0 !important;
   pointer-events: none !important; }
 
+.cui-no-padding {
+  padding: 0 !important; }
+
 .cui-padding--h-5 {
   padding: 0 0.3125em; }
 
