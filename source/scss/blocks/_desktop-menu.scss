@@ -81,12 +81,12 @@
     }
 
     &.active {
-      background: $secondary-background;
-      color: $cui-primary-colors--medium;
+      background: $cui-primary-colors--light;
+      color: $cui-primary-colors--medium-dark;
 
       .cui-desktop-menu__icon,
       .snap-menu__icon {
-        fill: $cui-primary-colors--medium;
+        fill: $cui-primary-colors--medium-dark;
       }
     }
   }
@@ -118,7 +118,7 @@
   }
 
   .cui-menu__toggle-button--desktop {
-    background: $cui-primary-colors--medium-dark;
+    background: $cui-primary-colors--dark;
     position: absolute;
     left: 0;
     top: 0;
@@ -257,7 +257,7 @@
 }
 
 .desktop-menu--option {
-  background: $cui-primary-colors--medium-dark;
+  background: $cui-primary-colors--dark;
   color: white;
   cursor: pointer;
   display: block;

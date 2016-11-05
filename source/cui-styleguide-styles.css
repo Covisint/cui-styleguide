@@ -4,8 +4,8 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* $cui-primary-colors--medium-light; */
 /* $cui-primary-colors--medium-dark; */
+/* $cui-primary-colors--dark; */
 html,
 body {
   height: 100%; }
@@ -121,7 +121,7 @@ html {
   margin: 50px auto; }
 
 .cui-styleguide__title a {
-  color: #6a98a0;
+  color: #85a6ad;
   font-size: 1.5em;
   text-decoration: none; }
 

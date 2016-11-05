@@ -4,13 +4,12 @@ $animation-medium: 0.3s;
 $animation-short: 0.15s;
 
 // Colors
-$cui-v2-colors-secondary: #e8f0f3;
-$cui-primary-colors--light: #cde6f0;
-$cui-primary-colors--medium-light: #85a6ad;
-$cui-primary-colors--medium: #6a98a0;
-$cui-primary-colors--medium-dark: #00667c;
-$cui-primary-colors--dark: #343534;
-$cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--medium-dark, $cui-primary-colors--medium);
+$cui-primary-colors--light: #e8f0f3;
+$cui-primary-colors--medium-light: #cde6f0;
+$cui-primary-colors--medium: #85a6ad;
+$cui-primary-colors--medium-dark: #6a98a0;
+$cui-primary-colors--dark: #00667c;
+$cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--dark, $cui-primary-colors--medium-dark);
 $cui-secondary-colors--light: #3cb371;
 $cui-secondary-colors--medium-light: #ffd700;
 $cui-secondary-colors--medium: #ff8c00;
@@ -42,10 +41,10 @@ $letter-spacing-lg: 1.6px;
 $letter-spacing-md: 1.5px;
 $letter-spacing-sm: 1.2px;
 $letter-spacing-xs: 1.1px;
-$link-color: $cui-primary-colors--medium;
-$link-color--hover: $cui-primary-colors--medium;
-$link-alt-color: $cui-primary-colors--medium;
-$link-alt-color--hover: $cui-primary-colors--medium;
+$link-color: $cui-primary-colors--medium-dark;
+$link-color--hover: $cui-primary-colors--medium-dark;
+$link-alt-color: $cui-primary-colors--medium-dark;
+$link-alt-color--hover: $cui-primary-colors--medium-dark;
 
 // Backgrounds
 $primary-background: #fff;
@@ -54,8 +53,8 @@ $tertiary-background: #d4e2e6;
 
 // Buttons
 $button-border-radius: em(3);
-$button-color: #6a98a0; /* $cui-primary-colors--medium-light; */
-$button-color--active: #b1c5ce; /* $cui-primary-colors--medium-dark; */
+$button-color: #6a98a0; /* $cui-primary-colors--medium-dark; */
+$button-color--active: #b1c5ce; /* $cui-primary-colors--dark; */
 $button-color--error: #dbdbdb;
 $button-color--visited: #d4e2e6;
 $button-text-color--visited: #006c77;
@@ -80,7 +79,7 @@ $input-error-padding: 5px 0 5px;
 // Input with Button
 $cui-buttonput-btn-bg-color: rgba(232, 240, 243, 0.3);
 $cui-buttonput-btn-alt-bg-color: $primary-background;
-$cui-buttonput-btn-font-color: $cui-primary-colors--medium;
+$cui-buttonput-btn-font-color: $cui-primary-colors--medium-dark;
 $cui-buttonput-input-bg-color: rgba(232, 240, 243, 0.3);
 $cui-buttonput-input-font-color: $cui-greyscale--medium-light;
 
@@ -94,7 +93,7 @@ $cui-radio-button-approve-color: #0d6c76;
 $cui-radio-button-deny-color: #fc5729;
 
 // Switch
-$cui-switch--checked: $cui-primary-colors--medium;
+$cui-switch--checked: $cui-primary-colors--medium-dark;
 $cui-switch--unchecked: $cui-greyscale--dark;
 $cui-switch-height: 50px;
 $cui-switch-width: 209px;
@@ -106,9 +105,9 @@ $action-bar-background: $secondary-background;
 $action-bar-alt-background: $tertiary-background;
 
 // Breadcrumb
-$breadcrumb-link-color: $cui-primary-colors--medium;
-$breadcrumb-link-color--active: $cui-primary-colors--medium-dark;
-$breadcrumb-seperator: 2px solid $cui-primary-colors--medium;
+$breadcrumb-link-color: $cui-primary-colors--medium-dark;
+$breadcrumb-link-color--active: $cui-primary-colors--dark;
+$breadcrumb-seperator: 2px solid $cui-primary-colors--medium-dark;
 
 // Card
 $card-background-color: #fff;
@@ -119,7 +118,7 @@ $card-header-color: $cui-greyscale--medium-dark;
 $card-header-font-size: $font-size-h4;
 $card-header-font-weight: 900;
 $card-header-margin: em(5) 0;
-$card-icon-color: $cui-primary-colors--medium-dark;
+$card-icon-color: $cui-primary-colors--dark;
 $card-content-color: $cui-greyscale--medium-dark;
 $card-padding: em(28);
 
@@ -134,7 +133,7 @@ $header-top-padding: 0 0;
 $header-bottom-padding: 0 0;
 
 // Loading
-$loader-circle-color: $cui-primary-colors--medium-light;
+$loader-circle-color: $cui-primary-colors--medium-dark;
 $loader-spinner-color: $cui-primary-colors--light;
 $loader-button-center-horizontal: calc(#{$button-width} / 2 - 10px);
 $loader-button-center-vertical: 8px;
@@ -186,8 +185,8 @@ $snap-menu: true;
 $tabs-background-color: $secondary-background;
 $tabs-background-color--active: #fff;
 $tabs-border-bottom: 1px solid #eee;
-$tabs-font-color: $cui-primary-colors--medium;
-$tabs-font-color--active: $cui-primary-colors--medium-dark;
+$tabs-font-color: $cui-primary-colors--medium-dark;
+$tabs-font-color--active: $cui-primary-colors--dark;
 $tabs-divider: 1px solid #fff;
 $tabs-padding: em(10);
 $tabs-content-padding: em(50) em(20);
@@ -208,19 +207,19 @@ $step-indicator-middle-bar-size: 1px;
 $step-indicator-title-color: #bbb;
 $step-indicator-title-color--active: #333;
 $step-indicator-title-color--visited: #666;
-$step-indicator-title-color--small-active: $cui-primary-colors--medium;
+$step-indicator-title-color--small-active: $cui-primary-colors--medium-dark;
 $step-indicator-title-color--small-visited: #666;
 $step-indicator-icon-color: #ccc;
 $step-indicator-icon-height: em(24);
 $step-indicator-icon-width: em(24);
-$step-indicator-icon-border--active: em(2) solid $cui-primary-colors--medium;
-$step-indicator-icon-underline--active: 6px solid $cui-primary-colors--medium-light;
-$step-indicator-icon-color--active: $cui-primary-colors--medium;
+$step-indicator-icon-border--active: em(2) solid $cui-primary-colors--medium-dark;
+$step-indicator-icon-underline--active: 6px solid $cui-primary-colors--medium-dark;
+$step-indicator-icon-color--active: $cui-primary-colors--medium-dark;
 $step-indicator-icon-border--visited: em(2) solid #666;
 
 // Mobile Step Indicator
-$mobile-step-icon--expanded: $cui-primary-colors--medium;
-$mobile-step-title--expanded: $cui-primary-colors--medium;
+$mobile-step-icon--expanded: $cui-primary-colors--medium-dark;
+$mobile-step-title--expanded: $cui-primary-colors--medium-dark;
 
 // Media Object
 $media-object-border: 0;
@@ -228,7 +227,7 @@ $media-object-border-radius: 50%;
 $media-object-content-padding: em(5) 0;
 
 // Status
-$status--active: $cui-primary-colors--medium;
+$status--active: $cui-primary-colors--medium-dark;
 $status--pending: $cui-secondary-colors--medium;
 $status--suspended: $cui-secondary-colors--dark;
 $status--locked: #f40;

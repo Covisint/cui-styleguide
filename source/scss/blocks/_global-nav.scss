@@ -57,8 +57,8 @@ Styleguide Navigation.Global Navigation
 
 .cui-top-nav__section.cui-top-nav__section--active {
   > a {
-    color: $cui-primary-colors--medium;
-    border: 2px solid $cui-primary-colors--medium;
+    color: $cui-primary-colors--medium-dark;
+    border: 2px solid $cui-primary-colors--medium-dark;
     border-radius: 30px;
     padding: 0.3em 0.7em;
     transition: background-color 0.3s;
@@ -66,7 +66,7 @@ Styleguide Navigation.Global Navigation
 
     &:hover {
       color: white;
-      background-color: $cui-primary-colors--medium;
+      background-color: $cui-primary-colors--medium-dark;
     }
   }
 }

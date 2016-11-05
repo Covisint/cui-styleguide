@@ -14,7 +14,7 @@ Styleguide Media Object.Default
   padding: em(16) 0;
 
   &--border {
-    border-bottom: 1px solid $cui-primary-colors--light;
+    border-bottom: 1px solid $cui-primary-colors--medium-light;
   }
 
   /* Centered Media Object */
@@ -249,7 +249,7 @@ Styleguide Media Object.Default
   }
 
   .cui-media__title {
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
     overflow: hidden;
     text-overflow: ellipsis;
     transition: color 0.15s linear;
@@ -269,7 +269,7 @@ Styleguide Media Object.Default
 
   &:hover {
     .cui-media__title {
-      color: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
       transition: color 0.15s linear;
     }
 
@@ -329,7 +329,7 @@ Styleguide Media Object.Default
   }
 
   .cui-media__app-launch-icon {
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
     height: em(20);
     opacity: 0.3;
     transition: opacity0.15s linear;

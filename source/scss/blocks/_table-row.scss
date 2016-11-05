@@ -28,7 +28,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
 
   &__tr:hover {
     .cui-flex-table__title {
-      color: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
       cursor: pointer;
     }
   }
@@ -119,7 +119,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__title {
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
     font-size: em(18);
     font-weight: bold;
     line-height: 1.5em;
@@ -141,7 +141,7 @@ cui-expandable:first-of-type .cui-flex-table__tr {
   }
 
   &__text--green {
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
   }
 
   &__text--header {

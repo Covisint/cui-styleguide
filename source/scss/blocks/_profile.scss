@@ -168,7 +168,7 @@ Styleguide Profile.Default
   }
 
   &__user-menu {
-    background: $secondary-background;
+    background: $cui-primary-colors--light;
     opacity: 1;
     padding: 10px 0;
     pointer-events: none;
@@ -335,7 +335,7 @@ Styleguide Profile.Default
   }
 
   .cui-profile__link-icon {
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
     height: 15px;
     width: 15px;
   }
@@ -397,7 +397,7 @@ Styleguide Profile.Default
 }
 
 .cui-avatar__color1 {
-  background-color: $cui-primary-colors--light;
+  background-color: $cui-primary-colors--medium-light;
 }
 
 .cui-avatar__color2 {
@@ -405,13 +405,13 @@ Styleguide Profile.Default
 }
 
 .cui-avatar__color3 {
-  background-color: $cui-primary-colors--medium;
-}
-
-.cui-avatar__color4 {
   background-color: $cui-primary-colors--medium-dark;
 }
 
-.cui-avatar__color5 {
+.cui-avatar__color4 {
   background-color: $cui-primary-colors--dark;
+}
+
+.cui-avatar__color5 {
+  background-color: $cui-greyscale--dark;
 }

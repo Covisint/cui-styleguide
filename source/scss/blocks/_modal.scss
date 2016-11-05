@@ -36,12 +36,12 @@ Modal example to be added via iframe
   }
 
   &__icon {
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
     height: 80px;
     width: 80px;
 
     svg {
-      fill: $cui-primary-colors--medium-dark;
+      fill: $cui-primary-colors--dark;
       height: em(80);
       width: em(80);
     }
@@ -51,7 +51,7 @@ Modal example to be added via iframe
 
     @extend %h3--bold;
 
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
     font-size: em(30);
     margin-top: em(25, 30);
   }
@@ -61,7 +61,7 @@ Modal example to be added via iframe
     @extend %h4;
     @extend %h4--bold;
 
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
     margin-top: em(18, 24);
     max-width: em(225, 24);
   }

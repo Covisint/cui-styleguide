@@ -1,7 +1,7 @@
 // Buttons
 //
 // Styles for a variety of button types
-// 
+//
 // Styleguide Buttons
 
 /*
@@ -106,12 +106,12 @@ Styleguide Buttons.Default
     appearance: none;
     border: none;
     background: none;
-    color: $cui-primary-colors--medium;
+    color: $cui-primary-colors--medium-dark;
     width: auto;
 
     &:hover {
       background: none;
-      color: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
     }
   }
 }
