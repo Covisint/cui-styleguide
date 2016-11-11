@@ -4,6 +4,11 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+### Updated
+- vars are now split between global and component vars.
+- registration page now uses chevron used in other table rows
+- color vars have been updated to properly reflect color palette
+
 ## [2.7.3] 2016-10-31
 ### Fixed
 - text overflow in flex table rows now shows ellipsis
