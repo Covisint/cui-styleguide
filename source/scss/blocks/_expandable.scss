@@ -183,13 +183,16 @@
   cursor: pointer;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 14px;
   transform: translate(-100%, 0);
 
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+
   .cui-expandable__edit-icon {
-    fill: #333;
-    height: 30px;
-    width: 30px;
+    fill: $cui-greyscale--dark;
+    width: 25px;
   }
 
   &:hover {
