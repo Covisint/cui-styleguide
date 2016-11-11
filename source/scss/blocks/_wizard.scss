@@ -202,7 +202,7 @@
   @extend %h5;
   @extend %h5--bold;
 
-  color: $cui-primary-colors--dark;
+  color: $cui-greyscale--dark;
   margin-bottom: em(10);
 }
 
@@ -227,8 +227,6 @@
 
 .chevron {
   color: $container-title-background;
-  float: right;
-  margin-right: 20px;
   transition: all 200ms ease-in-out;
 }
 

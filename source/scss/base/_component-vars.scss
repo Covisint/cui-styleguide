@@ -1,64 +1,17 @@
-// Animations
-$animation-long: 0.5s;
-$animation-medium: 0.3s;
-$animation-short: 0.15s;
-
-// Colors
-$cui-primary-colors--light: #e8f0f3;
-$cui-primary-colors--medium-light: #cde6f0;
-$cui-primary-colors--medium: #85a6ad;
-$cui-primary-colors--medium-dark: #6a98a0;
-$cui-primary-colors--dark: #00667c;
-$cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--dark, $cui-primary-colors--medium-dark);
-$cui-secondary-colors--light: #3cb371;
-$cui-secondary-colors--medium-light: #ffd700;
-$cui-secondary-colors--medium: #ff8c00;
-$cui-secondary-colors--dark: #f40;
-$cui-greyscale--x-light: #eceaea;
-$cui-greyscale--light: #c3c3c3;
-$cui-greyscale--medium-light: #343534;
-$cui-greyscale--medium: #828483;
-$cui-greyscale--medium-dark: #444544;
-$cui-greyscale--dark: #343534;
-$cui-white: #fff;
-
-// Fonts
-$base-font-size: 16px;
-$base-font-family: 'lato-normal', sans-serif;
-$base-font-weight: 400;
-$base-font-color: #929292;
-$secondary-font-color: #4a4a4a;
-$font-size-h1: 2.5em;
-$font-size-h2: 2em;
-$font-size-h3: 1.75em;
-$font-size-h4: 1.5em;
-$font-size-h5: 1.25em;
-$font-size-h6: 1em;
-$font-header-weight: 700;
-$letter-spacing-xxl: 2.1px;
-$letter-spacing-xl: 1.8px;
-$letter-spacing-lg: 1.6px;
-$letter-spacing-md: 1.5px;
-$letter-spacing-sm: 1.2px;
-$letter-spacing-xs: 1.1px;
+// Links
 $link-color: $cui-primary-colors--medium-dark;
 $link-color--hover: $cui-primary-colors--medium-dark;
 $link-alt-color: $cui-primary-colors--medium-dark;
 $link-alt-color--hover: $cui-primary-colors--medium-dark;
 
-// Backgrounds
-$primary-background: #fff;
-$secondary-background: #e8f0f3;
-$tertiary-background: #d4e2e6;
-
 // Buttons
 $button-border-radius: em(3);
-$button-color: #6a98a0; /* $cui-primary-colors--medium-dark; */
+$button-color: $cui-primary-colors--medium-dark; /* $cui-primary-colors--medium-dark; */
 $button-color--active: #b1c5ce; /* $cui-primary-colors--dark; */
 $button-color--error: #dbdbdb;
 $button-color--visited: #d4e2e6;
-$button-text-color--visited: #006c77;
-$button-color--hover: #006c77;
+$button-text-color--visited: $cui-primary-colors--dark;
+$button-color--hover: $cui-primary-colors--dark;
 $button-color--error-hover: $cui-greyscale--medium-light;
 $button-font-size: 15px;
 $button-height: em(42, $button-font-size);
@@ -71,7 +24,7 @@ $badge-font-size: em(12);
 // Inputs
 $cui-input-border: #dee9ee;
 $cui-input-border--focus: #828483;
-$cui-input-border--invalid: #f40;
+$cui-input-border--invalid: $cui-secondary-colors--dark;
 $cui-input-border--valid: #47cbb4;
 $input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
@@ -88,8 +41,8 @@ $cui-checkbox-check-color: #545454;
 
 // Radio
 $cui-radio-button-background-color: #d4e2e6;
-$cui-radio-button-checked-color: #006c77;
-$cui-radio-button-approve-color: #0d6c76;
+$cui-radio-button-checked-color: $cui-primary-colors--dark;
+$cui-radio-button-approve-color: $cui-primary-colors--dark;
 $cui-radio-button-deny-color: #fc5729;
 
 // Switch
@@ -165,7 +118,7 @@ $menu-hamburger-color: #fff;
 $menu-hamburger-color--hover: #fff;
 $menu-background-color: $cui-background-gradient;
 $menu-section-background-color: transparent;
-$menu-section-font-color--hover: #80b5c5;
+$menu-section-font-color--hover: $cui-primary-colors--medium;
 $menu-sub-section-background-color: transparent;
 $menu-sub-section-font-color--hover: $cui-primary-colors--light;
 $menu-sub-section-animation: $animation-medium;

@@ -38,7 +38,7 @@ Styleguide Popover.Default
 }
 
 .cui-popover__container {
-  filter: drop-shadow(0 1px 5px rgba($cui-primary-colors--medium, 0.9));
+  filter: drop-shadow(0 1px 5px rgba($cui-primary-colors--medium-dark, 0.9));
 }
 
 .cui-popover__pointer {
@@ -51,7 +51,7 @@ Styleguide Popover.Default
 
   border-radius: em(7);
   border: em(1) solid #ddd;
-  box-shadow: 0 1px 5px rgba($cui-primary-colors--medium, 0.9);
+  box-shadow: 0 1px 5px rgba($cui-primary-colors--medium-dark, 0.9);
   color: #888;
   display: block;
   padding: em(10) em(20) em(20);
@@ -87,7 +87,7 @@ Styleguide Popover.Default
     @extend %popover-arrow;
 
     left: 50%;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium-dark, 0.09);
     top: 0;
     transform: rotate(180deg) translate(em(7), em(15));
   }
@@ -97,7 +97,7 @@ Styleguide Popover.Default
     @extend %popover-arrow;
 
     left: 50%;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium-dark, 0.09);
     top: calc(100% - 5px);
   }
 
@@ -106,7 +106,7 @@ Styleguide Popover.Default
     @extend %popover-arrow;
 
     left: 2px;
-    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium, 0.09);
+    text-shadow: em(2) em(2) rgba($cui-primary-colors--medium-dark, 0.09);
     top: 30%;
     transform: rotate(90deg) translate(em(7), em(15));
   }
@@ -116,7 +116,7 @@ Styleguide Popover.Default
     @extend %popover-arrow;
 
     left: calc(100% - 4px);
-    text-shadow: -2px em(2) rgba($cui-primary-colors--medium, 0.09);
+    text-shadow: -2px em(2) rgba($cui-primary-colors--medium-dark, 0.09);
     top: 30%;
     transform: rotate(-90deg);
   }

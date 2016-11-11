@@ -152,7 +152,7 @@ Styleguide Forms.Input-With-Button
 
 // Styling specific for global search input
 .cui-input-button.cui-input-button--global-search {
-  background: $cui-v2-colors-secondary;
+  background: $cui-primary-colors--light;
   height: 60px;
   position: absolute;
   transition: transform 0.15s linear;
@@ -181,13 +181,13 @@ Styleguide Forms.Input-With-Button
     flex: 1;
 
     &::placeholder {
-      color: $cui-primary-colors--medium;
+      color: $cui-primary-colors--medium-dark;
     }
   }
 
   .cui-input-button__button {
     border: 0;
-    border-left: 2px solid $cui-primary-colors--medium;
+    border-left: 2px solid $cui-primary-colors--medium-dark;
     flex: 0.1 30px;
 
     @media screen and (min-width: 701px) {
@@ -444,7 +444,7 @@ select.cui-select,
 
 .cui-dropdown__wrapper {
   background-color: #fff;
-  border: 1px solid $cui-primary-colors--light;
+  border: 1px solid $cui-primary-colors--medium-light;
   max-height: 300px;
   overflow-y: auto;
 }
@@ -453,7 +453,7 @@ select.cui-select,
   padding: em(10) em(30);
 
   &:hover {
-    background-color: $cui-primary-colors--medium;
+    background-color: $cui-primary-colors--medium-dark;
     color: #fff;
     cursor: pointer;
   }

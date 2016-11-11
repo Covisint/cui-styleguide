@@ -4,8 +4,8 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/* $cui-primary-colors--medium-light; */
 /* $cui-primary-colors--medium-dark; */
+/* $cui-primary-colors--dark; */
 html,
 body {
   height: 100%; }
@@ -38,6 +38,9 @@ fieldset {
 .hide--opacity {
   opacity: 0 !important;
   pointer-events: none !important; }
+
+.cui-no-padding {
+  padding: 0 !important; }
 
 .cui-padding--h-5 {
   padding: 0 0.3125em; }
@@ -118,7 +121,7 @@ html {
   margin: 50px auto; }
 
 .cui-styleguide__title a {
-  color: #6a98a0;
+  color: #85a6ad;
   font-size: 1.5em;
   text-decoration: none; }
 

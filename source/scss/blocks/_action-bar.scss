@@ -27,26 +27,26 @@ Styleguide Navigation.Action-Bar
 
   &--alt {
     .cui-action__title {
-      color: $cui-primary-colors--dark;
+      color: $cui-greyscale--dark;
     }
 
     .cui-action__icon,
     .cui-action__icon--lg {
       cursor: pointer;
-      fill: $cui-primary-colors--dark;
+      fill: $cui-greyscale--dark;
       height: $action-bar-icon-height;
       min-width: 26px;
       width: auto;
       transition: fill 0.15s;
 
       use {
-        color: $cui-primary-colors--dark;
+        color: $cui-greyscale--dark;
         transition: color 0.15s;
       }
     }
 
     .cui-action__icon-counter {
-      color: $cui-primary-colors--dark;
+      color: $cui-greyscale--dark;
       font-family: lato-bold;
       margin-left: -8px;
       top: -5px;
@@ -55,12 +55,12 @@ Styleguide Navigation.Action-Bar
 
     .cui-action__icon--active,
     .cui-action__icon-counter--active {
-      color: $cui-primary-colors--medium-dark;
-      fill: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
+      fill: $cui-primary-colors--dark;
       transition: color 0.15s, fill 0.15s;
 
       use {
-        color: $cui-primary-colors--medium-dark;
+        color: $cui-primary-colors--dark;
         transition: color 0.15s;
       }
     }
@@ -70,7 +70,7 @@ Styleguide Navigation.Action-Bar
 
     @extend %bold;
 
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
     display: flex;
     flex: 0.5 auto;
     font-size: em(18);
@@ -109,7 +109,7 @@ Styleguide Navigation.Action-Bar
   }
 
   &__action-label {
-    color: $cui-primary-colors--medium;
+    color: $cui-primary-colors--medium-dark;
     font-size: 11px;
     text-align: center;
   }
@@ -117,12 +117,12 @@ Styleguide Navigation.Action-Bar
   &__icon,
   &__icon--lg {
     cursor: pointer;
-    fill: $cui-primary-colors--medium;
+    fill: $cui-primary-colors--medium-dark;
     min-width: 26px;
     width: auto;
 
     use {
-      color: $cui-primary-colors--medium;
+      color: $cui-primary-colors--medium-dark;
     }
   }
 
@@ -147,24 +147,24 @@ Styleguide Navigation.Action-Bar
   &__icon--new,
   &__icon--close {
     use {
-      color: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
     }
   }
 
   &__icon-counter {
-    color: $cui-primary-colors--medium;
+    color: $cui-primary-colors--medium-dark;
     font-family: lato-bold;
     margin-left: -8px;
     top: 2px;
   }
 
   &__icon--invite {
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
     height: em(40);
     width: em(40);
 
     use {
-      color: $cui-primary-colors--medium-dark;
+      color: $cui-primary-colors--dark;
     }
   }
 
@@ -185,7 +185,7 @@ Styleguide Navigation.Action-Bar
     @extend .cui-popover;
 
     border-radius: em(3);
-    box-shadow: 0 1px em(5) 0 $cui-primary-colors--medium-dark;
+    box-shadow: 0 1px em(5) 0 $cui-primary-colors--dark;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -203,7 +203,7 @@ Styleguide Navigation.Action-Bar
     @extend %h5;
     @extend %h5--bold;
 
-    color: $cui-primary-colors--dark;
+    color: $cui-greyscale--dark;
   }
 
   &__popover-section {

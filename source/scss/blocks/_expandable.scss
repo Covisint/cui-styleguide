@@ -183,13 +183,16 @@
   cursor: pointer;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 14px;
   transform: translate(-100%, 0);
 
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+
   .cui-expandable__edit-icon {
-    fill: #333;
-    height: 30px;
-    width: 30px;
+    fill: $cui-greyscale--dark;
+    width: 25px;
   }
 
   &:hover {
@@ -266,7 +269,7 @@
 }
 
 .cui-expandable__body--alt-bg {
-  background-color: $secondary-background;
+  background-color: $cui-primary-colors--light;
   margin: 0 auto em(24);
   padding: em(20) em(22) em(40) em(50);
   position: relative;
@@ -349,7 +352,7 @@
 
     @extend .cui-link;
 
-    color: $cui-primary-colors--medium-dark;
+    color: $cui-primary-colors--dark;
     height: em(16);
     margin-left: auto;
     position: absolute;

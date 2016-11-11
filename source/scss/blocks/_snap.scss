@@ -1,6 +1,6 @@
 .cui-wrapper {
   min-height: 100vh;
-  background: $secondary-background;
+  background: $cui-primary-colors--light;
   position: relative;
 
   @media screen and (min-width: $snap-menu-breaking-point) {
@@ -71,7 +71,7 @@ snap-drawer {
 }
 
 .snap-menu--option {
-  background: $cui-primary-colors--medium-dark;
+  background: $cui-primary-colors--dark;
   color: white;
   display: block;
   padding: 10px 20px;
