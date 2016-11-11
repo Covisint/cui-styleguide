@@ -301,7 +301,7 @@ Styleguide Profile.Default
   width: auto;
 
   &::before {
-    background-color: #e8f0f3;
+    background-color: $cui-primary-colors--light;
     content: '';
     height: 80px;
     position: absolute;

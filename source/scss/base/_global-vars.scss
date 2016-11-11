@@ -6,7 +6,7 @@ $animation-short: 0.15s;
 // Colors
 $cui-primary-colors--light: #e8f0f3;
 $cui-primary-colors--medium-light: #cde6f0;
-$cui-primary-colors--medium: #85a6ad;
+$cui-primary-colors--medium: #80b5c5;
 $cui-primary-colors--medium-dark: #6a98a0;
 $cui-primary-colors--dark: #00667c;
 $cui-background-gradient: linear-gradient(to bottom, $cui-primary-colors--dark, $cui-primary-colors--medium-dark);
@@ -41,10 +41,7 @@ $letter-spacing-lg: 1.6px;
 $letter-spacing-md: 1.5px;
 $letter-spacing-sm: 1.2px;
 $letter-spacing-xs: 1.1px;
-$link-color: $cui-primary-colors--medium-dark;
-$link-color--hover: $cui-primary-colors--medium-dark;
-$link-alt-color: $cui-primary-colors--medium-dark;
-$link-alt-color--hover: $cui-primary-colors--medium-dark;
+
 
 // Backgrounds
 $primary-background: #fff;

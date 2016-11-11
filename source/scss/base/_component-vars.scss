@@ -6,12 +6,12 @@ $link-alt-color--hover: $cui-primary-colors--medium-dark;
 
 // Buttons
 $button-border-radius: em(3);
-$button-color: #6a98a0; /* $cui-primary-colors--medium-dark; */
+$button-color: $cui-primary-colors--medium-dark; /* $cui-primary-colors--medium-dark; */
 $button-color--active: #b1c5ce; /* $cui-primary-colors--dark; */
 $button-color--error: #dbdbdb;
 $button-color--visited: #d4e2e6;
-$button-text-color--visited: #006c77;
-$button-color--hover: #006c77;
+$button-text-color--visited: $cui-primary-colors--dark;
+$button-color--hover: $cui-primary-colors--dark;
 $button-color--error-hover: $cui-greyscale--medium-light;
 $button-font-size: 15px;
 $button-height: em(42, $button-font-size);
@@ -24,7 +24,7 @@ $badge-font-size: em(12);
 // Inputs
 $cui-input-border: #dee9ee;
 $cui-input-border--focus: #828483;
-$cui-input-border--invalid: #f40;
+$cui-input-border--invalid: $cui-secondary-colors--dark;
 $cui-input-border--valid: #47cbb4;
 $input-padding: 8px 12px;
 $input-error-padding: 5px 0 5px;
@@ -41,8 +41,8 @@ $cui-checkbox-check-color: #545454;
 
 // Radio
 $cui-radio-button-background-color: #d4e2e6;
-$cui-radio-button-checked-color: #006c77;
-$cui-radio-button-approve-color: #0d6c76;
+$cui-radio-button-checked-color: $cui-primary-colors--dark;
+$cui-radio-button-approve-color: $cui-primary-colors--dark;
 $cui-radio-button-deny-color: #fc5729;
 
 // Switch
@@ -118,7 +118,7 @@ $menu-hamburger-color: #fff;
 $menu-hamburger-color--hover: #fff;
 $menu-background-color: $cui-background-gradient;
 $menu-section-background-color: transparent;
-$menu-section-font-color--hover: #80b5c5;
+$menu-section-font-color--hover: $cui-primary-colors--medium;
 $menu-sub-section-background-color: transparent;
 $menu-sub-section-font-color--hover: $cui-primary-colors--light;
 $menu-sub-section-animation: $animation-medium;
