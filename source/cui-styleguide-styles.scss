@@ -2,7 +2,9 @@
 
 @import 'scss/vendor/neat/neat';
 
-@import 'scss/base/vars';
+@import 'scss/base/global-vars';
+
+@import 'scss/base/component-vars';
 
 html {
   font-size: 16px;
