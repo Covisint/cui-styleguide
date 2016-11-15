@@ -106,7 +106,7 @@ html {
   .cui-styleguide__main::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   @media screen and (min-width: 999px) {
     .cui-styleguide__main {
       max-width: 80%;
@@ -115,7 +115,7 @@ html {
       .cui-styleguide__main::after {
         clear: both;
         content: "";
-        display: table; } }
+        display: block; } }
 
 .cui-styleguide__section.cui-tile {
   margin: 50px auto; }
@@ -156,7 +156,7 @@ html {
   padding: 10px; }
 
 .cui-styleguide__outer-container {
-  max-width: 68em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #e8f0f3;
@@ -168,7 +168,7 @@ html {
   .cui-styleguide__outer-container::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   .cui-styleguide__outer-container code {
     display: block; }
 
@@ -180,8 +180,8 @@ html {
 .cui-styleguide__half {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 48.821174201%; }
+  margin-right: 2.3576520234%;
+  width: 48.8211739883%; }
   .cui-styleguide__half:last-child {
     margin-right: 0; }
 
@@ -190,21 +190,21 @@ html {
   .cui-styleguide__row::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 .cui-styleguide__thirds {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 31.7615656014%; }
+  margin-right: 2.3576520234%;
+  width: 31.7615653177%; }
   .cui-styleguide__thirds:last-child {
     margin-right: 0; }
 
 .cui-styleguide__quarters {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 23.2317613015%; }
+  margin-right: 2.3576520234%;
+  width: 23.2317609825%; }
   .cui-styleguide__quarters:last-child {
     margin-right: 0; }
 
