@@ -4,10 +4,14 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [3.0.1] 2016-11-16
+### Changed
+- removes vendor libraries from repo and adds them to package.json
+
 ## [3.0.0] 2016-11-11
 
 ### Updated
-- vars are now split between global and component vars.
+- vars are now split between global and component vars
 - registration page now uses chevron used in other table rows
 - color vars have been updated to properly reflect color palette
 
