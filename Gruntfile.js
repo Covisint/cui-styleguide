@@ -26,7 +26,11 @@ module.exports = function(grunt) {
 
   grunt.initConfig(opts);
 
-  grunt.registerTask('default', ['browserSync','watch']);
+  grunt.registerTask('default', function() {
+    grunt.task.run('build');
+    grunt.task.run('browserSync','watch');
+  });
+
   grunt.registerTask('build', [
     'concat:specificity',
     'sass',
