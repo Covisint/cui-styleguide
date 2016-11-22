@@ -86,3 +86,85 @@ p {
   height: $card-button-height;
   margin-top: em(35);
 }
+
+/*
+Alternative Cards
+
+Markup: ../../hbs/cards--alt.hbs
+
+Weight: 10
+
+Styleguide Cards.Alternative-Cards
+*/
+
+.cui-card--alt {
+
+  &.cui-card {
+    background-color: $cui-white;
+    border-radius: em(3);
+    border: solid em(1) $cui-primary-colors--medium;
+    height: em(294);
+    min-height: auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .cui-card__header {
+    background: $cui-background-gradient;
+    height: em(54);
+  }
+
+  .cui-card__logo {
+    border: 4px solid $cui-greyscale--x-light;
+    border-radius: 100%;
+    height: em(100);
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 50px);
+    width: em(100);
+  }
+
+  .cui-card__title {
+
+    @extend %bold;
+
+    color: $secondary-font-color;
+    font-size:em(18);
+    margin: em(77, 18) auto em(13, 18) auto;
+  }
+
+  .cui-card__desc {
+    line-height: calc(21px * 1);
+    margin-bottom: em(17);
+  }
+
+  .cui-card__field {
+
+    @extend %bold;
+
+    color: $secondary-font-color;
+    font-size: em(18);
+    padding: 0 em(23, 18);
+  }
+
+  .cui-card__value {
+    color: $secondary-font-color;
+    padding: 0 em(23);
+  }
+
+  .cui-card__bottom-row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 em(23);
+
+    .cui-button {
+      height: em(31, 15);
+      width: em(118, 15);
+    }
+  }
+
+  .cui-card__category {
+    font-size: em(12);
+  }
+}
