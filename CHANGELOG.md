@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project tries its best to adhere to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- links now have an underline modifier class
+
+### Changed
+- font-size is removed from status text styling
+- header font families have been extracted into their own placeholders from header class styling
 
 ## [3.0.1] 2016-11-16
 ### Changed
