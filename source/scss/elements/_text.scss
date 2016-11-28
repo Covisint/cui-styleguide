@@ -119,6 +119,8 @@ Links
 
 Also available as the placeholder selector %cui-link.
 
+.cui-link--underline - Underline styling
+
 Markup: ../../hbs/text.link.hbs
 
 Styleguide Texts.Links
@@ -130,6 +132,10 @@ Styleguide Texts.Links
   cursor: pointer;
   text-decoration: none;
   transition: color 0.15s ease-in-out;
+
+  &--underline {
+    text-decoration: underline;
+  }
 
   &:hover {
     color: $link-color--hover;
