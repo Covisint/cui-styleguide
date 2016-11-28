@@ -206,10 +206,8 @@ Styleguide Texts.Status
 
 %cui-status {
   font-family: 'lato-normal', sans-serif;
-  font-size: em(10);
 
   @media screen and (min-width: 701px) {
-    font-size: em(16);
     letter-spacing: $letter-spacing-xs;
   }
 }
