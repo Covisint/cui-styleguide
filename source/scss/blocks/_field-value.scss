@@ -21,7 +21,7 @@ Styleguide Forms.Field-Value
   &__field {
 
     @extend %h5;
-    @extend %h5--bold;
+    @extend %bold;
 
     color: $cui-greyscale--dark;
     margin-right: em(5);

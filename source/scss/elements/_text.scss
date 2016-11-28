@@ -46,64 +46,47 @@ h6 {
 .h1,
 %h1 {
   font-size: $font-size-h1;
+  font-weight: $font-header-weight;
 }
 
 .h2,
 %h2 {
   font-size: $font-size-h2;
+  font-weight: $font-header-weight;
 }
 
 .h3,
 %h3 {
   font-size: $font-size-h3;
+  font-weight: $font-header-weight;
 }
 
 .h4,
 %h4 {
   font-size: $font-size-h4;
+  font-weight: $font-header-weight;
 }
 
 .h5,
 %h5 {
   font-size: $font-size-h5;
+  font-weight: $font-header-weight;
 }
 
 .h6,
 %h6 {
   font-size: $font-size-h6;
+  font-weight: $font-header-weight;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-%h1,
-%h2,
-%h3,
-%h4,
-%h5,
-%h6,
+.lato-black,
 %lato-black {
   font-family: 'lato-black', sans-serif;
   font-weight: $font-header-weight;
   letter-spacing: 1.6px;
 }
 
-.h1--bold,
-.h2--bold,
-.h3--bold,
-.h4--bold,
-.h5--bold,
-.h6--bold,
 .bold,
-%h1--bold,
-%h2--bold,
-%h3--bold,
-%h4--bold,
-%h5--bold,
-%h6--bold,
 %bold {
   font-family: 'lato-bold', sans-serif;
   font-weight: $font-header-weight;
@@ -119,6 +102,8 @@ Links
 
 Also available as the placeholder selector %cui-link.
 
+.cui-link--underline - Underline styling
+
 Markup: ../../hbs/text.link.hbs
 
 Styleguide Texts.Links
@@ -130,6 +115,10 @@ Styleguide Texts.Links
   cursor: pointer;
   text-decoration: none;
   transition: color 0.15s ease-in-out;
+
+  &--underline {
+    text-decoration: underline;
+  }
 
   &:hover {
     color: $link-color--hover;
@@ -217,10 +206,8 @@ Styleguide Texts.Status
 
 %cui-status {
   font-family: 'lato-normal', sans-serif;
-  font-size: em(10);
 
   @media screen and (min-width: 701px) {
-    font-size: em(16);
     letter-spacing: $letter-spacing-xs;
   }
 }
