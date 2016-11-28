@@ -200,7 +200,7 @@
 .cui-text-area__label {
 
   @extend %h5;
-  @extend %h5--bold;
+  @extend %bold;
 
   color: $cui-greyscale--dark;
   margin-bottom: em(10);

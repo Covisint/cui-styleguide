@@ -42,7 +42,7 @@
       flex: 1;
     }
 
-    .cui-expandable__title-left { @extend %h5--bold; }
+    .cui-expandable__title-left { @extend %bold; }
 
     .cui-expandable__title-middle {
       color: $secondary-font-color;
@@ -109,7 +109,7 @@
 
   .cui-expandable__pane-title {
 
-    @extend %h4--bold;
+    @extend %bold;
 
     color: $secondary-font-color;
     margin-bottom: em(35);
@@ -123,7 +123,7 @@
 
   .cui-expandable__pane-content {
 
-    @extend %h5--bold;
+    @extend %bold;
 
     color: $secondary-font-color;
 

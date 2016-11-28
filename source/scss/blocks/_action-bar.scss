@@ -201,7 +201,7 @@ Styleguide Navigation.Action-Bar
   &__popover-title {
 
     @extend %h5;
-    @extend %h5--bold;
+    @extend %bold;
 
     color: $cui-greyscale--dark;
   }

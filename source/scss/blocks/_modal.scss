@@ -49,7 +49,7 @@ Modal example to be added via iframe
 
   &__primary-message {
 
-    @extend %h3--bold;
+    @extend %bold;
 
     color: $cui-greyscale--dark;
     font-size: em(30);
@@ -59,7 +59,7 @@ Modal example to be added via iframe
   &__secondary-message {
 
     @extend %h4;
-    @extend %h4--bold;
+    @extend %bold;
 
     color: $cui-greyscale--dark;
     margin-top: em(18, 24);
