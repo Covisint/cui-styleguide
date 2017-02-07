@@ -4,6 +4,10 @@ This project tries its best to adhere to [Semantic Versioning](http://semver.org
 
 ## [Unreleased]
 
+## [3.0.3]
+### Added
+- Changes dropdown items to highlight on focus, removes focus outline
+
 ## [3.0.2]
 ### Added
 - links now have an underline modifier class
