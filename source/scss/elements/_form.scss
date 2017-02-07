@@ -452,10 +452,11 @@ select.cui-select,
 .cui-dropdown__item {
   padding: em(10) em(30);
 
-  &:hover {
+  &:focus {
     background-color: $cui-primary-colors--medium-dark;
     color: #fff;
     cursor: pointer;
+    outline: 0;
   }
 }
 
